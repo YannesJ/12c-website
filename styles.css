@@ -849,6 +849,117 @@ p {
   margin-top: var(--space-xl);
 }
 
+/* Challenge-Ideen-Bibliothek (/challenge-ideen/ + /en/challenge-ideas/) */
+
+.ideas-hero {
+  position: relative;
+  padding: var(--space-3xl) 0 var(--space-2xl);
+  overflow: hidden;
+}
+
+.ideas-hero::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10% auto -10%;
+  height: 480px;
+  background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 30%, #000 0%, transparent 75%);
+  mask-image: radial-gradient(ellipse 60% 55% at 50% 30%, #000 0%, transparent 75%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ideas-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.ideas-hero .lede {
+  max-width: 56ch;
+}
+
+/* Sprungnavigation zu den Kategorie-Ankern, gleiche Farb-Codierung wie die Karten */
+.idea-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: var(--space-xl);
+}
+
+.idea-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.idea-nav a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cat, var(--accent-light));
+  flex-shrink: 0;
+}
+
+.idea-nav a:hover {
+  color: var(--text-display);
+  border-color: var(--border-visible);
+  text-decoration: none;
+}
+
+/* Kriterien-Kasten: was eine gute Monats-Challenge ausmacht */
+.idea-criteria {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-xl);
+  max-width: 68ch;
+  margin-top: var(--space-xl);
+}
+
+.idea-criteria p {
+  margin: 0;
+  font-size: var(--fs-md);
+}
+
+/* Ideen-Karten: gleiche Karte wie .template-card, aber mit Begründungssatz,
+   deshalb breitere Mindestspalte als im .template-grid der Startseite */
+.idea-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.template-card .why {
+  color: var(--text-secondary);
+  font-size: var(--fs-md);
+  line-height: 1.5;
+  margin: 10px 0 0;
+}
+
+/* Anker landen nicht unter dem sticky Header */
+.idea-section {
+  scroll-margin-top: 90px;
+}
+
+.idea-count {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
 /* Footer */
 
 footer.site {

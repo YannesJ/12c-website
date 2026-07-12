@@ -12,6 +12,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/" />
   </url>
   <url>
+    <loc>https://12challenges.yann.es/challenge-ideen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/challenge-ideen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/challenge-ideas/" />
+  </url>
+  <url>
+    <loc>https://12challenges.yann.es/en/challenge-ideas/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/challenge-ideen/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/challenge-ideas/" />
+  </url>
+  <url>
     <loc>https://12challenges.yann.es/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/privacy.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/privacy.html" />
@@ -20,6 +30,16 @@
     <loc>https://12challenges.yann.es/en/privacy.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/privacy.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/privacy.html" />
+  </url>
+  <url>
+    <loc>https://12challenges.yann.es/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/support.html" />
+  </url>
+  <url>
+    <loc>https://12challenges.yann.es/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/support.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/support.html" />
   </url>
   <url>
     <loc>https://12challenges.yann.es/imprint.html</loc>
