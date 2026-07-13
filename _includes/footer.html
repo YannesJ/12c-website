@@ -8,6 +8,7 @@
         {% if site.data.pages.story[page.lang] %}<a href="{{ site.data.pages.story[page.lang] | relative_url }}">{{ t.story }}</a>{% endif %}
         {% if site.data.pages['challenge-ideas'][page.lang] %}<a href="{{ site.data.pages['challenge-ideas'][page.lang] | relative_url }}">{{ t.challenge_ideas }}</a>{% endif %}
         {% if site.data.pages.method[page.lang] %}<a href="{{ site.data.pages.method[page.lang] | relative_url }}">{{ t.method }}</a>{% endif %}
+        {% if site.data.pages.resolutions[page.lang] %}<a href="{{ site.data.pages.resolutions[page.lang] | relative_url }}">{{ t.resolutions }}</a>{% endif %}
         {% if site.data.pages.privacy[page.lang] %}<a href="{{ site.data.pages.privacy[page.lang] | relative_url }}">{{ t.privacy }}</a>{% endif %}
         {% if page.lang == 'en' %}
         <a href="{{ '/imprint.html#en' | relative_url }}">{{ t.imprint }}</a>
