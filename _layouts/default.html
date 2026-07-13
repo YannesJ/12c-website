@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }}</title>
   <meta name="description" content="{{ page.description }}" />
+  {% if page.noindex %}
+  <meta name="robots" content="noindex, follow" />
+  {% endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
   {% for entry in translations %}
   <link rel="alternate" hreflang="{{ entry[0] }}" href="{{ entry[1] | absolute_url }}" />

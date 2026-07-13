@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /imprint.html
 
 Sitemap: https://12challenges.de/sitemap.xml

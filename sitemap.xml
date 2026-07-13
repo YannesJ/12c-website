@@ -4,6 +4,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {% for page_entry in site.data.pages %}
+{% if page_entry[0] == 'imprint' %}{% continue %}{% endif %}
 {% assign translations = page_entry[1] %}
 {% for lang_entry in translations %}
   <url>
