@@ -13,6 +13,9 @@
   <link rel="apple-touch-icon" href="../assets/app-icon.png" />
   <meta name="theme-color" content="#050505" />
   <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .email-display { font-style: italic; color: var(--color-text-secondary, #888); }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -173,8 +176,10 @@
         <section>
           <h2>Contact</h2>
           <p>
-            Didn&rsquo;t find your question? Send us an email, the address is listed in the
-            <a href="../imprint.html#en">legal notice</a>. We usually reply within a few days.
+            Didn&rsquo;t find your question? Send us an email:
+            <a href="#" class="email-link" data-email="dHdlbHZlY2hhbGxlbmdlc0BpY2xvdWQuY29t" rel="nofollow">
+              <span class="email-display">twelvechallenges [at] icloud [dot] com</span>
+            </a>
           </p>
         </section>
       </article>
@@ -190,5 +195,15 @@
       </nav>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('.email-link').forEach(link => {
+      const encoded = link.dataset.email;
+      const decoded = atob(encoded);
+      const display = link.querySelector('.email-display');
+      link.href = 'mailto:' + decoded;
+      display.textContent = decoded;
+    });
+  </script>
 </body>
 </html>
