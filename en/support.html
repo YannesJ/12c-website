@@ -1,21 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Support &amp; FAQ: 12 Challenges</title>
-  <meta name="description" content="Help for the iPhone app 12 Challenges: answers to the most common questions about data, streaks, hardcore mode, the widget and reminders, plus contact." />
-  <link rel="canonical" href="https://12challenges.de/en/support.html" />
-  <link rel="alternate" hreflang="de" href="https://12challenges.de/support.html" />
-  <link rel="alternate" hreflang="en" href="https://12challenges.de/en/support.html" />
-  <link rel="alternate" hreflang="x-default" href="https://12challenges.de/support.html" />
-  <link rel="icon" href="../assets/app-icon.png" />
-  <link rel="apple-touch-icon" href="../assets/app-icon.png" />
-  <meta name="theme-color" content="#050505" />
-  <link rel="stylesheet" href="../styles.css" />
-  <style>
-    .email-display { font-style: italic; color: var(--color-text-secondary, #888); }
-  </style>
+---
+layout: default
+lang: en
+page_id: support
+title: "Support &amp; FAQ: 12 Challenges"
+description: "Help for the iPhone app 12 Challenges: answers to the most common questions about data, streaks, hardcore mode, the widget and reminders, plus contact."
+email_style: true
+email_script: true
+---
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -104,25 +95,6 @@
     ]
   }
   </script>
-</head>
-<body>
-  <header class="site">
-    <div class="container">
-      <a class="brand" href="/en/">
-        <img src="../assets/app-icon.webp" alt="" width="30" height="30" />
-        12 CHALLENGES
-      </a>
-      <div class="header-right">
-        <nav class="site-nav">
-          <a href="/en/">Start</a>
-        </nav>
-        <div class="lang-switch">
-          <a href="/support.html">DE</a>
-          <a href="/en/support.html" class="active">EN</a>
-        </div>
-      </div>
-    </div>
-  </header>
 
   <main class="legal">
     <div class="container">
@@ -137,7 +109,7 @@
           </details>
           <details>
             <summary>Where is my data stored?</summary>
-            <p>Exclusively on your iPhone. There are no servers, no accounts, no tracking and no sharing with third parties. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+            <p>Exclusively on your iPhone. There are no servers, no accounts, no tracking and no sharing with third parties. See the <a href="{{ site.data.pages.privacy.en | relative_url }}">Privacy Policy</a> for details.</p>
           </details>
           <details>
             <summary>How do I get my data onto a new iPhone?</summary>
@@ -185,25 +157,3 @@
       </article>
     </div>
   </main>
-
-  <footer class="site">
-    <div class="container">
-      <nav>
-        <a href="/en/">Start</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="../imprint.html#en">Legal notice</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script>
-    document.querySelectorAll('.email-link').forEach(link => {
-      const encoded = link.dataset.email;
-      const decoded = atob(encoded);
-      const display = link.querySelector('.email-display');
-      link.href = 'mailto:' + decoded;
-      display.textContent = decoded;
-    });
-  </script>
-</body>
-</html>

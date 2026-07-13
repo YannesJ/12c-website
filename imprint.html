@@ -1,32 +1,12 @@
-<!doctype html>
-<html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Impressum: 12 Challenges</title>
-  <meta name="description" content="Impressum / Legal notice für 12 Challenges gemäß § 5 DDG." />
-  <link rel="canonical" href="https://12challenges.de/imprint.html" />
-  <link rel="icon" href="assets/app-icon.png" />
-  <link rel="apple-touch-icon" href="assets/app-icon.png" />
-  <meta name="theme-color" content="#050505" />
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .email-display { font-style: italic; color: var(--color-text-secondary, #888); }
-  </style>
-</head>
-<body>
-  <header class="site">
-    <div class="container">
-      <a class="brand" href="/">
-        <img src="assets/app-icon.webp" alt="" width="30" height="30" />
-        12 CHALLENGES
-      </a>
-      <nav class="site-nav">
-        <a href="/">Start</a>
-      </nav>
-    </div>
-  </header>
-
+---
+layout: default
+lang: de
+page_id: imprint
+title: "Impressum: 12 Challenges"
+description: "Impressum / Legal notice für 12 Challenges gemäß § 5 DDG."
+email_style: true
+email_script: true
+---
   <main class="legal">
     <div class="container">
       <article lang="de">
@@ -103,33 +83,10 @@
             This is the legal notice ("Impressum") for the website and app 12 Challenges,
             required under German law (§ 5 DDG). Operator and contact details are listed above
             in the German section. For privacy information, see the
-            <a href="en/privacy.html">Privacy Policy</a> (available in English). Back to the
-            <a href="en/">English homepage</a>.
+            <a href="{{ site.data.pages.privacy.en | relative_url }}">Privacy Policy</a> (available in English). Back to the
+            <a href="{{ site.data.pages.home.en | relative_url }}">English homepage</a>.
           </p>
         </section>
       </article>
     </div>
   </main>
-
-  <footer class="site">
-    <div class="container">
-      <nav>
-        <a href="/">Start</a>
-        <a href="privacy.html">Datenschutz</a>
-        <a href="support.html">Support</a>
-        <a href="en/privacy.html">Privacy (EN)</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script>
-    document.querySelectorAll('.email-link').forEach(link => {
-      const encoded = link.dataset.email;
-      const decoded = atob(encoded);
-      const display = link.querySelector('.email-display');
-      link.href = 'mailto:' + decoded;
-      display.textContent = decoded;
-    });
-  </script>
-</body>
-</html>

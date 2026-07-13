@@ -1,0 +1,23 @@
+{% assign t = site.data.strings[page.lang] %}
+{% assign home_url = site.data.pages.home[page.lang] %}
+{% assign translations = site.data.pages[page.page_id] %}
+<header class="site">
+  <div class="container">
+    <a class="brand" href="{{ home_url | relative_url }}">
+      <img src="{{ '/assets/app-icon.webp' | relative_url }}" alt="" width="30" height="30" />
+      12 CHALLENGES
+    </a>
+    <div class="header-right">
+      <nav class="site-nav">
+        <a href="{{ home_url | relative_url }}">{{ t.start }}</a>
+      </nav>
+      {% if translations.size > 1 %}
+      <div class="lang-switch">
+        {% for entry in translations %}
+        <a href="{{ entry[1] | relative_url }}"{% if entry[0] == page.lang %} class="active"{% endif %}>{{ entry[0] | upcase }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</header>

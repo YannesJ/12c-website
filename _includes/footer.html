@@ -1,0 +1,21 @@
+{% assign t = site.data.strings[page.lang] %}
+{% assign home_url = site.data.pages.home[page.lang] %}
+<footer class="site">
+  <div class="container">
+    <div>
+      <nav>
+        <a href="{{ home_url | relative_url }}">{{ t.start }}</a>
+        {% if site.data.pages.story[page.lang] %}<a href="{{ site.data.pages.story[page.lang] | relative_url }}">{{ t.story }}</a>{% endif %}
+        {% if site.data.pages['challenge-ideas'][page.lang] %}<a href="{{ site.data.pages['challenge-ideas'][page.lang] | relative_url }}">{{ t.challenge_ideas }}</a>{% endif %}
+        {% if site.data.pages.privacy[page.lang] %}<a href="{{ site.data.pages.privacy[page.lang] | relative_url }}">{{ t.privacy }}</a>{% endif %}
+        {% if page.lang == 'en' %}
+        <a href="{{ '/imprint.html#en' | relative_url }}">{{ t.imprint }}</a>
+        {% elsif site.data.pages.imprint[page.lang] %}
+        <a href="{{ site.data.pages.imprint[page.lang] | relative_url }}">{{ t.imprint }}</a>
+        {% endif %}
+        {% if site.data.pages.support[page.lang] %}<a href="{{ site.data.pages.support[page.lang] | relative_url }}">{{ t.support }}</a>{% endif %}
+      </nav>
+      <p class="trademark-note">{{ t.trademark }}</p>
+    </div>
+  </div>
+</footer>

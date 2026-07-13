@@ -1,47 +1,19 @@
+---
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% for page_entry in site.data.pages %}
+{% assign translations = page_entry[1] %}
+{% for lang_entry in translations %}
   <url>
-    <loc>https://12challenges.yann.es/</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/" />
+    <loc>{{ lang_entry[1] | absolute_url }}</loc>
+{% if translations.size > 1 %}
+{% for alt in translations %}
+    <xhtml:link rel="alternate" hreflang="{{ alt[0] }}" href="{{ alt[1] | absolute_url }}" />
+{% endfor %}
+{% endif %}
   </url>
-  <url>
-    <loc>https://12challenges.yann.es/en/</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/" />
-  </url>
-  <url>
-    <loc>https://12challenges.yann.es/challenge-ideen/</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/challenge-ideen/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/challenge-ideas/" />
-  </url>
-  <url>
-    <loc>https://12challenges.yann.es/en/challenge-ideas/</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/challenge-ideen/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/challenge-ideas/" />
-  </url>
-  <url>
-    <loc>https://12challenges.yann.es/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/privacy.html" />
-  </url>
-  <url>
-    <loc>https://12challenges.yann.es/en/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/privacy.html" />
-  </url>
-  <url>
-    <loc>https://12challenges.yann.es/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/support.html" />
-  </url>
-  <url>
-    <loc>https://12challenges.yann.es/en/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://12challenges.yann.es/support.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://12challenges.yann.es/en/support.html" />
-  </url>
-  <url>
-    <loc>https://12challenges.yann.es/imprint.html</loc>
-  </url>
+{% endfor %}
+{% endfor %}
 </urlset>

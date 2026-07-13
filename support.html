@@ -1,21 +1,12 @@
-<!doctype html>
-<html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Support &amp; FAQ: 12 Challenges</title>
-  <meta name="description" content="Hilfe zur iPhone-App 12 Challenges: Antworten auf die häufigsten Fragen zu Daten, Streak, Hardcore-Modus, Widget und Erinnerungen, plus Kontakt." />
-  <link rel="canonical" href="https://12challenges.de/support.html" />
-  <link rel="alternate" hreflang="de" href="https://12challenges.de/support.html" />
-  <link rel="alternate" hreflang="en" href="https://12challenges.de/en/support.html" />
-  <link rel="alternate" hreflang="x-default" href="https://12challenges.de/support.html" />
-  <link rel="icon" href="assets/app-icon.png" />
-  <link rel="apple-touch-icon" href="assets/app-icon.png" />
-  <meta name="theme-color" content="#050505" />
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .email-display { font-style: italic; color: var(--color-text-secondary, #888); }
-  </style>
+---
+layout: default
+lang: de
+page_id: support
+title: "Support &amp; FAQ: 12 Challenges"
+description: "Hilfe zur iPhone-App 12 Challenges: Antworten auf die häufigsten Fragen zu Daten, Streak, Hardcore-Modus, Widget und Erinnerungen, plus Kontakt."
+email_style: true
+email_script: true
+---
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -104,25 +95,6 @@
     ]
   }
   </script>
-</head>
-<body>
-  <header class="site">
-    <div class="container">
-      <a class="brand" href="/">
-        <img src="assets/app-icon.webp" alt="" width="30" height="30" />
-        12 CHALLENGES
-      </a>
-      <div class="header-right">
-        <nav class="site-nav">
-          <a href="/">Start</a>
-        </nav>
-        <div class="lang-switch">
-          <a href="/support.html" class="active">DE</a>
-          <a href="/en/support.html">EN</a>
-        </div>
-      </div>
-    </div>
-  </header>
 
   <main class="legal">
     <div class="container">
@@ -137,7 +109,7 @@
           </details>
           <details>
             <summary>Wo werden meine Daten gespeichert?</summary>
-            <p>Ausschließlich lokal auf deinem iPhone. Es gibt keine Server, keine Konten, kein Tracking und keine Weitergabe an Dritte. Details stehen in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
+            <p>Ausschließlich lokal auf deinem iPhone. Es gibt keine Server, keine Konten, kein Tracking und keine Weitergabe an Dritte. Details stehen in der <a href="{{ site.data.pages.privacy.de | relative_url }}">Datenschutzerklärung</a>.</p>
           </details>
           <details>
             <summary>Wie bekomme ich meine Daten auf ein neues iPhone?</summary>
@@ -185,25 +157,3 @@
       </article>
     </div>
   </main>
-
-  <footer class="site">
-    <div class="container">
-      <nav>
-        <a href="/">Start</a>
-        <a href="privacy.html">Datenschutz</a>
-        <a href="imprint.html">Impressum</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script>
-    document.querySelectorAll('.email-link').forEach(link => {
-      const encoded = link.dataset.email;
-      const decoded = atob(encoded);
-      const display = link.querySelector('.email-display');
-      link.href = 'mailto:' + decoded;
-      display.textContent = decoded;
-    });
-  </script>
-</body>
-</html>

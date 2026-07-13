@@ -1,38 +1,11 @@
-<!doctype html>
-<html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Datenschutzerklärung: 12 Challenges</title>
-  <meta name="description" content="Datenschutzerklärung für die iPhone-App 12 Challenges. Keine Server, keine Konten, keine Tracking- oder Analyse-Dienste." />
-  <link rel="canonical" href="https://12challenges.de/privacy.html" />
-  <link rel="alternate" hreflang="de" href="https://12challenges.de/privacy.html" />
-  <link rel="alternate" hreflang="en" href="https://12challenges.de/en/privacy.html" />
-  <link rel="alternate" hreflang="x-default" href="https://12challenges.de/privacy.html" />
-  <link rel="icon" href="assets/app-icon.png" />
-  <link rel="apple-touch-icon" href="assets/app-icon.png" />
-  <meta name="theme-color" content="#050505" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site">
-    <div class="container">
-      <a class="brand" href="/">
-        <img src="assets/app-icon.webp" alt="" width="30" height="30" />
-        12 CHALLENGES
-      </a>
-      <div class="header-right">
-        <nav class="site-nav">
-          <a href="/">Start</a>
-        </nav>
-        <div class="lang-switch">
-          <a href="/privacy.html" class="active">DE</a>
-          <a href="/en/privacy.html">EN</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
+---
+layout: default
+lang: de
+page_id: privacy
+title: "Datenschutzerklärung: 12 Challenges"
+description: "Datenschutzerklärung für die iPhone-App 12 Challenges. Keine Server, keine Konten, keine Tracking- oder Analyse-Dienste."
+main_class: legal
+---
   <main class="legal">
     <div class="container">
       <article lang="de">
@@ -43,7 +16,7 @@
           <h2>Verantwortlicher</h2>
           <p>
             Wer im Sinne der DSGVO verantwortlich ist und wie du uns erreichst, steht im
-            <a href="imprint.html">Impressum</a>.
+            <a href="{{ site.data.pages.imprint.de | relative_url }}">Impressum</a>.
           </p>
         </section>
 
@@ -98,24 +71,36 @@
         </section>
 
         <section>
+          <h2>Google Search Console</h2>
+          <p>
+            Wir nutzen Google Search Console (Google Ireland Limited, Gordon House, Barrow
+            Street, Dublin 4, Irland), um zu sehen, wie diese Website in der Google-Suche
+            gefunden wird, zum Beispiel Suchanfragen, Klicks, Impressionen, Position und
+            Indexierungsstatus einzelner Seiten.
+          </p>
+          <p>
+            Search Console lädt dafür selbst keine Skripte, Cookies oder Tracking-Pixel auf
+            dieser Website. Die ausgewerteten Daten stammen ausschließlich aus der
+            Google-Suche selbst, also daraus, wie Google unsere Seiten crawlt und in den
+            Suchergebnissen anzeigt, nicht aus dem Verhalten einzelner Besucher auf der
+            Website. Die Bestätigung unserer Domain gegenüber Google erfolgt über einen
+            DNS-Eintrag und löst keine Datenverarbeitung auf deinem Gerät aus.
+          </p>
+          <p>
+            Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der
+            Analyse und Verbesserung der Auffindbarkeit unserer Website in Suchmaschinen).
+            Weitere Informationen findest du in der
+            <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener">Datenschutzerklärung von Google</a>.
+          </p>
+        </section>
+
+        <section>
           <h2>Kontakt</h2>
           <p>
             Fragen zum Datenschutz? Die Kontaktdaten findest du im
-            <a href="imprint.html">Impressum</a>.
+            <a href="{{ site.data.pages.imprint.de | relative_url }}">Impressum</a>.
           </p>
         </section>
       </article>
     </div>
   </main>
-
-  <footer class="site">
-    <div class="container">
-      <nav>
-        <a href="/">Start</a>
-        <a href="imprint.html">Impressum</a>
-        <a href="support.html">Support</a>
-      </nav>
-    </div>
-  </footer>
-</body>
-</html>

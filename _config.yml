@@ -1,0 +1,11 @@
+title: 12 Challenges
+url: "https://12challenges.de"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+
+keep_files:
+  - assets

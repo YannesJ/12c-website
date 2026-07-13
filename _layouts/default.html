@@ -1,0 +1,57 @@
+{% assign translations = site.data.pages[page.page_id] %}
+{% assign de_url = translations.de %}
+<!doctype html>
+<html lang="{{ page.lang }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  {% for entry in translations %}
+  <link rel="alternate" hreflang="{{ entry[0] }}" href="{{ entry[1] | absolute_url }}" />
+  {% endfor %}
+  {% if de_url %}
+  <link rel="alternate" hreflang="x-default" href="{{ de_url | absolute_url }}" />
+  {% endif %}
+  <link rel="icon" href="{{ '/assets/app-icon.png' | relative_url }}" />
+  <link rel="apple-touch-icon" href="{{ '/assets/app-icon.png' | relative_url }}" />
+  <meta name="theme-color" content="#050505" />
+  {% if page.og_title %}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page.og_title }}" />
+  <meta property="og:description" content="{{ page.og_description }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ page.og_image | absolute_url }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="{{ page.og_locale }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  {% endif %}
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+  {% if page.email_style %}
+  <style>
+    .email-display { font-style: italic; color: var(--color-text-secondary, #888); }
+  </style>
+  {% endif %}
+</head>
+<body>
+  {% include header.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+
+  {% if page.email_script %}
+  <script>
+    document.querySelectorAll('.email-link').forEach(link => {
+      const encoded = link.dataset.email;
+      const decoded = atob(encoded);
+      const display = link.querySelector('.email-display');
+      link.href = 'mailto:' + decoded;
+      display.textContent = decoded;
+    });
+  </script>
+  {% endif %}
+</body>
+</html>

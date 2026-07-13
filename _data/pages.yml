@@ -1,0 +1,28 @@
+# Eine Zeile pro logischer Seite. Jeder Sprach-Key zeigt auf die tatsächliche
+# URL dieser Sprachversion. Fehlt eine Sprache, existiert die Seite (noch)
+# nicht in dieser Sprache, Header/Footer blenden den Link dann automatisch
+# aus. Neue Sprache (z.B. es, fr) hinzufügen: hier je Zeile einen Key ergänzen,
+# sobald die jeweilige Seite existiert.
+
+home:
+  de: /
+  en: /en/
+
+story:
+  de: /story.html
+  en: /en/story.html
+
+privacy:
+  de: /privacy.html
+  en: /en/privacy.html
+
+support:
+  de: /support.html
+  en: /en/support.html
+
+imprint:
+  de: /imprint.html
+
+challenge-ideas:
+  de: /challenge-ideen/
+  en: /en/challenge-ideas/
