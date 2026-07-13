@@ -12,6 +12,10 @@ story:
   de: /story.html
   en: /en/story.html
 
+method:
+  de: /methode.html
+  en: /en/method.html
+
 privacy:
   de: /privacy.html
   en: /en/privacy.html

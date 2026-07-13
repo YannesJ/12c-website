@@ -10,6 +10,8 @@
     <div class="header-right">
       <nav class="site-nav">
         <a href="{{ home_url | relative_url }}">{{ t.start }}</a>
+        {% if site.data.pages['challenge-ideas'][page.lang] %}<a href="{{ site.data.pages['challenge-ideas'][page.lang] | relative_url }}">{{ t.challenge_ideas }}</a>{% endif %}
+        {% if site.data.pages.method[page.lang] %}<a href="{{ site.data.pages.method[page.lang] | relative_url }}">{{ t.method }}</a>{% endif %}
       </nav>
       {% if translations.size > 1 %}
       <div class="lang-switch">

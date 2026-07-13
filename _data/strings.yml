@@ -1,6 +1,7 @@
 de:
   start: Start
   story: Story
+  method: Methode
   challenge_ideas: Challenge-Ideen
   privacy: Datenschutz
   imprint: Impressum
@@ -10,6 +11,7 @@ de:
 en:
   start: Start
   story: Story
+  method: Method
   challenge_ideas: Challenge ideas
   privacy: Privacy
   imprint: Legal notice
