@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://12challenges.yann.es/sitemap.xml
+Sitemap: https://12challenges.de/sitemap.xml
