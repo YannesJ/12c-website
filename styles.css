@@ -291,6 +291,33 @@ p {
   flex-wrap: wrap;
 }
 
+/* Kleiner Hinweis "Version X ist da": zeigt, dass an der App gearbeitet wird.
+   Wert im Text wird bei jedem App-Release manuell hochgezogen. */
+.release-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  margin-bottom: 16px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-subtle);
+  border: 1px solid rgba(52, 199, 89, 0.3);
+  color: var(--accent-light);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.release-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
 /* Offizielles Apple-Badge (assets/appstore-badge.svg, unverändert von developer.apple.com):
    kein eigener Hintergrund/Rahmen/Schatten, nur Freiraum drumherum gemäß Apple-Guidelines. */
 .appstore-badge {

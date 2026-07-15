@@ -1,0 +1,23 @@
+# 12 Challenges
+
+> 12 Challenges ist eine einfache, komplett lokale iPhone-App zum Tracken von Monats-Challenges (z. B. 30 Tage Sport, Lesen, kein Zucker). Kein Account, kein Tracking, keine Werbung. Ein Antippen pro Tag genügt, um den Fortschritt zu sehen.
+
+## Deutsch
+
+- [Start](https://12challenges.de/): Überblick über die App, Funktionsweise und App-Store-Link
+- [Story](https://12challenges.de/story.html): Die Geschichte hinter 12 Challenges
+- [Methode](https://12challenges.de/methode.html): Wie die 12-Challenges-Methode funktioniert und warum sie hilft, Gewohnheiten durchzuhalten
+- [Challenge-Ideen](https://12challenges.de/challenge-ideen/): 50 Ideen für 30-Tage-Challenges
+- [Neujahrsvorsätze](https://12challenges.de/neujahrsvorsaetze.html): Warum Neujahrsvorsätze meist scheitern und was stattdessen funktioniert
+- [Support & FAQ](https://12challenges.de/support.html): Häufige Fragen und Kontakt
+- [Datenschutz](https://12challenges.de/privacy.html): Datenschutzerklärung
+
+## English
+
+- [Home](https://12challenges.de/en/): Overview of the app, how it works, and App Store link
+- [Story](https://12challenges.de/en/story.html): The story behind 12 Challenges
+- [Method](https://12challenges.de/en/method.html): How the 12 Challenges method works and why it helps you stick to habits
+- [Challenge Ideas](https://12challenges.de/en/challenge-ideas/): 50 ideas for 30-day challenges
+- [New Year's Resolutions](https://12challenges.de/en/new-years-resolutions.html): Why New Year's resolutions usually fail and what works instead
+- [Support & FAQ](https://12challenges.de/en/support.html): Frequently asked questions and contact
+- [Privacy](https://12challenges.de/en/privacy.html): Privacy policy
