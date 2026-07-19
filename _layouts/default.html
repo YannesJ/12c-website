@@ -44,5 +44,15 @@
   {{ content }}
 
   {% include footer.html %}
+
+  {% if page.email_script %}
+  <script>
+    document.querySelectorAll('.email-link').forEach(link => {
+      const encoded = link.dataset.email;
+      const decoded = atob(encoded);
+      link.href = 'mailto:' + decoded;
+    });
+  </script>
+  {% endif %}
 </body>
 </html>
