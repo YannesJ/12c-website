@@ -50,9 +50,7 @@
     document.querySelectorAll('.email-link').forEach(link => {
       const encoded = link.dataset.email;
       const decoded = atob(encoded);
-      const display = link.querySelector('.email-display');
       link.href = 'mailto:' + decoded;
-      display.textContent = decoded;
     });
   </script>
   {% endif %}
