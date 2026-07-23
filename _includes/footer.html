@@ -16,6 +16,7 @@
         <a href="{{ site.data.pages.imprint[page.lang] | relative_url }}">{{ t.imprint }}</a>
         {% endif %}
         {% if site.data.pages.support[page.lang] %}<a href="{{ site.data.pages.support[page.lang] | relative_url }}">{{ t.support }}</a>{% endif %}
+        {% if site.data.pages.snake[page.lang] %}<a href="{{ site.data.pages.snake[page.lang] | relative_url }}">{{ t.snake }}</a>{% endif %}
       </nav>
       <p class="trademark-note">&copy; {{ site.time | date: "%Y" }} 12 Challenges. {{ t.trademark }}</p>
     </div>
