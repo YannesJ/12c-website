@@ -18,7 +18,57 @@
         {% if site.data.pages.support[page.lang] %}<a href="{{ site.data.pages.support[page.lang] | relative_url }}">{{ t.support }}</a>{% endif %}
         {% if site.data.pages.snake[page.lang] %}<a href="{{ site.data.pages.snake[page.lang] | relative_url }}">{{ t.snake }}</a>{% endif %}
       </nav>
-      <p class="trademark-note">&copy; {{ site.time | date: "%Y" }} 12 Challenges. {{ t.trademark }}</p>
+      <p class="trademark-note">&copy; <button type="button" class="year-spark" aria-label="{{ site.time | date: "%Y" }}">{{ site.time | date: "%Y" }}</button> 12 Challenges. {{ t.trademark }}</p>
     </div>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var btn = document.querySelector('.year-spark');
+    if (!btn) return;
+
+    var COLORS = ['#34c759', '#6be08a', '#1e9e46', '#dfe3e1'];
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function burst() {
+      btn.classList.remove('is-popping');
+      // Reflow, damit die Animation bei schnellen Klicks neu startet.
+      void btn.offsetWidth;
+      btn.classList.add('is-popping');
+
+      if (reduceMotion) return;
+
+      var rect = btn.getBoundingClientRect();
+      var originX = rect.left + rect.width / 2;
+      var originY = rect.top + rect.height / 2;
+      var count = 12; // eins pro Challenge
+
+      for (var i = 0; i < count; i++) {
+        var p = document.createElement('span');
+        p.className = 'year-spark-particle';
+        var angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.5;
+        var distance = 42 + Math.random() * 46;
+        var dx = Math.cos(angle) * distance;
+        var dy = Math.sin(angle) * distance - 18; // leichter Auftrieb
+        var size = 5 + Math.random() * 4;
+        p.style.left = originX + 'px';
+        p.style.top = originY + 'px';
+        p.style.width = size + 'px';
+        p.style.height = size + 'px';
+        p.style.background = COLORS[i % COLORS.length];
+        p.style.setProperty('--dx', dx.toFixed(1) + 'px');
+        p.style.setProperty('--dy', dy.toFixed(1) + 'px');
+        p.style.setProperty('--rot', (Math.random() * 720 - 360).toFixed(0) + 'deg');
+        document.body.appendChild(p);
+        (function (node) {
+          node.addEventListener('animationend', function () {
+            node.remove();
+          });
+        })(p);
+      }
+    }
+
+    btn.addEventListener('click', burst);
+  })();
+</script>
