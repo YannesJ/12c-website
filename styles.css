@@ -1050,42 +1050,9 @@ footer.site a:hover {
   border-radius: 3px;
 }
 
-.year-spark.is-popping {
-  animation: year-spark-pop 0.4s ease;
-}
-
-@keyframes year-spark-pop {
-  0% { transform: scale(1); }
-  35% { transform: scale(1.45); color: var(--accent-light); }
-  100% { transform: scale(1); }
-}
-
-.year-spark-particle {
-  position: fixed;
-  z-index: 9999;
-  border-radius: 2px;
-  pointer-events: none;
-  will-change: transform, opacity;
-  transform: translate(-50%, -50%);
-  animation: year-spark-fly 0.85s cubic-bezier(0.15, 0.6, 0.4, 1) forwards;
-}
-
-@keyframes year-spark-fly {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) rotate(var(--rot)) scale(0.4);
-    opacity: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .year-spark.is-popping {
-    animation: none;
-  }
-}
+/* Der Konfetti-Ausbruch und der Pop werden per JS (Web Animations API) mit
+   inline gesetzten Styles animiert – so ist der Effekt unabhaengig davon, ob
+   diese CSS-Datei bereits frisch aus dem Cache geladen wurde. */
 
 /* Legal pages */
 
