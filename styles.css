@@ -1026,6 +1026,67 @@ footer.site a:hover {
   letter-spacing: 0.02em;
 }
 
+/* Kleines Easter-Egg: Klick auf die Jahreszahl zündet einen Konfetti-Ausbruch. */
+.year-spark {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.15s ease;
+}
+
+.year-spark:hover {
+  color: var(--accent-light);
+}
+
+.year-spark:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+.year-spark.is-popping {
+  animation: year-spark-pop 0.4s ease;
+}
+
+@keyframes year-spark-pop {
+  0% { transform: scale(1); }
+  35% { transform: scale(1.45); color: var(--accent-light); }
+  100% { transform: scale(1); }
+}
+
+.year-spark-particle {
+  position: fixed;
+  z-index: 9999;
+  border-radius: 2px;
+  pointer-events: none;
+  will-change: transform, opacity;
+  transform: translate(-50%, -50%);
+  animation: year-spark-fly 0.85s cubic-bezier(0.15, 0.6, 0.4, 1) forwards;
+}
+
+@keyframes year-spark-fly {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) rotate(var(--rot)) scale(0.4);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .year-spark.is-popping {
+    animation: none;
+  }
+}
+
 /* Legal pages */
 
 .legal section {
