@@ -29,43 +29,63 @@
     if (!btn) return;
 
     var COLORS = ['#34c759', '#6be08a', '#1e9e46', '#dfe3e1'];
+    var canAnimate = typeof Element !== 'undefined' && !!Element.prototype.animate;
     var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+    // Effekt komplett selbst-enthaltend: alle Styles inline + Web Animations API,
+    // damit er unabhaengig von (evtl. gecachtem) styles.css funktioniert.
     function burst() {
-      btn.classList.remove('is-popping');
-      // Reflow, damit die Animation bei schnellen Klicks neu startet.
-      void btn.offsetWidth;
-      btn.classList.add('is-popping');
-
-      if (reduceMotion) return;
-
       var rect = btn.getBoundingClientRect();
       var originX = rect.left + rect.width / 2;
       var originY = rect.top + rect.height / 2;
-      var count = 12; // eins pro Challenge
 
+      // Kurzer Pop auf der Jahreszahl.
+      if (canAnimate && !reduceMotion) {
+        btn.animate(
+          [
+            { transform: 'scale(1)' },
+            { transform: 'scale(1.45)', color: '#6be08a' },
+            { transform: 'scale(1)' }
+          ],
+          { duration: 400, easing: 'ease' }
+        );
+      }
+
+      if (reduceMotion) return;
+
+      var count = 14;
       for (var i = 0; i < count; i++) {
+        var size = 6 + Math.random() * 5;
         var p = document.createElement('span');
-        p.className = 'year-spark-particle';
-        var angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.5;
-        var distance = 42 + Math.random() * 46;
-        var dx = Math.cos(angle) * distance;
-        var dy = Math.sin(angle) * distance - 18; // leichter Auftrieb
-        var size = 5 + Math.random() * 4;
-        p.style.left = originX + 'px';
-        p.style.top = originY + 'px';
-        p.style.width = size + 'px';
-        p.style.height = size + 'px';
-        p.style.background = COLORS[i % COLORS.length];
-        p.style.setProperty('--dx', dx.toFixed(1) + 'px');
-        p.style.setProperty('--dy', dy.toFixed(1) + 'px');
-        p.style.setProperty('--rot', (Math.random() * 720 - 360).toFixed(0) + 'deg');
+        p.style.cssText =
+          'position:fixed;z-index:2147483647;pointer-events:none;border-radius:2px;' +
+          'left:' + originX + 'px;top:' + originY + 'px;width:' + size + 'px;height:' +
+          size + 'px;background:' + COLORS[i % COLORS.length] +
+          ';transform:translate(-50%,-50%);';
         document.body.appendChild(p);
-        (function (node) {
-          node.addEventListener('animationend', function () {
-            node.remove();
-          });
-        })(p);
+
+        var angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.5;
+        var distance = 55 + Math.random() * 55;
+        var dx = Math.cos(angle) * distance;
+        var dy = Math.sin(angle) * distance - 20; // leichter Auftrieb
+        var rot = Math.random() * 720 - 360;
+
+        if (canAnimate) {
+          var anim = p.animate(
+            [
+              { transform: 'translate(-50%,-50%) rotate(0deg) scale(1)', opacity: 1 },
+              {
+                transform: 'translate(calc(-50% + ' + dx.toFixed(1) + 'px), calc(-50% + ' +
+                  dy.toFixed(1) + 'px)) rotate(' + rot.toFixed(0) + 'deg) scale(0.4)',
+                opacity: 0
+              }
+            ],
+            { duration: 850, easing: 'cubic-bezier(0.15, 0.6, 0.4, 1)', fill: 'forwards' }
+          );
+          (function (node) { anim.onfinish = function () { node.remove(); }; })(p);
+        } else {
+          (function (node) { setTimeout(function () { node.remove(); }, 900); })(p);
+        }
       }
     }
 
