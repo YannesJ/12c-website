@@ -15,6 +15,178 @@ description: "No company, no team: 12 Challenges is the app of solo developer Ya
           <div class="method-panel">
             <p>I'm Yannes, a solo developer. No company, no team, no investors, just me and an app I use myself every day. I simply enjoy improving things about myself, and of all the methods I've tried for that, none stuck with me as reliably as this one.</p>
             <p>It all started on paper: circles on a calendar, one per day, following the old “don't break the chain” idea. Miss no circle, or the chain starts over. 30 days for one goal, nothing more.</p>
+
+            <div class="chain-sketch">
+              <svg viewBox="0 0 320 150">
+                <defs>
+                  <path id="wob-h" d="M0,0.3 C15,-1.2 28,1.4 42,-0.4 C58,1.6 74,-1.1 87,0.6 C93,1.3 97,-0.5 100,0.2" />
+                  <path id="wob-v" d="M0.3,0 C-1.1,15 1.5,28 -0.3,42 C1.6,58 -1.2,74 0.5,87 C1.2,93 -0.4,97 0.2,100" />
+                  <path id="wob-circle" d="M0,-13.6 C7.6,-13.9 13.4,-8.1 13.7,-0.6 C13.9,7.4 7.9,13.6 0.4,13.3 C-7.4,13.7 -13.6,7.6 -13.3,-0.4 C-13.7,-8.2 -7.7,-13.4 0.6,-13.8 C2.2,-13.9 3.5,-13.7 4.7,-13.4" />
+                </defs>
+                <g class="grid-lines" aria-hidden="true">
+                  <use href="#wob-h" transform="translate(10,15) scale(2.8,1)" />
+                  <use href="#wob-h" transform="translate(10,55) scale(2.8,1)" />
+                  <use href="#wob-h" transform="translate(10,95) scale(2.8,1)" />
+                  <use href="#wob-h" transform="translate(10,135) scale(2.8,1)" />
+                  <use href="#wob-v" transform="translate(10,15) scale(1,1.2)" />
+                  <use href="#wob-v" transform="translate(50,15) scale(1,1.2)" />
+                  <use href="#wob-v" transform="translate(90,15) scale(1,1.2)" />
+                  <use href="#wob-v" transform="translate(130,15) scale(1,1.2)" />
+                  <use href="#wob-v" transform="translate(170,15) scale(1,1.2)" />
+                  <use href="#wob-v" transform="translate(210,15) scale(1,1.2)" />
+                  <use href="#wob-v" transform="translate(250,15) scale(1,1.2)" />
+                  <use href="#wob-v" transform="translate(290,15) scale(1,1.2)" />
+                </g>
+                <g class="chain-link" aria-hidden="true">
+                  <use href="#wob-h" transform="translate(30,35) scale(2.4,1)" />
+                  <use href="#wob-h" transform="translate(30,75) scale(1.6,1)" />
+                  <use href="#wob-h" class="hidden" transform="translate(30,115) scale(0,1)" />
+                </g>
+                <g class="day-circles">
+                  <g class="day done" aria-label="Day 1">
+                    <use class="day-circle" href="#wob-circle" transform="translate(30,35) rotate(-8) scale(1.03)" />
+                    <text class="day-number" x="30" y="35">1</text>
+                  </g>
+                  <g class="day done" aria-label="Day 2">
+                    <use class="day-circle" href="#wob-circle" transform="translate(70,35) rotate(5) scale(0.97)" />
+                    <text class="day-number" x="70" y="35">2</text>
+                  </g>
+                  <g class="day done" aria-label="Day 3">
+                    <use class="day-circle" href="#wob-circle" transform="translate(110,35) rotate(-4) scale(1.05)" />
+                    <text class="day-number" x="110" y="35">3</text>
+                  </g>
+                  <g class="day done" aria-label="Day 4">
+                    <use class="day-circle" href="#wob-circle" transform="translate(150,35) rotate(9) scale(0.95)" />
+                    <text class="day-number" x="150" y="35">4</text>
+                  </g>
+                  <g class="day done" aria-label="Day 5">
+                    <use class="day-circle" href="#wob-circle" transform="translate(190,35) rotate(-11) scale(1.0)" />
+                    <text class="day-number" x="190" y="35">5</text>
+                  </g>
+                  <g class="day done" aria-label="Day 6">
+                    <use class="day-circle" href="#wob-circle" transform="translate(230,35) rotate(3) scale(1.04)" />
+                    <text class="day-number" x="230" y="35">6</text>
+                  </g>
+                  <g class="day done" aria-label="Day 7">
+                    <use class="day-circle" href="#wob-circle" transform="translate(270,35) rotate(-6) scale(0.96)" />
+                    <text class="day-number" x="270" y="35">7</text>
+                  </g>
+                  <g class="day done" aria-label="Day 8">
+                    <use class="day-circle" href="#wob-circle" transform="translate(30,75) rotate(7) scale(1.02)" />
+                    <text class="day-number" x="30" y="75">8</text>
+                  </g>
+                  <g class="day done" aria-label="Day 9">
+                    <use class="day-circle" href="#wob-circle" transform="translate(70,75) rotate(-9) scale(0.98)" />
+                    <text class="day-number" x="70" y="75">9</text>
+                  </g>
+                  <g class="day done" aria-label="Day 10">
+                    <use class="day-circle" href="#wob-circle" transform="translate(110,75) rotate(4) scale(1.06)" />
+                    <text class="day-number" x="110" y="75">10</text>
+                  </g>
+                  <g class="day done" aria-label="Day 11">
+                    <use class="day-circle" href="#wob-circle" transform="translate(150,75) rotate(-5) scale(1.01)" />
+                    <text class="day-number" x="150" y="75">11</text>
+                  </g>
+                  <g class="day next" tabindex="0" role="button" aria-label="Check off day 12">
+                    <use class="day-circle" href="#wob-circle" transform="translate(190,75) rotate(8) scale(0.99)" />
+                    <text class="day-number" x="190" y="75">12</text>
+                  </g>
+                  <g class="day hidden" aria-label="Day 13">
+                    <use class="day-circle" href="#wob-circle" transform="translate(230,75) rotate(-10) scale(1.05)" />
+                    <text class="day-number" x="230" y="75">13</text>
+                  </g>
+                  <g class="day hidden" aria-label="Day 14">
+                    <use class="day-circle" href="#wob-circle" transform="translate(270,75) rotate(6) scale(0.96)" />
+                    <text class="day-number" x="270" y="75">14</text>
+                  </g>
+                  <g class="day hidden" aria-label="Day 15">
+                    <use class="day-circle" href="#wob-circle" transform="translate(30,115) rotate(-3) scale(1.02)" />
+                    <text class="day-number" x="30" y="115">15</text>
+                  </g>
+                  <g class="day hidden" aria-label="Day 16">
+                    <use class="day-circle" href="#wob-circle" transform="translate(70,115) rotate(10) scale(0.97)" />
+                    <text class="day-number" x="70" y="115">16</text>
+                  </g>
+                  <g class="day hidden" aria-label="Day 17">
+                    <use class="day-circle" href="#wob-circle" transform="translate(110,115) rotate(-7) scale(1.04)" />
+                    <text class="day-number" x="110" y="115">17</text>
+                  </g>
+                  <g class="day hidden" aria-label="Day 18">
+                    <use class="day-circle" href="#wob-circle" transform="translate(150,115) rotate(4) scale(0.98)" />
+                    <text class="day-number" x="150" y="115">18</text>
+                  </g>
+                  <g class="day hidden" aria-label="Day 19">
+                    <use class="day-circle" href="#wob-circle" transform="translate(190,115) rotate(-9) scale(1.03)" />
+                    <text class="day-number" x="190" y="115">19</text>
+                  </g>
+                  <g class="day hidden" aria-label="Day 20">
+                    <use class="day-circle" href="#wob-circle" transform="translate(230,115) rotate(2) scale(0.95)" />
+                    <text class="day-number" x="230" y="115">20</text>
+                  </g>
+                  <g class="day hidden" aria-label="Day 21">
+                    <use class="day-circle" href="#wob-circle" transform="translate(270,115) rotate(-6) scale(1.06)" />
+                    <text class="day-number" x="270" y="115">21</text>
+                  </g>
+                </g>
+                <text class="chain-ellipsis" x="305" y="115" aria-hidden="true">…</text>
+              </svg>
+            </div>
+            <p class="chain-sketch-caption">Tap the next circle</p>
+            <script>
+              (function () {
+                var days = document.querySelectorAll('.chain-sketch .day');
+                var chainLines = document.querySelectorAll('.chain-sketch .chain-link use');
+
+                function updateChainLines() {
+                  var nextIndex = -1;
+                  for (var i = 0; i < days.length; i++) {
+                    if (days[i].classList.contains('next')) { nextIndex = i; break; }
+                  }
+                  var reach = nextIndex === -1 ? days.length - 1 : nextIndex;
+                  chainLines.forEach(function (line, row) {
+                    var rowStart = row * 7;
+                    if (reach <= rowStart) {
+                      line.classList.add('hidden');
+                      return;
+                    }
+                    line.classList.remove('hidden');
+                    var col = Math.min(reach, rowStart + 6) - rowStart;
+                    var scaleX = (col * 40) / 100;
+                    line.setAttribute('transform', 'translate(30,' + (35 + row * 40) + ') scale(' + scaleX + ',1)');
+                  });
+                }
+
+                function activate(day, index) {
+                  day.classList.remove('next');
+                  day.classList.add('done');
+                  day.removeAttribute('tabindex');
+                  day.removeAttribute('role');
+                  var nextDay = days[index + 1];
+                  if (nextDay) {
+                    nextDay.classList.remove('hidden');
+                    nextDay.classList.add('next');
+                    nextDay.setAttribute('tabindex', '0');
+                    nextDay.setAttribute('role', 'button');
+                  }
+                  updateChainLines();
+                }
+
+                days.forEach(function (day, index) {
+                  day.addEventListener('click', function () {
+                    if (day.classList.contains('next')) activate(day, index);
+                  });
+                  day.addEventListener('keydown', function (e) {
+                    if ((e.key === 'Enter' || e.key === ' ') && day.classList.contains('next')) {
+                      e.preventDefault();
+                      activate(day, index);
+                    }
+                  });
+                });
+
+                updateChainLines();
+              })();
+            </script>
+
             <p>Over the years that turned into a whole series of month-long challenges: learning CAD in 30 days, finally using that dusty pull-up bar every day for a month, reading faster with a well-known method, drawing one product sketch a day with pencil and paper. 12 Challenges itself grew out of exactly one of those month-long challenges.</p>
             <p>The nice thing about the method: you only ever deal with the one task that's currently due. Manageable, with an end date, and clearly visible. And it's fine if a day goes wrong. Completely fine, as long as it's back on track by the day after next at the latest.</p>
           </div>

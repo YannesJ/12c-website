@@ -777,6 +777,101 @@ p {
   color: var(--text-secondary);
 }
 
+/* Chain-Sketch: handgezeichnet wirkende Kalenderskizze auf der Story-Seite,
+   bewusst Kontrast zum sauberen .circle-diagram der App (Outline statt Füllung,
+   ein Basis-Kreis/eine Basis-Linie per <use> mehrfach transformiert statt Filter –
+   damit identisch in jedem Browser, keine feDisplacementMap-Kompatibilitätsrisiken).
+   Tage 1-11 stehen schon, danach ist immer nur der naechste Tag antippbar
+   (wie beim echten Abhaken auf Papier – ein Kreis nach dem anderen). Reines
+   Vanilla-JS, kein externer Request, kein Speichern von Daten – der Zustand
+   lebt nur im DOM und ist nach einem Reload wieder weg. */
+
+.chain-sketch {
+  max-width: 340px;
+  margin: 6px 0 var(--space-lg);
+}
+
+.chain-sketch svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chain-sketch .grid-lines use {
+  fill: none;
+  stroke: var(--border-visible);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.chain-sketch .chain-link use {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1;
+  stroke-linecap: round;
+  opacity: 0.4;
+  vector-effect: non-scaling-stroke;
+}
+
+.chain-sketch .chain-link use.hidden {
+  display: none;
+}
+
+.chain-sketch .chain-ellipsis {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  fill: var(--text-secondary);
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+
+.chain-sketch .day.hidden {
+  display: none;
+}
+
+.chain-sketch .day.next {
+  cursor: pointer;
+}
+
+.chain-sketch .day-circle {
+  fill: transparent;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  transition: fill 0.15s ease;
+}
+
+.chain-sketch .day-number {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-anchor: middle;
+  dominant-baseline: central;
+  fill: var(--text-secondary);
+  pointer-events: none;
+  user-select: none;
+  transition: fill 0.15s ease;
+}
+
+.chain-sketch .day.done .day-circle {
+  fill: var(--accent);
+}
+
+.chain-sketch .day.done .day-number {
+  fill: var(--accent-contrast);
+}
+
+.chain-sketch-caption {
+  margin: 0 0 var(--space-lg);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
 /* Positionierung: Absatz-Section, kein Bild, bewusst textlastig */
 
 .positioning {
