@@ -1133,9 +1133,23 @@ p {
 /* Finale CTA */
 
 .cta-final {
+  position: relative;
   padding: var(--space-4xl) 0;
   text-align: center;
   border-top: 1px solid var(--border);
+}
+
+/* Das Punktmuster + seine Ausblend-Maske sitzen bewusst auf einem eigenen
+   Hintergrund-Pseudo-Element statt direkt auf .cta-final: eine mask-image auf
+   dem Element selbst maskiert auch den Text (h2/p), nicht nur den Hintergrund -
+   auf schmalen Mobile-Breiten ragte der Absatztext dadurch über die "scharfe"
+   Ellipsenmitte hinaus und verblasste an den Rändern unlesbar. */
+.cta-final::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
   background-size: 24px 24px;
   -webkit-mask-image: radial-gradient(ellipse 60% 100% at 50% 50%, #000 0%, transparent 80%);
