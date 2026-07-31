@@ -477,22 +477,37 @@ p {
 
 /* Widget-Nachbau: echter Screenshot hätte Homescreen-Hintergrund und andere Apps im Bild,
    deshalb als eigenständiges Element nachgebaut statt fotografiert (Layout nach
-   Widget/HomeScreenWidget.swift, HomeScreenWidgetMediumView + accentGradient-Prinzip,
-   Farbe bewusst auf das Seiten-Grün --accent statt der App-Kategoriefarbe gemünzt, damit
-   es zur restlichen Seite passt). Klickbar: bestätigt den Tap-to-Check-in-Button der echten
-   Widgets mit einer kleinen Animation, siehe Script am Seitenende. */
+   Widget/HomeScreenWidget.swift, HomeScreenWidgetMediumView). Stil an .phone-frame/
+   .watch-frame angeglichen statt an die echte App-accentGradient-Füllung: dunkle Karte
+   + sparsamer grüner Glow im Hintergrund, damit es sich einreiht statt als einziger
+   satter Grünblock auf der sonst schwarzen Seite hervorzustechen. Klickbar: bestätigt
+   den Tap-to-Check-in-Button der echten Widgets mit einer kleinen Animation, siehe
+   Script am Seitenende. */
 
 .widget-mock-wrap {
+  position: relative;
   display: flex;
   justify-content: center;
 }
 
+.widget-mock-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 8% 8%;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  opacity: 0.25;
+  filter: blur(50px);
+  z-index: 0;
+}
+
 .widget-mock {
   position: relative;
+  z-index: 1;
   width: min(320px, 80vw);
   aspect-ratio: 2.15 / 1;
   border-radius: 22px;
-  background: linear-gradient(135deg, #1e7a42 0%, #0d3018 100%);
+  background: var(--surface-raised);
+  border: 1px solid var(--border-visible);
   padding: 16px 18px;
   display: flex;
   flex-direction: column;
