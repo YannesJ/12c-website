@@ -417,7 +417,174 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Watch mockup: gleiche generische Silhouette-Idee wie .phone-frame, kein Apple-Asset */
+
+.watch-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.watch-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 8% 8%;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  opacity: 0.25;
+  filter: blur(50px);
+  z-index: 0;
+}
+
+.watch-frame {
+  position: relative;
+  z-index: 1;
+  width: min(220px, 55vw);
+  background: #000;
+  border: 1px solid var(--border-visible);
+  border-radius: 54px;
+  padding: 10px;
+  box-shadow: 0 40px 90px -30px rgba(0, 0, 0, 0.85);
+}
+
+.watch-frame::after {
+  content: "";
+  position: absolute;
+  right: -7px;
+  top: 36%;
+  width: 9px;
+  height: 14%;
+  background: #000;
+  border: 1px solid var(--border-visible);
+  border-radius: 4px;
+}
+
+.watch-screen {
+  width: 100%;
+  aspect-ratio: 416 / 496;
+  border-radius: 42px;
+  overflow: hidden;
+  background: #000;
+}
+
+.watch-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   object-position: top;
+}
+
+/* Widget-Nachbau: echter Screenshot hätte Homescreen-Hintergrund und andere Apps im Bild,
+   deshalb als eigenständiges Element nachgebaut statt fotografiert (Layout nach
+   Widget/HomeScreenWidget.swift, HomeScreenWidgetMediumView + accentGradient-Prinzip,
+   Farbe bewusst auf das Seiten-Grün --accent statt der App-Kategoriefarbe gemünzt, damit
+   es zur restlichen Seite passt). Klickbar: bestätigt den Tap-to-Check-in-Button der echten
+   Widgets mit einer kleinen Animation, siehe Script am Seitenende. */
+
+.widget-mock-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.widget-mock {
+  position: relative;
+  width: min(320px, 80vw);
+  aspect-ratio: 2.15 / 1;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #1e7a42 0%, #0d3018 100%);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 30px 70px -25px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+
+.widget-mock::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.22), transparent 55%);
+  pointer-events: none;
+}
+
+.widget-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.widget-emoji {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.widget-title {
+  flex: 1;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.widget-count {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.75;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.widget-bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.widget-checkin {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.18);
+  padding: 7px 13px;
+  border-radius: 999px;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.widget-mock.done .widget-checkin {
+  background: #fff;
+  color: var(--accent-contrast);
+  animation: widget-pop 0.35s ease;
+}
+
+.widget-streak {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ff9f0a;
+  white-space: nowrap;
+}
+
+.widget-count.bump,
+.widget-streak.bump {
+  animation: widget-pop 0.35s ease;
+}
+
+@keyframes widget-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.12); }
+  100% { transform: scale(1); }
 }
 
 /* Sections */
@@ -733,6 +900,22 @@ p {
   border-left: 2px solid var(--accent-contrast);
   border-bottom: 2px solid var(--accent-contrast);
   transform: rotate(-45deg) translateY(-1px);
+}
+
+.circle-diagram .day-finish {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.circle-diagram .day-finish line {
+  stroke: var(--text-secondary);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+.circle-diagram .day-finish path {
+  fill: var(--accent);
 }
 
 .circle-diagram-caption {
