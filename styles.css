@@ -197,17 +197,6 @@ nav.site-nav a:hover {
   justify-content: flex-end;
 }
 
-/* Bei sehr schmalen Handybreiten (~375-430px) sind Nav-Links + Sprachumschalter
-   zusammen (beide innerhalb von .header-right) minimal breiter als der
-   Container, wodurch "EN" leicht über den Rand läuft. nav.site-nav bekommt
-   hier eine eigene Zeile, der Sprachumschalter wird durch das schon
-   vorhandene flex-wrap auf .header-right automatisch druntergeschoben. */
-@media (max-width: 480px) {
-  nav.site-nav {
-    flex-basis: 100%;
-  }
-}
-
 main {
   padding: 0 0 var(--space-4xl);
 }
@@ -817,6 +806,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Container statt Viewport-Query für die Notiz-Innenabstände: die Karte
+     wird nicht nur auf schmalen Handys eng, sondern auch im zweispaltigen
+     Layout bei ~860-1000px Fensterbreite (schmale rechte Spalte) - eine
+     Media Query würde diesen Fall nicht erfassen. */
+  container-type: inline-size;
 }
 
 /* Jahres-Notiz: eine matte Karte mit echtem Materialgefühl statt einer
@@ -887,13 +881,28 @@ p {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-secondary);
-  width: 62px;
+  width: 68px;
   flex-shrink: 0;
 }
 
 .year-note-goal {
   font-size: var(--fs-md);
   color: var(--text-display);
+}
+
+/* Wenig verfügbare Breite (schmales Handy oder schmale rechte Spalte im
+   Grid): etwas knapper gepolstert, sonst brechen die längeren deutschen
+   Ergebnis-Zeilen (z.B. "Klimmzugskraft verbessert") unnötig um. */
+@container (max-width: 400px) {
+  .year-note {
+    padding: 18px;
+  }
+  .year-note-row {
+    gap: 9px;
+  }
+  .year-note-month {
+    width: 60px;
+  }
 }
 
 .year-note-more {
