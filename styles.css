@@ -197,6 +197,17 @@ nav.site-nav a:hover {
   justify-content: flex-end;
 }
 
+/* Bei sehr schmalen Handybreiten (~375-430px) sind Nav-Links + Sprachumschalter
+   zusammen (beide innerhalb von .header-right) minimal breiter als der
+   Container, wodurch "EN" leicht über den Rand läuft. nav.site-nav bekommt
+   hier eine eigene Zeile, der Sprachumschalter wird durch das schon
+   vorhandene flex-wrap auf .header-right automatisch druntergeschoben. */
+@media (max-width: 480px) {
+  nav.site-nav {
+    flex-basis: 100%;
+  }
+}
+
 main {
   padding: 0 0 var(--space-4xl);
 }
@@ -782,6 +793,112 @@ p {
   background: var(--cat, var(--accent-light));
   margin-right: 7px;
   vertical-align: middle;
+}
+
+/* Methode-Showcase: Panel links, Jahres-Notiz rechts daneben statt darunter -
+   sonst wird der Abschnitt auf dem Desktop unnötig hoch (passt dann nicht
+   mehr auf einen Screen), und der Platz rechts neben dem schmalen Panel
+   bliebe sonst gänzlich leer. Auf Mobile stapelt sich beides ganz normal. */
+
+.method-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(240px, 0.9fr);
+  gap: 28px;
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .method-showcase {
+    grid-template-columns: 1fr;
+  }
+}
+
+.year-note-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Jahres-Notiz: eine matte Karte mit echtem Materialgefühl statt einer
+   weiteren flachen UI-Box - weiches, realistisches Licht/Schatten und
+   zurückhaltende Typografie tragen den Look, keine Bastel-Elemente. Nur ein
+   paar Monate als Beispiel, keine vollständigen 12, das Jahr geht erkennbar
+   weiter (Zeile "…"). */
+
+.year-note-label {
+  margin-bottom: 14px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.year-note {
+  position: relative;
+  background: var(--surface-raised);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  width: 100%;
+  max-width: 368px;
+  /* Weicher, tiefer Schatten statt harter Kontur: zwei Lagen, eine eng für
+     Kontaktschatten direkt an der Kante, eine breit/diffus für das Gefühl,
+     dass die Karte leicht über der Seite schwebt. */
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.5),
+    0 24px 48px -12px rgba(0, 0, 0, 0.6);
+}
+
+/* Mattes Oberflächenlicht: ein sehr sanfter Verlauf von oben links, wie
+   weiches Studiolicht auf mattem Karton - kein Glanz, nur ein Hauch Relief. */
+.year-note::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.05), transparent 45%);
+  pointer-events: none;
+}
+
+.year-note-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.year-note-row:last-child {
+  border-bottom: none;
+}
+
+.year-note-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-visible);
+  flex-shrink: 0;
+}
+
+.year-note-month {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  width: 62px;
+  flex-shrink: 0;
+}
+
+.year-note-goal {
+  font-size: var(--fs-md);
+  color: var(--text-display);
+}
+
+.year-note-more {
+  justify-content: center;
+  color: var(--text-secondary);
 }
 
 /* FAQ: native <details>/<summary>, kein JS nötig für Auf-/Zuklappen */
