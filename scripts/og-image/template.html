@@ -40,9 +40,19 @@
   body {
     position: relative;
     font-family: "Bricolage Grotesque", sans-serif;
+  }
+
+  /* Dot-grid, faded via radial mask centered on the text block (matches
+     the falloff measured on assets/og-image-de.png: brightest around
+     x=300 y=340, fading out toward the canvas edges). */
+  .dot-grid {
+    position: absolute;
+    inset: 0;
     background-image: radial-gradient(circle, var(--border-visible) 1px, transparent 1px);
-    background-size: 22px 22px;
-    background-position: -11px -11px;
+    background-size: 27px 27px;
+    background-position: -8px -8px;
+    -webkit-mask-image: radial-gradient(ellipse 480px 420px at 300px 340px, #000 0%, transparent 75%);
+    mask-image: radial-gradient(ellipse 480px 420px at 300px 340px, #000 0%, transparent 75%);
   }
 
   .wordmark {
@@ -84,115 +94,65 @@
     color: var(--text-secondary);
   }
 
-  /* --- phone mockup --- */
-  .phone {
+  /* --- phone mockup: same recipe as .phone-wrap/.phone-frame/.phone-screen
+     in the site's own styles.css, just placed absolutely for the OG canvas.
+     Content is a real app screenshot, not a redrawn UI. --- */
+  .phone-wrap {
     position: absolute;
-    right: 55px;
-    top: 10px;
-    width: 372px;
-    height: 612px;
-    background: var(--black);
-    border: 2px solid #2b2d2f;
-    border-radius: 54px;
-    padding: 16px 16px 14px;
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.03) inset;
+    right: 52px;
+    top: -4px;
+    width: 308px;
   }
-  .phone::before {
+  .phone-wrap::before {
     content: "";
     position: absolute;
-    top: 8px;
+    inset: 8% 8%;
+    background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+    opacity: 0.45;
+    filter: blur(50px);
+    z-index: 0;
+  }
+  .phone-frame {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background: #000;
+    border: 1px solid var(--border-visible);
+    border-radius: 46px;
+    padding: 12px;
+    box-shadow: 0 40px 90px -30px rgba(0, 0, 0, 0.85);
+  }
+  .phone-frame::before {
+    content: "";
+    position: absolute;
+    top: 22px;
     left: 50%;
     transform: translateX(-50%);
-    width: 92px;
-    height: 20px;
+    width: 34%;
+    height: 22px;
     background: #000;
-    border-radius: 12px;
+    border-radius: 20px;
+    z-index: 2;
   }
-
-  .status-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--text-display);
-    font-size: 13px;
-    font-weight: 600;
-    padding: 0 6px;
-    margin-top: 26px;
+  .phone-screen {
+    width: 100%;
+    aspect-ratio: 9 / 19.5;
+    border-radius: 34px;
+    overflow: hidden;
+    background: #000;
   }
-  .status-row .icons { display: flex; align-items: center; gap: 5px; }
-  .status-row svg { display: block; }
-
-  .top-icons {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 2px 0;
+  .phone-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
   }
-  .circle-btn {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1.5px solid var(--border-visible);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent-light);
-  }
-
-  .screen-title {
-    font-size: 28px;
-    font-weight: 800;
-    color: var(--text-display);
-    padding: 14px 4px 0;
-  }
-  .screen-date {
-    font-size: 12px;
-    color: var(--text-secondary);
-    padding: 4px 4px 0;
-  }
-  .screen-quote {
-    font-size: 12px;
-    font-style: italic;
-    color: var(--text-secondary);
-    padding: 10px 4px 12px;
-  }
-
-  .task {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    height: 44px;
-    border-radius: 12px;
-    padding: 0 12px;
-    margin-bottom: 8px;
-    background: linear-gradient(90deg, rgba(52,199,89,0.22), rgba(52,199,89,0.05));
-    border: 1px solid rgba(52,199,89,0.18);
-  }
-  .task .emoji { font-size: 16px; width: 18px; text-align: center; }
-  .task .name { flex: 1; font-size: 13px; font-weight: 600; color: var(--text-display); }
-  .task .count { font-size: 10px; color: var(--text-secondary); font-family: "JetBrains Mono"; }
-  .task .check {
-    width: 18px; height: 18px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .task .check.done { background: var(--accent); }
-  .task .check.open { border: 1.5px solid var(--border-visible); }
-
-  .tabbar {
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-    right: 16px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 8px;
-  }
-  .tab { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 9px; font-family: "JetBrains Mono"; color: var(--text-secondary); }
-  .tab.active { color: var(--accent-light); background: rgba(52,199,89,0.12); border-radius: 14px; padding: 5px 14px; }
-  .tab:not(.active) { padding: 5px 14px; }
 </style>
 </head>
 <body>
+
+  <div class="dot-grid"></div>
 
   <div class="wordmark">
     <img src="../../assets/app-icon.png" alt="" />
@@ -202,64 +162,10 @@
   <div class="headline">{{HEADLINE}}</div>
   <div class="sub">{{SUBTEXT}}</div>
 
-  <div class="phone">
-    <div class="status-row">
-      <span>{{TIME}}</span>
-      <span class="icons">
-        <svg width="16" height="11" viewBox="0 0 16 11" fill="none"><rect x="0" y="7" width="3" height="4" rx="0.5" fill="white"/><rect x="4.5" y="5" width="3" height="6" rx="0.5" fill="white"/><rect x="9" y="3" width="3" height="8" rx="0.5" fill="white"/><rect x="13.5" y="0" width="3" height="11" rx="0.5" fill="white"/></svg>
-        <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M8 9.5C5.8 9.5 3.9 8.5 2.5 7L1 5.5C2.9 3.4 5.3 2 8 2C10.7 2 13.1 3.4 15 5.5L13.5 7C12.1 8.5 10.2 9.5 8 9.5Z" stroke="white" stroke-width="1.3"/><circle cx="8" cy="9.5" r="1.1" fill="white"/></svg>
-        <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><rect x="0.75" y="0.75" width="19.5" height="10.5" rx="2.5" stroke="white" stroke-width="1"/><rect x="2" y="2" width="17" height="8" rx="1.5" fill="white"/><rect x="21" y="4" width="2" height="4" rx="1" fill="white"/></svg>
-      </span>
-    </div>
-    <div class="top-icons">
-      <div class="circle-btn">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .9-1 1.7"/><circle cx="12" cy="17" r="0.3" fill="currentColor"/></svg>
-      </div>
-      <div class="circle-btn">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 13a7.7 7.7 0 0 0 0-2l2-1.5-2-3.5-2.4.6a7.6 7.6 0 0 0-1.7-1L15 3h-6l-.3 2.6a7.6 7.6 0 0 0-1.7 1L4.6 6 2.6 9.5 4.6 11a7.7 7.7 0 0 0 0 2l-2 1.5 2 3.5 2.4-.6a7.6 7.6 0 0 0 1.7 1L9 21h6l.3-2.6a7.6 7.6 0 0 0 1.7-1l2.4.6 2-3.5-2-1.5Z"/></svg>
-      </div>
-    </div>
-    <div class="screen-title">{{TODAY}}</div>
-    <div class="screen-date">{{DATE_LINE}}</div>
-    <div class="screen-quote">{{QUOTE}}</div>
-
-    <div class="task">
-      <span class="emoji">✏️</span>
-      <span class="name">{{TASK1}}</span>
-      <span class="count">{{TASK1_COUNT}}</span>
-      <span class="check done"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#04140a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-    </div>
-    <div class="task">
-      <span class="emoji">🏃</span>
-      <span class="name">{{TASK2}}</span>
-      <span class="count">{{TASK2_COUNT}}</span>
-      <span class="check done"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#04140a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-    </div>
-    <div class="task">
-      <span class="emoji">🧘</span>
-      <span class="name">{{TASK3}}</span>
-      <span class="count">{{TASK3_COUNT}}</span>
-      <span class="check done"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#04140a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-    </div>
-    <div class="task" style="background:linear-gradient(90deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border-color: var(--border);">
-      <span class="emoji">💰</span>
-      <span class="name">{{TASK4}}</span>
-      <span class="count">{{TASK4_COUNT}}</span>
-      <span class="check open"></span>
-    </div>
-
-    <div class="tabbar">
-      <div class="tab active">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="7" r="2"/><path d="M10 7h10"/><circle cx="14" cy="14" r="2"/><path d="M4 14h6M18 14h2"/><circle cx="8" cy="21" r="2"/><path d="M4 21h2m6 0h10"/></svg>
-        {{TAB1}}
-      </div>
-      <div class="tab">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
-        {{TAB2}}
-      </div>
-      <div class="tab">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 4h12l-1 6a5 5 0 0 1-10 0Z"/><path d="M6 6H4a2 2 0 0 0 0 4M18 6h2a2 2 0 0 1 0 4"/></svg>
-        {{TAB3}}
+  <div class="phone-wrap">
+    <div class="phone-frame">
+      <div class="phone-screen">
+        <img src="../../assets/{{SCREENSHOT}}" alt="" />
       </div>
     </div>
   </div>
