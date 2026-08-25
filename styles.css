@@ -147,7 +147,10 @@ header.site .container {
 /* Auf dem Handy brach der Header in drei Zeilen um (Marke / Navigation /
    Sprache) und stand als sticky Leiste mit 168px vor dem Inhalt. Kompakter
    gesetzt passen Navigation und Sprachwahl in eine gemeinsame Zeile, der
-   Header schrumpft auf rund 94px, ohne dass ein Link verschwindet. */
+   Header schrumpft auf rund 94px, ohne dass ein Link verschwindet.
+   Bemessen auf den laengsten Nav-Text ueber alle Sprachen: ES/FR
+   "Ideas/Idées de challenges" ist deutlich laenger als DE/EN, daher die
+   knappe Schrift/Gap-Wahl statt der urspruenglich groesseren Werte. */
 @media (max-width: 600px) {
   header.site {
     padding: 12px 0;
@@ -171,13 +174,14 @@ header.site .container {
   }
 
   header.site nav.site-nav {
-    font-size: var(--fs-xs);
-    gap: 15px;
+    font-size: var(--fs-2xs);
+    gap: 8px;
+    letter-spacing: 0.01em;
   }
 
   header.site .lang-switch > summary {
-    gap: 5px;
-    padding: 5px 9px;
+    gap: 4px;
+    padding: 5px 7px;
     /* Etwas hoeher als der Text allein, damit das Antippziel gross genug bleibt. */
     min-height: 34px;
   }
@@ -185,8 +189,8 @@ header.site .container {
 
 @media (max-width: 360px) {
   header.site nav.site-nav {
-    gap: 11px;
-    letter-spacing: 0.02em;
+    gap: 6px;
+    letter-spacing: 0em;
   }
 }
 
