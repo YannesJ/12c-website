@@ -14,12 +14,52 @@
         {% if site.data.pages.method[page.lang] %}<a href="{{ site.data.pages.method[page.lang] | relative_url }}">{{ t.method }}</a>{% endif %}
       </nav>
       {% if translations.size > 1 %}
-      <div class="lang-switch">
-        {% for entry in translations %}
-        <a href="{{ entry[1] | relative_url }}"{% if entry[0] == page.lang %} class="active"{% endif %}>{{ entry[0] | upcase }}</a>
-        {% endfor %}
-      </div>
+      <details class="lang-switch">
+        <summary aria-label="{{ t.language_label }}" title="{{ t.language_label }}">
+          <svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M3 12h18" />
+            <path d="M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9s1.3-6.4 3.8-9z" />
+          </svg>
+          <span class="lang-current">{{ page.lang | upcase }}</span>
+          <svg class="lang-chevron" viewBox="0 0 24 24" width="11" height="11" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </summary>
+        <ul class="lang-menu">
+          {% for entry in translations %}
+          {% assign entry_lang = entry[0] %}
+          <li>
+            <a href="{{ entry[1] | relative_url }}" lang="{{ entry_lang }}" hreflang="{{ entry_lang }}"{% if entry_lang == page.lang %} aria-current="true"{% endif %}>
+              {% assign entry_name = site.data.strings[entry_lang].language_name %}
+              <span class="lang-name">{% if entry_name %}{{ entry_name }}{% else %}{{ entry_lang | upcase }}{% endif %}</span>
+              <span class="lang-code">{{ entry_lang | upcase }}</span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </details>
       {% endif %}
     </div>
   </div>
 </header>
+
+<script>
+  (function () {
+    // <details> bleibt von Haus aus offen, wenn man daneben klickt: nur diese
+    // zwei Ergaenzungen. Ohne JS funktioniert das Menue trotzdem vollstaendig.
+    var sw = document.querySelector('.lang-switch');
+    if (!sw) return;
+
+    document.addEventListener('click', function (e) {
+      if (!sw.contains(e.target)) sw.removeAttribute('open');
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape' || !sw.hasAttribute('open')) return;
+      sw.removeAttribute('open');
+      var summary = sw.querySelector('summary');
+      if (summary) summary.focus();
+    });
+  })();
+</script>

@@ -1510,35 +1510,112 @@ footer.site a:hover {
   margin-bottom: 6px;
 }
 
+/* Sprachumschalter: Weltkugel plus aktuelles Kürzel, die Liste klappt per
+   <details> auf. Bewusst keine Flaggen (eine Sprache ist kein Land) und keine
+   Reihe aus Pills: die bliebe nur bei zwei Sprachen schmal genug für den
+   Header auf dem Handy. Jede Sprache ist eine eigene URL (/ vs. /en/),
+   aria-current markiert die gerade geladene. */
 .lang-switch {
-  display: flex;
-  gap: 6px;
+  position: relative;
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
 }
 
-.lang-switch a {
-  padding: 6px 13px;
+.lang-switch > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 11px;
   border: 1px solid var(--border);
   border-radius: var(--radius-pill);
   color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  list-style: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.lang-switch a:hover {
+/* Standard-Dreieck des <summary> entfernen, das Chevron im Markup ersetzt es. */
+.lang-switch > summary::-webkit-details-marker {
+  display: none;
+}
+
+.lang-switch > summary:hover,
+.lang-switch[open] > summary {
   color: var(--text-display);
   border-color: var(--accent);
+}
+
+.lang-switch > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.lang-globe {
+  flex-shrink: 0;
+}
+
+.lang-chevron {
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+.lang-switch[open] .lang-chevron {
+  transform: rotate(180deg);
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 20;
+  min-width: 172px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-visible);
+  border-radius: var(--radius-md);
+  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.85);
+}
+
+.lang-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  letter-spacing: 0;
+}
+
+.lang-menu a:hover,
+.lang-menu a:focus-visible {
+  background: var(--surface);
+  color: var(--text-display);
   text-decoration: none;
 }
 
-/* Echte Sprachumschaltung: eigene URL pro Sprache (/ vs. /en/), kein :target-Trick mehr
-   nötig. .active markiert die Sprache der aktuell geladenen Seite, statisch pro Datei gesetzt. */
-.lang-switch a.active {
+.lang-menu a[aria-current] {
   color: var(--text-display);
-  border-color: var(--accent);
   background: var(--accent-subtle);
+}
+
+.lang-code {
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lang-chevron {
+    transition: none;
+  }
 }
 
 hr.lang-divider {

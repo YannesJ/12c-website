@@ -1,4 +1,8 @@
 de:
+  # language_name steht in der jeweiligen Sprache selbst (Endonym), damit im
+  # Sprachmenü jede Zeile fuer die Leserin dieser Sprache lesbar ist.
+  language_name: Deutsch
+  language_label: Sprache wählen
   start: Start
   story: Story
   method: Methode
@@ -11,6 +15,8 @@ de:
   trademark: "Apple, das Apple-Logo und App Store sind Marken der Apple Inc."
 
 en:
+  language_name: English
+  language_label: Choose language
   start: Start
   story: Story
   method: Method
