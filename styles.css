@@ -144,9 +144,49 @@ header.site .container {
   gap: 16px;
 }
 
-@media (max-width: 420px) {
-  .brand {
+/* Auf dem Handy brach der Header in drei Zeilen um (Marke / Navigation /
+   Sprache) und stand als sticky Leiste mit 168px vor dem Inhalt. Kompakter
+   gesetzt passen Navigation und Sprachwahl in eine gemeinsame Zeile, der
+   Header schrumpft auf rund 94px, ohne dass ein Link verschwindet. */
+@media (max-width: 600px) {
+  header.site {
+    padding: 12px 0;
+  }
+
+  header.site .container {
+    row-gap: 8px;
+    gap: 12px;
+  }
+
+  /* Alle Selektoren hier mit header.site davor: die Basisregeln fuer .brand,
+     nav.site-nav und .lang-switch stehen weiter unten in dieser Datei und
+     wuerden diesen Block sonst bei gleicher Spezifitaet ueberschreiben. */
+  header.site .brand {
     font-size: var(--fs-md);
+  }
+
+  header.site .brand img {
+    width: 26px;
+    height: 26px;
+  }
+
+  header.site nav.site-nav {
+    font-size: var(--fs-xs);
+    gap: 15px;
+  }
+
+  header.site .lang-switch > summary {
+    gap: 5px;
+    padding: 5px 9px;
+    /* Etwas hoeher als der Text allein, damit das Antippziel gross genug bleibt. */
+    min-height: 34px;
+  }
+}
+
+@media (max-width: 360px) {
+  header.site nav.site-nav {
+    gap: 11px;
+    letter-spacing: 0.02em;
   }
 }
 
