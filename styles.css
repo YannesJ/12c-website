@@ -213,6 +213,11 @@ h1 {
   margin: 0 0 20px;
   letter-spacing: -0.03em;
   color: var(--text-display);
+  /* Lange deutsche Komposita ("Datenschutzerklaerung") passen auf schmalen
+     Displays sonst nicht in die Zeile und schieben die Seite horizontal auf. */
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 h2 {
@@ -222,6 +227,9 @@ h2 {
   margin: 0 0 12px;
   letter-spacing: -0.02em;
   color: var(--text-display);
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 h3 {
