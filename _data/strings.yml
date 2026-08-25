@@ -27,3 +27,31 @@ en:
   support: Support
   snake: Snake
   trademark: "Apple, the Apple logo, and App Store are trademarks of Apple Inc."
+
+es:
+  language_name: Español
+  language_label: Elegir idioma
+  start: Inicio
+  story: Historia
+  method: Método
+  challenge_ideas: Ideas de challenges
+  resolutions: Propósitos
+  privacy: Privacidad
+  imprint: Aviso legal
+  support: Soporte
+  snake: Snake
+  trademark: "Apple, el logotipo de Apple y App Store son marcas de Apple Inc."
+
+fr:
+  language_name: Français
+  language_label: Choisir la langue
+  start: Accueil
+  story: Histoire
+  method: Méthode
+  challenge_ideas: Idées de challenges
+  resolutions: Résolutions
+  privacy: Confidentialité
+  imprint: Mentions légales
+  support: Assistance
+  snake: Snake
+  trademark: "Apple, le logo Apple et App Store sont des marques d'Apple Inc."

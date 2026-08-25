@@ -10,10 +10,10 @@
         {% if site.data.pages.method[page.lang] %}<a href="{{ site.data.pages.method[page.lang] | relative_url }}">{{ t.method }}</a>{% endif %}
         {% if site.data.pages.resolutions[page.lang] %}<a href="{{ site.data.pages.resolutions[page.lang] | relative_url }}">{{ t.resolutions }}</a>{% endif %}
         {% if site.data.pages.privacy[page.lang] %}<a href="{{ site.data.pages.privacy[page.lang] | relative_url }}">{{ t.privacy }}</a>{% endif %}
-        {% if page.lang == 'en' %}
-        <a href="{{ '/imprint.html#en' | relative_url }}">{{ t.imprint }}</a>
-        {% elsif site.data.pages.imprint[page.lang] %}
+        {% if site.data.pages.imprint[page.lang] %}
         <a href="{{ site.data.pages.imprint[page.lang] | relative_url }}">{{ t.imprint }}</a>
+        {% elsif page.lang != 'de' %}
+        <a href="{{ '/imprint.html' | relative_url }}#{{ page.lang }}">{{ t.imprint }}</a>
         {% endif %}
         {% if site.data.pages.support[page.lang] %}<a href="{{ site.data.pages.support[page.lang] | relative_url }}">{{ t.support }}</a>{% endif %}
         {% if site.data.pages.snake[page.lang] %}<a href="{{ site.data.pages.snake[page.lang] | relative_url }}">{{ t.snake }}</a>{% endif %}
