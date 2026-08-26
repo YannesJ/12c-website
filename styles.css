@@ -387,6 +387,27 @@ p {
   opacity: 0.85;
 }
 
+/* Ab Tablet-Breite etwas grosszuegiger: mehr Praesenz im Hero und im
+   finalen CTA. Floating-CTA und Handy bleiben kompakt. */
+@media (min-width: 761px) {
+  .hero .appstore-badge img,
+  .cta-final .appstore-badge img {
+    height: 64px;
+  }
+
+  .hero .qr-trigger,
+  .cta-final .qr-trigger {
+    width: 64px;
+    height: 64px;
+  }
+
+  .hero .qr-trigger svg,
+  .cta-final .qr-trigger svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /* Floating CTA: offizielles Apple-Badge, unverändert, mindestens auf Apples
    Mindesthöhe von 40px (hier 55px wie die übrigen Badges der Seite). Bleibt
    ausgeblendet, solange irgendein anderer .badge-cta im Viewport sichtbar ist
