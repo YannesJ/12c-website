@@ -47,6 +47,20 @@ og_locale: es_ES
             <a class="appstore-badge" href="https://apps.apple.com/app/id6790353238">
               <img src="/assets/appstore-badge.svg" alt="Descargar 12 Challenges en el App Store" />
             </a>
+            <button type="button" class="qr-trigger" data-qr-trigger aria-haspopup="dialog" aria-label="Mostrar código QR del App Store">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" />
+                <rect x="14" y="3" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" />
+                <rect x="3" y="14" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" />
+                <rect x="5.6" y="5.6" width="1.8" height="1.8" fill="currentColor" />
+                <rect x="16.6" y="5.6" width="1.8" height="1.8" fill="currentColor" />
+                <rect x="5.6" y="16.6" width="1.8" height="1.8" fill="currentColor" />
+                <rect x="14" y="14" width="2.6" height="2.6" fill="currentColor" />
+                <rect x="18.4" y="14" width="2.6" height="2.6" fill="currentColor" />
+                <rect x="14" y="18.4" width="2.6" height="2.6" fill="currentColor" />
+                <rect x="18.4" y="18.4" width="2.6" height="2.6" fill="currentColor" />
+              </svg>
+            </button>
           </div>
         </div>
         <!--
@@ -356,6 +370,20 @@ og_locale: es_ES
           <a class="appstore-badge" href="https://apps.apple.com/app/id6790353238">
             <img src="/assets/appstore-badge.svg" alt="Descargar 12 Challenges en el App Store" />
           </a>
+          <button type="button" class="qr-trigger" data-qr-trigger aria-haspopup="dialog" aria-label="Mostrar código QR del App Store">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" />
+              <rect x="14" y="3" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" />
+              <rect x="3" y="14" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.6" />
+              <rect x="5.6" y="5.6" width="1.8" height="1.8" fill="currentColor" />
+              <rect x="16.6" y="5.6" width="1.8" height="1.8" fill="currentColor" />
+              <rect x="5.6" y="16.6" width="1.8" height="1.8" fill="currentColor" />
+              <rect x="14" y="14" width="2.6" height="2.6" fill="currentColor" />
+              <rect x="18.4" y="14" width="2.6" height="2.6" fill="currentColor" />
+              <rect x="14" y="18.4" width="2.6" height="2.6" fill="currentColor" />
+              <rect x="18.4" y="18.4" width="2.6" height="2.6" fill="currentColor" />
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -365,8 +393,38 @@ og_locale: es_ES
         </a>
       </div>
 
+      <dialog class="qr-dialog" id="qr-dialog">
+        <button type="button" class="qr-dialog-close" data-qr-close aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <img class="qr-dialog-code" src="/assets/qr-appstore.svg" width="190" height="190" alt="Código QR que enlaza a la ficha de 12 Challenges en el App Store" />
+        <p class="qr-dialog-title">Escanea para ir al App Store</p>
+        <p class="qr-dialog-text">Apunta la cámara de tu móvil al código para abrir 12 Challenges directamente en el App Store.</p>
+      </dialog>
+
     </div>
   </main>
+
+  <script>
+    (function () {
+      var dialog = document.getElementById("qr-dialog");
+      document.querySelectorAll("[data-qr-trigger]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          dialog.showModal();
+        });
+      });
+      dialog.querySelector("[data-qr-close]").addEventListener("click", function () {
+        dialog.close();
+      });
+      dialog.addEventListener("click", function (event) {
+        if (event.target === dialog) {
+          dialog.close();
+        }
+      });
+    })();
+  </script>
 
   <script>
     (function () {

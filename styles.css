@@ -425,6 +425,107 @@ p {
   }
 }
 
+/* QR-Trigger neben dem App-Store-Badge: oeffnet einen Dialog mit QR-Code, der
+   direkt zum App-Store-Eintrag fuehrt. Nur ab Tablet-Breite sichtbar - auf dem
+   Handy tippt man den Badge ja direkt an, da bringt ein QR-Code nichts. */
+.qr-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  border: 1px solid var(--border-visible);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.qr-trigger:hover,
+.qr-trigger:focus-visible {
+  color: var(--accent-light);
+  border-color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+.qr-trigger svg {
+  width: 26px;
+  height: 26px;
+}
+
+@media (max-width: 760px) {
+  .qr-trigger {
+    display: none;
+  }
+}
+
+.qr-dialog {
+  padding: 30px;
+  width: calc(100% - 40px);
+  max-width: 300px;
+  border: 1px solid var(--border-visible);
+  border-radius: var(--radius-lg);
+  background: var(--surface-raised);
+  color: var(--text-primary);
+  text-align: center;
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.7);
+}
+
+.qr-dialog::backdrop {
+  background: rgba(4, 5, 4, 0.75);
+  backdrop-filter: blur(4px);
+}
+
+.qr-dialog-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.qr-dialog-close:hover,
+.qr-dialog-close:focus-visible {
+  color: var(--text-display);
+  background: var(--border);
+}
+
+.qr-dialog-close svg {
+  width: 16px;
+  height: 16px;
+}
+
+.qr-dialog-code {
+  display: block;
+  width: 190px;
+  height: 190px;
+  margin: 6px auto 22px;
+  border-radius: var(--radius-lg);
+}
+
+.qr-dialog-title {
+  color: var(--text-display);
+  font-size: var(--fs-md);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.qr-dialog-text {
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  margin: 0;
+}
+
 /* Phone mockup: eigene, generische Silhouette (kein Apple-Bezel-Asset nötig) */
 
 .phone-wrap {
