@@ -1,6 +1,6 @@
 # 12 Challenges
 
-> 12 Challenges ist eine einfache, komplett lokale iPhone-App zum Tracken von Monats-Challenges (z. B. 30 Tage Sport, Lesen, kein Zucker). Kein Account, kein Tracking, keine Werbung. Ein Antippen pro Tag genügt, um den Fortschritt zu sehen.
+> 12 Challenges ist eine einfache iPhone-App zum Tracken von Monats-Challenges (z. B. 30 Tage Sport, Lesen, kein Zucker). Läuft lokal, iCloud-Sync optional. Kein Account, kein Tracking, keine Werbung. Ein Antippen pro Tag genügt, um den Fortschritt zu sehen.
 
 ## Deutsch
 
