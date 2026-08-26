@@ -343,33 +343,6 @@ p {
   flex-wrap: wrap;
 }
 
-/* Kleiner Hinweis "Version X ist da": zeigt, dass an der App gearbeitet wird.
-   Wert im Text wird bei jedem App-Release manuell hochgezogen. */
-.release-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 5px 12px;
-  margin-bottom: 16px;
-  border-radius: var(--radius-pill);
-  background: var(--accent-subtle);
-  border: 1px solid rgba(52, 199, 89, 0.3);
-  color: var(--accent-light);
-  font-family: var(--font-mono);
-  font-size: var(--fs-xs);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-.release-badge::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--accent);
-  flex-shrink: 0;
-}
-
 /* Offizielles Apple-Badge (assets/appstore-badge.svg, unverändert von developer.apple.com):
    kein eigener Hintergrund/Rahmen/Schatten, nur Freiraum drumherum gemäß Apple-Guidelines. */
 .appstore-badge {
@@ -388,8 +361,9 @@ p {
 }
 
 /* Floating CTA: offizielles Apple-Badge, unverändert, mindestens auf Apples
-   Mindesthöhe von 40px (hier 55px wie die übrigen Badges der Seite), immer
-   sichtbar solange die jeweilige Sprache aktiv ist. */
+   Mindesthöhe von 40px (hier 55px wie die übrigen Badges der Seite). Bleibt
+   ausgeblendet, solange der Hero-Badge noch sichtbar ist (siehe footer.html),
+   damit nie zwei "Im App Store laden"-Buttons gleichzeitig zu sehen sind. */
 
 .floating-cta {
   position: fixed;
@@ -397,6 +371,14 @@ p {
   right: 20px;
   z-index: 40;
   filter: drop-shadow(0 12px 32px -10px rgba(0, 0, 0, 0.7));
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.floating-cta.is-visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .floating-cta .appstore-badge img {
