@@ -98,16 +98,24 @@
     var floatingCta = document.querySelector('.floating-cta');
     if (!floatingCta) return;
 
-    var heroBadge = document.querySelector('.hero .badge-cta');
-    if (!heroBadge) {
-      // Keine Hero-CTA auf dieser Seite (z. B. Unterseiten): kein Duplikat-Risiko.
+    var badges = document.querySelectorAll('.badge-cta');
+    if (!badges.length) {
+      // Keine inline-CTA auf dieser Seite (z. B. Unterseiten): kein Duplikat-Risiko.
       floatingCta.classList.add('is-visible');
       return;
     }
 
+    var visibleBadges = new Set();
     var observer = new IntersectionObserver(function (entries) {
-      floatingCta.classList.toggle('is-visible', !entries[0].isIntersecting);
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          visibleBadges.add(entry.target);
+        } else {
+          visibleBadges.delete(entry.target);
+        }
+      });
+      floatingCta.classList.toggle('is-visible', visibleBadges.size === 0);
     });
-    observer.observe(heroBadge);
+    badges.forEach(function (badge) { observer.observe(badge); });
   })();
 </script>

@@ -362,8 +362,9 @@ p {
 
 /* Floating CTA: offizielles Apple-Badge, unverändert, mindestens auf Apples
    Mindesthöhe von 40px (hier 55px wie die übrigen Badges der Seite). Bleibt
-   ausgeblendet, solange der Hero-Badge noch sichtbar ist (siehe footer.html),
-   damit nie zwei "Im App Store laden"-Buttons gleichzeitig zu sehen sind. */
+   ausgeblendet, solange irgendein anderer .badge-cta im Viewport sichtbar ist
+   (siehe footer.html), damit nie zwei "Im App Store laden"-Buttons gleichzeitig
+   zu sehen sind. */
 
 .floating-cta {
   position: fixed;
