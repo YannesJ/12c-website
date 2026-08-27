@@ -9,30 +9,35 @@ home:
   en: /en/
   es: /es/
   fr: /fr/
+  pt: /pt/
 
 story:
   de: /story.html
   en: /en/story.html
   es: /es/historia.html
   fr: /fr/histoire.html
+  pt: /pt/historia.html
 
 method:
   de: /methode.html
   en: /en/method.html
   es: /es/metodo.html
   fr: /fr/methode.html
+  pt: /pt/metodo.html
 
 privacy:
   de: /privacy.html
   en: /en/privacy.html
   es: /es/privacidad.html
   fr: /fr/confidentialite.html
+  pt: /pt/privacidade.html
 
 support:
   de: /support.html
   en: /en/support.html
   es: /es/soporte.html
   fr: /fr/assistance.html
+  pt: /pt/suporte.html
 
 imprint:
   de: /imprint.html
@@ -42,15 +47,18 @@ challenge-ideas:
   en: /en/challenge-ideas/
   es: /es/ideas-challenges/
   fr: /fr/idees-challenges/
+  pt: /pt/ideias-challenges/
 
 resolutions:
   de: /neujahrsvorsaetze.html
   en: /en/new-years-resolutions.html
   es: /es/propositos-ano-nuevo.html
   fr: /fr/resolutions-nouvel-an.html
+  pt: /pt/resolucoes-ano-novo.html
 
 snake:
   de: /snake.html
   en: /en/snake.html
   es: /es/snake.html
   fr: /fr/snake.html
+  pt: /pt/snake.html

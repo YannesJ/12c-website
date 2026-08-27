@@ -41,3 +41,13 @@
 - [Résolutions de nouvel an](https://12challenges.de/fr/resolutions-nouvel-an.html): Pourquoi les résolutions de nouvel an échouent souvent et ce qui marche à la place
 - [Assistance et FAQ](https://12challenges.de/fr/assistance.html): Questions fréquentes et contact
 - [Confidentialité](https://12challenges.de/fr/confidentialite.html): Politique de confidentialité
+
+## Português
+
+- [Início](https://12challenges.de/pt/): Visão geral da app, como funciona e link para a App Store
+- [Story](https://12challenges.de/pt/historia.html): A história por trás do 12 Challenges
+- [Método](https://12challenges.de/pt/metodo.html): Como funciona o método 12 Challenges e porque ajuda a manter hábitos
+- [Ideias de challenges](https://12challenges.de/pt/ideias-challenges/): 50 ideias para challenges de 30 dias
+- [Resoluções de Ano Novo](https://12challenges.de/pt/resolucoes-ano-novo.html): Porque as resoluções de Ano Novo costumam falhar e o que funciona em vez disso
+- [Support e FAQ](https://12challenges.de/pt/suporte.html): Perguntas frequentes e contacto
+- [Privacidade](https://12challenges.de/pt/privacidade.html): Política de Privacidade

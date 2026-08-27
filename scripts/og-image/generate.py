@@ -37,6 +37,11 @@ CONTENT = {
         SUBTEXT="Suivi de challenges mensuels pour iPhone. Sans compte, sans tracking, sans pub.",
         SCREENSHOT="screenshot-heute-fr.webp",
     ),
+    "pt": dict(
+        HEADLINE="Os primeiros três dias qualquer um aguenta.",
+        SUBTEXT="Acompanhamento de challenges mensais para iPhone. Sem conta, sem tracking, sem anúncios.",
+        SCREENSHOT="screenshot-heute-pt.webp",
+    ),
 }
 
 
