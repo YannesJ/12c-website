@@ -94,9 +94,8 @@
     color: var(--text-secondary);
   }
 
-  /* --- phone mockup: same recipe as .phone-wrap/.phone-frame/.phone-screen
-     in the site's own styles.css, just placed absolutely for the OG canvas.
-     Content is a real app screenshot, not a redrawn UI. --- */
+  /* --- phone mockup: the same finished image the site uses, just placed
+     absolutely for the OG canvas. --- */
   .phone-wrap {
     position: absolute;
     right: 60px;
@@ -112,40 +111,14 @@
     filter: blur(50px);
     z-index: 0;
   }
-  .phone-frame {
+  /* Fertiges Mock-up aus scripts/geraete-mockups/: Screenshot im echten
+     Apple-Rahmen. Vorher zeichnete dieses Template den Rahmen selbst nach,
+     wodurch das Vorschaubild anders aussah als die Seite, auf die es
+     verweist. */
+  .phone-wrap img {
     position: relative;
     z-index: 1;
     width: 100%;
-    background: #000;
-    border: 1px solid var(--border-visible);
-    border-radius: 46px;
-    padding: 12px;
-    box-shadow: 0 40px 90px -30px rgba(0, 0, 0, 0.85);
-  }
-  .phone-frame::before {
-    content: "";
-    position: absolute;
-    top: 22px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 34%;
-    height: 22px;
-    background: #000;
-    border-radius: 20px;
-    z-index: 2;
-  }
-  .phone-screen {
-    width: 100%;
-    aspect-ratio: 9 / 19.5;
-    border-radius: 34px;
-    overflow: hidden;
-    background: #000;
-  }
-  .phone-screen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
     display: block;
   }
 </style>
@@ -163,11 +136,7 @@
   <div class="sub">{{SUBTEXT}}</div>
 
   <div class="phone-wrap">
-    <div class="phone-frame">
-      <div class="phone-screen">
-        <img src="../../assets/{{SCREENSHOT}}" alt="" />
-      </div>
-    </div>
+    <img src="../../assets/{{SCREENSHOT}}" alt="" />
   </div>
 
 </body>

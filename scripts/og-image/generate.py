@@ -20,27 +20,47 @@ CONTENT = {
     "de": dict(
         HEADLINE="Die ersten drei Tage schafft jeder.",
         SUBTEXT="Monats-Challenge-Tracker für iPhone. Kein Account, kein Tracking, keine Werbung.",
-        SCREENSHOT="screenshot-heute-de.webp",
+        SCREENSHOT="mock/heute-de.webp",
     ),
     "en": dict(
         HEADLINE="Everyone makes it three days.",
         SUBTEXT="Monthly challenge tracker for iPhone. No account, no tracking, no ads.",
-        SCREENSHOT="screenshot-heute-en.webp",
+        SCREENSHOT="mock/heute-en.webp",
     ),
     "es": dict(
         HEADLINE="Los primeros tres días los aguanta cualquiera.",
         SUBTEXT="Seguimiento de challenges mensuales para iPhone. Sin cuenta, sin tracking, sin anuncios.",
-        SCREENSHOT="screenshot-heute-es.webp",
+        SCREENSHOT="mock/heute-es.webp",
     ),
     "fr": dict(
         HEADLINE="Les trois premiers jours, tout le monde y arrive.",
         SUBTEXT="Suivi de challenges mensuels pour iPhone. Sans compte, sans tracking, sans pub.",
-        SCREENSHOT="screenshot-heute-fr.webp",
+        SCREENSHOT="mock/heute-fr.webp",
+    ),
+    "it": dict(
+        HEADLINE="I primi tre giorni li regge chiunque.",
+        SUBTEXT="Tracker di challenge mensili per iPhone. Senza account, senza tracciamento, senza pubblicità.",
+        SCREENSHOT="mock/heute-it.webp",
+    ),
+    "tr": dict(
+        HEADLINE="İlk üç günü herkes götürür.",
+        SUBTEXT="iPhone için aylık challenge takibi. Hesap yok, takip yok, reklam yok.",
+        SCREENSHOT="mock/heute-tr.webp",
+    ),
+    "pl": dict(
+        HEADLINE="Pierwsze trzy dni wytrzyma każdy.",
+        SUBTEXT="Śledzenie miesięcznych challenge’ów na iPhone’a. Bez konta, bez śledzenia, bez reklam.",
+        SCREENSHOT="mock/heute-pl.webp",
+    ),
+    "el": dict(
+        HEADLINE="Τις πρώτες τρεις μέρες τις βγάζει ο καθένας.",
+        SUBTEXT="Παρακολούθηση μηνιαίων challenges για iPhone. Χωρίς λογαριασμό, χωρίς παρακολούθηση, χωρίς διαφημίσεις.",
+        SCREENSHOT="mock/heute-el.webp",
     ),
     "pt": dict(
         HEADLINE="Os primeiros três dias qualquer um aguenta.",
         SUBTEXT="Acompanhamento de challenges mensais para iPhone. Sem conta, sem tracking, sem anúncios.",
-        SCREENSHOT="screenshot-heute-pt.webp",
+        SCREENSHOT="mock/heute-pt.webp",
     ),
 }
 
