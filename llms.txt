@@ -51,3 +51,43 @@
 - [Resoluções de Ano Novo](https://12challenges.de/pt/resolucoes-ano-novo.html): Porque as resoluções de Ano Novo costumam falhar e o que funciona em vez disso
 - [Support e FAQ](https://12challenges.de/pt/suporte.html): Perguntas frequentes e contacto
 - [Privacidade](https://12challenges.de/pt/privacidade.html): Política de Privacidade
+
+## Italiano
+
+- [Inizio](https://12challenges.de/it/): Panoramica dell’app, come funziona e link all’App Store
+- [Storia](https://12challenges.de/it/storia.html): La storia dietro 12 Challenges
+- [Metodo](https://12challenges.de/it/metodo.html): Come funziona il metodo di 12 Challenges e perché aiuta a tenere le abitudini
+- [Idee per le challenge](https://12challenges.de/it/idee-challenge/): 50 idee per challenge di 30 giorni
+- [Buoni propositi](https://12challenges.de/it/propositi-anno-nuovo.html): Perché i buoni propositi di solito falliscono e cosa funziona al loro posto
+- [Assistenza e FAQ](https://12challenges.de/it/assistenza.html): Domande frequenti e contatti
+- [Privacy](https://12challenges.de/it/privacy.html): Informativa sulla privacy
+
+## Türkçe
+
+- [Başlangıç](https://12challenges.de/tr/): Uygulamaya genel bakış, nasıl çalıştığı ve App Store bağlantısı
+- [Hikâye](https://12challenges.de/tr/hikaye.html): 12 Challenges’ın arkasındaki hikâye
+- [Yöntem](https://12challenges.de/tr/yontem.html): 12 Challenges yönteminin nasıl işlediği ve alışkanlıkları sürdürmeye nasıl yardım ettiği
+- [Challenge fikirleri](https://12challenges.de/tr/challenge-fikirleri/): 30 günlük challenge’lar için 50 fikir
+- [Yılbaşı kararları](https://12challenges.de/tr/yilbasi-kararlari.html): Yılbaşı kararlarının neden tutmadığı ve onun yerine ne işe yaradığı
+- [Destek ve SSS](https://12challenges.de/tr/destek.html): Sık sorulan sorular ve iletişim
+- [Gizlilik](https://12challenges.de/tr/gizlilik.html): Gizlilik politikası
+
+## Polski
+
+- [Start](https://12challenges.de/pl/): Przegląd aplikacji, jak działa i link do App Store
+- [Historia](https://12challenges.de/pl/historia.html): Historia stojąca za 12 Challenges
+- [Metoda](https://12challenges.de/pl/metoda.html): Jak działa metoda 12 Challenges i dlaczego pomaga wytrwać w nawykach
+- [Pomysły na challenge](https://12challenges.de/pl/pomysly-na-challenge/): 50 pomysłów na 30-dniowe challenge’e
+- [Postanowienia noworoczne](https://12challenges.de/pl/postanowienia-noworoczne.html): Dlaczego postanowienia noworoczne zwykle zawodzą i co działa zamiast nich
+- [Pomoc i FAQ](https://12challenges.de/pl/pomoc.html): Częste pytania i kontakt
+- [Prywatność](https://12challenges.de/pl/prywatnosc.html): Polityka prywatności
+
+## Ελληνικά
+
+- [Αρχική](https://12challenges.de/el/): Επισκόπηση της εφαρμογής, πώς λειτουργεί και σύνδεσμος στο App Store
+- [Ιστορία](https://12challenges.de/el/istoria.html): Η ιστορία πίσω από το 12 Challenges
+- [Μέθοδος](https://12challenges.de/el/methodos.html): Πώς λειτουργεί η μέθοδος του 12 Challenges και γιατί βοηθά να κρατήσεις τις συνήθειες
+- [Ιδέες για challenges](https://12challenges.de/el/idees-challenge/): 50 ιδέες για challenges 30 ημερών
+- [Πρωτοχρονιάτικες αποφάσεις](https://12challenges.de/el/protochroniatikes-apofaseis.html): Γιατί οι πρωτοχρονιάτικες αποφάσεις συνήθως αποτυγχάνουν και τι δουλεύει αντ’ αυτού
+- [Υποστήριξη και FAQ](https://12challenges.de/el/ypostirixi.html): Συχνές ερωτήσεις και επικοινωνία
+- [Απόρρητο](https://12challenges.de/el/aporrito.html): Πολιτική απορρήτου

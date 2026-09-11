@@ -10,6 +10,22 @@
   font-style: normal;
   font-display: swap;
 }
+/* Bricolage Grotesque bringt kein Griechisch mit: Auf einer griechischen Seite
+   fiele jede Überschrift auf eine Systemschrift zurück, im Test eine Serife.
+   Inter ergänzt genau diesen Bereich, unter demselben Familiennamen und mit
+   eigenem unicode-range - der Browser wählt dann je Zeichen die passende Datei.
+   Auf allen anderen Sprachseiten wird sie deshalb nie geladen und kostet dort
+   nichts. Inter steht wie die übrigen Schriften unter der OFL (Inter-OFL.txt),
+   ohne Reserved Font Name. JetBrains Mono kann Griechisch von Haus aus und
+   braucht keine Ergänzung. */
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("assets/fonts/InterGreek.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
 @font-face {
   font-family: "JetBrains Mono";
   src:
@@ -97,6 +113,9 @@ a:focus-visible {
 img {
   max-width: 100%;
   display: block;
+  /* Ohne height:auto staucht max-width nur die Breite, während eine im
+     HTML gesetzte height-Angabe stehen bleibt: das Bild wird verzerrt. */
+  height: auto;
 }
 
 .container {
@@ -332,7 +351,20 @@ p {
 @media (max-width: 760px) {
   .hero {
     grid-template-columns: 1fr;
-    padding-top: var(--space-3xl);
+    /* Knapper als auf dem Desktop: gestapelt liegt das Gerätebild unter der
+       Copy, jedes gesparte Pixel darüber zieht es näher an die Falz. */
+    padding-top: var(--space-xl);
+    gap: 28px;
+  }
+
+  .hero .badge-cta {
+    margin-top: 24px;
+  }
+
+  /* iPhone schmaler als die 72vw des Basiswerts, damit die Komposition aus
+     iPhone und halber Uhr auch bei 320px Viewport in den Hero passt. */
+  .hero-devices {
+    --phone-w: min(312px, 62vw, 36vh);
   }
 }
 
@@ -621,35 +653,80 @@ p {
   z-index: 0;
 }
 
+/* Alle Maße hängen an --watch-w, damit dieselbe Silhouette in jeder Größe
+   stimmt: im Hero klein neben dem iPhone, in der Watch-Sektion zu dritt.
+   Die Faktoren sind aus den ursprünglichen Pixelwerten bei 220px abgeleitet
+   (54/220, 10/220, 42/220 ...), der Basisfall sieht also aus wie vorher. */
+/* --watch-w wird vom Kontext gesetzt (Hero, Watch-Galerie); --w faengt den
+   Fall ohne Kontext mit dem urspruenglichen Basiswert ab. */
+.watch-device,
+.watch-frame {
+  --w: var(--watch-w, min(220px, 55vw));
+}
+
 .watch-frame {
   position: relative;
   z-index: 1;
-  width: min(220px, 55vw);
+  width: var(--w);
   background: #000;
   border: 1px solid var(--border-visible);
-  border-radius: 54px;
-  padding: 10px;
+  border-radius: calc(var(--w) * 0.245);
+  padding: calc(var(--w) * 0.045);
   box-shadow: 0 40px 90px -30px rgba(0, 0, 0, 0.85);
 }
 
 .watch-frame::after {
   content: "";
   position: absolute;
-  right: -7px;
+  right: calc(var(--w) * -0.032);
   top: 36%;
-  width: 9px;
+  width: calc(var(--w) * 0.041);
   height: 14%;
   background: #000;
   border: 1px solid var(--border-visible);
-  border-radius: 4px;
+  border-radius: calc(var(--w) * 0.018);
 }
 
 .watch-screen {
   width: 100%;
   aspect-ratio: 416 / 496;
-  border-radius: 42px;
+  border-radius: calc(var(--w) * 0.19);
   overflow: hidden;
   background: #000;
+}
+
+/* Armbandstummel oben und unten. Ohne sie ist die Silhouette nur ein
+   abgerundetes Rechteck; erst das Band macht sie auf einen Blick als Uhr
+   lesbar. Liegen hinter dem Gehaeuse (z-index 0 gegen .watch-frame 1) und
+   verjuengen sich nach aussen wie ein Sportarmband. */
+.watch-device {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+.watch-device::before,
+.watch-device::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: calc(var(--w) * 0.5);
+  height: calc(var(--w) * 0.34);
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #17181a 0%, #2b2e31 48%, #1a1c1e 100%);
+  z-index: 0;
+}
+
+.watch-device::before {
+  bottom: calc(100% - var(--w) * 0.14);
+  border-radius: calc(var(--w) * 0.1) calc(var(--w) * 0.1) 0 0;
+  clip-path: polygon(6% 0, 94% 0, 100% 100%, 0 100%);
+}
+
+.watch-device::after {
+  top: calc(100% - var(--w) * 0.14);
+  border-radius: 0 0 calc(var(--w) * 0.1) calc(var(--w) * 0.1);
+  clip-path: polygon(0 0, 100% 0, 94% 100%, 6% 100%);
 }
 
 .watch-screen img {
@@ -803,16 +880,15 @@ p {
   align-items: center;
 }
 
+/* Gespiegelt heißt: Bild nach links, Text nach rechts. Die HTML-Reihenfolge
+   erledigt das von selbst (bei .showcase-reverse steht das Bild zuerst),
+   deshalb hier bewusst keine order-Regeln. Mit ihnen stand das Bild trotz
+   "reverse" weiter rechts, nur in einer schmaleren Spalte - die Geräte
+   wanderten dadurch von Zeile zu Zeile seitlich, ohne dass die Zeilen sich
+   sichtbar abwechselten. Die Bildspalte bleibt so oder so die breitere
+   (1.1fr), die Textspalte die schmalere. */
 .showcase-reverse {
   grid-template-columns: 1.1fr 0.9fr;
-}
-
-.showcase-reverse .showcase-visual {
-  order: 2;
-}
-
-.showcase-reverse .showcase-copy {
-  order: 1;
 }
 
 @media (max-width: 760px) {
@@ -820,9 +896,15 @@ p {
   .showcase-reverse {
     grid-template-columns: 1fr;
   }
-  .showcase-reverse .showcase-visual,
+
+  /* Gestapelt dagegen immer die Überschrift zuerst: ein Screenshot ohne den
+     Satz darüber sagt nichts. */
+  .showcase-reverse .showcase-visual {
+    order: 2;
+  }
+
   .showcase-reverse .showcase-copy {
-    order: initial;
+    order: 1;
   }
 }
 
@@ -837,8 +919,58 @@ p {
 /* Hero-Mockup etwas knapper als der Basiswert und zusätzlich per vh-Bremse
    gedeckelt, damit der Hero auf niedrigen Laptop-Fenstern (z.B. MacBook Air
    ohne Vollbild) verlässlich above the fold bleibt. */
+.hero-devices {
+  --phone-w: min(312px, 72vw, 36vh);
+  --hero-watch-w: calc(var(--phone-w) * 0.46);
+  position: relative;
+  /* Breite der ganzen Komposition, nicht nur des iPhones: der halbe
+     Uhrendurchmesser links gehört dazu. Sonst ragt die Uhr auf schmalen
+     Viewports aus dem Hero heraus und wird von dessen overflow:hidden
+     angeschnitten. */
+  width: calc(var(--phone-w) + var(--hero-watch-w) * 0.5);
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .hero .phone-frame {
-  width: min(294px, 72vw, 36vh);
+  width: var(--phone-w);
+}
+
+/* Die Uhr steht vor der unteren linken Ecke des iPhones und ragt um ihre halbe
+   Breite darüber hinaus: ein Produktbild statt zwei nebeneinander gestellter
+   Geräte, und es kostet keine zusätzliche Höhe. Der Versatz ist an
+   --hero-watch-w gekoppelt, damit die Überlappung bei jeder Größe gleich
+   aussieht. .hero hat overflow:hidden, deshalb darf sie nicht weiter nach
+   links wandern als der Rand der Hero-Spalte hergibt (siehe Mobile unten). */
+.hero-watch {
+  position: absolute;
+  left: 0;
+  bottom: 13%;
+  z-index: 2;
+}
+
+/* Muss NACH .hero-watch stehen: gleiche Spezifität, sonst gewinnt der
+   Basiswert oben. Gestapelt reicht das iPhone weit unter die Falz - bliebe die
+   Uhr an seiner Unterkante, sähe sie auf dem Handy niemand mehr. */
+@media (max-width: 760px) {
+  .hero-watch {
+    bottom: 36%;
+  }
+}
+
+.hero-watch {
+  --watch-w: var(--hero-watch-w);
+}
+
+.hero-watch .watch-frame {
+  /* Gehäuse und iPhone sind beide schwarz. Ohne eigene Kante verschmelzen sie,
+     deshalb hier eine helle Lichtkante plus tiefer Schatten statt des
+     freistehenden Mockup-Schattens. */
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 20px 44px -10px rgba(0, 0, 0, 0.95);
 }
 
 .section-intro {
@@ -932,6 +1064,53 @@ p {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--text-secondary);
+}
+
+/* Watch-Galerie: drei Ansichten nebeneinander. Eigenes Raster statt
+   .gallery-grid, weil Uhren breiter als hoch wirken und zu dritt stehen. */
+.watch-gallery {
+  --watch-w: min(200px, 21vw);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 760px;
+  margin: 0 auto;
+  justify-items: center;
+  /* Die Armbänder ragen oben und unten aus dem Gehäusekasten heraus (siehe
+     .watch-device). Ohne diesen Ausgleich stößt das obere Band an den
+     Einleitungstext und das untere an die Bildunterschrift. */
+  padding-top: calc(var(--watch-w) * 0.2);
+}
+
+.watch-item {
+  text-align: center;
+}
+
+.watch-item .caption {
+  margin-top: calc(var(--watch-w) * 0.2 + 18px);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+@media (max-width: 700px) {
+  .watch-gallery {
+    --watch-w: min(200px, 52vw);
+    grid-template-columns: 1fr;
+    max-width: 240px;
+    gap: 44px;
+  }
+}
+
+.watch-note {
+  max-width: 62ch;
+  margin: var(--space-xl) auto 0;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: var(--fs-md);
 }
 
 .feature-card p {
@@ -1098,6 +1277,20 @@ p {
 
 .faq {
   max-width: 68ch;
+}
+
+/* Die Fragen schließen die Seite ab und gehen direkt in den zentrierten
+   Schluss-CTA über. Linksbündig stand daneben ein großes leeres Feld und der
+   Übergang brach. Der Text in den Antworten bleibt linksbündig, nur der Block
+   rückt in die Mitte. */
+.section-faq .section-intro {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-faq .faq {
+  margin: 0 auto;
 }
 
 .faq details {
@@ -1841,4 +2034,66 @@ hr.lang-divider {
   position: absolute;
   left: 0;
   color: var(--text-secondary);
+}
+
+
+/* --- Geräte als fertige Bilder ----------------------------------------
+   Die Startseiten aller fünf Sprachen zeigen iPhone und Uhr als fertige
+   Mock-ups: Screenshot im echten Apple-Rahmen, beides in einer Datei.
+   Erzeugt von scripts/geraete-mockups/, siehe README dort - unter anderem
+   dazu, warum die Rahmendateien selbst nicht im Repo liegen dürfen.
+   Die per CSS gezeichneten Silhouetten weiter oben (.phone-frame,
+   .watch-frame, .watch-device) nutzt keine Seite mehr; sie stehen noch als
+   Vorlage für scripts/og-image/template.html, das sein CSS aus diesem
+   Stylesheet kopiert und weiterhin Nachbauten zeigt. */
+
+.mock {
+  display: block;
+  height: auto;
+}
+
+/* Uhr und iPhone maßstabsgetreu zueinander: 39,7 zu 78 mm Gehäusebreite.
+   Der Nachbau lag mit 0.46 etwas zu klein. */
+.mock-devices {
+  --hero-watch-w: calc(var(--phone-w) * 0.509);
+}
+
+.hero .mock-phone {
+  width: var(--phone-w);
+}
+
+.mock-hero-watch .mock-watch {
+  width: var(--hero-watch-w);
+}
+
+/* Das Bezel-Bild trägt das Armband über die volle Höhe mit; unterhalb des
+   Gehäuses sind das rund 34 % der Gehäusebreite. Ohne Ausgleich säße das
+   Gehäuse deutlich zu hoch über der unteren iPhone-Kante. */
+.mock-hero-watch {
+  bottom: calc(13% - var(--hero-watch-w) * 0.343);
+}
+
+.showcase-visual .mock-phone {
+  width: min(280px, 64vw);
+  margin: 0 auto;
+}
+
+.gallery-item .mock-phone {
+  width: min(257px, 100%);
+  margin: 0 auto;
+}
+
+/* Der Armband-Ausgleich der Nachbau-Galerie entfällt: hier steckt das Band
+   im Bild, der Kasten stimmt also schon. */
+.mock-watch-gallery {
+  padding-top: 0;
+}
+
+.mock-watch-gallery .mock-watch {
+  width: min(254px, 100%);
+  margin: 0 auto;
+}
+
+.mock-watch-gallery .caption {
+  margin-top: 14px;
 }

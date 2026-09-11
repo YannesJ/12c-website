@@ -69,3 +69,59 @@ pt:
   support: Support
   snake: Snake
   trademark: "A Apple, o logótipo da Apple e a App Store são marcas da Apple Inc."
+
+it:
+  language_name: Italiano
+  language_label: Scegli la lingua
+  start: Inizio
+  story: Storia
+  method: Metodo
+  challenge_ideas: Idee per le challenge
+  resolutions: Buoni propositi
+  privacy: Privacy
+  imprint: Note legali
+  support: Assistenza
+  snake: Snake
+  trademark: "Apple, il logo Apple e App Store sono marchi di Apple Inc."
+
+tr:
+  language_name: Türkçe
+  language_label: Dil seçin
+  start: Başlangıç
+  story: Hikâye
+  method: Yöntem
+  challenge_ideas: Challenge fikirleri
+  resolutions: Yılbaşı kararları
+  privacy: Gizlilik
+  imprint: Künye
+  support: Destek
+  snake: Snake
+  trademark: "Apple, Apple logosu ve App Store, Apple Inc. şirketinin ticari markalarıdır."
+
+pl:
+  language_name: Polski
+  language_label: Wybierz język
+  start: Start
+  story: Historia
+  method: Metoda
+  challenge_ideas: Pomysły na challenge
+  resolutions: Postanowienia
+  privacy: Prywatność
+  imprint: Nota prawna
+  support: Pomoc
+  snake: Snake
+  trademark: "Apple, logo Apple i App Store są znakami towarowymi Apple Inc."
+
+el:
+  language_name: Ελληνικά
+  language_label: Επιλογή γλώσσας
+  start: Αρχική
+  story: Ιστορία
+  method: Μέθοδος
+  challenge_ideas: Ιδέες για challenges
+  resolutions: Αποφάσεις
+  privacy: Απόρρητο
+  imprint: Νομικές πληροφορίες
+  support: Υποστήριξη
+  snake: Snake
+  trademark: "Η Apple, το λογότυπο Apple και το App Store είναι εμπορικά σήματα της Apple Inc."

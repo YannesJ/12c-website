@@ -10,6 +10,10 @@ home:
   es: /es/
   fr: /fr/
   pt: /pt/
+  it: /it/
+  tr: /tr/
+  pl: /pl/
+  el: /el/
 
 story:
   de: /story.html
@@ -17,6 +21,10 @@ story:
   es: /es/historia.html
   fr: /fr/histoire.html
   pt: /pt/historia.html
+  it: /it/storia.html
+  tr: /tr/hikaye.html
+  pl: /pl/historia.html
+  el: /el/istoria.html
 
 method:
   de: /methode.html
@@ -24,6 +32,10 @@ method:
   es: /es/metodo.html
   fr: /fr/methode.html
   pt: /pt/metodo.html
+  it: /it/metodo.html
+  tr: /tr/yontem.html
+  pl: /pl/metoda.html
+  el: /el/methodos.html
 
 privacy:
   de: /privacy.html
@@ -31,6 +43,10 @@ privacy:
   es: /es/privacidad.html
   fr: /fr/confidentialite.html
   pt: /pt/privacidade.html
+  it: /it/privacy.html
+  tr: /tr/gizlilik.html
+  pl: /pl/prywatnosc.html
+  el: /el/aporrito.html
 
 support:
   de: /support.html
@@ -38,6 +54,10 @@ support:
   es: /es/soporte.html
   fr: /fr/assistance.html
   pt: /pt/suporte.html
+  it: /it/assistenza.html
+  tr: /tr/destek.html
+  pl: /pl/pomoc.html
+  el: /el/ypostirixi.html
 
 imprint:
   de: /imprint.html
@@ -48,6 +68,10 @@ challenge-ideas:
   es: /es/ideas-challenges/
   fr: /fr/idees-challenges/
   pt: /pt/ideias-challenges/
+  it: /it/idee-challenge/
+  tr: /tr/challenge-fikirleri/
+  pl: /pl/pomysly-na-challenge/
+  el: /el/idees-challenge/
 
 resolutions:
   de: /neujahrsvorsaetze.html
@@ -55,6 +79,10 @@ resolutions:
   es: /es/propositos-ano-nuevo.html
   fr: /fr/resolutions-nouvel-an.html
   pt: /pt/resolucoes-ano-novo.html
+  it: /it/propositi-anno-nuovo.html
+  tr: /tr/yilbasi-kararlari.html
+  pl: /pl/postanowienia-noworoczne.html
+  el: /el/protochroniatikes-apofaseis.html
 
 snake:
   de: /snake.html
@@ -62,3 +90,7 @@ snake:
   es: /es/snake.html
   fr: /fr/snake.html
   pt: /pt/snake.html
+  it: /it/snake.html
+  tr: /tr/snake.html
+  pl: /pl/snake.html
+  el: /el/snake.html

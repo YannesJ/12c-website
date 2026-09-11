@@ -77,11 +77,12 @@ og_locale: es_ES
           Der App Store bekommt umgekehrt die Pro-Max-Aufnahmen (1320x2868, Pflichtformat).
         -->
         <div class="hero-visual">
-          <div class="phone-wrap">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <img src="/assets/screenshot-heute-es.webp" alt="Vista Hoy de 12 Challenges en modo oscuro: cuatro challenges, tres ya completados" loading="eager" fetchpriority="high" width="874" height="1900" />
-              </div>
+          <div class="hero-devices mock-devices">
+            <div class="phone-wrap">
+              <img class="mock mock-phone" src="/assets/mock/heute-es.webp" alt="Vista Hoy de 12 Challenges en modo oscuro: cuatro challenges, tres ya completados" loading="eager" fetchpriority="high" width="940" height="1918" />
+            </div>
+            <div class="hero-watch mock-hero-watch">
+              <img class="mock mock-watch" src="/assets/mock/watch-checkin-es.webp" alt="La misma challenge en el Apple Watch, con el botón verde para marcarla" loading="eager" width="780" height="1226" />
             </div>
           </div>
         </div>
@@ -97,17 +98,101 @@ og_locale: es_ES
         <div class="showcase showcase-reverse">
           <div class="showcase-visual">
             <div class="phone-wrap">
-              <div class="phone-frame">
-                <div class="phone-screen">
-                  <img src="/assets/screenshot-streak-es.webp" alt="Vista de streak: una fila de puntos que se va llenando, 14 días seguidos" loading="lazy" width="874" height="1900" />
-                </div>
-              </div>
+              <img class="mock mock-phone" src="/assets/mock/streak-es.webp" alt="Vista de streak: una fila de puntos que se va llenando, 14 días seguidos" loading="lazy" width="940" height="1918" />
             </div>
           </div>
           <div class="showcase-copy">
             <span class="eyebrow">El progreso</span>
             <h2>No quieres romper tu streak</h2>
             <p>Cada día que completas hace crecer tu streak. Y cuanto más larga se hace, más cuesta parar.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="showcase">
+          <div class="showcase-copy">
+            <span class="eyebrow">Resumen</span>
+            <h2>Tu challenge, claro de un vistazo.</h2>
+            <p>La vista de calendario muestra los días completados y tu streak actual, y marca claramente los días que te saltaste. Uno o dos días sueltos no pasa nada, lo que no vale es fallar dos seguidos.</p>
+          </div>
+          <div class="showcase-visual">
+            <div class="phone-wrap">
+              <img class="mock mock-phone" src="/assets/mock/detail-es.webp" alt="Vista de calendario de un challenge con el progreso diario y el contador de streak" loading="lazy" width="940" height="1918" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-intro">
+          <span class="eyebrow">En tu muñeca</span>
+          <h2>Marca tu día sin sacar el móvil.</h2>
+          <p>Un toque en el reloj y ya está. Si llevas varias challenges a la vez, las tienes todas ahí, una debajo de otra. Y en cuanto has terminado por hoy, el reloj te lo dice.</p>
+        </div>
+        <div class="watch-gallery">
+          <div class="watch-item">
+            <img class="mock mock-watch" src="/assets/mock/watch-checkin-es.webp" alt="Apple Watch con una sola challenge, «Nada de azúcar», 11 de 30 días, con el botón verde para marcarla" loading="lazy" width="780" height="1226" />
+            <div class="caption">Un toque y listo</div>
+          </div>
+          <div class="watch-item">
+            <img class="mock mock-watch" src="/assets/mock/watch-liste-es.webp" alt="Apple Watch con tres challenges una debajo de otra, cada una con su marca verde y los días cumplidos" loading="lazy" width="780" height="1226" />
+            <div class="caption">Todo de un vistazo</div>
+          </div>
+          <div class="watch-item">
+            <img class="mock mock-watch" src="/assets/mock/watch-fertig-es.webp" alt="Apple Watch con el mensaje «¡Hecho por hoy!» tras la última marca" loading="lazy" width="780" height="1226" />
+            <div class="caption">Hecho por hoy</div>
+          </div>
+        </div>
+        <p class="watch-note">Además hay una complicación para la esfera que tiene tu progreso siempre a la vista.</p>
+      </section>
+
+      <section class="section">
+        <div class="showcase">
+          <div class="showcase-copy">
+            <span class="eyebrow">Widgets</span>
+            <h2>Ni siquiera tienes que abrir la app.</h2>
+            <p>Los widgets de la pantalla de inicio muestran tu progreso y te dejan marcar el día ahí mismo, sin necesidad de abrir la app.</p>
+          </div>
+          <div class="showcase-visual">
+            <div class="widget-mock-wrap">
+              <div class="widget-mock done" id="widget-demo-es" role="button" tabindex="0" aria-pressed="true" aria-label="Widget de pantalla de inicio: challenge «Medité 10 minutos», 6 de 30 días completados, streak de 6 días. Toca para probarlo.">
+                <div class="widget-top">
+                  <span class="widget-emoji" aria-hidden="true">🌱</span>
+                  <span class="widget-title">Medité 10 minutos</span>
+                  <span class="widget-count" data-open="5/30 hechos" data-done="6/30 hechos">6/30 hechos</span>
+                </div>
+                <div class="widget-bottom">
+                  <span class="widget-checkin" data-open="○ Marcar" data-done="✓ Hecho">✓ Hecho</span>
+                  <span class="widget-streak" data-open="🔥 Streak de 5 días" data-done="🔥 Streak de 6 días">🔥 Streak de 6 días</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-intro">
+          <span class="eyebrow">Más de la app</span>
+          <h2>Y esto no es todo.</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img class="mock mock-phone" src="/assets/mock/challenges-es.webp" alt="Vista de challenges: progreso de todos los challenges activos en cuadrícula mensual" loading="lazy" width="940" height="1918" />
+            <div class="caption">Varias challenges a la vez</div>
+          </div>
+          <div class="gallery-item">
+            <img class="mock mock-phone" src="/assets/mock/erfolge-es.webp" alt="Vista de logros: insignias desbloqueadas y anillo de progreso" loading="lazy" width="940" height="1918" />
+            <div class="caption">Logros</div>
+          </div>
+          <div class="gallery-item">
+            <img class="mock mock-phone" src="/assets/mock/reminder-es.webp" alt="Panel de hora de recordatorio: hora personalizada para un challenge concreto" loading="lazy" width="940" height="1918" />
+            <div class="caption">Horarios de recordatorio personalizados</div>
+          </div>
+          <div class="gallery-item">
+            <img class="mock mock-phone" src="/assets/mock/archiv-es.webp" alt="Vista de archivo: challenges finalizados con estado final y periodo" loading="lazy" width="940" height="1918" />
+            <div class="caption">Archivo de challenges pasados</div>
           </div>
         </div>
       </section>
@@ -159,25 +244,6 @@ og_locale: es_ES
               </div>
               <div class="year-note-row year-note-more">
                 <span>…</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="showcase">
-          <div class="showcase-copy">
-            <span class="eyebrow">Resumen</span>
-            <h2>Tu challenge, claro de un vistazo.</h2>
-            <p>La vista de calendario muestra los días completados y tu streak actual, y marca claramente los días que te saltaste. Uno o dos días sueltos no pasa nada, lo que no vale es fallar dos seguidos.</p>
-          </div>
-          <div class="showcase-visual">
-            <div class="phone-wrap">
-              <div class="phone-frame">
-                <div class="phone-screen">
-                  <img src="/assets/screenshot-detail-es.webp" alt="Vista de calendario de un challenge con el progreso diario y el contador de streak" loading="lazy" width="874" height="1900" />
-                </div>
               </div>
             </div>
           </div>
@@ -239,85 +305,15 @@ og_locale: es_ES
 
       <section class="section">
         <div class="showcase showcase-reverse">
-          <div class="showcase-copy">
-            <span class="eyebrow">En tu muñeca</span>
-            <h2>Marca tu día sin sacar el móvil.</h2>
-            <p>Un toque en el reloj basta para marcar la actividad de hoy, y el Watch te lo confirma ahí mismo, en la muñeca: «¡Hecho por hoy!».</p>
-          </div>
           <div class="showcase-visual">
-            <div class="watch-wrap">
-              <div class="watch-frame">
-                <div class="watch-screen">
-                  <img src="/assets/screenshot-watch-es.webp" alt="App de Apple Watch: confirmación «¡Hecho por hoy!» justo después de marcar, directamente en la muñeca" loading="lazy" width="416" height="496" />
-                </div>
-              </div>
+            <div class="phone-wrap">
+              <img class="mock mock-phone" src="/assets/mock/statistiken-es.webp" alt="Vista de estadísticas: 298 días marcados, racha más larga y tasa de éxito, además de una vista anual donde cada día tiene su cuadrito" loading="lazy" width="940" height="1918" />
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="showcase">
           <div class="showcase-copy">
-            <span class="eyebrow">Widgets</span>
-            <h2>Ni siquiera tienes que abrir la app.</h2>
-            <p>Los widgets de la pantalla de inicio muestran tu progreso y te dejan marcar el día ahí mismo, sin necesidad de abrir la app.</p>
-          </div>
-          <div class="showcase-visual">
-            <div class="widget-mock-wrap">
-              <div class="widget-mock done" id="widget-demo-es" role="button" tabindex="0" aria-pressed="true" aria-label="Widget de pantalla de inicio: challenge «Medité 10 minutos», 6 de 30 días completados, streak de 6 días. Toca para probarlo.">
-                <div class="widget-top">
-                  <span class="widget-emoji" aria-hidden="true">🌱</span>
-                  <span class="widget-title">Medité 10 minutos</span>
-                  <span class="widget-count" data-open="5/30 hechos" data-done="6/30 hechos">6/30 hechos</span>
-                </div>
-                <div class="widget-bottom">
-                  <span class="widget-checkin" data-open="○ Marcar" data-done="✓ Hecho">✓ Hecho</span>
-                  <span class="widget-streak" data-open="🔥 Streak de 5 días" data-done="🔥 Streak de 6 días">🔥 Streak de 6 días</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-intro">
-          <span class="eyebrow">Más de la app</span>
-          <h2>Y esto no es todo.</h2>
-        </div>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <img src="/assets/screenshot-challenges-es.webp" alt="Vista de challenges: progreso de todos los challenges activos en cuadrícula mensual" loading="lazy" width="874" height="1900" />
-              </div>
-            </div>
-            <div class="caption">Varias challenges a la vez</div>
-          </div>
-          <div class="gallery-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <img src="/assets/screenshot-erfolge-es.webp" alt="Vista de logros: insignias desbloqueadas y anillo de progreso" loading="lazy" width="874" height="1900" />
-              </div>
-            </div>
-            <div class="caption">Logros</div>
-          </div>
-          <div class="gallery-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <img src="/assets/screenshot-reminder-es.webp" alt="Panel de hora de recordatorio: hora personalizada para un challenge concreto" loading="lazy" width="874" height="1900" />
-              </div>
-            </div>
-            <div class="caption">Horarios de recordatorio personalizados</div>
-          </div>
-          <div class="gallery-item">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <img src="/assets/screenshot-archiv-es.webp" alt="Vista de archivo: challenges finalizados con estado final y periodo" loading="lazy" width="874" height="1900" />
-              </div>
-            </div>
-            <div class="caption">Archivo de challenges pasados</div>
+            <span class="eyebrow">La mirada atrás</span>
+            <h2>Tu año, día a día.</h2>
+            <p>Las estadísticas muestran lo que se ha juntado a lo largo de los meses: días marcados, rachas más largas, tasa de éxito. En la vista anual cada día tiene su propio cuadrito, y después de unos meses ves cómo te ha ido el año de verdad.</p>
           </div>
         </div>
       </section>
@@ -341,7 +337,7 @@ og_locale: es_ES
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section-faq">
         <div class="section-intro">
           <span class="eyebrow">Preguntas</span>
           <h2>Antes de descargarla</h2>
@@ -357,7 +353,7 @@ og_locale: es_ES
           </details>
           <details>
             <summary>¿Se acaba mi challenge si fallo un día?</summary>
-            <p>No. Un challenge no tiene que salir perfecto: ya cuenta como cumplido a partir de 26 de 30 días, así que hay margen para cuatro fallos. Además, hoy y ayer todavía se pueden marcar a posteriori, solo los días más antiguos quedan bloqueados. Únicamente en el modo opcional «Sin excepciones» cuenta de verdad cada día, pensado para quienes quieren empezar sin red de seguridad a propósito.</p>
+            <p>No. Un challenge no tiene que salir perfecto: ya cuenta como cumplido a partir de 26 de 30 días, así que hay margen para cuatro fallos. Si se te olvida un día, aún puedes marcarlo al siguiente; más atrás ya no. Únicamente en el modo opcional «Sin excepciones» cuenta de verdad cada día, pensado para quienes quieren empezar sin red de seguridad a propósito.</p>
           </details>
         </div>
       </section>
@@ -386,7 +382,6 @@ og_locale: es_ES
           </button>
         </div>
       </div>
-
       <div class="floating-cta">
         <a class="appstore-badge" href="https://apps.apple.com/app/id6790353238">
           <img src="/assets/appstore-badge.svg" alt="Descargar 12 Challenges en el App Store" />
