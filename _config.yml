@@ -6,6 +6,10 @@ exclude:
   - Gemfile.lock
   - README.md
   - node_modules
+  # Arbeitswerkzeuge, keine Seiteninhalte. Ohne diese Zeile landet unter
+  # anderem scripts/og-image/template.html im Build und ist öffentlich
+  # abrufbar, obwohl es nur die Vorlage für die Vorschaubilder ist.
+  - scripts
 
 keep_files:
   - assets
