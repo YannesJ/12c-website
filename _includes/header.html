@@ -63,3 +63,60 @@
     });
   })();
 </script>
+
+<script>
+  (function () {
+    // Sticky-Header, der beim Runterscrollen wegfaehrt und beim Hochscrollen
+    // zurueckkommt. Auf dem Handy ist die Leiste zweizeilig und kostet sonst
+    // dauerhaft Lesehoehe. Ohne JS bleibt der Header einfach stehen, die
+    // Seite funktioniert also unveraendert weiter.
+    var header = document.querySelector('header.site');
+    if (!header || !window.matchMedia) return;
+
+    // Nur dort, wo der Platz knapp ist. Der Desktop-Header bleibt, wie er ist.
+    var schmal = window.matchMedia('(max-width: 760px)');
+
+    // Erst ab dieser Tiefe ueberhaupt verstecken, sonst zuckt die Leiste
+    // schon bei der kleinsten Bewegung direkt unter dem Seitenanfang.
+    var SCHWELLE = 120;
+    var letzteY = window.pageYOffset;
+    var wartet = false;
+
+    function pruefen() {
+      wartet = false;
+      var y = window.pageYOffset;
+
+      if (!schmal.matches) {
+        header.classList.remove('is-hidden');
+        letzteY = y;
+        return;
+      }
+
+      // Das Sprachmenue ist ein <details>. Faehrt der Header weg, waehrend es
+      // offen ist, verschwindet die Auswahl unter dem Bildschirmrand.
+      var menueOffen = header.querySelector('.lang-switch[open]');
+
+      if (y > SCHWELLE && y > letzteY && !menueOffen) {
+        header.classList.add('is-hidden');
+      } else if (y < letzteY || y <= SCHWELLE) {
+        header.classList.remove('is-hidden');
+      }
+
+      // Auf iOS laeuft der Wert beim Ueberscrollen ins Negative, das wuerde
+      // die Richtungserkennung durcheinanderbringen.
+      letzteY = y < 0 ? 0 : y;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (wartet) return;
+      wartet = true;
+      window.requestAnimationFrame(pruefen);
+    }, { passive: true });
+
+    // Beim Wechsel auf eine breite Ansicht darf keine versteckte Leiste
+    // zurueckbleiben.
+    if (schmal.addEventListener) {
+      schmal.addEventListener('change', pruefen);
+    }
+  })();
+</script>
