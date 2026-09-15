@@ -1,0 +1,140 @@
+{% comment %}
+  Strukturierte Daten der deutschen Winter-Arc-Seite. Liegt als Include vor,
+  damit das Layout sie im <head> ausliefern kann. Die Fragen im FAQPage-Block
+  muessen wortgleich mit den <summary>-Zeilen in winter-arc.html bleiben,
+  sonst verwirft Google das Markup. Pro Sprache kommt spaeter eine eigene
+  Datei nach demselben Muster dazu (schema-winter-arc-en.html usw.).
+{% endcomment %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Winter Arc: Was dahintersteckt und wie du ihn bis Silvester durchziehst",
+    "description": "Winter Arc heißt rund 90 Tage Disziplin von Oktober bis Dezember. Was dahintersteckt, welche Regeln üblich sind und wie daraus drei machbare Monate werden.",
+    "inLanguage": "de",
+    "datePublished": "2026-09-13",
+    "image": "{{ '/assets/og-image-de.png' | absolute_url }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "12 Challenges",
+      "url": "{{ '/' | absolute_url }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "12 Challenges",
+      "url": "{{ '/' | absolute_url }}"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "12 Challenges",
+        "item": "{{ '/' | absolute_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Winter Arc",
+        "item": "{{ page.url | absolute_url }}"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was bedeutet Winter Arc?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der Begriff stammt vom Character Arc, dem Handlungsbogen aus Serien und Animes, der die Entwicklung einer Figur beschreibt. Auf den Alltag übertragen heißt das: Du nutzt die dunkle Jahreshälfte als festen Zeitraum für eine bewusste Veränderung, statt sie abzuwarten. Der Kern ist immer ein klarer Anfang, ein definiertes Ende und feste tägliche Regeln dazwischen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wann fängt der Winter Arc an?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Üblich ist der 1. Oktober, was bis Silvester rund 90 Tagen entspricht. Verbindlich ist das nicht: Manche starten am 1. November, andere ziehen bis Ende Januar durch. Ein festes Datum hilft trotzdem, weil ein Zeitraum ohne klaren Anfang schwer zu messen ist."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie lange dauert ein Winter Arc?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meistens 90 Tage, also ungefähr drei Monate von Oktober bis Dezember. Wenn dir das zu lang vorkommt, ist das ein nützliches Signal und kein Zeichen von Schwäche. Drei separate Blöcke von je 30 Tagen decken dasselbe Zeitfenster ab, geben dir aber zwei Zwischenziele mehr."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Regeln gelten beim Winter Arc?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es gibt keine offiziellen Regeln, weil niemand den Trend verwaltet. Am häufigsten vertreten sind: früh aufstehen, regelmäßig trainieren, bewusster essen, feste Schlafenszeiten einhalten, die Bildschirmzeit reduzieren und Journaling. Sinnvoll ist, davon zwei oder drei auszuwählen statt alle sechs. Eine Regel, die du nicht einhältst, ist keine Regel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was macht man während eines Winter Arc?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Du wiederholst jeden Tag dieselben festgelegten Aufgaben, und zwar so klein angesetzt, dass sie auch an schlechten Tagen möglich bleiben. Das kann Sport sein, Lesen, früher ins Bett gehen oder abends das Handy weglegen. Entscheidend ist nicht das Thema, sondern dass sich abends eindeutig mit Ja oder Nein beantworten lässt, ob du es getan hast."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist der Winter Arc nur etwas für Sport und Fitness?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein, das ist nur der sichtbarste Teil. Weil Trainingsvideos auf Social Media die meiste Reichweite erzielen, wirkt der Trend nach außen wie eine reine Fitnesssache. Der Mechanismus funktioniert genauso für Schlaf, Lesen, Finanzen, Ordnung oder weniger Bildschirmzeit. Entscheidend ist, dass sich dein Ziel jeden Tag wiederholen lässt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was bringt ein Winter Arc überhaupt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Am Ende hast du drei Monate, in denen du Routinen aufgebaut hast, statt drei Monate, an die du dich kaum erinnerst. Was dabei konkret herauskommt, hängt von deinem Ziel ab, und das kann dir niemand seriös versprechen. Der eigentliche Gewinn ist der Zeitpunkt: Du fängst im Januar nicht bei null an, sondern gehst mit laufenden Gewohnheiten ins neue Jahr."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich später als am 1. Oktober anfangen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Der 1. Oktober ist eine Konvention, kein Startschuss. Wer am 12. November anfängt, hat bis Silvester noch fast 50 Tage, und das reicht für eine vollständige 30-Tage-Challenge. Auf ein perfektes Datum im nächsten Jahr zu warten, kostet dich mehr als ein später Start."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie halte ich einen Winter Arc bis zum Ende durch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Drei Faktoren entscheiden. Setz das Ziel klein genug für deinen schlechtesten Tag, nicht für deinen besten. Unterteile die 90 Tage in drei Monate, damit du schon nach 30 Tagen ein greifbares Ergebnis hast. Und kalkuliere Fehltage von Anfang an ein, denn ein Vorhaben, das nach dem ersten Aussetzer scheitert, ist falsch gebaut."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Brauche ich dafür eine App?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Ein Kalender an der Wand und ein Stift funktionieren seit Jahrzehnten. In der Praxis scheitert das aber oft an drei Punkten: Der Kalender hängt zu Hause, niemand erinnert dich, und nach zwei Monaten weiß keiner mehr, wie der Oktober gelaufen ist. Die iPhone-App 12 Challenges setzt genau hier an, mit Erinnerungen, einem Widget auf dem Homescreen und einem Rückblick zu jedem Monat."
+        }
+      }
+    ]
+  }
+  </script>

@@ -8,6 +8,7 @@ de:
   method: Methode
   challenge_ideas: Challenge-Ideen
   resolutions: Neujahrsvorsätze
+  winter_arc: Winter Arc
   privacy: Datenschutz
   imprint: Impressum
   support: Support
@@ -22,6 +23,7 @@ en:
   method: Method
   challenge_ideas: Challenge ideas
   resolutions: Resolutions
+  winter_arc: Winter Arc
   privacy: Privacy
   imprint: Legal notice
   support: Support
@@ -36,6 +38,7 @@ es:
   method: Método
   challenge_ideas: Ideas de challenges
   resolutions: Propósitos
+  winter_arc: Winter Arc
   privacy: Privacidad
   imprint: Aviso legal
   support: Soporte
@@ -50,6 +53,7 @@ fr:
   method: Méthode
   challenge_ideas: Idées de challenges
   resolutions: Résolutions
+  winter_arc: Winter Arc
   privacy: Confidentialité
   imprint: Mentions légales
   support: Assistance
@@ -64,6 +68,7 @@ pt:
   method: Método
   challenge_ideas: Ideias de challenges
   resolutions: Resoluções
+  winter_arc: Winter Arc
   privacy: Privacidade
   imprint: Aviso legal
   support: Support
@@ -78,6 +83,7 @@ it:
   method: Metodo
   challenge_ideas: Idee per le challenge
   resolutions: Buoni propositi
+  winter_arc: Winter Arc
   privacy: Privacy
   imprint: Note legali
   support: Assistenza
@@ -92,6 +98,7 @@ tr:
   method: Yöntem
   challenge_ideas: Challenge fikirleri
   resolutions: Yılbaşı kararları
+  winter_arc: Winter Arc
   privacy: Gizlilik
   imprint: Künye
   support: Destek
@@ -106,6 +113,7 @@ pl:
   method: Metoda
   challenge_ideas: Pomysły na challenge
   resolutions: Postanowienia
+  winter_arc: Winter Arc
   privacy: Prywatność
   imprint: Nota prawna
   support: Pomoc
@@ -120,6 +128,7 @@ el:
   method: Μέθοδος
   challenge_ideas: Ιδέες για challenges
   resolutions: Αποφάσεις
+  winter_arc: Winter Arc
   privacy: Απόρρητο
   imprint: Νομικές πληροφορίες
   support: Υποστήριξη

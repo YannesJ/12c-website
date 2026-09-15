@@ -33,7 +33,22 @@
   <meta property="og:locale" content="{{ page.og_locale }}" />
   <meta name="twitter:card" content="summary_large_image" />
   {% endif %}
+  {% comment %}
+    Die Variable-Schrift traegt H1 und Fliesstext und ist mit rund 200 KB die
+    groesste Datei der Seite. Ohne Preload wird sie erst entdeckt, wenn das CSS
+    geparst ist, was den LCP auf dem Handy sichtbar nach hinten schiebt.
+    crossorigin ist bei Schriften Pflicht, sonst laedt der Browser zweimal.
+  {% endcomment %}
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="{{ '/assets/fonts/BricolageGrotesque.woff2' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" />
+  {% comment %}
+    Strukturierte Daten liegen auf den aelteren Seiten direkt im Body, weil sie
+    ueber {{ content }} eingesetzt werden. Neue Seiten koennen sie stattdessen
+    hier im <head> ausliefern: einfach schema_include im Frontmatter setzen.
+    Ohne das Feld passiert nichts, bestehende Seiten bleiben unberuehrt.
+  {% endcomment %}
+  {% if page.schema_include %}{% include {{ page.schema_include }} %}{% endif %}
   {% if page.email_style %}
   <style>
     .email-display { font-style: italic; color: var(--color-text-secondary, #888); }

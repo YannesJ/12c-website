@@ -2097,3 +2097,155 @@ hr.lang-divider {
 .mock-watch-gallery .caption {
   margin-top: 14px;
 }
+
+/* ---------------------------------------------------------------------------
+   Winter-Arc-Hero: die 90 Tage als drei Bloecke zu 30 Tagen.
+
+   Traegt die Kernaussage der Seite als Bild, bevor der erste Absatz gelesen
+   ist: 90 Tage am Stueck sind eine Strecke ohne Ziellinie, dieselbe Zeit in
+   drei Monaten hat drei davon. Bewusst reines CSS, kein Bild. So bleibt das
+   LCP-Element ein Textblock und es gibt nichts, was beim Laden springt.
+   --------------------------------------------------------------------------- */
+.arc-hero {
+  display: grid;
+  /* Gleiche Spaltenbreite, nicht auto: sonst wird die Oktober-Karte schmaler,
+     nur weil das Wort kuerzer ist. Eine Grafik, die Gleichheit zeigen soll,
+     darf nicht drei verschiedene Breiten haben. */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-md);
+  max-width: 600px;
+  margin: var(--space-2xl) 0 var(--space-lg);
+}
+
+/* Jeder Monat ist eine eigene Karte. Das ist der Punkt der ganzen Grafik:
+   drei abgeschlossene Bloecke, nicht eine durchgehende Strecke. Optik wie
+   .template-card, damit die Seite eine Formensprache behaelt. */
+.arc-month {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: var(--space-md);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+/* Monatsname links, Schwelle rechts. Die Zahl steht bewusst statt eines
+   Satzes: dreimal derselbe Satz untereinander liest sich wie ein Stottern,
+   dreimal dieselbe Zahl liest sich wie eine Tabellenspalte. */
+.arc-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.arc-label,
+.arc-goal {
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.arc-label {
+  color: var(--text-display);
+}
+
+/* Der Punkt vor dem Monatsnamen greift die Kategorie-Punkte der
+   Challenge-Karten auf. */
+.arc-label::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  vertical-align: middle;
+}
+
+.arc-goal {
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+/* Der Nenner tritt zurueck: die 26 ist die Aussage, die 30 nur der Rahmen. */
+.arc-of {
+  color: var(--text-secondary);
+}
+
+/* 30 Tage als 6 mal 5. Feste Spaltenzahl statt auto-fit: das Raster soll in
+   allen drei Monaten identisch aussehen, sonst geht die Aussage verloren. */
+/* Spalten in fr statt in px: so fuellt das Raster die Karte, statt links zu
+   kleben und rechts Luft zu lassen. aspect-ratio haelt die Punkte rund. */
+.arc-dots {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 7px;
+}
+
+.arc-dots span {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* Nur im dritten Monat bleiben die letzten vier Tage offen. Oktober und
+   November stehen voll da, der Dezember zeigt den Puffer, den die 85-%-
+   Schwelle erlaubt. So passt das Raster zur Zahl in der Kopfzeile. */
+.arc-month:nth-child(3) .arc-dots span:nth-child(n + 27) {
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px var(--border-visible);
+}
+
+.arc-hero-caption {
+  max-width: 56ch;
+  color: var(--text-secondary);
+  font-size: var(--fs-md);
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Sanfter Aufbau pro Monatsblock, damit die Dreiteilung im Blick haengen
+   bleibt. Nur Opazitaet und ein kleiner Versatz, nichts, was Layout kostet. */
+@media (prefers-reduced-motion: no-preference) {
+  .arc-month {
+    animation: arc-in 0.5s ease both;
+  }
+
+  .arc-month:nth-child(2) { animation-delay: 0.12s; }
+  .arc-month:nth-child(3) { animation-delay: 0.24s; }
+
+  @keyframes arc-in {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: none; }
+  }
+}
+
+/* Unter 620px passen drei Raster nicht mehr nebeneinander. Die Monate stehen
+   dann untereinander und das Raster wird liegend (15 mal 2), damit der Block
+   nicht den halben ersten Bildschirm frisst. */
+@media (max-width: 620px) {
+  .arc-hero {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: var(--space-xl);
+  }
+
+  .arc-dots {
+    grid-template-columns: repeat(15, 1fr);
+    gap: 4px;
+  }
+
+}
+
+/* Sprungmarken-Leiste im Artikel: .idea-nav bringt von der Ideen-Seite nur
+   einen margin-top mit, weil dort ein eigener Kasten folgt. Im Artikel steht
+   direkt danach die erste Ueberschrift, die sonst an den Pills klebt. */
+.legal article .idea-nav {
+  margin-bottom: var(--space-2xl);
+}
