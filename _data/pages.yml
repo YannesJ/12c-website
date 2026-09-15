@@ -86,6 +86,14 @@ resolutions:
 
 winter-arc:
   de: /winter-arc.html
+  en: /en/winter-arc.html
+  es: /es/winter-arc.html
+  fr: /fr/winter-arc.html
+  pt: /pt/winter-arc.html
+  it: /it/winter-arc.html
+  tr: /tr/winter-arc.html
+  pl: /pl/winter-arc.html
+  el: /el/winter-arc.html
 
 snake:
   de: /snake.html

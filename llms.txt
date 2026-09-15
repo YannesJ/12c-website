@@ -20,6 +20,7 @@
 - [Method](https://12challenges.de/en/method.html): How the 12 Challenges method works and why it helps you stick to habits
 - [Challenge Ideas](https://12challenges.de/en/challenge-ideas/): 50 ideas for 30-day challenges
 - [New Year's Resolutions](https://12challenges.de/en/new-years-resolutions.html): Why New Year's resolutions usually fail and what works instead
+- [Winter Arc](https://12challenges.de/en/winter-arc.html): What the Winter Arc trend is, which rules circulate, and how to split the 90 days into three monthly challenges
 - [Support & FAQ](https://12challenges.de/en/support.html): Frequently asked questions and contact
 - [Privacy](https://12challenges.de/en/privacy.html): Privacy policy
 
@@ -30,6 +31,7 @@
 - [Método](https://12challenges.de/es/metodo.html): Cómo funciona el método de 12 Challenges y por qué ayuda a mantener hábitos
 - [Ideas de challenges](https://12challenges.de/es/ideas-challenges/): 50 ideas para challenges de 30 días
 - [Propósitos de Año Nuevo](https://12challenges.de/es/propositos-ano-nuevo.html): Por qué suelen fracasar los propósitos de Año Nuevo y qué funciona en su lugar
+- [Winter Arc](https://12challenges.de/es/winter-arc.html): Qué es el trend del Winter Arc, qué reglas circulan y cómo dividir los 90 días en tres challenges mensuales
 - [Soporte y FAQ](https://12challenges.de/es/soporte.html): Preguntas frecuentes y contacto
 - [Privacidad](https://12challenges.de/es/privacidad.html): Política de privacidad
 
@@ -40,6 +42,7 @@
 - [Méthode](https://12challenges.de/fr/methode.html): Comment fonctionne la méthode 12 Challenges et pourquoi elle aide à tenir ses habitudes
 - [Idées de challenges](https://12challenges.de/fr/idees-challenges/): 50 idées de challenges de 30 jours
 - [Résolutions de nouvel an](https://12challenges.de/fr/resolutions-nouvel-an.html): Pourquoi les résolutions de nouvel an échouent souvent et ce qui marche à la place
+- [Winter Arc](https://12challenges.de/fr/winter-arc.html): Ce qu'est la tendance Winter Arc, quelles règles circulent et comment découper les 90 jours en trois challenges mensuels
 - [Assistance et FAQ](https://12challenges.de/fr/assistance.html): Questions fréquentes et contact
 - [Confidentialité](https://12challenges.de/fr/confidentialite.html): Politique de confidentialité
 
@@ -50,6 +53,7 @@
 - [Método](https://12challenges.de/pt/metodo.html): Como funciona o método 12 Challenges e porque ajuda a manter hábitos
 - [Ideias de challenges](https://12challenges.de/pt/ideias-challenges/): 50 ideias para challenges de 30 dias
 - [Resoluções de Ano Novo](https://12challenges.de/pt/resolucoes-ano-novo.html): Porque as resoluções de Ano Novo costumam falhar e o que funciona em vez disso
+- [Winter Arc](https://12challenges.de/pt/winter-arc.html): O que é a tendência Winter Arc, que regras circulam e como dividir os 90 dias em três challenges mensais
 - [Support e FAQ](https://12challenges.de/pt/suporte.html): Perguntas frequentes e contacto
 - [Privacidade](https://12challenges.de/pt/privacidade.html): Política de Privacidade
 
@@ -60,6 +64,7 @@
 - [Metodo](https://12challenges.de/it/metodo.html): Come funziona il metodo di 12 Challenges e perché aiuta a tenere le abitudini
 - [Idee per le challenge](https://12challenges.de/it/idee-challenge/): 50 idee per challenge di 30 giorni
 - [Buoni propositi](https://12challenges.de/it/propositi-anno-nuovo.html): Perché i buoni propositi di solito falliscono e cosa funziona al loro posto
+- [Winter Arc](https://12challenges.de/it/winter-arc.html): Che cos'è il trend Winter Arc, quali regole circolano e come dividere i 90 giorni in tre challenge mensili
 - [Assistenza e FAQ](https://12challenges.de/it/assistenza.html): Domande frequenti e contatti
 - [Privacy](https://12challenges.de/it/privacy.html): Informativa sulla privacy
 
@@ -70,6 +75,7 @@
 - [Yöntem](https://12challenges.de/tr/yontem.html): 12 Challenges yönteminin nasıl işlediği ve alışkanlıkları sürdürmeye nasıl yardım ettiği
 - [Challenge fikirleri](https://12challenges.de/tr/challenge-fikirleri/): 30 günlük challenge’lar için 50 fikir
 - [Yılbaşı kararları](https://12challenges.de/tr/yilbasi-kararlari.html): Yılbaşı kararlarının neden tutmadığı ve onun yerine ne işe yaradığı
+- [Winter Arc](https://12challenges.de/tr/winter-arc.html): Winter Arc trendinin ne olduğu, hangi kuralların dolaştığı ve 90 günün üç aylık challenge'a nasıl bölündüğü
 - [Destek ve SSS](https://12challenges.de/tr/destek.html): Sık sorulan sorular ve iletişim
 - [Gizlilik](https://12challenges.de/tr/gizlilik.html): Gizlilik politikası
 
@@ -80,6 +86,7 @@
 - [Metoda](https://12challenges.de/pl/metoda.html): Jak działa metoda 12 Challenges i dlaczego pomaga wytrwać w nawykach
 - [Pomysły na challenge](https://12challenges.de/pl/pomysly-na-challenge/): 50 pomysłów na 30-dniowe challenge’e
 - [Postanowienia noworoczne](https://12challenges.de/pl/postanowienia-noworoczne.html): Dlaczego postanowienia noworoczne zwykle zawodzą i co działa zamiast nich
+- [Winter Arc](https://12challenges.de/pl/winter-arc.html): Czym jest trend Winter Arc, jakie zasady krążą i jak podzielić 90 dni na trzy miesięczne challenge
 - [Pomoc i FAQ](https://12challenges.de/pl/pomoc.html): Częste pytania i kontakt
 - [Prywatność](https://12challenges.de/pl/prywatnosc.html): Polityka prywatności
 
@@ -90,5 +97,6 @@
 - [Μέθοδος](https://12challenges.de/el/methodos.html): Πώς λειτουργεί η μέθοδος του 12 Challenges και γιατί βοηθά να κρατήσεις τις συνήθειες
 - [Ιδέες για challenges](https://12challenges.de/el/idees-challenge/): 50 ιδέες για challenges 30 ημερών
 - [Πρωτοχρονιάτικες αποφάσεις](https://12challenges.de/el/protochroniatikes-apofaseis.html): Γιατί οι πρωτοχρονιάτικες αποφάσεις συνήθως αποτυγχάνουν και τι δουλεύει αντ’ αυτού
+- [Winter Arc](https://12challenges.de/el/winter-arc.html): Τι είναι το trend Winter Arc, ποιοι κανόνες κυκλοφορούν και πώς χωρίζονται οι 90 μέρες σε τρία μηνιαία challenges
 - [Υποστήριξη και FAQ](https://12challenges.de/el/ypostirixi.html): Συχνές ερωτήσεις και επικοινωνία
 - [Απόρρητο](https://12challenges.de/el/aporrito.html): Πολιτική απορρήτου
