@@ -1,4 +1,4 @@
-/* 12 Challenges — gemeinsames Stylesheet.
+/* 12 Challenges, gemeinsames Stylesheet.
    Nur Dark Mode, selbst gehostete OFL-Schriften (kein CDN), kein JS, keine Cookies. */
 
 @font-face {
@@ -1481,11 +1481,11 @@ p {
 
 /* Chain-Sketch: handgezeichnet wirkende Kalenderskizze auf der Story-Seite,
    bewusst Kontrast zum sauberen .circle-diagram der App (Outline statt Füllung,
-   ein Basis-Kreis/eine Basis-Linie per <use> mehrfach transformiert statt Filter –
+   ein Basis-Kreis/eine Basis-Linie per <use> mehrfach transformiert statt Filter,
    damit identisch in jedem Browser, keine feDisplacementMap-Kompatibilitätsrisiken).
    Tage 1-11 stehen schon, danach ist immer nur der naechste Tag antippbar
-   (wie beim echten Abhaken auf Papier – ein Kreis nach dem anderen). Reines
-   Vanilla-JS, kein externer Request, kein Speichern von Daten – der Zustand
+   (wie beim echten Abhaken auf Papier, ein Kreis nach dem anderen). Reines
+   Vanilla-JS, kein externer Request, kein Speichern von Daten, der Zustand
    lebt nur im DOM und ist nach einem Reload wieder weg. */
 
 .chain-sketch {
@@ -1861,7 +1861,7 @@ footer.site a:hover {
 }
 
 /* Der Konfetti-Ausbruch und der Pop werden per JS (Web Animations API) mit
-   inline gesetzten Styles animiert – so ist der Effekt unabhaengig davon, ob
+   inline gesetzten Styles animiert, so ist der Effekt unabhaengig davon, ob
    diese CSS-Datei bereits frisch aus dem Cache geladen wurde. */
 
 /* Legal pages */
@@ -2248,4 +2248,53 @@ hr.lang-divider {
    direkt danach die erste Ueberschrift, die sonst an den Pills klebt. */
 .legal article .idea-nav {
   margin-bottom: var(--space-2xl);
+}
+
+/* Kurzer Erklaerkasten mitten im Artikel: Wer ueber eine SEO-Seite kommt,
+   kennt die App noch nicht und braucht sie einmal in zwei Saetzen erklaert,
+   bevor sie im Text vorausgesetzt wird. Bewusst schmal und ruhig, damit er
+   den Lesefluss nicht bricht. Der Badge darin blendet ueber den bestehenden
+   IntersectionObserver automatisch den Floating-CTA aus, solange er im Bild
+   ist, sonst staenden zwei Buttons gleichzeitig auf dem Schirm. */
+.inline-cta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+  max-width: 68ch;
+  margin: var(--space-2xl) 0;
+  padding: var(--space-lg) var(--space-xl);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.inline-cta p {
+  flex: 1 1 24ch;
+  margin: 0;
+  font-size: var(--fs-md);
+}
+
+.inline-cta strong {
+  color: var(--text-display);
+}
+
+/* Im Kasten reicht ein kleinerer Badge, der Haupt-CTA steht am Seitenende.
+   Das margin-top von .badge-cta muss hier weg, sonst addiert es sich zum
+   gap des Flex-Containers und der Badge haengt zu weit unten. */
+.inline-cta .badge-cta {
+  margin-top: 0;
+}
+
+.inline-cta .appstore-badge img {
+  height: 44px;
+}
+
+/* Untereinander braucht es weniger Luft als nebeneinander, sonst zerfaellt
+   der Kasten auf dem Handy in zwei lose Bloecke. */
+@media (max-width: 620px) {
+  .inline-cta {
+    gap: var(--space-md);
+    padding: var(--space-lg);
+  }
 }
