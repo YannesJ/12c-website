@@ -8,7 +8,7 @@ noindex: true
 ---
   <main class="legal">
     <div class="container">
-      <article lang="es">
+      <article lang="it">
         <h1>Snake</h1>
         <p class="lede">Prendi fiato, batti il tuo record e vai avanti.</p>
 
@@ -241,7 +241,7 @@ noindex: true
           bestEl.textContent = best;
           localStorage.setItem("snakeBest", String(best));
         }
-        messageEl.textContent = "Game over — Puntos " + score;
+        messageEl.textContent = "Game over: Punti " + score;
         startBtn.textContent = "Otra vez";
         overlay.classList.remove("hidden");
       }
