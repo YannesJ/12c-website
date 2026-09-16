@@ -40,7 +40,7 @@
 - [Accueil](https://12challenges.de/fr/): Présentation de l'appli, son fonctionnement et le lien vers l'App Store
 - [Histoire](https://12challenges.de/fr/histoire.html): L'histoire derrière 12 Challenges
 - [Méthode](https://12challenges.de/fr/methode.html): Comment fonctionne la méthode 12 Challenges et pourquoi elle aide à tenir ses habitudes
-- [Idées de challenges](https://12challenges.de/fr/idees-challenges/): 50 idées de challenges de 30 jours
+- [Idées de challenges](https://12challenges.de/fr/idees-challenges/): 72 idées de challenges de 30 jours
 - [Résolutions de nouvel an](https://12challenges.de/fr/resolutions-nouvel-an.html): Pourquoi les résolutions de nouvel an échouent souvent et ce qui marche à la place
 - [Winter Arc](https://12challenges.de/fr/winter-arc.html): Ce qu'est la tendance Winter Arc, quelles règles circulent et comment découper les 90 jours en trois challenges mensuels
 - [Assistance et FAQ](https://12challenges.de/fr/assistance.html): Questions fréquentes et contact
