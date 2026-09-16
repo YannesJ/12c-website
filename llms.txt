@@ -84,7 +84,7 @@
 - [Start](https://12challenges.de/pl/): Przegląd aplikacji, jak działa i link do App Store
 - [Historia](https://12challenges.de/pl/historia.html): Historia stojąca za 12 Challenges
 - [Metoda](https://12challenges.de/pl/metoda.html): Jak działa metoda 12 Challenges i dlaczego pomaga wytrwać w nawykach
-- [Pomysły na challenge](https://12challenges.de/pl/pomysly-na-challenge/): 50 pomysłów na 30-dniowe challenge’e
+- [Pomysły na challenge](https://12challenges.de/pl/pomysly-na-challenge/): 72 pomysły na 30-dniowe challenge’e
 - [Postanowienia noworoczne](https://12challenges.de/pl/postanowienia-noworoczne.html): Dlaczego postanowienia noworoczne zwykle zawodzą i co działa zamiast nich
 - [Winter Arc](https://12challenges.de/pl/winter-arc.html): Czym jest trend Winter Arc, jakie zasady krążą i jak podzielić 90 dni na trzy miesięczne challenge
 - [Pomoc i FAQ](https://12challenges.de/pl/pomoc.html): Częste pytania i kontakt
