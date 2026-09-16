@@ -1,45 +1,38 @@
 # Methode-Seite: alle Texte, neun Sprachen
 
-Diese Datei enthaelt saemtliche sichtbaren Texte der Unterseite "Methode" in
-allen neun Sprachversionen.
+Stand nach Einarbeitung der Rueckmeldungen zu Genus, Germanismen und Wording.
 
-## Was neu ist
+## Was hier drin steht
 
-Die Seite hatte bisher weder haeufige Fragen noch strukturiertes Markup. Neu
-hinzugekommen und **mit NEU markiert** sind:
+Saemtliche sichtbaren Texte der Unterseite "Methode" in allen neun Sprachen,
+also Seitentitel, Beschreibung, alle Abschnitte und die haeufigen Fragen.
 
-- der Seitentitel und die Beschreibung, die Google im Suchergebnis anzeigt
-- ein Abschnitt mit sechs haeufigen Fragen zur Methode
+## Was seit der letzten Runde geaendert wurde
 
-Alles andere stand vorher schon auf der Seite und wurde bereits geprueft.
+- **Genus des Lehnworts "Challenge"**: In den FAQ war es faelschlich feminin.
+  Es folgt jetzt dem Bestand der jeweiligen Sprache, siehe Angabe je Sprache.
+- **Germanismen**: "sauber nachtragen", "bringt mit sich" und die gespiegelte
+  Konstruktion "der Verlust wiegt schwerer als der Gewinn wiegt" waren zu
+  woertlich uebertragen und sind jetzt idiomatisch geloest.
+- **Wording**: unter anderem "Control Center control", "achieved or not",
+  franzoesisch "le bazar", polnisch "nadrobic" und "zamkniety".
 
-## Worauf es bei der Pruefung ankommt
+## Worauf es bei dieser Pruefung ankommt
 
-1. **Klingt es wie in dieser Sprache geschrieben, nicht wie uebersetzt?** Die
-   Texte wurden je Sprache eigenstaendig formuliert, nicht Satz fuer Satz
-   uebertragen.
-2. **Zwei deutsche Bilder liessen sich nicht uebertragen** und wurden bewusst
-   ersetzt. "Das steht auf einem anderen Blatt" ist jeweils als normale Frage
-   formuliert. "Der Haken am Zettel" ist im Deutschen ein Wortspiel mit Haken
-   als Haekchen und als Nachteil, das nirgends sonst funktioniert, deshalb
-   ueberall "das Problem am Papier".
-3. **Fachbegriffe folgen dem Bestand der jeweiligen Seite.** Sie sind je
-   Sprache unten angegeben. Wenn die Seite vorher von einer Kette sprach, tut
-   es die FAQ auch.
-4. **Der Name des Modus** ist so uebernommen, wie ihn die Support-Seite der
-   jeweiligen Sprache nennt.
-5. **Zahlen und Fakten** stammen aus dem Bestand: 30 Tage, 85 Prozent, 26 von
-   30 Tagen, bis zu vier Fehltage, zwoelf Challenges im Jahr.
+1. Sind die Korrekturen an allen Stellen angekommen, auch dort, wo derselbe
+   Begriff mehrfach vorkommt?
+2. Klingt der Text durchgehend wie in dieser Sprache geschrieben?
+3. Stimmen Genus und Bezuege ueber Satzgrenzen hinweg?
 
 ---
 
 # Deutsch (de)
 
 URL: `https://12challenges.de/methode.html`  
-Fachbegriff fuer die Kette auf dieser Seite: **Streak / Kette**  
-Name des Modus: **„Ohne Ausnahme“**
+Kette heißt hier: **Streak / Kette**  
+Genus von Challenge: **–**
 
-## Seitentitel und Beschreibung  **NEU**
+## Seitentitel und Beschreibung
 
 - **Title:** Die 12-Challenges-Methode: 30 Tage pro Ziel, ein Haken pro Tag
 - **Meta description:** Ein Ziel pro Monat, 30 Tage, abends ein Haken. Warum der Streak trägt, was die 85-Prozent-Schwelle verzeiht und warum das besser wirkt als ein Jahresvorsatz.
@@ -48,8 +41,6 @@ Name des Modus: **„Ohne Ausnahme“**
 
 - **Ueberschrift:** Die 12-Challenges-Methode
 - **Einleitung:** Ein simples System: ein Ziel, 30 Tage, eine kleine Aktivität pro Tag.
-
-## Bestehende Abschnitte
 
 ### Wie eine Challenge funktioniert
 
@@ -93,7 +84,7 @@ Ein Fehltag lässt sich außerdem nachträglich korrigieren: Heute und gestern b
 
 Die Methode funktioniert für fast jedes Ziel, das sich in eine tägliche Wiederholung übersetzen lässt.
 
-## Haeufige Fragen zur Methode  **NEU, kompletter Abschnitt**
+## Haeufige Fragen zur Methode
 
 **Was ist die 12-Challenges-Methode?**
 
@@ -124,10 +115,10 @@ Ja, jede mit eigenem Kalender und eigenem Streak. Ob es klug ist, steht auf eine
 # English (en)
 
 URL: `https://12challenges.de/en/method.html`  
-Fachbegriff fuer die Kette auf dieser Seite: **streak / chain**  
-Name des Modus: **No Exceptions**
+Kette heißt hier: **streak / chain**  
+Genus von Challenge: **–**
 
-## Seitentitel und Beschreibung  **NEU**
+## Seitentitel und Beschreibung
 
 - **Title:** The 12 Challenges Method: 30 Days per Goal, One Check a Day
 - **Meta description:** One goal a month, 30 days, one check in the evening. Why the streak carries you, what the 85 percent threshold forgives, and why it beats a resolution that never ends.
@@ -136,8 +127,6 @@ Name des Modus: **No Exceptions**
 
 - **Ueberschrift:** The 12 Challenges Method
 - **Einleitung:** A simple system: one goal, 30 days, one circle a day.
-
-## Bestehende Abschnitte
 
 ### How a challenge works
 
@@ -153,21 +142,21 @@ That keeps every single commitment manageable. You never sign up for “forever,
 
 ### Better than a note on the fridge
 
-The core idea isn't new: checking off circles on a calendar sheet has worked for decades, known as the “don’t break the chain” method. A piece of paper just brings along a few problems the app solves.
+The core idea isn't new: checking off circles on a calendar sheet has worked for decades, known as the “don’t break the chain” method. A piece of paper just comes with a few problems the app solves.
 
 - Stays at home, not in your pocket
 - No reminder, you have to remember it yourself
-- A missed day can't be cleanly corrected afterward
+- A missed day can't be easily corrected afterward
 - Several goals at once get messy fast
 - Always on your iPhone, one tap is enough
 - Reminder at a time of your choice, plus a catch-up reminder after a missed day
 - Today and yesterday can still be changed afterward
-- Home Screen widget and Control Center control to check in without opening the app
+- Home Screen widget and Control Center toggle to check in without opening the app
 - Several challenges in parallel, each with its own calendar and streak
 
 ### The streak effect
 
-A growing streak motivates more than any reward, because losing it feels worse than one more good day feels good. Kahneman and Tversky call this principle loss aversion: people work harder to avoid a loss than to chase an equally sized gain. That's why you keep going, not because you have to, but because you don't want to give away a streak you've already built.
+A growing streak motivates more than any reward, because the pain of losing it outweighs the joy of another check mark. Kahneman and Tversky call this principle loss aversion: people work harder to avoid a loss than to chase an equally sized gain. That's why you keep going, not because you have to, but because you don't want to give away a streak you've already built.
 
 And 30 days isn't an arbitrary number. A University College London study (Lally et al., 2010) found that a new habit takes just over two months on average to become automatic, with wide differences between people and behaviors. 30 days is enough to make a routine noticeably stick, and short enough that you see it through.
 
@@ -175,13 +164,13 @@ And 30 days isn't an arbitrary number. A University College London study (Lally 
 
 One missed day shouldn't wreck an entire challenge, or perfectionism ends up discouraging instead of motivating. That's why a challenge already counts as achieved at 85% of the days, for a 30-day challenge that's 26, so up to four days of buffer.
 
-A missed day can also still be corrected shortly after: today and yesterday stay editable, older days are locked. Only in No Exceptions mode does every single day really count, for anyone who wants to switch off the safety nets on purpose. At the end of every challenge, achieved or not, you get a monthly review with final status and streak, stored in the archive: visible proof of 30 days followed through.
+A missed day can also still be corrected shortly after: today and yesterday stay editable, older days are locked. Only in No Exceptions mode does every single day really count, for anyone who wants to switch off the safety nets on purpose. At the end of every challenge, successful or not, you get a monthly review with final status and streak, stored in the archive: visible proof of 30 completed days.
 
 ### Worth trying
 
 The method works for almost any goal that can be turned into a daily repetition.
 
-## Haeufige Fragen zur Methode  **NEU, kompletter Abschnitt**
+## Haeufige Fragen zur Methode
 
 **What is the 12 Challenges method?**
 
@@ -212,10 +201,10 @@ Yes, each with its own calendar and its own streak. Whether that is wise is a di
 # Español (es)
 
 URL: `https://12challenges.de/es/metodo.html`  
-Fachbegriff fuer die Kette auf dieser Seite: **streak / cadena**  
-Name des Modus: **«Sin excepciones»**
+Kette heißt hier: **streak / cadena**  
+Genus von Challenge: **maskulin (el/un challenge)**
 
-## Seitentitel und Beschreibung  **NEU**
+## Seitentitel und Beschreibung
 
 - **Title:** El método de 12 Challenges: 30 días por objetivo, una marca al día
 - **Meta description:** Un objetivo al mes, 30 días, una marca por la noche. Por qué el streak te sostiene, qué perdona el umbral del 85 por ciento y por qué funciona mejor que un propósito sin final.
@@ -224,8 +213,6 @@ Name des Modus: **«Sin excepciones»**
 
 - **Ueberschrift:** El método de 12 Challenges
 - **Einleitung:** Un sistema simple: una meta, 30 días, una pequeña acción al día.
-
-## Bestehende Abschnitte
 
 ### Cómo funciona un challenge
 
@@ -245,17 +232,17 @@ La idea de base no es nueva: marcar círculos en una hoja de calendario funciona
 
 - Se queda en casa, no en tu bolsillo
 - Sin recordatorio, tienes que acordarte tú solo
-- Un día olvidado no se puede corregir bien después
+- Un día olvidado no se puede corregir fácilmente después
 - Varias metas a la vez se vuelven un lío enseguida
 - Siempre en tu iPhone, un toque basta
 - Recordatorio a la hora que quieras, más un aviso extra si fallas un día
 - Hoy y ayer se pueden modificar después
 - Widget de pantalla de inicio y control para el Centro de Control, para marcar sin abrir la app
-- Varias challenges a la vez, cada uno con su propio calendario y streak
+- Varios challenges a la vez, cada uno con su propio calendario y streak
 
 ### El efecto streak
 
-Una cadena que crece motiva más que cualquier recompensa, porque perderla se siente peor de lo que se siente bien un día más. Kahneman y Tversky llaman a este principio aversión a la pérdida: las personas evitan una pérdida con mucha más fuerza de la que buscan una ganancia equivalente. Por eso sigues adelante, no porque debas, sino porque no quieres perder tu cadena.
+Una cadena que crece motiva más que cualquier recompensa, porque perderla duele más que la alegría de sumar un día más. Kahneman y Tversky llaman a este principio aversión a la pérdida: las personas evitan una pérdida con mucha más fuerza de la que buscan una ganancia equivalente. Por eso sigues adelante, no porque debas, sino porque no quieres perder tu cadena.
 
 Y 30 días no es un número al azar. Un estudio del University College London (Lally et al., 2010) descubrió que un hábito nuevo se consolida, de media, algo después de dos meses, con diferencias notables según la persona y el comportamiento. 30 días bastan para anclar una rutina de forma perceptible, y son lo bastante cortos como para que aguantes hasta el final.
 
@@ -263,19 +250,19 @@ Y 30 días no es un número al azar. Un estudio del University College London (L
 
 Un solo día fallado no debería echar por tierra todo un challenge, o el perfeccionismo acaba desmotivando en lugar de animar. Por eso un challenge ya cuenta como cumplido a partir del 85 % de los días: en 30 días son 26, así que hay margen para hasta cuatro días.
 
-Además, un día fallado se puede corregir poco después: hoy y ayer siguen siendo editables, los días más antiguos quedan bloqueados. Solo en el modo «Sin excepciones» cuenta de verdad cada día, para quienes quieren desactivar las redes de seguridad a propósito. Al final de cada challenge, cumplido o no, recibes un resumen mensual con el estado final y el streak, guardado en el archivo: tu prueba visible de 30 días llevados a cabo.
+Además, un día fallado se puede corregir poco después: hoy y ayer siguen siendo editables, los días más antiguos quedan bloqueados. Solo en el modo «Sin excepciones» cuenta de verdad cada día, para quienes quieren desactivar las redes de seguridad a propósito. Al final de cada challenge, cumplido o no, recibes un resumen mensual con el estado final y el streak, guardado en el archivo: tu prueba visible de 30 días completados.
 
 ### Para probar
 
 El método funciona para casi cualquier meta que se pueda convertir en una repetición diaria.
 
-## Haeufige Fragen zur Methode  **NEU, kompletter Abschnitt**
+## Haeufige Fragen zur Methode
 
 **¿Qué es el método de 12 Challenges?**
 
-Un objetivo al mes, durante 30 días, con una pequeña actividad cada día. Por la noche marcas si lo has conseguido, y no hay más opciones. Los días marcados forman una cadena. Pasados los 30 días la challenge termina, salga como salga, y eliges el siguiente objetivo.
+Un objetivo al mes, durante 30 días, con una pequeña actividad cada día. Por la noche marcas si lo has conseguido, y no hay más opciones. Los días marcados forman una cadena. Pasados los 30 días el challenge termina, salga como salga, y eliges el siguiente objetivo.
 
-**¿Por qué una challenge al mes y no un propósito de Año Nuevo?**
+**¿Por qué un challenge al mes y no un propósito de Año Nuevo?**
 
 Un propósito para todo el año no tiene final, y justo por eso falla. Sin meta a la vista el empeño se va apagando, y un día perdido en febrero parece echar a perder el año entero. Un mes sigue siendo abarcable: nunca te comprometes a «para siempre», solo a los próximos 30 días. Y si un mes sale mal, te quedan once.
 
@@ -289,21 +276,21 @@ La idea de marcar en un calendario cada día cumplido y no dejar que la cadena s
 
 **¿Por qué basta con cumplir el 85 por ciento de los días?**
 
-Porque un solo día fallado no debería arruinar una challenge entera. Quien se exige perfección suele abandonar tras el primer tropiezo. En 30 días, el 85 por ciento son exactamente 26, así que tienes hasta cuatro días de margen. Quien no quiera ese margen activa el modo «Sin excepciones», y entonces cuenta cada día.
+Porque un solo día fallado no debería arruinar un challenge entero. Quien se exige perfección suele abandonar tras el primer tropiezo. En 30 días, el 85 por ciento son exactamente 26, así que tienes hasta cuatro días de margen. Quien no quiera ese margen activa el modo «Sin excepciones», y entonces cuenta cada día.
 
-**¿Puedo tener varias challenges a la vez?**
+**¿Puedo tener varios challenges a la vez?**
 
-Sí, cada una con su propio calendario y su propio streak. Si conviene hacerlo ya es otra cuestión: el error más común al empezar es abarcar demasiados objetivos. Con doce challenges al año, la siguiente llega el mes que viene de todos modos.
+Sí, cada uno con su propio calendario y su propio streak. Si conviene hacerlo ya es otra cuestión: el error más común al empezar es abarcar demasiados objetivos. Con doce challenges al año, el siguiente llega el mes que viene de todos modos.
 
 ---
 
 # Français (fr)
 
 URL: `https://12challenges.de/fr/methode.html`  
-Fachbegriff fuer die Kette auf dieser Seite: **streak / chaîne**  
-Name des Modus: **« Sans exception »**
+Kette heißt hier: **streak / chaîne**  
+Genus von Challenge: **maskulin (le/un challenge)**
 
-## Seitentitel und Beschreibung  **NEU**
+## Seitentitel und Beschreibung
 
 - **Title:** La méthode 12 Challenges : 30 jours par objectif, une coche par jour
 - **Meta description:** Un objectif par mois, 30 jours, une coche le soir. Pourquoi le streak te porte, ce que le seuil de 85 pour cent pardonne et pourquoi ça tient mieux qu'une résolution sans fin.
@@ -312,8 +299,6 @@ Name des Modus: **« Sans exception »**
 
 - **Ueberschrift:** La méthode 12 Challenges
 - **Einleitung:** Un système simple : un objectif, 30 jours, une petite action par jour.
-
-## Bestehende Abschnitte
 
 ### Comment fonctionne un challenge
 
@@ -333,8 +318,8 @@ L'idée de base n'est pas nouvelle : cocher des cercles sur une feuille de calen
 
 - Reste à la maison, pas dans ta poche
 - Pas de rappel, tu dois y penser tout seul
-- Un jour oublié ne peut pas être corrigé proprement après coup
-- Plusieurs objectifs à la fois deviennent vite le bazar
+- Un jour oublié ne peut pas être corrigé facilement après coup
+- Plusieurs objectifs à la fois deviennent vite ingérables
 - Toujours sur ton iPhone, un tap suffit
 - Rappel à l'heure de ton choix, plus un rappel supplémentaire après un jour manqué
 - Aujourd'hui et hier peuvent encore être modifiés après coup
@@ -343,7 +328,7 @@ L'idée de base n'est pas nouvelle : cocher des cercles sur une feuille de calen
 
 ### L'effet streak
 
-Une chaîne qui grandit motive plus que n'importe quelle récompense, parce que la perdre fait plus mal qu'un jour de plus ne fait de bien. Kahneman et Tversky appellent ce principe l'aversion à la perte : on évite une perte bien plus fort qu'on ne recherche un gain équivalent. C'est pour ça que tu continues, pas parce que tu y es obligé, mais parce que tu ne veux pas perdre ta chaîne.
+Une chaîne qui grandit motive plus que n'importe quelle récompense, parce que la perdre fait plus mal que la satisfaction d'ajouter un jour. Kahneman et Tversky appellent ce principe l'aversion à la perte : on évite une perte bien plus fort qu'on ne recherche un gain équivalent. C'est pour ça que tu continues, pas parce que tu y es obligé, mais parce que tu ne veux pas perdre ta chaîne.
 
 Et 30 jours n'est pas un chiffre pris au hasard. Une étude de l'University College London (Lally et al., 2010) a montré qu'une nouvelle habitude se consolide en moyenne un peu plus de deux mois, avec de grandes variations selon la personne et le comportement. 30 jours suffisent pour ancrer une routine de façon notable, et c'est assez court pour tenir jusqu'au bout.
 
@@ -357,13 +342,13 @@ Un jour manqué peut aussi encore être corrigé peu après : aujourd'hui et hie
 
 La méthode fonctionne pour presque n'importe quel objectif qui peut se transformer en répétition quotidienne.
 
-## Haeufige Fragen zur Methode  **NEU, kompletter Abschnitt**
+## Haeufige Fragen zur Methode
 
 **Qu'est-ce que la méthode 12 Challenges ?**
 
-Un objectif par mois, pendant 30 jours, avec une petite activité chaque jour. Le soir, tu coches si tu l'as fait, et il n'y a rien d'autre à choisir. Les jours cochés forment une chaîne. Au bout de 30 jours la challenge se termine, quel qu'en soit le résultat, et tu choisis l'objectif suivant.
+Un objectif par mois, pendant 30 jours, avec une petite activité chaque jour. Le soir, tu coches si tu l'as fait, et il n'y a rien d'autre à choisir. Les jours cochés forment une chaîne. Au bout de 30 jours le challenge se termine, quel qu'en soit le résultat, et tu choisis l'objectif suivant.
 
-**Pourquoi une challenge par mois plutôt qu'une résolution de nouvel an ?**
+**Pourquoi un challenge par mois plutôt qu'une résolution de nouvel an ?**
 
 Une résolution pour l'année entière n'a pas de fin, et c'est précisément pour ça qu'elle échoue. Sans ligne d'arrivée, l'élan retombe, et un jour manqué en février donne l'impression que toute l'année est perdue. Un mois reste gérable : tu ne t'engages jamais pour « toujours », seulement pour les 30 prochains jours. Et si un mois tourne mal, il t'en reste onze.
 
@@ -377,21 +362,21 @@ L'idée de cocher sur un calendrier chaque journée accomplie et de ne jamais la
 
 **Pourquoi 85 pour cent des jours suffisent ?**
 
-Parce qu'un seul jour manqué ne doit pas détruire une challenge entière. Qui s'impose la perfection abandonne souvent après le premier faux pas. Sur 30 jours, 85 pour cent font exactement 26 jours, ce qui laisse jusqu'à quatre jours de marge. Qui n'en veut pas active le mode « Sans exception », et alors chaque jour compte.
+Parce qu'un seul jour manqué ne doit pas détruire un challenge entier. Qui s'impose la perfection abandonne souvent après le premier faux pas. Sur 30 jours, 85 pour cent font exactement 26 jours, ce qui laisse jusqu'à quatre jours de marge. Qui n'en veut pas active le mode « Sans exception », et alors chaque jour compte.
 
 **Puis-je mener plusieurs challenges en même temps ?**
 
-Oui, chacune avec son calendrier et son streak. Savoir si c'est judicieux est une autre question : l'erreur la plus fréquente au démarrage, c'est de viser trop d'objectifs d'un coup. Avec douze challenges par an, la suivante arrive de toute façon le mois prochain.
+Oui, chacun avec son calendrier et son streak. Savoir si c'est judicieux est une autre question : l'erreur la plus fréquente au démarrage, c'est de viser trop d'objectifs d'un coup. Avec douze challenges par an, le suivant arrive de toute façon le mois prochain.
 
 ---
 
 # Português (pt)
 
 URL: `https://12challenges.de/pt/metodo.html`  
-Fachbegriff fuer die Kette auf dieser Seite: **streak / corrente**  
-Name des Modus: **«Sem exceções»**
+Kette heißt hier: **streak / corrente**  
+Genus von Challenge: **maskulin (o/um challenge)**
 
-## Seitentitel und Beschreibung  **NEU**
+## Seitentitel und Beschreibung
 
 - **Title:** O método do 12 Challenges: 30 dias por objetivo, uma marca por dia
 - **Meta description:** Um objetivo por mês, 30 dias, uma marca à noite. Porque é que o streak te segura, o que o limiar dos 85 por cento perdoa e porque funciona melhor do que uma resolução sem fim.
@@ -400,8 +385,6 @@ Name des Modus: **«Sem exceções»**
 
 - **Ueberschrift:** O método 12 Challenges
 - **Einleitung:** Um sistema simples: um objetivo, 30 dias, uma pequena atividade por dia.
-
-## Bestehende Abschnitte
 
 ### Como funciona um challenge
 
@@ -421,7 +404,7 @@ A ideia de base não é nova: marcar círculos numa folha de calendário funcion
 
 - Fica pendurada em casa, não no teu bolso
 - Sem lembrete, tens de te lembrar sozinho
-- Um dia esquecido não se consegue corrigir de forma limpa
+- Um dia esquecido não se consegue corrigir facilmente
 - Vários objetivos em simultâneo tornam-se rapidamente confusos
 - Sempre no iPhone, basta um toque
 - Lembrete à hora que quiseres, mais um lembrete extra depois de um dia falhado
@@ -445,13 +428,13 @@ Um dia falhado ainda se pode corrigir por pouco tempo: hoje e ontem continuam ed
 
 O método funciona para quase qualquer objetivo que se consiga traduzir numa repetição diária.
 
-## Haeufige Fragen zur Methode  **NEU, kompletter Abschnitt**
+## Haeufige Fragen zur Methode
 
 **O que é o método do 12 Challenges?**
 
-Um objetivo por mês, durante 30 dias, com uma pequena atividade por dia. À noite marcas se conseguiste, e não há mais nada para escolher. Os dias marcados formam uma corrente. Passados os 30 dias a challenge acaba, seja qual for o resultado, e escolhes o objetivo seguinte.
+Um objetivo por mês, durante 30 dias, com uma pequena atividade por dia. À noite marcas se conseguiste, e não há mais nada para escolher. Os dias marcados formam uma corrente. Passados os 30 dias o challenge acaba, seja qual for o resultado, e escolhes o objetivo seguinte.
 
-**Porquê uma challenge por mês e não uma resolução de Ano Novo?**
+**Porquê um challenge por mês e não uma resolução de Ano Novo?**
 
 Uma resolução para o ano inteiro não tem fim, e é precisamente por isso que falha. Sem meta à vista, o ânimo vai-se desvanecendo, e um dia falhado em fevereiro parece estragar o ano todo. Um mês continua a ser abarcável: nunca te comprometes com «para sempre», apenas com os próximos 30 dias. E se um mês correr mal, ainda te restam onze.
 
@@ -465,21 +448,21 @@ A ideia de marcar num calendário cada dia cumprido e nunca deixar a corrente qu
 
 **Porque é que basta cumprir 85 por cento dos dias?**
 
-Porque um único dia falhado não deve destruir uma challenge inteira. Quem se exige perfeição costuma desistir ao primeiro tropeção. Em 30 dias, 85 por cento são exatamente 26, o que deixa até quatro dias de margem. Quem não a quiser ativa o modo «Sem exceções», e aí conta cada dia.
+Porque um único dia falhado não deve destruir um challenge inteiro. Quem se exige perfeição costuma desistir ao primeiro tropeção. Em 30 dias, 85 por cento são exatamente 26, o que deixa até quatro dias de margem. Quem não a quiser ativa o modo «Sem exceções», e aí conta cada dia.
 
-**Posso ter várias challenges ao mesmo tempo?**
+**Posso ter vários challenges ao mesmo tempo?**
 
-Sim, cada uma com o seu calendário e o seu streak. Se é sensato fazê-lo já é outra questão: o erro mais comum ao começar é abraçar objetivos a mais. Com doze challenges por ano, a seguinte chega no mês seguinte de qualquer forma.
+Sim, cada um com o seu calendário e o seu streak. Se é sensato fazê-lo já é outra questão: o erro mais comum ao começar é abraçar objetivos a mais. Com doze challenges por ano, o seguinte chega no mês seguinte de qualquer forma.
 
 ---
 
 # Italiano (it)
 
 URL: `https://12challenges.de/it/metodo.html`  
-Fachbegriff fuer die Kette auf dieser Seite: **catena**  
-Name des Modus: **«Senza eccezioni»**
+Kette heißt hier: **catena**  
+Genus von Challenge: **feminin (la challenge)**
 
-## Seitentitel und Beschreibung  **NEU**
+## Seitentitel und Beschreibung
 
 - **Title:** Il metodo di 12 Challenges: 30 giorni per obiettivo, una spunta al giorno
 - **Meta description:** Un obiettivo al mese, 30 giorni, una spunta la sera. Perché la catena ti sostiene, cosa perdona la soglia dell’85 per cento e perché regge meglio di un proposito senza fine.
@@ -488,8 +471,6 @@ Name des Modus: **«Senza eccezioni»**
 
 - **Ueberschrift:** Il metodo di 12 Challenges
 - **Einleitung:** Un sistema semplice: un obiettivo, 30 giorni, una piccola azione al giorno.
-
-## Bestehende Abschnitte
 
 ### Come funziona una challenge
 
@@ -533,7 +514,7 @@ Un giorno saltato si può inoltre sistemare poco dopo: il giorno stesso e quello
 
 Il metodo funziona per quasi ogni obiettivo che si possa trasformare in una ripetizione quotidiana.
 
-## Haeufige Fragen zur Methode  **NEU, kompletter Abschnitt**
+## Haeufige Fragen zur Methode
 
 **Che cos’è il metodo di 12 Challenges?**
 
@@ -564,10 +545,10 @@ Sì, ciascuna con il suo calendario e la sua catena. Se convenga farlo è un’a
 # Türkçe (tr)
 
 URL: `https://12challenges.de/tr/yontem.html`  
-Fachbegriff fuer die Kette auf dieser Seite: **seri / zincir**  
-Name des Modus: **"İstisnasız"**
+Kette heißt hier: **seri / zincir**  
+Genus von Challenge: **–**
 
-## Seitentitel und Beschreibung  **NEU**
+## Seitentitel und Beschreibung
 
 - **Title:** 12 Challenges yöntemi: hedef başına 30 gün, günde bir işaret
 - **Meta description:** Ayda bir hedef, 30 gün, akşam bir işaret. Serinin seni neden taşıdığı, yüzde 85 eşiğinin neyi affettiği ve bunun bitmeyen bir karardan neden daha iyi işlediği.
@@ -576,8 +557,6 @@ Name des Modus: **"İstisnasız"**
 
 - **Ueberschrift:** 12 Challenges’ın yöntemi
 - **Einleitung:** Basit bir sistem: bir hedef, 30 gün, günde küçük bir adım.
-
-## Bestehende Abschnitte
 
 ### Bir challenge nasıl işler
 
@@ -621,7 +600,7 @@ Kaçırılan bir gün ayrıca kısa süre içinde telafi edilebilir: bugün ve d
 
 Yöntem, günlük bir tekrara dönüştürülebilen hemen her hedef için işler.
 
-## Haeufige Fragen zur Methode  **NEU, kompletter Abschnitt**
+## Haeufige Fragen zur Methode
 
 **12 Challenges yöntemi nedir?**
 
@@ -652,10 +631,10 @@ Evet, her biri kendi takvimi ve kendi serisiyle. Akıllıca olup olmadığı ayr
 # Polski (pl)
 
 URL: `https://12challenges.de/pl/metoda.html`  
-Fachbegriff fuer die Kette auf dieser Seite: **łańcuch**  
-Name des Modus: **«Bez wyjątków»**
+Kette heißt hier: **łańcuch**  
+Genus von Challenge: **maskulin (jeden challenge)**
 
-## Seitentitel und Beschreibung  **NEU**
+## Seitentitel und Beschreibung
 
 - **Title:** Metoda 12 Challenges: 30 dni na cel, jedno odhaczenie dziennie
 - **Meta description:** Jeden cel w miesiącu, 30 dni, wieczorem jedno odhaczenie. Dlaczego łańcuch cię niesie, co wybacza próg 85 procent i dlaczego działa lepiej niż postanowienie bez końca.
@@ -665,8 +644,6 @@ Name des Modus: **«Bez wyjątków»**
 - **Ueberschrift:** Metoda 12 Challenges
 - **Einleitung:** Prosty system: jeden cel, 30 dni, jedna mała czynność dziennie.
 
-## Bestehende Abschnitte
-
 ### Jak działa challenge
 
 Wybierasz cel na miesiąc, na przykład «30 minut sportu» albo «10 minut medytacji», i każdego dnia dokładasz do niego jedną małą czynność. Każdy challenge trwa dokładnie 30 dni, po jednym kółku na dzień: zrobione albo nie, innych opcji nie ma. Bez punktów, bez poziomów, bez wykresów do rozszyfrowania. Wieczorem zerkasz, tapiesz i tyle.
@@ -675,7 +652,7 @@ Gdy kółka układają się jedno za drugim, tworzą twój łańcuch, sprowadzon
 
 ### Dlaczego challenge na miesiąc działa lepiej niż postanowienie na zawsze
 
-Postanowienie noworoczne ma z założenia trwać wiecznie i właśnie dlatego zwykle kończy się już w lutym: cel nie ma końca, a zapał się wyczerpuje. 12 Challenges odwraca to: jeden cel na miesiąc, dwanaście w roku, każdy ze stałym początkiem i końcem. Po 30 dniach jest zamknięty, niezależnie od wyniku. Cieszysz się efektem, archiwizujesz challenge i w kolejnym miesiącu wybierasz następny cel.
+Postanowienie noworoczne ma z założenia trwać wiecznie i właśnie dlatego zwykle kończy się już w lutym: cel nie ma końca, a zapał się wyczerpuje. 12 Challenges odwraca to: jeden cel na miesiąc, dwanaście w roku, każdy ze stałym początkiem i końcem. Po 30 dniach jest zakończony, niezależnie od wyniku. Cieszysz się efektem, archiwizujesz challenge i w kolejnym miesiącu wybierasz następny cel.
 
 Dzięki temu każde postanowienie da się ogarnąć. Nigdy nie zobowiązujesz się na «zawsze», tylko na najbliższe 30 dni, jeden miesiąc twojego roku.
 
@@ -685,11 +662,11 @@ Sam pomysł nie jest nowy: zakreślanie kółek na kartce kalendarza działa od 
 
 - Zostaje w domu, nie w kieszeni
 - Bez przypomnienia, musisz pamiętać sam
-- Zapomnianego dnia nie da się dobrze nadrobić
-- Kilka celów naraz szybko robi się nieczytelne
+- Zapomnianego dnia nie da się łatwo uzupełnić wstecz
+- Kilka celów naraz szybko staje się nieczytelnych
 - Zawsze w iPhonie, wystarczy jedno tapnięcie
 - Przypomnienie o dowolnej godzinie, plus sygnał, gdy opuścisz dzień
-- Dziś i wczoraj można jeszcze poprawić
+- Dziś i wczoraj można jeszcze edytować
 - Widżet na ekran początkowy i przełącznik w Centrum sterowania, do odhaczania bez otwierania aplikacji
 - Kilka challenge’ów naraz, każdy z własnym kalendarzem i łańcuchem
 
@@ -709,13 +686,13 @@ Opuszczony dzień można też wkrótce nadrobić: dziś i wczoraj pozostają edy
 
 Metoda sprawdza się przy niemal każdym celu, który da się zamienić w codzienne powtórzenie.
 
-## Haeufige Fragen zur Methode  **NEU, kompletter Abschnitt**
+## Haeufige Fragen zur Methode
 
 **Czym jest metoda 12 Challenges?**
 
 Jeden cel w miesiącu, przez 30 dni, z jedną małą aktywnością dziennie. Wieczorem odhaczasz, czy się udało, i nie ma nic więcej do wyboru. Odhaczone dni tworzą łańcuch. Po 30 dniach challenge się kończy, niezależnie od wyniku, a ty wybierasz kolejny cel.
 
-**Dlaczego jedna challenge miesięcznie, a nie postanowienie noworoczne?**
+**Dlaczego jeden challenge miesięcznie, a nie postanowienie noworoczne?**
 
 Postanowienie na cały rok nie ma końca i właśnie dlatego się nie udaje. Bez linii mety zapał z czasem gaśnie, a jeden opuszczony dzień w lutym sprawia wrażenie, jakby cały rok był stracony. Miesiąc pozostaje ogarnialny: nigdy nie zobowiązujesz się na «zawsze», tylko na najbliższe 30 dni. A jeśli jeden miesiąc pójdzie źle, zostaje jedenaście.
 
@@ -725,25 +702,25 @@ Liczba dni z rzędu bez przerwy. Każdy odhaczony dzień go wydłuża, jeden opu
 
 **Co kryje się za «Don't break the chain»?**
 
-Pomysł, żeby odhaczać w kalendarzu każdy zaliczony dzień i nie dopuścić do przerwania łańcucha. Na papierze działa od dziesięcioleci. Problem z kartką: wisi w domu, o niczym nie przypomina, a kilka celów naraz szybko robi się nieczytelne. Dokładnie te braki nadrabia aplikacja.
+Pomysł, żeby odhaczać w kalendarzu każdy zaliczony dzień i nie dopuścić do przerwania łańcucha. Na papierze działa od dziesięcioleci. Problem z kartką: wisi w domu, o niczym nie przypomina, a kilka celów naraz szybko staje się nieczytelnych. Dokładnie te braki nadrabia aplikacja.
 
 **Dlaczego wystarczy zaliczyć 85 procent dni?**
 
-Bo jeden opuszczony dzień nie powinien przekreślać całej challenge. Kto wymaga od siebie perfekcji, często rezygnuje po pierwszym potknięciu. Przy 30 dniach 85 procent to dokładnie 26 dni, więc masz do czterech dni zapasu. Kto świadomie go nie chce, włącza tryb «Bez wyjątków», i wtedy liczy się każdy dzień.
+Bo jeden opuszczony dzień nie powinien przekreślać całego challenge'u. Kto wymaga od siebie perfekcji, często rezygnuje po pierwszym potknięciu. Przy 30 dniach 85 procent to dokładnie 26 dni, więc masz do czterech dni zapasu. Kto świadomie go nie chce, włącza tryb «Bez wyjątków», i wtedy liczy się każdy dzień.
 
 **Czy mogę prowadzić kilka challenge'y naraz?**
 
-Tak, każdą z własnym kalendarzem i własnym łańcuchem. Czy to rozsądne, to już inna sprawa: najczęstszy błąd na starcie to zbyt wiele celów naraz. Przy dwunastu challenge'ach w roku kolejna i tak przychodzi w następnym miesiącu.
+Tak, każdy z własnym kalendarzem i własnym łańcuchem. Czy to rozsądne, to już inna sprawa: najczęstszy błąd na starcie to zbyt wiele celów naraz. Przy dwunastu challenge'ach w roku kolejny i tak przychodzi w następnym miesiącu.
 
 ---
 
 # Ελληνικά (el)
 
 URL: `https://12challenges.de/el/methodos.html`  
-Fachbegriff fuer die Kette auf dieser Seite: **σειρά / αλυσίδα**  
-Name des Modus: **«Χωρίς εξαιρέσεις»**
+Kette heißt hier: **σειρά / αλυσίδα**  
+Genus von Challenge: **neutrum (το/ένα challenge)**
 
-## Seitentitel und Beschreibung  **NEU**
+## Seitentitel und Beschreibung
 
 - **Title:** Η μέθοδος του 12 Challenges: 30 μέρες ανά στόχο, μία σημείωση τη μέρα
 - **Meta description:** Ένας στόχος τον μήνα, 30 μέρες, μία σημείωση το βράδυ. Γιατί η σειρά σε κρατά, τι συγχωρεί το όριο του 85 τοις εκατό και γιατί δουλεύει καλύτερα από μια απόφαση χωρίς τέλος.
@@ -752,8 +729,6 @@ Name des Modus: **«Χωρίς εξαιρέσεις»**
 
 - **Ueberschrift:** Η μέθοδος του 12 Challenges
 - **Einleitung:** Ένα απλό σύστημα: ένας στόχος, 30 μέρες, μια μικρή κίνηση την ημέρα.
-
-## Bestehende Abschnitte
 
 ### Πώς λειτουργεί ένα challenge
 
@@ -797,13 +772,13 @@ Name des Modus: **«Χωρίς εξαιρέσεις»**
 
 Η μέθοδος δουλεύει σχεδόν για κάθε στόχο που μπορεί να γίνει καθημερινή επανάληψη.
 
-## Haeufige Fragen zur Methode  **NEU, kompletter Abschnitt**
+## Haeufige Fragen zur Methode
 
 **Τι είναι η μέθοδος του 12 Challenges;**
 
-Ένας στόχος τον μήνα, για 30 μέρες, με μια μικρή δραστηριότητα κάθε μέρα. Το βράδυ σημειώνεις αν τα κατάφερες, και δεν υπάρχει άλλη επιλογή. Οι σημειωμένες μέρες σχηματίζουν μια αλυσίδα. Μετά από 30 μέρες η challenge τελειώνει, όπως κι αν πήγε, και διαλέγεις τον επόμενο στόχο.
+Ένας στόχος τον μήνα, για 30 μέρες, με μια μικρή δραστηριότητα κάθε μέρα. Το βράδυ σημειώνεις αν τα κατάφερες, και δεν υπάρχει άλλη επιλογή. Οι σημειωμένες μέρες σχηματίζουν μια αλυσίδα. Μετά από 30 μέρες το challenge τελειώνει, όπως κι αν πήγε, και διαλέγεις τον επόμενο στόχο.
 
-**Γιατί μία challenge τον μήνα και όχι μια πρωτοχρονιάτικη απόφαση;**
+**Γιατί ένα challenge τον μήνα και όχι μια πρωτοχρονιάτικη απόφαση;**
 
 Μια απόφαση για ολόκληρο τον χρόνο δεν έχει τέλος, και ακριβώς γι’ αυτό αποτυγχάνει. Χωρίς γραμμή τερματισμού η ορμή σβήνει, και μια χαμένη μέρα τον Φεβρουάριο κάνει όλη τη χρονιά να μοιάζει χαμένη. Ένας μήνας παραμένει διαχειρίσιμος: δεν δεσμεύεσαι ποτέ για «πάντα», μόνο για τις επόμενες 30 μέρες. Κι αν ένας μήνας πάει στραβά, σου μένουν έντεκα.
 
@@ -817,10 +792,10 @@ Name des Modus: **«Χωρίς εξαιρέσεις»**
 
 **Γιατί αρκεί το 85 τοις εκατό των ημερών;**
 
-Γιατί μία χαμένη μέρα δεν πρέπει να καταστρέφει ολόκληρη τη challenge. Όποιος απαιτεί τελειότητα από τον εαυτό του συχνά τα παρατά μετά το πρώτο στραβοπάτημα. Στις 30 μέρες, το 85 τοις εκατό είναι ακριβώς 26, οπότε έχεις έως τέσσερις μέρες περιθώριο. Όποιος δεν το θέλει ενεργοποιεί τη λειτουργία «Χωρίς εξαιρέσεις», και τότε μετρά κάθε μέρα.
+Γιατί μία χαμένη μέρα δεν πρέπει να καταστρέφει ολόκληρο το challenge. Όποιος απαιτεί τελειότητα από τον εαυτό του συχνά τα παρατά μετά το πρώτο στραβοπάτημα. Στις 30 μέρες, το 85 τοις εκατό είναι ακριβώς 26, οπότε έχεις έως τέσσερις μέρες περιθώριο. Όποιος δεν το θέλει ενεργοποιεί τη λειτουργία «Χωρίς εξαιρέσεις», και τότε μετρά κάθε μέρα.
 
-**Μπορώ να τρέχω πολλές challenges ταυτόχρονα;**
+**Μπορώ να τρέχω πολλά challenges ταυτόχρονα;**
 
-Ναι, καθεμία με το δικό της ημερολόγιο και τη δική της σειρά. Το αν είναι σοφό είναι άλλο ζήτημα: το πιο συχνό λάθος στην αρχή είναι να παίρνεις πολλούς στόχους μαζί. Με δώδεκα challenges τον χρόνο, η επόμενη έρχεται έτσι κι αλλιώς τον επόμενο μήνα.
+Ναι, το καθένα με το δικό του ημερολόγιο και τη δική του σειρά. Το αν είναι σοφό είναι άλλο ζήτημα: το πιο συχνό λάθος στην αρχή είναι να παίρνεις πολλούς στόχους μαζί. Με δώδεκα challenges τον χρόνο, το επόμενο έρχεται έτσι κι αλλιώς τον επόμενο μήνα.
 
 ---
