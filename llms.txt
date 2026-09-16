@@ -95,7 +95,7 @@
 - [Αρχική](https://12challenges.de/el/): Επισκόπηση της εφαρμογής, πώς λειτουργεί και σύνδεσμος στο App Store
 - [Ιστορία](https://12challenges.de/el/istoria.html): Η ιστορία πίσω από το 12 Challenges
 - [Μέθοδος](https://12challenges.de/el/methodos.html): Πώς λειτουργεί η μέθοδος του 12 Challenges και γιατί βοηθά να κρατήσεις τις συνήθειες
-- [Ιδέες για challenges](https://12challenges.de/el/idees-challenge/): 50 ιδέες για challenges 30 ημερών
+- [Ιδέες για challenges](https://12challenges.de/el/idees-challenge/): 72 ιδέες για challenges 30 ημερών
 - [Πρωτοχρονιάτικες αποφάσεις](https://12challenges.de/el/protochroniatikes-apofaseis.html): Γιατί οι πρωτοχρονιάτικες αποφάσεις συνήθως αποτυγχάνουν και τι δουλεύει αντ’ αυτού
 - [Winter Arc](https://12challenges.de/el/winter-arc.html): Τι είναι το trend Winter Arc, ποιοι κανόνες κυκλοφορούν και πώς χωρίζονται οι 90 μέρες σε τρία μηνιαία challenges
 - [Υποστήριξη και FAQ](https://12challenges.de/el/ypostirixi.html): Συχνές ερωτήσεις και επικοινωνία
