@@ -73,7 +73,7 @@
 - [Başlangıç](https://12challenges.de/tr/): Uygulamaya genel bakış, nasıl çalıştığı ve App Store bağlantısı
 - [Hikâye](https://12challenges.de/tr/hikaye.html): 12 Challenges’ın arkasındaki hikâye
 - [Yöntem](https://12challenges.de/tr/yontem.html): 12 Challenges yönteminin nasıl işlediği ve alışkanlıkları sürdürmeye nasıl yardım ettiği
-- [Challenge fikirleri](https://12challenges.de/tr/challenge-fikirleri/): 30 günlük challenge’lar için 50 fikir
+- [Challenge fikirleri](https://12challenges.de/tr/challenge-fikirleri/): 30 günlük challenge’lar için 72 fikir
 - [Yılbaşı kararları](https://12challenges.de/tr/yilbasi-kararlari.html): Yılbaşı kararlarının neden tutmadığı ve onun yerine ne işe yaradığı
 - [Winter Arc](https://12challenges.de/tr/winter-arc.html): Winter Arc trendinin ne olduğu, hangi kuralların dolaştığı ve 90 günün üç aylık challenge'a nasıl bölündüğü
 - [Destek ve SSS](https://12challenges.de/tr/destek.html): Sık sorulan sorular ve iletişim
