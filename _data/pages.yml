@@ -121,3 +121,17 @@ android:
   tr: /tr/android.html
   pl: /pl/android.html
   el: /el/android.html
+
+# SEO-Seite zu Habit Trackern ohne Abo. Die Preise stehen pro Sprache fest im
+# Text (Laenderpreise aus ~/12c/appstoreconnect), bei Preisaenderungen in App
+# Store Connect alle neun Fassungen nachziehen.
+habit-tracker-ohne-abo:
+  de: /habit-tracker-ohne-abo.html
+  en: /en/habit-tracker-no-subscription.html
+  es: /es/habit-tracker-sin-suscripcion.html
+  fr: /fr/habit-tracker-sans-abonnement.html
+  pt: /pt/habit-tracker-sem-assinatura.html
+  it: /it/habit-tracker-senza-abbonamento.html
+  tr: /tr/aboneliksiz-aliskanlik-takibi.html
+  pl: /pl/habit-tracker-bez-subskrypcji.html
+  el: /el/habit-tracker-choris-syndromi.html
