@@ -1,0 +1,74 @@
+{% comment %}
+  Datos estructurados de la página Android en español. Está como include para
+  que el layout pueda servirlos desde el <head>. Las preguntas del bloque
+  FAQPage deben coincidir palabra por palabra con las líneas <summary> de
+  es/android.html, si no Google descarta el marcado.
+{% endcomment %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "12 Challenges",
+        "item": "{{ '/es/' | absolute_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Android",
+        "item": "{{ page.url | absolute_url }}"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Hay una versión de 12 Challenges para Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ahora mismo no. La app solo funciona en iPhone. La versión para Android no está terminada ni en marcha: está en la lista, esperando a que se note la demanda."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Llegará una versión para Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es posible, pero no prometo nada. No doy fecha a propósito, porque no podría cumplirla. La decisión depende de cuánta gente la pida."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Está la app en Google Play?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. 12 Challenges no está en Google Play y tampoco existe un archivo APK oficial para instalar por tu cuenta. Si te encuentras alguno con ese nombre, no es mío."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hay una versión web para el navegador?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tampoco. La app guarda todo en el propio dispositivo, sin cuenta y sin servidor, y eso es casi imposible de replicar en un navegador. Una versión web significaría registro, servidores y tus datos en mi poder. Prefiero que no."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Para qué sirve pulsar el botón de esta página?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Siendo sincero, para nada que yo pueda contar. El clic se queda en tu navegador, la página no me envía nada. Lo que cuenta es la búsqueda que hiciste antes: esa sí la veo en la estadística, y es el motivo por el que existe esta página."
+        }
+      }
+    ]
+  }
+  </script>

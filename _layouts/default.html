@@ -73,5 +73,24 @@
     });
   </script>
   {% endif %}
+  {% if page.interest_script %}
+  <script>
+    (function () {
+      // Der Interesse-Block ist ein <details>. Ohne JavaScript klappt er wie
+      // ein Akkordeon auf, das CSS blendet das <summary> danach aus, sodass er
+      // sich nicht wieder schliessen laesst. Das hier ergaenzt nur den Fokus:
+      // Sonst faellt er beim Verschwinden des Buttons zurueck auf <body> und
+      // wer mit Tastatur oder Screenreader unterwegs ist, verliert die Stelle.
+      var block = document.querySelector('.interest');
+      if (!block) return;
+
+      block.addEventListener('toggle', function () {
+        if (!block.open) return;
+        var antwort = block.querySelector('.interest-answer');
+        if (antwort) antwort.focus();
+      });
+    })();
+  </script>
+  {% endif %}
 </body>
 </html>

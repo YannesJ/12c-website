@@ -1,0 +1,74 @@
+{% comment %}
+  Δομημένα δεδομένα της ελληνικής σελίδας για το Android. Είναι include ώστε
+  το layout να τα σερβίρει μέσα στο <head>. Οι ερωτήσεις στο μπλοκ FAQPage
+  πρέπει να μένουν λέξη προς λέξη ίδιες με τις γραμμές <summary> στο
+  el/android.html, αλλιώς η Google απορρίπτει το markup.
+{% endcomment %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "12 Challenges",
+        "item": "{{ '/el/' | absolute_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Android",
+        "item": "{{ page.url | absolute_url }}"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Υπάρχει το 12 Challenges για Android;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Αυτή τη στιγμή όχι. Η εφαρμογή τρέχει μόνο σε iPhone. Μια έκδοση για Android δεν είναι ούτε έτοιμη ούτε υπό κατασκευή: βρίσκεται στη λίστα και περιμένει να φανεί η ζήτηση."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Θα βγει έκδοση για Android;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Πιθανόν, αλλά δεν υπόσχομαι τίποτα. Επίτηδες δεν δίνω ημερομηνία, γιατί δεν θα μπορούσα να την τηρήσω. Η απόφαση εξαρτάται απλώς από το πόσοι τη ζητούν."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Υπάρχει η εφαρμογή στο Google Play Store;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Όχι. Το 12 Challenges δεν υπάρχει στο Play Store, ούτε υπάρχει επίσημο αρχείο APK για χειροκίνητη εγκατάσταση. Αν πετύχεις κάπου ένα με αυτό το όνομα, δεν προέρχεται από εμένα."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Υπάρχει έκδοση για τον browser;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ούτε αυτή. Η εφαρμογή κρατάει τα πάντα τοπικά στη συσκευή, χωρίς λογαριασμό και χωρίς διακομιστή, και αυτό είναι σχεδόν αδύνατο να αναπαραχθεί σε έναν browser. Μια έκδοση για τον browser θα σήμαινε εγγραφή, διακομιστές και τα δεδομένα σου σε εμένα. Προτιμώ να μην το κάνω."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Τι κερδίζω αν πατήσω το κουμπί εδώ;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ειλικρινά τίποτα που να μπορώ να μετρήσω. Το κλικ μένει στον browser σου, η σελίδα δεν μου στέλνει τίποτα. Αυτό που μετράει είναι η αναζήτηση που έκανες πριν: αυτή τη βλέπω στα στατιστικά και είναι όλος ο λόγος που υπάρχει αυτή η σελίδα."
+        }
+      }
+    ]
+  }
+  </script>

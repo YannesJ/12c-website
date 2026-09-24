@@ -1,0 +1,74 @@
+{% comment %}
+  Données structurées de la page Android en français. Sous forme d'include
+  pour que le layout puisse les servir dans le <head>. Les questions du bloc
+  FAQPage doivent rester mot pour mot identiques aux lignes <summary> de
+  fr/android.html, sinon Google rejette le balisage.
+{% endcomment %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "12 Challenges",
+        "item": "{{ '/fr/' | absolute_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Android",
+        "item": "{{ page.url | absolute_url }}"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "12 Challenges existe-t-il pour Android ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pas pour le moment. L'appli ne tourne que sur iPhone. Une version Android n'est ni terminée ni en chantier : elle est sur la liste et attend que la demande se manifeste."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Une version Android va-t-elle arriver ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Peut-être, mais rien n'est promis. Je ne donne volontairement aucune date, parce que je ne pourrais pas la tenir. Tout dépend du nombre de personnes qui la demandent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "L'appli est-elle sur le Google Play Store ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. 12 Challenges n'est pas sur le Play Store, et il n'existe pas non plus de fichier APK officiel à installer soi-même. Si tu en croises un sous ce nom, il ne vient pas de moi."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Existe-t-il une version web dans le navigateur ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non plus. L'appli garde tout en local sur l'appareil, sans compte et sans serveur, et c'est presque impossible à reproduire dans un navigateur. Une version web voudrait dire inscription, serveurs et tes données chez moi. Je préfère éviter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "À quoi sert le bouton de cette page ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Honnêtement, à rien que je puisse compter. Le clic reste dans ton navigateur, la page ne m'envoie rien. Ce qui compte, c'est la recherche que tu as faite avant : celle-là, je la vois dans les statistiques, et c'est toute la raison d'être de cette page."
+        }
+      }
+    ]
+  }
+  </script>

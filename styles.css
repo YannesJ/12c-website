@@ -2336,3 +2336,92 @@ hr.lang-divider {
     padding: var(--space-lg);
   }
 }
+
+/* Interesse-Block der Android-Seite.
+
+   Bewusst ein <details> statt eines <button> mit JavaScript: So funktioniert
+   der Klick auch ohne Skript. Sobald der Block offen ist, verschwindet das
+   <summary>, damit die Antwort stehen bleibt und sich nicht wieder zuklappen
+   laesst. Genau deshalb steht display:none hier im CSS und nicht im Skript:
+   ohne JavaScript soll es trotzdem so sein. */
+
+.interest {
+  max-width: 68ch;
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.interest > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  list-style: none;
+  padding: 13px var(--space-lg);
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: background 0.2s ease;
+}
+
+.interest > summary::-webkit-details-marker {
+  display: none;
+}
+
+.interest > summary:hover {
+  background: var(--accent-light);
+}
+
+.interest > summary:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 3px;
+}
+
+/* Einmal geklickt, bleibt geklickt. */
+.interest[open] > summary {
+  display: none;
+}
+
+.interest-answer {
+  margin: 0;
+  font-size: var(--fs-base);
+  color: var(--text-primary);
+}
+
+/* Der Fokus landet nach dem Klick auf diesem Absatz (siehe Skript im Layout).
+   Ohne das hier zoege der Browser einen Rahmen um einen reinen Textblock. */
+.interest-answer:focus {
+  outline: none;
+}
+
+.interest-answer strong {
+  color: var(--text-display);
+}
+
+@media (max-width: 620px) {
+  .interest {
+    padding: var(--space-lg);
+  }
+
+  .interest > summary {
+    /* Auf dem Handy passt das Label sonst nicht in eine Zeile und der Pill
+       wird zum Klotz. Zentriert ueber die volle Breite sieht das sauberer aus.
+       text-wrap:balance verteilt die beiden Zeilen gleichmaessig, sonst
+       bricht es hinter "Android-" und liest sich wie eine Silbentrennung. */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .interest[open] > summary {
+    display: none;
+  }
+}

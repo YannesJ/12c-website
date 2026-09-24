@@ -105,3 +105,19 @@ snake:
   tr: /tr/snake.html
   pl: /pl/snake.html
   el: /el/snake.html
+
+# Bewusst nirgends verlinkt: weder Header noch Footer noch llms.txt fuehren
+# hierher. Der Eintrag steht trotzdem hier, damit hreflang, Sprachumschalter
+# und vor allem die Sitemap funktionieren. Die Sitemap ist der einzige Weg,
+# auf dem Google die Seite ueberhaupt findet. Zweck der Seite: ueber die
+# Search Console messen, wie stark nach einer Android-Version gesucht wird.
+android:
+  de: /android.html
+  en: /en/android.html
+  es: /es/android.html
+  fr: /fr/android.html
+  pt: /pt/android.html
+  it: /it/android.html
+  tr: /tr/android.html
+  pl: /pl/android.html
+  el: /el/android.html

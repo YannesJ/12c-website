@@ -1,0 +1,75 @@
+{% comment %}
+  Strukturierte Daten der deutschen Android-Seite. Liegt als Include vor,
+  damit das Layout sie im <head> ausliefern kann. Die Fragen im FAQPage-Block
+  muessen wortgleich mit den <summary>-Zeilen in android.html bleiben, sonst
+  verwirft Google das Markup. Pro Sprache gibt es eine eigene Datei nach
+  demselben Muster (schema-android-en.html usw.).
+{% endcomment %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "12 Challenges",
+        "item": "{{ '/' | absolute_url }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Android",
+        "item": "{{ page.url | absolute_url }}"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Gibt es 12 Challenges für Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Aktuell nicht. Die App läuft nur auf dem iPhone. Eine Android-Fassung ist weder fertig noch im Bau, sie steht auf der Liste und wartet darauf, dass sich die Nachfrage zeigt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kommt noch eine Android-Version?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Möglich, versprochen ist nichts. Einen Termin nenne ich bewusst nicht, weil ich keinen halten könnte. Die Entscheidung hängt schlicht daran, wie viele Leute danach fragen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist die App im Google Play Store?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein. Im Play Store gibt es 12 Challenges nicht, und eine offizielle APK-Datei zum Selbstinstallieren gibt es ebenfalls nicht. Falls dir irgendwo eine begegnet, die so heißt: Von mir kommt sie nicht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gibt es eine Webversion im Browser?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Auch nicht. Die App speichert alles lokal auf dem Gerät, ohne Konto und ohne Server, und genau das ist im Browser kaum zu bauen. Eine Webversion würde bedeuten: Anmeldung, Server, deine Daten bei mir. Das will ich nicht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was bringt es, wenn ich hier auf den Button klicke?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ehrlich gesagt nichts, was ich zählen könnte. Der Klick bleibt in deinem Browser, die Seite schickt nichts an mich. Was zählt, ist deine Suche vorher: Die sehe ich in der Suchstatistik, und die ist am Ende der Grund, warum diese Seite überhaupt existiert."
+        }
+      }
+    ]
+  }
+  </script>
