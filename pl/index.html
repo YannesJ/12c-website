@@ -137,7 +137,7 @@ og_locale: pl_PL
           <h2>Odhacz dzień bez wyciągania telefonu.</h2>
           <p>Jedno tapnięcie w zegarek i gotowe. Jeśli prowadzisz kilka challenge’ów naraz, masz je tam wszystkie, jeden pod drugim. A gdy masz już dzień z głowy, zegarek ci to powie.</p>
         </div>
-        <div class="watch-gallery">
+        <div class="watch-gallery mock-watch-gallery swipe-gallery" role="region" aria-label="Widoki na Apple Watch" tabindex="0">
           <div class="watch-item">
             <img class="mock mock-watch" src="/assets/mock/watch-checkin-pl.webp" alt="Apple Watch z jednym challenge’em, «Bez cukru», 11 z 30 dni, z zielonym przyciskiem do odhaczenia" loading="lazy" width="780" height="1226" />
             <div class="caption">Jedno tapnięcie</div>
@@ -147,9 +147,15 @@ og_locale: pl_PL
             <div class="caption">Wszystko na raz</div>
           </div>
           <div class="watch-item">
-            <img class="mock mock-watch" src="/assets/mock/watch-fertig-pl.webp" alt="Apple Watch con el mensaje «¡Na dziś zrobione!» tras la última marca" loading="lazy" width="780" height="1226" />
+            <img class="mock mock-watch" src="/assets/mock/watch-fertig-pl.webp" alt="Apple Watch z komunikatem «Na dziś zrobione!» po ostatnim odhaczeniu" loading="lazy" width="780" height="1226" />
             <div class="caption">Na dziś zrobione</div>
           </div>
+        </div>
+        <div class="gallery-controls" hidden>
+          <span class="gallery-swipe-hint">Przesuń, by zobaczyć więcej</span>
+          <button type="button" data-gallery-prev aria-label="Poprzedni widok na Apple Watch">←</button>
+          <span class="gallery-count" aria-live="polite" aria-atomic="true">1 / 3</span>
+          <button type="button" data-gallery-next aria-label="Następny widok na Apple Watch">→</button>
         </div>
         <p class="watch-note">Jest też komplikacja na tarczę, która trzyma twój postęp cały czas na widoku.</p>
       </section>
@@ -178,7 +184,7 @@ og_locale: pl_PL
           </div>
           <div class="showcase-visual">
             <div class="widget-mock-wrap">
-              <div class="widget-mock done" id="widget-demo-es" role="button" tabindex="0" aria-pressed="true" aria-label="Widżet ekranu początkowego: challenge «10 minut medytacji», 6 z 30 dni zrobione, 6 dni z rzędu. Tapnij, aby sprawdzić.">
+              <div class="widget-mock done" id="widget-demo-pl" role="button" tabindex="0" aria-pressed="true" aria-label="Widżet ekranu początkowego: challenge «10 minut medytacji», 6 z 30 dni zrobione, 6 dni z rzędu. Tapnij, aby sprawdzić.">
                 <div class="widget-top">
                   <span class="widget-emoji" aria-hidden="true">🌱</span>
                   <span class="widget-title">10 minut medytacji</span>
@@ -199,7 +205,7 @@ og_locale: pl_PL
           <span class="eyebrow">Więcej w aplikacji</span>
           <h2>I to jeszcze nie wszystko.</h2>
         </div>
-        <div class="gallery-grid">
+        <div class="gallery-grid swipe-gallery" role="region" aria-label="Więcej widoków aplikacji" tabindex="0">
           <div class="gallery-item">
             <img class="mock mock-phone" src="/assets/mock/challenges-pl.webp" alt="Widok challenge’ów: postęp wszystkich aktywnych challenge’ów w siatce miesiąca" loading="lazy" width="940" height="1918" />
             <div class="caption">Kilka challenge’ów naraz</div>
@@ -216,6 +222,12 @@ og_locale: pl_PL
             <img class="mock mock-phone" src="/assets/mock/archiv-pl.webp" alt="Widok archiwum: zakończone challenge’e z końcowym wynikiem i okresem" loading="lazy" width="940" height="1918" />
             <div class="caption">Archiwum dawnych challenge’ów</div>
           </div>
+        </div>
+        <div class="gallery-controls" hidden>
+          <span class="gallery-swipe-hint">Przesuń, by zobaczyć więcej</span>
+          <button type="button" data-gallery-prev aria-label="Poprzedni widok aplikacji">←</button>
+          <span class="gallery-count" aria-live="polite" aria-atomic="true">1 / 4</span>
+          <button type="button" data-gallery-next aria-label="Następny widok aplikacji">→</button>
         </div>
       </section>
 
@@ -353,7 +365,7 @@ og_locale: pl_PL
         <div class="faq">
           <details>
             <summary>Jak przetwarzane są moje dane?</summary>
-            <p>Wszystko zostaje na twoim urządzeniu. Nie ma serwerów ani kont, więc nie ma też dokąd danym uciec. Bez śledzenia, bez analityki, bez reklam. Szczegóły znajdziesz w <a href="/pl/prywatnosc.html">Polityce prywatności</a>.</p>
+            <p>Twoje dane są domyślnie przechowywane lokalnie na twoim urządzeniu. Jeśli włączysz opcjonalną synchronizację iCloud, będą synchronizowane między twoimi urządzeniami za pośrednictwem twojego konta iCloud. Nie mamy własnych serwerów i nie musisz zakładać u nas konta. Bez śledzenia i reklam. Szczegóły znajdziesz w <a href="/pl/prywatnosc.html">Polityce prywatności</a>.</p>
           </details>
           <details>
             <summary>Ile kosztuje 12 Challenges?</summary>
@@ -442,33 +454,4 @@ og_locale: pl_PL
     })();
   </script>
 
-  <script>
-    (function () {
-      document.querySelectorAll(".widget-mock").forEach(function (widget) {
-        var checkin = widget.querySelector(".widget-checkin");
-        var count = widget.querySelector(".widget-count");
-        var streak = widget.querySelector(".widget-streak");
-
-        function toggle() {
-          var done = widget.classList.toggle("done");
-          checkin.textContent = done ? checkin.dataset.done : checkin.dataset.open;
-          count.textContent = done ? count.dataset.done : count.dataset.open;
-          streak.textContent = done ? streak.dataset.done : streak.dataset.open;
-          [count, streak].forEach(function (el) {
-            el.classList.remove("bump");
-            void el.offsetWidth;
-            el.classList.add("bump");
-          });
-          widget.setAttribute("aria-pressed", done ? "true" : "false");
-        }
-
-        widget.addEventListener("click", toggle);
-        widget.addEventListener("keydown", function (e) {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            toggle();
-          }
-        });
-      });
-    })();
-  </script>
+  {% include landing-interactions.html %}

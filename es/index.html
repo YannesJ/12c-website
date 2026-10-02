@@ -137,7 +137,7 @@ og_locale: es_ES
           <h2>Marca tu día sin sacar el móvil.</h2>
           <p>Un toque en el reloj y ya está. Si llevas varios challenges a la vez, los tienes todos ahí, una debajo de otra. Y en cuanto has terminado por hoy, el reloj te lo dice.</p>
         </div>
-        <div class="watch-gallery">
+        <div class="watch-gallery mock-watch-gallery swipe-gallery" role="region" aria-label="Vistas del Apple Watch" tabindex="0">
           <div class="watch-item">
             <img class="mock mock-watch" src="/assets/mock/watch-checkin-es.webp" alt="Apple Watch con una sola challenge, «Nada de azúcar», 11 de 30 días, con el botón verde para marcarla" loading="lazy" width="780" height="1226" />
             <div class="caption">Un toque y listo</div>
@@ -150,6 +150,12 @@ og_locale: es_ES
             <img class="mock mock-watch" src="/assets/mock/watch-fertig-es.webp" alt="Apple Watch con el mensaje «¡Hecho por hoy!» tras la última marca" loading="lazy" width="780" height="1226" />
             <div class="caption">Hecho por hoy</div>
           </div>
+        </div>
+        <div class="gallery-controls" hidden>
+          <span class="gallery-swipe-hint">Desliza para ver más</span>
+          <button type="button" data-gallery-prev aria-label="Vista anterior del Apple Watch">←</button>
+          <span class="gallery-count" aria-live="polite" aria-atomic="true">1 / 3</span>
+          <button type="button" data-gallery-next aria-label="Siguiente vista del Apple Watch">→</button>
         </div>
         <p class="watch-note">Además hay una complicación para la esfera que tiene tu progreso siempre a la vista.</p>
       </section>
@@ -199,7 +205,7 @@ og_locale: es_ES
           <span class="eyebrow">Más de la app</span>
           <h2>Y esto no es todo.</h2>
         </div>
-        <div class="gallery-grid">
+        <div class="gallery-grid swipe-gallery" role="region" aria-label="Más vistas de la app" tabindex="0">
           <div class="gallery-item">
             <img class="mock mock-phone" src="/assets/mock/challenges-es.webp" alt="Vista de challenges: progreso de todos los challenges activos en cuadrícula mensual" loading="lazy" width="940" height="1918" />
             <div class="caption">Varios challenges a la vez</div>
@@ -216,6 +222,12 @@ og_locale: es_ES
             <img class="mock mock-phone" src="/assets/mock/archiv-es.webp" alt="Vista de archivo: challenges finalizados con estado final y periodo" loading="lazy" width="940" height="1918" />
             <div class="caption">Archivo de challenges pasados</div>
           </div>
+        </div>
+        <div class="gallery-controls" hidden>
+          <span class="gallery-swipe-hint">Desliza para ver más</span>
+          <button type="button" data-gallery-prev aria-label="Vista anterior de la app">←</button>
+          <span class="gallery-count" aria-live="polite" aria-atomic="true">1 / 4</span>
+          <button type="button" data-gallery-next aria-label="Siguiente vista de la app">→</button>
         </div>
       </section>
 
@@ -353,7 +365,7 @@ og_locale: es_ES
         <div class="faq">
           <details>
             <summary>¿Cómo se tratan mis datos?</summary>
-            <p>Todo se queda en tu dispositivo. No hay servidores, no hay cuentas, nada sale de tu teléfono. Sin análisis, sin tracking, sin anuncios. Más detalles en la <a href="/es/privacidad.html">Política de privacidad</a> completa.</p>
+            <p>Tus datos se guardan por defecto en tu dispositivo. Si activas la sincronización opcional con iCloud, se sincronizan entre tus dispositivos a través de tu cuenta de iCloud. No tenemos servidores propios y no necesitas crear una cuenta con nosotros. Sin tracking ni anuncios. Más detalles en la <a href="/es/privacidad.html">Política de privacidad</a>.</p>
           </details>
           <details>
             <summary>¿Cuánto cuesta 12 Challenges?</summary>
@@ -442,33 +454,4 @@ og_locale: es_ES
     })();
   </script>
 
-  <script>
-    (function () {
-      document.querySelectorAll(".widget-mock").forEach(function (widget) {
-        var checkin = widget.querySelector(".widget-checkin");
-        var count = widget.querySelector(".widget-count");
-        var streak = widget.querySelector(".widget-streak");
-
-        function toggle() {
-          var done = widget.classList.toggle("done");
-          checkin.textContent = done ? checkin.dataset.done : checkin.dataset.open;
-          count.textContent = done ? count.dataset.done : count.dataset.open;
-          streak.textContent = done ? streak.dataset.done : streak.dataset.open;
-          [count, streak].forEach(function (el) {
-            el.classList.remove("bump");
-            void el.offsetWidth;
-            el.classList.add("bump");
-          });
-          widget.setAttribute("aria-pressed", done ? "true" : "false");
-        }
-
-        widget.addEventListener("click", toggle);
-        widget.addEventListener("keydown", function (e) {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            toggle();
-          }
-        });
-      });
-    })();
-  </script>
+  {% include landing-interactions.html %}

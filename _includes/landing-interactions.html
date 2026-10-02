@@ -1,0 +1,111 @@
+  <script>
+    (function () {
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      var attentionObserver = !reduceMotion.matches && "IntersectionObserver" in window
+        ? new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("widget-attention");
+                attentionObserver.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.6 })
+        : null;
+
+      document.querySelectorAll(".widget-mock").forEach(function (widget) {
+        var checkin = widget.querySelector(".widget-checkin");
+        var count = widget.querySelector(".widget-count");
+        var streak = widget.querySelector(".widget-streak");
+
+        function toggle() {
+          widget.classList.remove("widget-attention");
+          if (attentionObserver) attentionObserver.unobserve(widget);
+          var done = widget.classList.toggle("done");
+          checkin.textContent = done ? checkin.dataset.done : checkin.dataset.open;
+          count.textContent = done ? count.dataset.done : count.dataset.open;
+          streak.textContent = done ? streak.dataset.done : streak.dataset.open;
+          [count, streak].forEach(function (el) {
+            el.classList.remove("bump");
+            void el.offsetWidth;
+            el.classList.add("bump");
+          });
+          widget.setAttribute("aria-pressed", done ? "true" : "false");
+        }
+
+        widget.addEventListener("click", toggle);
+        if (attentionObserver) attentionObserver.observe(widget);
+        widget.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggle();
+          }
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var mobile = window.matchMedia("(max-width: 760px)");
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+      document.querySelectorAll(".swipe-gallery").forEach(function (gallery) {
+        var items = Array.from(gallery.children);
+        var controls = gallery.nextElementSibling;
+        var previous = controls.querySelector("[data-gallery-prev]");
+        var next = controls.querySelector("[data-gallery-next]");
+        var count = controls.querySelector(".gallery-count");
+        var current = 0;
+
+        function update() {
+          var maxScroll = gallery.scrollWidth - gallery.clientWidth;
+          var scrollable = mobile.matches && maxScroll > 1;
+          controls.hidden = !scrollable;
+          gallery.tabIndex = scrollable ? 0 : -1;
+          var viewport = gallery.getBoundingClientRect();
+          var center = viewport.left + gallery.clientWidth / 2;
+          var closest = Infinity;
+          items.forEach(function (item, index) {
+            var rect = item.getBoundingClientRect();
+            var distance = Math.abs(rect.left + rect.width / 2 - center);
+            if (distance < closest) {
+              closest = distance;
+              current = index;
+            }
+          });
+          if (gallery.scrollLeft <= 1) current = 0;
+          else if (maxScroll - gallery.scrollLeft <= 1) current = items.length - 1;
+          var label = (current + 1) + " / " + items.length;
+          if (count.textContent !== label) count.textContent = label;
+          previous.disabled = current === 0;
+          next.disabled = current === items.length - 1;
+        }
+
+        function move(index) {
+          index = Math.max(0, Math.min(items.length - 1, index));
+          var item = items[index];
+          var offset = item.getBoundingClientRect().left - gallery.getBoundingClientRect().left + gallery.scrollLeft;
+          gallery.scrollTo({
+            left: offset - (gallery.clientWidth - item.offsetWidth) / 2,
+            behavior: reduceMotion.matches ? "auto" : "smooth"
+          });
+        }
+
+        previous.addEventListener("click", function () { move(current - 1); });
+        next.addEventListener("click", function () { move(current + 1); });
+        gallery.addEventListener("scroll", update, { passive: true });
+        window.addEventListener("resize", update);
+        gallery.addEventListener("keydown", function (event) {
+          if (!mobile.matches) return;
+          if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+            event.preventDefault();
+            move(current + (event.key === "ArrowRight" ? 1 : -1));
+          } else if (event.key === "Home" || event.key === "End") {
+            event.preventDefault();
+            move(event.key === "Home" ? 0 : items.length - 1);
+          }
+        });
+        update();
+      });
+    })();
+  </script>
