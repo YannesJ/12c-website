@@ -367,13 +367,22 @@ p {
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 48px;
+  /* Vorher 1.15fr/0.85fr nebeneinander. Umgestellt auf gestapelt (Text oben,
+     Geraete darunter), wie bisher nur unter 760px: Nebeneinander blieb fuer
+     drei nahezu vollstaendig erkennbare Screenshots schlicht zu wenig Platz
+     in der rechten Spalte, egal wie klein/ueberlappend der Faecher wurde.
+     Gestapelt hat die Geraete-Reihe die volle Breite zur Verfuegung. */
+  grid-template-columns: 1fr;
+  gap: 40px;
   align-items: center;
   /* Bewusst nicht an --space-4xl/--space-3xl gekoppelt: der Hero braucht
      eigene, knappere Werte, damit er trotz größerer Typografie/Mockups
-     above the fold bleibt. Rest der Seite darf großzügiger sein. */
-  padding: 100px 0 64px;
+     above the fold bleibt. Rest der Seite darf großzügiger sein.
+     padding-bottom deutlich reduziert (56 -> 24px): .positioning direkt
+     danach bringt selbst noch var(--space-2xl) Abstand oben mit, zusammen
+     wirkte das wie eine überflüssig große Lücke zwischen den Geräten und
+     dem naechsten Abschnitt. */
+  padding: 72px 0 24px;
   overflow: hidden;
 }
 
@@ -423,8 +432,8 @@ p {
   /* iPhone schmaler als die 72vw des Basiswerts, damit die Komposition aus
      iPhone und halber Uhr auch bei 320px Viewport in den Hero passt. */
   .hero-devices {
-    --phone-w: min(312px, 62vw, 36vh);
-    --phone-w: min(312px, 62vw, 36svh);
+    --phone-w: min(340px, 62vw, 36vh);
+    --phone-w: min(340px, 62vw, 36svh);
   }
 }
 
@@ -953,12 +962,15 @@ p {
    gedeckelt, damit der Hero auf niedrigen Laptop-Fenstern (z.B. MacBook Air
    ohne Vollbild) verlässlich above the fold bleibt. */
 .hero-devices {
-  --phone-w: min(312px, 72vw, 36vh);
+  /* Hochgesetzt von 312px, seit der Hero gestapelt ist: vorher musste die
+     Komposition in eine 0.85fr-Spalte passen, jetzt steht die volle Breite
+     zur Verfuegung. */
+  --phone-w: min(340px, 72vw, 36vh);
   /* svh statt vh: auf iOS aendert sich vh, sobald Safari die Adressleiste
      ein- oder ausblendet, das Geraetebild skaliert dann mitten im Scrollen
      nach. svh bezieht sich auf den kleinen Viewport und bleibt konstant.
      Die vh-Zeile darueber bleibt als Fallback fuer aeltere Browser. */
-  --phone-w: min(312px, 72vw, 36svh);
+  --phone-w: min(340px, 72vw, 36svh);
   --hero-watch-w: calc(var(--phone-w) * 0.46);
   position: relative;
   /* Breite der ganzen Komposition, nicht nur des iPhones: der halbe
@@ -1612,15 +1624,23 @@ p {
   color: var(--text-secondary);
 }
 
-/* Positionierung: Absatz-Section, kein Bild, bewusst textlastig */
-
+/* Positionierung: kurzer Absatz direkt unterm Hero, jetzt mit der Watch
+   daneben (vorher stand sie noch im Hero selbst, wirkte dort zu unruhig
+   neben dem Faecher). .showcase regelt die Grid-Aufteilung, das alte
+   max-width:62ch ist raus, weil es sonst die ganze Zeile (inklusive
+   Bildspalte) einengen wuerde statt nur den Text. */
 .positioning {
   padding: var(--space-2xl) 0;
-  max-width: 62ch;
 }
 
 .positioning p {
   font-size: var(--fs-lg);
+  max-width: 62ch;
+}
+
+.positioning .mock-watch {
+  width: min(220px, 50vw);
+  margin: 0 auto;
 }
 
 /* Pull-Quote: Original-Spruch aus der App (Resources/Localizable.xcstrings) */
@@ -1694,6 +1714,21 @@ p {
     -webkit-mask-image: radial-gradient(ellipse 100% 100% at 50% 50%, #000 0%, #000 85%, transparent 100%);
     mask-image: radial-gradient(ellipse 100% 100% at 50% 50%, #000 0%, #000 85%, transparent 100%);
   }
+}
+
+/* Schliesst den Bogen zum Hero: derselbe Geraete-Faecher noch einmal, hier
+   als ruhiger Abschluss vor dem letzten CTA. .closing-devices traegt die
+   gleiche container-type-Regel wie .hero-visual, damit die cqw-Formeln von
+   .hero-devices-trio unveraendert weiterfunktionieren; die eigene max-width
+   verhindert nur, dass der Faecher hier (ohne konkurrierende Textspalte)
+   breiter als im Hero wird. */
+.closing-devices {
+  /* Angepasst an die groessere Faecher-Formel (phone-w 312->340, trio-w
+     0.7->0.8, side-reveal grosszuegiger): die alten 420px waren fuer die
+     vorherige, kompaktere Version gedacht und haben den neuen, breiteren
+     Faecher am Rand abgeschnitten. */
+  max-width: 680px;
+  margin: 0 auto var(--space-2xl);
 }
 
 .cta-final h2 {
@@ -2109,6 +2144,172 @@ hr.lang-divider {
    Gehäuse deutlich zu hoch über der unteren iPhone-Kante. */
 .mock-hero-watch {
   bottom: calc(13% - var(--hero-watch-w) * 0.343);
+}
+
+/* Hero mit drei Screenshots im Fächer, angelehnt an cloudkit.app: Kalender
+   links, Heute in der Mitte (ungedreht, oberste Ebene, Watch wie gehabt
+   davor), Statistiken rechts.
+
+   Zweiter Anlauf, zwei Probleme aus dem ersten behoben:
+
+   1) Der erste Anlauf hat die Spaltenaufteilung des Hero (.hero-trio,
+      grid-template-columns) ab 1024px testweise verbreitert, damit fuer den
+      Fächer genug Platz war. Das hat die Textspalte schmaler gemacht als im
+      Original - die Ueberschrift lief auf Desktop dreizeilig statt wie im
+      Original zweizeilig, und in einer Zwischenfassung ist "ersten" sogar
+      mitten im Wort umgebrochen. Jetzt bleibt die Spaltenaufteilung des Hero
+      komplett unangetastet (immer 1.15fr/0.85fr, wie im Original), der
+      Fächer muss sich stattdessen mit weniger Breite begnuegen.
+
+   2) Statt fester Breakpoints (vorher: eigene Werte fuer <761px, 761-1023px,
+      ab 1024px, mit sichtbaren Spruengen dazwischen) reagiert die Groesse
+      jetzt stufenlos auf die tatsaechliche Breite der Spalte: .hero-visual
+      wird zum Query-Container, --side-reveal nutzt cqw-Einheiten. Genau das
+      Muster, das im Jahres-Notiz-Element schon einmal noetig war (siehe
+      Kommentar bei .year-note-wrap) - eine Viewport-Media-Query erfasst die
+      schmale rechte Spalte eines zweispaltigen Layouts nicht richtig, ein
+      Container schon. Damit gibt es keine Bruchstellen mehr: der Fächer
+      waechst und schrumpft mit der Spalte, bis er bei sehr schmalen Breiten
+      (Handy) von selbst fast bis auf die Zwei-Elemente-Ansicht des Originals
+      zusammenfaellt, ohne einen harten Sprung. */
+.hero-visual {
+  container-type: inline-size;
+}
+
+/* .phone-wrap hat schon ein eigenes Glow-Pseudoelement (.phone-wrap::before
+   weiter oben). .hero-peek bekommt hier dasselbe Muster, damit jeder der
+   drei Screens sein eigenes Glow traegt statt alle vor einem gemeinsamen
+   zu stehen. .hero-peek ist bereits position:absolute (siehe weiter unten),
+   das reicht als Bezugspunkt fuer das ::before. */
+.hero-peek::before {
+  content: "";
+  position: absolute;
+  inset: 8% 8%;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  opacity: 0.25;
+  filter: blur(50px);
+  z-index: -1;
+}
+
+.hero-devices-trio {
+  /* Seit der Hero gestapelt ist (Text oben, Geraete darunter, volle Breite
+     statt schmaler 0.85fr-Spalte), braucht .hero-devices-trio keine zwei
+     getrennten Formeln fuer Mobile/Desktop mehr: .hero-visual ist jetzt in
+     jeder Breite derselbe Containertyp (volle Zeile), nur unterschiedlich
+     breit. Eine einzige, grosszuegigere cqw-Formel deckt beides ab. Größer
+     als der zweispaltige Anlauf (0.7 -> 0.8), weil jetzt mehr Platz da ist. */
+  --trio-w: calc(var(--phone-w) * 0.8);
+  --side-w: calc(var(--trio-w) * 0.84);
+  /* Deutlich mehr Spielraum als im Zwei-Spalten-Anlauf (0.6 -> 0.8): Ziel ist,
+     dass auch ohne den vertikalen Versatz unten schon der groesste Teil jeder
+     Seitenansicht sichtbar ist, inklusive Titelzeile. */
+  --side-reveal: clamp(0px, 24cqw, calc(var(--side-w) * 0.8));
+  --hero-watch-w: calc(var(--trio-w) * 0.509);
+  width: calc(var(--trio-w) + var(--side-reveal) * 2);
+}
+
+@media (max-width: 629px) {
+  .hero-devices-trio {
+    /* Sweep-Test hat hier echten Ueberlauf gezeigt (bis 60px bei <600px,
+       noch bis zu 4px direkt an der ehemaligen 599/600-Grenze): Die
+       Desktop-Formel oben geht von viel mehr Luft aus, als eine schmale
+       Breite tatsaechlich hat. Deutlich kleinere Werte, die den Sweep sauber
+       bestehen. Grenze bewusst mit Puffer bei 629px statt exakt am zuerst
+       gemessenen Punkt, damit der Uebergang selbst nicht erneut knapp wird.
+
+       Zusaetzlich (zweite Runde): --trio-w kleiner als die Basisformel oben,
+       damit das Hauptbild nicht mehr so dominant wirkt und fuer die Seiten
+       relativ mehr Raum bleibt - Feedback war, dass sich die Komposition auf
+       dem Handy "zusammenzieht". Alle drei Screens damit aehnlicher groß statt
+       ein großes Hauptbild mit zwei schmalen Streifen daneben. */
+    --trio-w: calc(var(--phone-w) * 0.64);
+    --side-reveal: clamp(0px, 18cqw, calc(var(--side-w) * 0.62));
+  }
+}
+
+.hero-devices-trio .mock-phone {
+  width: var(--trio-w);
+}
+
+.hero-devices-trio .phone-wrap {
+  position: relative;
+  z-index: 1;
+  margin-left: var(--side-reveal);
+  margin-right: var(--side-reveal);
+}
+
+/* Die Watch steckt im Faecher (anders als in den anderen Sprachversionen,
+   die noch die einfache Zwei-Elemente-Hero mit der Watch als Geschwister
+   von .phone-wrap nutzen) direkt IN .phone-wrap - das macht ihre Position
+   unabhaengig von --side-reveal und damit robust, egal wie der Faecher gerade
+   austariert ist. .phone-wrap ist dafuer bereits position:relative (oben),
+   wird also automatisch zum Bezugspunkt. Hoehere Spezifitaet als die
+   .hero-watch-Basisregel, gewinnt deshalb unabhaengig von der Reihenfolge. */
+.phone-wrap > .hero-watch {
+  left: calc(var(--hero-watch-w) * -0.5);
+}
+
+.hero-peek {
+  position: absolute;
+  z-index: 0;
+  /* Nur noch ein leichter Versatz: Die Titelzeile jeder Ansicht liegt dank
+     des grosszuegigen --side-reveal jetzt ueberwiegend schon seitlich frei,
+     der starke negative Versatz aus dem Zwei-Spalten-Anlauf (-14 % / -8 %)
+     wird nicht mehr gebraucht und ist auf dem Handy ohnehin mit dem
+     App-Store-Badge kollidiert. */
+  top: 2%;
+  pointer-events: none;
+}
+
+.hero-peek .mock-peek {
+  width: var(--side-w);
+}
+
+.hero-peek-left {
+  left: 0;
+  /* Nur ein Hauch Drehung, einheitlich in jeder Breite (vorher 9 Grad nur
+     im Faecher fuer schmale Screens, ruhiger erst ab 860px) - wirkte auf
+     dem Handy dadurch viel dynamischer/unruhiger als auf Desktop. Jetzt
+     ueberall gleich ruhig. */
+  transform: rotate(-3deg);
+}
+
+.hero-peek-right {
+  right: 0;
+  transform: rotate(3deg);
+}
+
+/* Ab hier genug Breite fuer drei Screens nebeneinander statt im Faecher:
+   ruhigere, gleichmaessigere Reihe mit wenig Drehung, jeder Screen praktisch
+   vollstaendig sichtbar statt teilweise ueberlappt. Nutzt dieselben
+   --trio-w/--side-w-Groessen wie der Faecher weiter oben, nur die
+   Anordnungsmechanik aendert sich: von absolut positioniert/ueberlappend auf
+   normale Flex-Items mit Abstand. Unter dieser Breite bleibt der Faecher
+   (dichter, braucht weniger Platz), weil dort fuer drei nebeneinander keine
+   drei lesbaren Screens mehr reinpassen. */
+@media (min-width: 860px) {
+  .hero-devices-trio {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: clamp(16px, 2.4vw, 32px);
+    width: auto;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hero-devices-trio .hero-peek {
+    position: relative;
+    z-index: 0;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+
+  .hero-devices-trio .phone-wrap {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .showcase-visual .mock-phone {
