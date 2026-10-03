@@ -5,6 +5,7 @@
     <div>
       <nav>
         <a href="{{ home_url | relative_url }}">{{ t.start }}</a>
+        {% if site.data.pages['apple-watch'][page.lang] %}<a href="{{ site.data.pages['apple-watch'][page.lang] | relative_url }}">Apple Watch</a>{% endif %}
         {% if site.data.pages.story[page.lang] %}<a href="{{ site.data.pages.story[page.lang] | relative_url }}">{{ t.story }}</a>{% endif %}
         {% if site.data.pages['challenge-ideas'][page.lang] %}<a href="{{ site.data.pages['challenge-ideas'][page.lang] | relative_url }}">{{ t.challenge_ideas }}</a>{% endif %}
         {% if site.data.pages.method[page.lang] %}<a href="{{ site.data.pages.method[page.lang] | relative_url }}">{{ t.method }}</a>{% endif %}

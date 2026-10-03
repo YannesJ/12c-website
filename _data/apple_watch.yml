@@ -1,0 +1,16 @@
+de:
+  faq:
+    - question: "Wie funktioniert ein Gewohnheitstracker auf der Apple Watch?"
+      answer: "Du nimmst dir eine Gewohnheit vor und hakst auf der Uhr ab, wenn du dein Tagesziel erreicht hast. Bei 12 Challenges legst du dafür eine Monats-Challenge auf dem iPhone an. Auf der Apple Watch siehst du, was heute noch offen ist und an wie vielen Tagen du dein Ziel bereits erreicht hast."
+    - question: "Brauche ich ein iPhone für 12 Challenges auf der Apple Watch?"
+      answer: "Ja. Du brauchst ein gekoppeltes iPhone mit 12 Challenges. Dort legst du deine Challenges an und bearbeitest sie. Die Watch-App zeigt deine laufenden Ziele an und lässt dich erledigte Tage direkt auf der Uhr abhaken."
+    - question: "Kann ich auch abhaken, wenn mein iPhone gerade nicht erreichbar ist?"
+      answer: "Ja, wenn deine Challenges vorher auf die Watch übertragen wurden. Du kannst sie dann auf der Uhr abhaken. Sobald die Verbindung wieder möglich ist, werden die Einträge mit dem iPhone abgeglichen. Für die erste Einrichtung müssen die Geräte miteinander verbunden sein."
+    - question: "Kann ich mehrere Gewohnheiten gleichzeitig auf der Apple Watch verfolgen?"
+      answer: "Ja. Die App zeigt deine laufenden Challenges in einer Liste. Zu jedem Ziel siehst du den Fortschritt und ob es heute schon abgehakt ist. Sobald alle Ziele für heute erledigt sind, erscheint „Für heute geschafft!“."
+    - question: "Welche Komplikationen gibt es für das Zifferblatt?"
+      answer: "Du kannst deinen Fortschritt oder deine aktuelle Serie, den Streak, anzeigen lassen. Bei einer Challenge zeigt der Fortschrittsring die erledigten Tage dieser Challenge. Bei mehreren Challenges zeigt er, wie viele Ziele du heute abgehakt hast. Beide Komplikationen gibt es für runde und rechteckige Plätze sowie für die Ecken geeigneter Zifferblätter."
+    - question: "Werden Gewohnheiten automatisch über Apple Health erfasst?"
+      answer: "Nein. Du hakst selbst ab, wenn du dein Tagesziel erreicht hast. So kannst du auch Gewohnheiten festhalten, die deine Uhr nicht messen kann: zum Beispiel Lesen, Tagebuchschreiben oder weniger Zeit in sozialen Medien."
+    - question: "Was ist der Unterschied zu den Aktivitätsringen der Apple Watch?"
+      answer: "Die Aktivitätsringe zeigen deine Bewegung im Alltag. In 12 Challenges bestimmst du selbst, welche Gewohnheiten du verfolgen möchtest – etwa täglich lesen, meditieren oder auf Zucker verzichten. Du bestätigst selbst, ob du dein Ziel erreicht hast. Die App übernimmt keine Gesundheits- oder Trainingsdaten automatisch."

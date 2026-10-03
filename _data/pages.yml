@@ -4,6 +4,9 @@
 # aus. Neue Sprache (z.B. es, fr) hinzufügen: hier je Zeile einen Key ergänzen,
 # sobald die jeweilige Seite existiert.
 
+apple-watch:
+  de: /apple-watch.html
+
 home:
   de: /
   en: /en/
