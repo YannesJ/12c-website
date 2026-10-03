@@ -1,0 +1,29 @@
+<dialog class="qr-dialog" id="qr-dialog" aria-labelledby="qr-title" aria-describedby="qr-description">
+  <button type="button" class="qr-dialog-close" data-qr-close aria-label="{{ w.qr_close | escape }}">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </svg>
+  </button>
+  <img class="qr-dialog-code" src="{{ "/assets/qr-appstore.svg" | relative_url }}" width="190" height="190" alt="{{ w.qr_alt | escape }}" />
+  <p class="qr-dialog-title" id="qr-title">{{ w.qr_title | escape }}</p>
+  <p class="qr-dialog-text" id="qr-description">{{ w.qr_text | escape }}</p>
+</dialog>
+
+<script>
+  (function () {
+    var dialog = document.getElementById("qr-dialog");
+    document.querySelectorAll("[data-qr-trigger]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        dialog.showModal();
+      });
+    });
+    dialog.querySelector("[data-qr-close]").addEventListener("click", function () {
+      dialog.close();
+    });
+    dialog.addEventListener("click", function (event) {
+      if (event.target === dialog) {
+        dialog.close();
+      }
+    });
+  })();
+</script>

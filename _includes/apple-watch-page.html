@@ -16,6 +16,7 @@
             <a class="appstore-badge" href="https://apps.apple.com/app/id6790353238">
               <img src="{{ '/assets/appstore-badge.svg' | relative_url }}" alt="{{ w.download_alt | escape }}" width="165" height="55" />
             </a>
+            {% include watch-qr-trigger.html %}
           </div>
           <p class="watch-intro-note">{{ w.hero_note | escape }}</p>
         </div>
@@ -238,6 +239,7 @@
         <a class="appstore-badge" href="https://apps.apple.com/app/id6790353238">
           <img src="{{ '/assets/appstore-badge.svg' | relative_url }}" alt="{{ w.download_alt | escape }}" width="165" height="55" />
         </a>
+        {% include watch-qr-trigger.html %}
       </div>
     </div>
     <div class="floating-cta">
@@ -245,6 +247,7 @@
         <img src="{{ '/assets/appstore-badge.svg' | relative_url }}" alt="{{ w.download_alt | escape }}" width="165" height="55" />
       </a>
     </div>
+    {% include watch-qr-dialog.html %}
   </div>
 </main>
 {% include landing-interactions.html %}

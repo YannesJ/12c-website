@@ -121,7 +121,12 @@
       "progress": "erledigt",
       "streak": "7 Tage Streak"
     },
-    "title": "Habit Tracker für die Apple Watch – 12 Challenges"
+    "title": "Habit Tracker für die Apple Watch – 12 Challenges",
+    "qr_label": "QR-Code zum App Store anzeigen",
+    "qr_close": "Schließen",
+    "qr_alt": "QR-Code, der zum App-Store-Eintrag von 12 Challenges führt",
+    "qr_title": "Zum App Store scannen",
+    "qr_text": "Mit der Handykamera scannen, dann öffnet sich 12 Challenges direkt im App Store."
   },
   "en": {
     "brand": "12 Challenges",
@@ -251,7 +256,12 @@
       "Watch face complications",
       "show your progress or streak right on your wrist.",
       "Explore the Apple Watch app →"
-    ]
+    ],
+    "qr_label": "Show QR code for the App Store",
+    "qr_close": "Close",
+    "qr_alt": "QR code linking to the 12 Challenges App Store listing",
+    "qr_title": "Scan to open the App Store",
+    "qr_text": "Point your phone's camera at the code to open 12 Challenges directly in the App Store."
   },
   "fr": {
     "brand": "12 Challenges",
@@ -381,7 +391,12 @@
       "Les complications du cadran",
       "affichent ta progression ou ta série directement sur la montre.",
       "Découvrir l’app Apple Watch →"
-    ]
+    ],
+    "qr_label": "Afficher le code QR de l'App Store",
+    "qr_close": "Fermer",
+    "qr_alt": "Code QR menant à la fiche 12 Challenges sur l'App Store",
+    "qr_title": "Scanner pour l'App Store",
+    "qr_text": "Pointe la caméra de ton téléphone vers le code pour ouvrir 12 Challenges directement dans l'App Store."
   },
   "es": {
     "brand": "12 Challenges",
@@ -511,7 +526,12 @@
       "Las complicaciones de la esfera",
       "muestran tu progreso o tu racha directamente en el reloj.",
       "Descubre la app para Apple Watch →"
-    ]
+    ],
+    "qr_label": "Mostrar código QR del App Store",
+    "qr_close": "Cerrar",
+    "qr_alt": "Código QR que enlaza a la ficha de 12 Challenges en el App Store",
+    "qr_title": "Escanea para ir al App Store",
+    "qr_text": "Apunta la cámara de tu móvil al código para abrir 12 Challenges directamente en el App Store."
   },
   "it": {
     "brand": "12 Challenges",
@@ -641,7 +661,12 @@
       "Le complicazioni del quadrante",
       "mostrano i tuoi progressi o la tua serie direttamente sull’orologio.",
       "Scopri l’app per Apple Watch →"
-    ]
+    ],
+    "qr_label": "Mostra il codice QR dell’App Store",
+    "qr_close": "Chiudi",
+    "qr_alt": "Codice QR che porta alla scheda di 12 Challenges sull’App Store",
+    "qr_title": "Inquadra per andare sull’App Store",
+    "qr_text": "Punta la fotocamera del telefono sul codice per aprire 12 Challenges direttamente sull’App Store."
   },
   "pt": {
     "brand": "12 Challenges",
@@ -771,7 +796,12 @@
       "As complicações do mostrador",
       "mostram o teu progresso ou a tua sequência diretamente no relógio.",
       "Conhece a app para Apple Watch →"
-    ]
+    ],
+    "qr_label": "Mostrar código QR da App Store",
+    "qr_close": "Fechar",
+    "qr_alt": "Código QR que leva à ficha do 12 Challenges na App Store",
+    "qr_title": "Digitaliza para ir à App Store",
+    "qr_text": "Aponta a câmara do telemóvel ao código, e o 12 Challenges abre diretamente na App Store."
   },
   "tr": {
     "brand": "12 Challenges",
@@ -901,7 +931,12 @@
       "Kadran komplikasyonları",
       "ilerlemeni veya serini doğrudan saatinde gösterir.",
       "Apple Watch uygulamasını keşfet →"
-    ]
+    ],
+    "qr_label": "App Store QR kodunu göster",
+    "qr_close": "Kapat",
+    "qr_alt": "12 Challenges’ın App Store sayfasına götüren QR kodu",
+    "qr_title": "App Store için tara",
+    "qr_text": "12 Challenges’ı doğrudan App Store’da açmak için telefonunun kamerasını koda tut."
   },
   "pl": {
     "brand": "12 Challenges",
@@ -1031,7 +1066,12 @@
       "Komplikacje tarczy",
       "pokazują twój postęp lub serię bezpośrednio na zegarku.",
       "Poznaj aplikację na Apple Watch →"
-    ]
+    ],
+    "qr_label": "Pokaż kod QR do App Store",
+    "qr_close": "Zamknij",
+    "qr_alt": "Kod QR prowadzący do strony 12 Challenges w App Store",
+    "qr_title": "Zeskanuj, by przejść do App Store",
+    "qr_text": "Skieruj aparat telefonu na kod, aby otworzyć 12 Challenges bezpośrednio w App Store."
   },
   "el": {
     "brand": "12 Challenges",
@@ -1161,6 +1201,11 @@
       "Οι πολυπλοκότητες της πρόσοψης",
       "δείχνουν την πρόοδο ή το σερί σου απευθείας στο ρολόι.",
       "Γνώρισε την εφαρμογή Apple Watch →"
-    ]
+    ],
+    "qr_label": "Εμφάνιση κωδικού QR για το App Store",
+    "qr_close": "Κλείσιμο",
+    "qr_alt": "Κωδικός QR που οδηγεί στη σελίδα του 12 Challenges στο App Store",
+    "qr_title": "Σάρωσε για το App Store",
+    "qr_text": "Στρέψε την κάμερα του κινητού στον κωδικό για να ανοίξεις το 12 Challenges απευθείας στο App Store."
   }
 }

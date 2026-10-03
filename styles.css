@@ -467,17 +467,20 @@ p {
    finalen CTA. Floating-CTA und Handy bleiben kompakt. */
 @media (min-width: 761px) {
   .hero .appstore-badge img,
+  .watch-intro .appstore-badge img,
   .cta-final .appstore-badge img {
     height: 64px;
   }
 
   .hero .qr-trigger,
+  .watch-intro .qr-trigger,
   .cta-final .qr-trigger {
     width: 64px;
     height: 64px;
   }
 
   .hero .qr-trigger svg,
+  .watch-intro .qr-trigger svg,
   .cta-final .qr-trigger svg {
     width: 30px;
     height: 30px;
