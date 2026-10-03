@@ -4,6 +4,8 @@
 
 ## Deutsch
 
+- [Klimmzug-Challenge](https://12challenges.de/klimmzug-challenge.html): Vier Varianten mit Regeln, Nutzen, Ausrüstung und App zum Abhaken der Trainingstage
+
 - [Start](https://12challenges.de/): Überblick über die App, Funktionsweise und App-Store-Link
 - [Story](https://12challenges.de/story.html): Die Geschichte hinter 12 Challenges
 - [Methode](https://12challenges.de/methode.html): Wie die 12-Challenges-Methode funktioniert und warum sie hilft, Gewohnheiten durchzuhalten
@@ -15,6 +17,8 @@
 - [Datenschutz](https://12challenges.de/privacy.html): Datenschutzerklärung
 
 ## English
+
+- [Pull-up challenge](https://12challenges.de/en/pull-up-challenge.html): Try a pull-up challenge over 30 days or with friends. Compare four variations, learn the rules and track completed training days with 12 Challenges.
 
 - [Home](https://12challenges.de/en/): Overview of the app, how it works, and App Store link
 - [Apple Watch](https://12challenges.de/en/apple-watch.html): Check off habits on Apple Watch and see your progress on the watch face. Explore 12 Challenges with screenshots, complications and a setup guide.
@@ -28,6 +32,8 @@
 
 ## Español
 
+- [Reto de dominadas](https://12challenges.de/es/pull-up-challenge.html): Un reto de dominadas de 30 días o con amigos: cuatro variantes, reglas, consejos para casa y una app para marcar tus días de entrenamiento.
+
 - [Inicio](https://12challenges.de/es/): Resumen de la app, cómo funciona y enlace al App Store
 - [Apple Watch](https://12challenges.de/es/apple-watch.html): Marca tus hábitos en el Apple Watch y consulta tu progreso en la esfera. Descubre 12 Challenges con imágenes, complicaciones y guía de configuración.
 - [Historia](https://12challenges.de/es/historia.html): La historia detrás de 12 Challenges
@@ -39,6 +45,8 @@
 - [Privacidad](https://12challenges.de/es/privacidad.html): Política de privacidad
 
 ## Français
+
+- [Défi tractions](https://12challenges.de/fr/pull-up-challenge.html): Un défi tractions sur 30 jours ou entre amis : quatre variantes, des règles claires, des conseils pour la maison et une app pour cocher tes journées.
 
 - [Accueil](https://12challenges.de/fr/): Présentation de l'appli, son fonctionnement et le lien vers l'App Store
 - [Apple Watch](https://12challenges.de/fr/apple-watch.html): Coche tes habitudes sur Apple Watch et suis ta progression sur le cadran. Découvre 12 Challenges, ses complications et les étapes d’installation.
@@ -52,6 +60,8 @@
 
 ## Português
 
+- [Desafio de elevações](https://12challenges.de/pt/pull-up-challenge.html): Um desafio de elevações de 30 dias ou com amigos: quatro variantes, regras claras, dicas para casa e uma app para assinalar os dias cumpridos.
+
 - [Início](https://12challenges.de/pt/): Visão geral da app, como funciona e link para a App Store
 - [Apple Watch](https://12challenges.de/pt/apple-watch.html): Assinala hábitos no Apple Watch e vê o progresso no mostrador. Conhece o 12 Challenges com imagens, complicações e instruções de configuração.
 - [Story](https://12challenges.de/pt/historia.html): A história por trás do 12 Challenges
@@ -63,6 +73,8 @@
 - [Privacidade](https://12challenges.de/pt/privacidade.html): Política de Privacidade
 
 ## Italiano
+
+- [Sfida di trazioni](https://12challenges.de/it/pull-up-challenge.html): Una sfida di trazioni di 30 giorni o con gli amici: quattro varianti, regole chiare, consigli per casa e un’app per segnare i giorni completati.
 
 - [Inizio](https://12challenges.de/it/): Panoramica dell’app, come funziona e link all’App Store
 - [Apple Watch](https://12challenges.de/it/apple-watch.html): Spunta le tue abitudini su Apple Watch e segui i progressi sul quadrante. Scopri 12 Challenges con immagini, complicazioni e istruzioni per iniziare.
@@ -76,6 +88,8 @@
 
 ## Türkçe
 
+- [Barfiks challenge](https://12challenges.de/tr/pull-up-challenge.html): 30 günlük veya arkadaşlarla yapılan barfiks challenge: dört seçenek, açık kurallar, evde antrenman önerileri ve tamamlanan günleri takip eden bir uygulama.
+
 - [Başlangıç](https://12challenges.de/tr/): Uygulamaya genel bakış, nasıl çalıştığı ve App Store bağlantısı
 - [Apple Watch](https://12challenges.de/tr/apple-watch.html): Alışkanlıklarını Apple Watch’ta işaretle, ilerlemeni kadranda gör. 12 Challenges’ın özelliklerini, komplikasyonlarını ve kurulum adımlarını keşfet.
 - [Hikâye](https://12challenges.de/tr/hikaye.html): 12 Challenges’ın arkasındaki hikâye
@@ -88,6 +102,8 @@
 
 ## Polski
 
+- [Wyzwanie w podciąganiu](https://12challenges.de/pl/pull-up-challenge.html): Wyzwanie w podciąganiu na 30 dni lub ze znajomymi: cztery warianty, zasady, wskazówki do ćwiczeń w domu i aplikacja do odhaczania wykonanych dni.
+
 - [Start](https://12challenges.de/pl/): Przegląd aplikacji, jak działa i link do App Store
 - [Apple Watch](https://12challenges.de/pl/apple-watch.html): Odhaczaj nawyki na Apple Watch i sprawdzaj postęp na tarczy. Poznaj 12 Challenges, komplikacje i konfigurację na przykładach z aplikacji.
 - [Historia](https://12challenges.de/pl/historia.html): Historia stojąca za 12 Challenges
@@ -99,6 +115,8 @@
 - [Prywatność](https://12challenges.de/pl/prywatnosc.html): Polityka prywatności
 
 ## Ελληνικά
+
+- [Πρόκληση έλξεων](https://12challenges.de/el/pull-up-challenge.html): Πρόκληση έλξεων για 30 ημέρες ή με φίλους: τέσσερις παραλλαγές, κανόνες, συμβουλές για το σπίτι και εφαρμογή για να σημειώνεις τις ημέρες που ολοκληρώνεις.
 
 - [Αρχική](https://12challenges.de/el/): Επισκόπηση της εφαρμογής, πώς λειτουργεί και σύνδεσμος στο App Store
 - [Apple Watch](https://12challenges.de/el/apple-watch.html): Σημείωσε συνήθειες στο Apple Watch και δες την πρόοδο στην πρόσοψη. Γνώρισε το 12 Challenges με εικόνες, πολυπλοκότητες και οδηγίες ρύθμισης.

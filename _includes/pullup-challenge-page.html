@@ -1,0 +1,95 @@
+{% assign p = site.data.pullup_challenge[page.lang] %}
+{% assign w = site.data.apple_watch_copy[page.lang] %}
+<main class="legal pullup-page">
+  <div class="container">
+    <article lang="{{ page.lang }}">
+      <nav class="pullup-breadcrumb" aria-label="{{ p.breadcrumb_label | escape }}">
+        <a href="{{ site.data.pages.home[page.lang] | relative_url }}">12 Challenges</a><span aria-hidden="true">/</span><span aria-current="page">{{ p.name | escape }}</span>
+      </nav>
+      <div class="pullup-hero">
+        <div>
+          <span class="eyebrow">{{ p.eyebrow | escape }}</span>
+          <h1>{{ p.h1 | escape }}</h1>
+          <p class="lede">{{ p.lede | escape }}</p>
+          <div class="badge-cta">
+            {% include pullup-appstore-badge.html %}
+            {% include watch-qr-trigger.html %}
+          </div>
+        </div>
+        <figure class="pullup-hero-art">
+          <img src="{{ '/assets/images/pullup-hero-720.webp' | relative_url }}" srcset="{{ '/assets/images/pullup-hero-360.webp' | relative_url }} 360w, {{ '/assets/images/pullup-hero-720.webp' | relative_url }} 720w, {{ '/assets/images/pullup-hero-960.webp' | relative_url }} 960w" sizes="(max-width: 760px) 280px, (max-width: 1200px) 30vw, 360px" width="720" height="900" alt="{{ p.hero_alt | escape }}" loading="eager" fetchpriority="high" decoding="async" />
+          <figcaption>{{ p.hero_credit | escape }}</figcaption>
+        </figure>
+      </div>
+      <p class="pullup-definition">{{ p.definition | escape }}</p>
+      <p class="pullup-note">{{ p.hero_note | escape }}</p>
+      <nav class="idea-nav" aria-label="{{ p.contents_label | escape }}">
+        {% assign anchors = 'nutzen,varianten,regeln,zuhause,app,faq' | split: ',' %}
+        {% for label in p.nav %}<a href="#{{ anchors[forloop.index0] }}">{{ label | escape }}</a>{% endfor %}
+      </nav>
+
+      <section class="pullup-section" aria-labelledby="nutzen">
+        <h2 id="nutzen">{{ p.benefit_heading | escape }}</h2>
+        <div class="pullup-benefits">
+          {% for benefit in p.benefits %}<div><h3>{{ benefit[0] | escape }}</h3><p>{{ benefit[1] | escape }}</p></div>{% endfor %}
+        </div>
+
+      </section>
+
+      <section class="pullup-section" aria-labelledby="varianten">
+        <h2 id="varianten">{{ p.variants_heading | escape }}</h2>
+        <p>{{ p.variants_intro | escape }}</p>
+        <div class="pullup-variant-grid">
+          {% assign marks = 'X,+1,0 → 1,1 · 2 · 3' | split: ',' %}
+          {% for variant in p.variants %}
+          <a class="pullup-variant-card" href="#{{ variant.id }}"><span class="pullup-card-mark" aria-hidden="true">{{ marks[forloop.index0] }}</span><h3>{{ variant.short | escape }}</h3><p>{{ variant.goal | escape }}</p><span class="pullup-card-arrow" aria-hidden="true">↗</span></a>
+          {% endfor %}
+        </div>
+        <table class="pullup-table">
+          <caption>{{ p.table_caption | escape }}</caption>
+          <thead><tr>{% for heading in p.table_heads %}<th scope="col">{{ heading | escape }}</th>{% endfor %}</tr></thead>
+          <tbody>{% for variant in p.variants %}<tr><th scope="row"><a href="#{{ variant.id }}">{{ variant.short | escape }}</a></th><td>{{ variant.audience | escape }}</td><td>{{ variant.count | escape }}</td></tr>{% endfor %}</tbody>
+        </table>
+      </section>
+
+      <section class="pullup-section" aria-labelledby="regeln">
+        <h2 id="regeln">{{ p.rules_heading | escape }}</h2>
+        <ul class="list-check">{% for rule in p.common_rules %}<li>{{ rule | escape }}</li>{% endfor %}</ul>
+        <aside class="pullup-recovery"><h3>{{ p.recovery_heading | escape }}</h3><p>{{ p.recovery_body | escape }}</p></aside>
+      </section>
+
+      {% for variant in p.variants %}
+      <section class="pullup-section pullup-variant-detail" aria-labelledby="{{ variant.id }}">
+        <span class="eyebrow">{{ variant.short | escape }}</span><h2 id="{{ variant.id }}">{{ variant.heading | escape }}</h2>
+        <dl class="pullup-variant-facts"><div><dt>{{ p.audience_label | escape }}</dt><dd>{{ variant.audience | escape }}</dd></div><div><dt>{{ p.goal_label | escape }}</dt><dd>{{ variant.goal | escape }}</dd></div></dl>
+        <h3>{{ p.rules_label | escape }}</h3><ul class="list-check">{% for rule in variant.rules %}<li>{{ rule | escape }}</li>{% endfor %}</ul>
+        {% if forloop.last %}
+        <figure class="pullup-ladder"><div class="pullup-ladder-rounds">{% for round in (1..3) %}<div><span>{{ p.round_label | escape }} {{ round }}</span><strong>{{ round }}</strong><span>{{ p.reps_label | escape }}</span></div>{% endfor %}</div><figcaption>{{ p.ladder_caption | escape }}</figcaption></figure>
+        {% endif %}
+        <div class="pullup-example"><h3>{{ p.example_label | escape }}</h3><p>{{ variant.example | escape }}</p></div>
+      </section>
+      {% endfor %}
+
+      <section class="pullup-section" aria-labelledby="zuhause">
+        <h2 id="zuhause">{{ p.home_heading | escape }}</h2>
+        <p>{{ p.home_body | escape }}</p>
+        {% for item in p.equipment %}<h3>{{ item[0] | escape }}</h3><p>{{ item[1] | escape }}</p>{% endfor %}
+      </section>
+      <section class="pullup-section" aria-labelledby="trainingsorte">
+        <h2 id="trainingsorte">{{ p.places_heading | escape }}</h2>
+        {% for item in p.places %}<h3>{{ item[0] | escape }}</h3><p>{{ item[1] | escape }}</p>{% endfor %}
+        <aside class="pullup-recovery"><h3>{{ p.mount_heading | escape }}</h3><p>{{ p.mount_body | escape }}</p></aside>
+      </section>
+      <section class="pullup-section pullup-app" aria-labelledby="app">
+        <div><h2 id="app">{{ p.app_heading | escape }}</h2><p>{{ p.app_body | escape }}</p><ol>{% for step in p.app_steps %}<li>{{ step | escape }}</li>{% endfor %}</ol><div class="pullup-example"><span class="eyebrow">{{ p.app_example_label | escape }}</span><p>{{ p.app_goal | escape }}</p></div></div>
+        <img class="mock mock-phone" src="{{ '/assets/mock/detail-' | append: page.lang | append: '.webp' | relative_url }}" srcset="{{ '/assets/mock/watch-page/detail-' | append: page.lang | append: '-240.webp' | relative_url }} 240w, {{ '/assets/mock/watch-page/detail-' | append: page.lang | append: '-380.webp' | relative_url }} 380w, {{ '/assets/mock/watch-page/detail-' | append: page.lang | append: '-570.webp' | relative_url }} 570w, {{ '/assets/mock/detail-' | append: page.lang | append: '.webp' | relative_url }} 940w" sizes="(max-width: 760px) 190px, 240px" width="940" height="1918" loading="lazy" decoding="async" alt="{{ p.app_alt | escape }}" />
+      <div class="inline-cta"><p>{{ p.inline_body | escape }}</p><div class="badge-cta">{% include pullup-appstore-badge.html %}</div></div>
+      </section>
+      <section class="pullup-section" aria-labelledby="faq"><h2 id="faq">{{ p.faq_heading | escape }}</h2><div class="faq">{% for item in p.faq %}<details><summary>{{ item[0] | escape }}</summary><p>{{ item[1] | escape }}</p></details>{% endfor %}</div></section>
+      <aside class="pullup-related"><h2>{{ p.related_heading | escape }}</h2><ul><li><a href="{{ site.data.pages['challenge-ideas'][page.lang] | relative_url }}#{{ p.sports_anchor }}">{{ p.ideas_link | escape }}</a></li><li><a href="{{ site.data.pages.method[page.lang] | relative_url }}">{{ p.method_link | escape }}</a></li><li><a href="{{ site.data.pages['apple-watch'][page.lang] | relative_url }}">{{ p.watch_link | escape }}</a></li></ul></aside>
+    </article>
+    <div class="cta-final"><span class="eyebrow">12 Challenges</span><h2>{{ p.app_heading | escape }}</h2><p>{{ p.final_body | escape }}</p><div class="badge-cta">{% include pullup-appstore-badge.html %}{% include watch-qr-trigger.html %}</div></div>
+    <div class="floating-cta">{% include pullup-appstore-badge.html %}</div>
+    {% include watch-qr-dialog.html %}
+  </div>
+</main>

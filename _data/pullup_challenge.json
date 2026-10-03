@@ -1,0 +1,1739 @@
+{
+  "de": {
+    "title": "Klimmzug-Challenge: 4 Varianten und Regeln zum Mitmachen",
+    "description": "Klimmzug-Challenge für 30 Tage oder mit Freunden: vier Varianten, klare Regeln, Tipps für zu Hause und eine App zum Abhaken deiner Trainingstage.",
+    "h1": "Klimmzug-Challenge: 4 Varianten für dich und deine Freunde",
+    "name": "Klimmzug-Challenge",
+    "eyebrow": "Dein Ziel an der Stange",
+    "lede": "Eine feste Anzahl, pro Trainingseinheit einen mehr, der erste freie Klimmzug oder ein Wettkampf mit Freunden: Such dir die Klimmzug-Challenge aus, die zu dir passt.",
+    "definition": "Bei einer Klimmzug-Challenge legst du ein Ziel und Regeln fest: etwa eine bestimmte Anzahl an Klimmzügen an deinen Trainingstagen oder immer mehr Wiederholungen pro Runde. Du kannst allein über 30 Tage üben oder dich mit Freunden an der Stange messen. Ein einheitliches Regelwerk gibt es nicht – entscheidend ist, dass ihr vorher dasselbe darunter versteht.",
+    "hero_note": "30 Tage sind ein Zeitraum. Dein Ausgangspunkt bestimmt das Ziel.",
+    "nav": [
+      "Nutzen",
+      "Varianten",
+      "Regeln",
+      "Zu Hause",
+      "Mit der App",
+      "Fragen"
+    ],
+    "benefit_heading": "Was bringen Klimmzüge?",
+    "benefits": [
+      [
+        "Rücken und Arme trainieren",
+        "Beim Hochziehen arbeiten unter anderem die Rückenmuskeln und die Armbeuger. Du trainierst eine Zugbewegung mit deinem eigenen Körpergewicht."
+      ],
+      [
+        "Griffkraft aufbauen",
+        "Deine Hände und Unterarme halten dich an der Stange. Regelmäßiges, passend dosiertes Üben fordert deshalb auch deinen Griff."
+      ],
+      [
+        "Fortschritte greifbar machen",
+        "Ein erster freier Klimmzug oder mehr kontrollierte Wiederholungen sind konkrete Ziele. Die Challenge gibt deinem Üben einen Rahmen; sie ersetzt kein ausgewogenes Training."
+      ]
+    ],
+    "variants_heading": "Welche Klimmzug-Challenge passt zu dir?",
+    "variants_intro": "Du schaffst noch keinen Klimmzug? Dann starte mit dem ersten freien. Du schaffst schon mehrere? Dann kommen ein festes Ziel, eine Steigerung oder die Leiter mit Freunden infrage.",
+    "table_caption": "Die vier Varianten im Vergleich",
+    "table_heads": [
+      "Variante",
+      "Für wen?",
+      "Was zählt?"
+    ],
+    "variants": [
+      {
+        "id": "festes-ziel",
+        "heading": "Eine feste Anzahl pro Tag",
+        "short": "Dein festes Ziel",
+        "audience": "Du schaffst bereits kontrollierte Klimmzüge.",
+        "goal": "Eine selbst gewählte Anzahl an deinen Trainingstagen erreichen.",
+        "count": "Gesamtzahl am Trainingstag",
+        "rules": [
+          "Lege dein Ziel X vor dem Start fest. Es sollte zu deinem aktuellen Können passen.",
+          "Du darfst die Wiederholungen auf mehrere Sätze verteilen. Fünf insgesamt sind nicht dasselbe wie fünf am Stück.",
+          "Wenn du „jeden Tag X Klimmzüge“ wählst, prüfe zuerst, ob die tägliche Belastung zu dir passt. Vereinbare Erholungstage; ein Trainingsrhythmus mit Pausen ist ebenfalls eine Challenge."
+        ],
+        "example": "Dein Tagesziel sind fünf Klimmzüge: morgens zwei, später zwei und am Abend einer. Das Ziel gilt damit als erreicht. Die Zahl ist ein Rechenbeispiel, keine Trainingsvorgabe."
+      },
+      {
+        "id": "steigerung",
+        "heading": "Pro Trainingseinheit einen Klimmzug mehr",
+        "short": "Einen mehr",
+        "audience": "Du hast bereits eine Grundlage und möchtest dich steigern.",
+        "goal": "Die vereinbarte Wiederholungszahl schrittweise erhöhen.",
+        "count": "Ziel pro Trainingseinheit",
+        "rules": [
+          "Lege eine Ausgangszahl fest und kläre, ob das Ziel für die ganze Trainingseinheit oder einen einzelnen Satz gilt.",
+          "Das Prinzip lautet: in Trainingseinheit eins einen Klimmzug, in Einheit zwei zwei, in Einheit drei drei. Wenn du die Gesamtzahl der Einheit zählst, kannst du die Wiederholungen auf mehrere Sätze verteilen.",
+          "Steigere nur, solange die Ausführung kontrolliert bleibt. Halte das Ziel bei Bedarf gleich, reduziere es oder pausiere. Erholungstage liegen zwischen den Einheiten und erhöhen dein nächstes Ziel nicht."
+        ],
+        "example": "Du startest mit einem Klimmzug in der ersten Einheit, machst zwei in der zweiten und drei in der dritten. Dazwischen liegen deine geplanten Erholungstage. So folgt die Steigerung deinem Training und nicht dem Kalender."
+      },
+      {
+        "id": "erster-klimmzug",
+        "heading": "In 30 Tagen auf den ersten Klimmzug hinarbeiten",
+        "short": "Dein erster Klimmzug",
+        "audience": "Du schaffst noch keinen freien Klimmzug.",
+        "goal": "Regelmäßig üben und dem ersten freien Klimmzug näherkommen.",
+        "count": "Geplante Übungseinheit",
+        "rules": [
+          "Setze dir 30 Tage als Übungszeitraum und plane Training und Erholung vorher.",
+          "Unterstützte Klimmzüge, etwa mit einem geeigneten Widerstandsband oder einer Assistenzmaschine, können den Einstieg erleichtern. Lass dir die Ausführung zeigen.",
+          "Vergleiche deinen Start und deinen Stand am Ende unter denselben Bedingungen. Weniger Unterstützung ist ebenfalls ein Fortschritt, auch wenn der freie Klimmzug noch nicht gelingt."
+        ],
+        "example": "Zu Beginn brauchst du Unterstützung. Nach einigen Wochen gelingt die gleiche Bewegung mit weniger Hilfe. Deine Challenge hat dich vorangebracht – der erste freie Klimmzug muss nicht genau am Tag 30 passieren."
+      },
+      {
+        "id": "leiter",
+        "heading": "Die Klimmzug-Leiter mit Freunden",
+        "short": "Die Leiter mit Freunden",
+        "audience": "Ihr schafft bereits freie Klimmzüge und wollt euch messen.",
+        "goal": "Die höchste vollständige Runde erreichen.",
+        "count": "Wiederholungen am Stück",
+        "rules": [
+          "Legt Griff, Bewegungsumfang, Reihenfolge und eine feste Mindestpause zwischen euren eigenen Sätzen vor dem Start fest. Die Reihenfolge bleibt bestehen; wartet zusätzlich, falls die vereinbarte Pause noch nicht abgelaufen ist.",
+          "In Runde eins macht jede Person einen Klimmzug, in Runde zwei zwei, in Runde drei drei. Jede Runde muss am Stück gelingen.",
+          "Wer die geforderte Zahl nicht kontrolliert schafft, scheidet aus. Die übrigen machen weiter, bis eine Person gewinnt. Scheiden alle verbliebenen in derselben Runde aus, teilen die mit der höchsten vollständig geschafften Runde den Sieg."
+        ],
+        "example": "Alex und Sam schaffen Runde drei. In Runde vier schafft Alex alle vier Wiederholungen, Sam nur drei: Alex gewinnt. Schaffen beide die vier nicht, endet die Leiter unentschieden."
+      }
+    ],
+    "audience_label": "Für wen?",
+    "goal_label": "Dein Ziel",
+    "rules_label": "So funktioniert’s",
+    "example_label": "Ein Beispiel",
+    "rules_heading": "Gemeinsame Regeln: Was zählt als Klimmzug?",
+    "common_rules": [
+      "Vereinbare den Griff: Obergriff und Untergriff sind unterschiedliche Varianten. Vergleiche Leistungen mit demselben Griff.",
+      "Starte mit gestreckten Armen in einer kontrollierten Position, ziehe das Kinn über die Stange und senke dich kontrolliert zurück. Kein Schwung, kein Hochspringen und keine verkürzten Wiederholungen.",
+      "Beim Wettbewerb endet ein Satz, sobald du die Stange loslässt. Unterstützte und freie Wiederholungen werden getrennt gewertet.",
+      "Brich einen Satz ab, sobald du die vereinbarte Ausführung nicht mehr halten kannst. Bei Schmerzen beendest du die Übung."
+    ],
+    "recovery_heading": "Eine Challenge darf Pausen haben",
+    "recovery_body": "30 Tage Challenge bedeuten nicht automatisch 30 harte Trainingstage. Plane einen vollen Erholungstag ein, bevor du dieselbe Muskelgruppe erneut trainierst. Lege deine Trainingstage entsprechend fest und erhöhe die Belastung nicht allein wegen des Kalenders.",
+    "home_heading": "Klimmzüge zu Hause: Welche Möglichkeiten gibt es?",
+    "equipment": [
+      [
+        "Stange im Türrahmen",
+        "Eine Türrahmenstange ist eine Möglichkeit, wenn das Modell zu deinem Türrahmen passt und nach Herstellerangaben montiert werden kann."
+      ],
+      [
+        "Fest montierte Stange",
+        "Alternativ kommt eine fest montierte Stange an Wand, Decke oder einem geeigneten Balken infrage. Dafür müssen Untergrund und Befestigung für die Belastung ausgelegt sein."
+      ]
+    ],
+    "app_heading": "Deine Klimmzug-Challenge festhalten",
+    "app_body": "12 Challenges hilft dir, dein selbst gewähltes Ziel über 30 Tage im Blick zu behalten: Challenge anlegen, erinnern lassen und erledigte Tage abhaken. Das passt auch zu anderen sportlichen Aktivitäten.",
+    "app_goal": "Mein geplantes Klimmzugtraining erledigt",
+    "app_steps": [
+      "Lege deine Klimmzug-Challenge mit einem eigenen Titel an. Halte dein Ziel und deinen Rhythmus in der Beschreibung fest.",
+      "Definiere für jeden Tag, was „erledigt“ heißt: an Trainingstagen die geplante Einheit, an Erholungstagen die eingehaltene Pause. So bedeutet ein Haken, dass du deinem Plan gefolgt bist.",
+      "Hake am Abend ab, ob du deinem Plan gefolgt bist. Eine Erinnerung hilft dir dabei; im Kalender siehst du deine erledigten Tage auf einen Blick."
+    ],
+    "app_example_label": "Ein mögliches Ziel in der App",
+    "app_alt": "12 Challenges: Ansicht einer Challenge mit Kalender und erledigten Tagen",
+    "inline_body": "Starte deine 30-Tage-Challenge: eigenes Ziel festlegen, erinnern lassen und erledigte Tage abhaken.",
+    "final_body": "Mach aus einer Idee eine Challenge mit klaren Regeln – und behalte mit 12 Challenges deine erledigten Tage im Blick.",
+    "faq_heading": "Häufige Fragen zur Klimmzug-Challenge",
+    "faq": [
+      [
+        "Was ist eine Klimmzugchallenge?",
+        "Eine Klimmzugchallenge ist eine selbst festgelegte Herausforderung an der Klimmzugstange. Du kannst eine feste Anzahl, eine Steigerung oder den ersten freien Klimmzug als Ziel wählen. Mit Freunden lässt sich daraus auch ein Wettkampf in aufsteigenden Runden machen."
+      ],
+      [
+        "Kann ich mitmachen, wenn ich noch keinen Klimmzug schaffe?",
+        "Ja. Wähle die Variante „auf den ersten Klimmzug hinarbeiten“ und übe mit passender Unterstützung. 30 Tage geben dir einen Rahmen, garantieren aber keinen freien Klimmzug."
+      ],
+      [
+        "Wie viele Klimmzüge sollte ich pro Tag machen?",
+        "Es gibt keine Zahl, die für alle passt. Dein Ziel hängt von deinem Ausgangsniveau und deinem Training ab. Die Zahlen auf dieser Seite erklären die Regeln; sie sind kein persönlicher Trainingsplan."
+      ],
+      [
+        "Muss ich 30 Tage lang jeden Tag Klimmzüge machen?",
+        "Nein. Entscheidend ist, dass du deinen vorher festgelegten Trainings- und Erholungsrhythmus einhältst."
+      ],
+      [
+        "Geht eine Klimmzug-Challenge mit einer Türrahmenstange?",
+        "Ja, wenn die Stange für deinen Türrahmen geeignet, korrekt montiert und ausreichend belastbar ist. Halte dich an die Herstellerangaben und prüfe die Befestigung vor dem Training."
+      ],
+      [
+        "Wer gewinnt die Klimmzug-Leiter?",
+        "Wer als letzte Person eine vollständige Runde schafft. Scheiden alle verbliebenen Personen in derselben Runde aus, teilen sich diejenigen mit der höchsten zuvor vollständig geschafften Runde den Sieg."
+      ],
+      [
+        "Wie kann ich meine Klimmzug-Challenge mit der App festhalten?",
+        "Lege in 12 Challenges dein eigenes Ziel an, nutze eine Erinnerung und hake die Tage ab, an denen du deinem Plan gefolgt bist. Im Kalender siehst du, wie regelmäßig du dranbleibst. Die App erfasst erledigte Tage; Wiederholungszahlen und Sätze notierst du bei Bedarf separat."
+      ]
+    ],
+    "round_label": "Runde",
+    "reps_label": "pro Person, am Stück",
+    "ladder_caption": "Gleiche Regeln. Jede Runde eine Wiederholung mehr.",
+    "related_heading": "Mehr Ideen für deine nächste Challenge",
+    "ideas_link": "Sport- und Challenge-Ideen",
+    "method_link": "Die 12-Challenges-Methode",
+    "watch_link": "Auf der Apple Watch abhaken",
+    "breadcrumb_label": "Brotkrümelnavigation",
+    "contents_label": "Inhalt dieser Seite",
+    "published": "2026-10-03",
+    "sports_anchor": "sport",
+    "hero_alt": "Person beim Klimmzug an einer Trainingsstange",
+    "home_body": "Mit einer passenden Klimmzugstange kannst du die Challenge auch zu Hause machen. Welche Lösung infrage kommt, hängt von deinem Platz und den Befestigungsmöglichkeiten ab.",
+    "places_heading": "Wo kann man sonst Klimmzüge machen?",
+    "places": [
+      [
+        "Im Fitnessstudio",
+        "Dort findest du meist eine Klimmzugstange oder eine Station für unterstützte Klimmzüge. So kannst du die Variante wählen, die zu deinem aktuellen Niveau passt."
+      ],
+      [
+        "Im Calisthenics-Park",
+        "Viele Outdoor-Trainingsanlagen haben eine dafür vorgesehene Klimmzugstange. Das eignet sich auch für die Leiter mit Freunden. Achte auf genügend Platz und eine trockene, gut greifbare Stange."
+      ]
+    ],
+    "mount_heading": "Vor dem Start: Halt prüfen",
+    "mount_body": "Prüfe vor jeder Einheit den festen Sitz der Stange und ihrer Befestigung. Beachte die zulässige Belastung und die Montagehinweise. Wenn du dir beim Halt oder bei der Tragfähigkeit nicht sicher bist, benutze die Stange nicht.",
+    "hero_credit": "KI-generiertes Symbolbild"
+  },
+  "en": {
+    "title": "Pull-up challenge: 4 variations and rules to get started",
+    "description": "Try a pull-up challenge over 30 days or with friends. Compare four variations, learn the rules and track completed training days with 12 Challenges.",
+    "h1": "Pull-up challenge: 4 ways to challenge yourself and your friends",
+    "name": "Pull-up challenge",
+    "eyebrow": "Your goal at the bar",
+    "lede": "A fixed number, one more per session, your first unassisted pull-up or a competition with friends: choose the pull-up challenge that suits you.",
+    "definition": "A pull-up challenge starts with a goal and a set of rules. You might aim for a fixed number on training days or add repetitions each round. Practise on your own over 30 days or compete with friends. There is no single official format, so agree on what counts before you start.",
+    "hero_note": "Thirty days set the timeframe. Your starting point sets the goal.",
+    "nav": [
+      "Benefits",
+      "Variations",
+      "Rules",
+      "At home",
+      "With the app",
+      "Questions"
+    ],
+    "benefit_heading": "What are the benefits of pull-ups?",
+    "benefits": [
+      [
+        "Train your back and arms",
+        "Pulling yourself up works your back and arm flexors. It is a pulling movement using your own body weight."
+      ],
+      [
+        "Build grip strength",
+        "Your hands and forearms support you at the bar. Appropriately paced practice also challenges your grip."
+      ],
+      [
+        "Make progress tangible",
+        "Your first unassisted pull-up or more controlled repetitions gives you a concrete goal. A challenge adds structure to practice; it is one part of a balanced routine."
+      ]
+    ],
+    "variants_heading": "Which pull-up challenge suits you?",
+    "variants_intro": "Not yet able to do a pull-up? Work towards your first. Already doing several? Choose a fixed target, gradual increases or a ladder with friends.",
+    "table_caption": "Compare the four variations",
+    "table_heads": [
+      "Variation",
+      "Who is it for?",
+      "What counts?"
+    ],
+    "variants": [
+      {
+        "id": "festes-ziel",
+        "heading": "A fixed number each day",
+        "short": "Your fixed target",
+        "audience": "You can already do controlled pull-ups.",
+        "goal": "Reach a chosen number on your training days.",
+        "count": "Total on the training day",
+        "rules": [
+          "Choose a target that matches your current ability.",
+          "You can split the repetitions into sets. Five in total is different from five in a row.",
+          "Daily pull-ups are an option, but daily loading needs to suit you. Agree on recovery days; a schedule with rest days is a challenge too."
+        ],
+        "example": "A target of five could mean two in the morning, two later and one in the evening. This explains how counting works; it is not a training prescription."
+      },
+      {
+        "id": "steigerung",
+        "heading": "One more pull-up per training session",
+        "short": "One more",
+        "audience": "You have a foundation and want to progress.",
+        "goal": "Gradually increase your agreed target.",
+        "count": "Target per training session",
+        "rules": [
+          "Choose a starting number and decide whether the target applies to the whole session or a single set.",
+          "The rule is one pull-up in session one, two in session two and three in session three. If you count the session total, you can split it into sets.",
+          "Increase only while your technique stays controlled. Hold the target, reduce it or rest when needed. Recovery days fall between sessions and do not increase your next target."
+        ],
+        "example": "Start with one pull-up in your first session, two in your second and three in your third. Your planned recovery days go between them. Progress follows your training, not the calendar."
+      },
+      {
+        "id": "erster-klimmzug",
+        "heading": "Work towards your first pull-up over 30 days",
+        "short": "Your first pull-up",
+        "audience": "You cannot yet do an unassisted pull-up.",
+        "goal": "Practise consistently and move closer to your first pull-up.",
+        "count": "Planned practice session",
+        "rules": [
+          "Use 30 days as a practice window and plan training and recovery.",
+          "An appropriate resistance band or an assisted pull-up machine can help. Get guidance on technique.",
+          "Compare the start and finish under the same conditions. Needing less assistance is progress even without an unassisted repetition."
+        ],
+        "example": "You start with assistance and later perform the same movement with less help. That is progress; your first unassisted pull-up does not have to happen on day 30."
+      },
+      {
+        "id": "leiter",
+        "heading": "The pull-up ladder with friends",
+        "short": "The ladder with friends",
+        "audience": "You can already do unassisted pull-ups and want to compete.",
+        "goal": "Complete the highest round.",
+        "count": "Consecutive repetitions",
+        "rules": [
+          "Agree on grip, range of motion, order and a minimum rest interval between your own sets. Keep the order and wait longer if the agreed rest has not elapsed.",
+          "Each person does one pull-up in round one, two in round two and three in round three. Complete each round in one set.",
+          "Anyone who cannot complete the round with controlled technique is out. Continue until one person wins. If all remaining players fail the same round, those with the highest completed round share the win."
+        ],
+        "example": "Alex and Sam complete round three. Alex completes four in round four and Sam only three: Alex wins. If neither completes four, they tie."
+      }
+    ],
+    "audience_label": "Who is it for?",
+    "goal_label": "Your goal",
+    "rules_label": "How it works",
+    "example_label": "An example",
+    "rules_heading": "Shared rules: what counts as a pull-up?",
+    "common_rules": [
+      "Agree on the grip. Overhand pull-ups and underhand chin-ups are different variations; use the same grip for comparisons.",
+      "Begin in a controlled position with straight arms, pull your chin above the bar and lower yourself under control. No swinging, jumping or shortened repetitions.",
+      "In a competition, the set ends when you let go of the bar. Count assisted and unassisted repetitions separately.",
+      "Stop a set when you can no longer maintain the agreed technique. Stop exercising if it hurts."
+    ],
+    "recovery_heading": "A challenge can include rest days",
+    "recovery_body": "A 30-day challenge does not mean 30 hard training sessions. Allow a full recovery day before training the same muscle group again. Plan your training days accordingly instead of increasing the load just because the calendar says so.",
+    "home_heading": "Pull-ups at home: what are your options?",
+    "equipment": [
+      [
+        "A doorway bar",
+        "A doorway bar is one option if the model fits your doorframe and can be installed according to the manufacturer’s instructions."
+      ],
+      [
+        "A permanently mounted bar",
+        "Alternatively, use a fixed bar on a wall, ceiling or suitable beam. The structure and mounting must be designed for the load."
+      ]
+    ],
+    "app_heading": "Keep track of your pull-up challenge",
+    "app_body": "With 12 Challenges, set your own goal over 30 days, add a reminder and check off completed days. You can use it for other sports activities too.",
+    "app_goal": "Completed my planned pull-up training",
+    "app_steps": [
+      "Create a challenge with your own title. Describe your goal and training schedule.",
+      "Define what “done” means each day: the planned session on training days and the agreed recovery on rest days. A checkmark then means you followed your plan.",
+      "Check off the day if you followed your plan. A reminder can help, and the calendar shows your completed days at a glance."
+    ],
+    "app_example_label": "An example goal in the app",
+    "app_alt": "12 Challenges: challenge view with a calendar and completed days",
+    "inline_body": "Start your 30-day challenge: set your own goal, get reminders and check off completed days.",
+    "final_body": "Turn your idea into a challenge with clear rules, then keep your completed days in view with 12 Challenges.",
+    "faq_heading": "Pull-up challenge questions",
+    "faq": [
+      [
+        "What is a pull-up challenge?",
+        "A goal you set at the pull-up bar: a fixed number, increasing repetitions, your first unassisted pull-up or a ladder competition with friends."
+      ],
+      [
+        "Can I join if I cannot do a pull-up yet?",
+        "Yes. Work towards your first pull-up with suitable assistance. Thirty days give you a timeframe, not a guaranteed result."
+      ],
+      [
+        "How many pull-ups should I do per day?",
+        "There is no number that suits everyone. Your target depends on your ability and training. These examples explain the rules, not a personal workout plan."
+      ],
+      [
+        "Do I need to do pull-ups every day for 30 days?",
+        "No. What matters is following the training and recovery schedule you agreed on before starting."
+      ],
+      [
+        "Can I use a doorway pull-up bar?",
+        "Yes, if it suits your doorframe, is correctly mounted and has enough load capacity. Follow the manufacturer’s instructions and check the mounting before training."
+      ],
+      [
+        "Who wins the pull-up ladder?",
+        "The last person to complete a full round. If all remaining players fail the same round, those with the highest previously completed round share the win."
+      ],
+      [
+        "How can I track my pull-up challenge with the app?",
+        "Create your own goal in 12 Challenges, set a reminder and check off the days you follow your plan. The calendar shows how consistently you practise. The app records completed days; note repetition numbers and sets separately if needed."
+      ]
+    ],
+    "round_label": "Round",
+    "reps_label": "per person, in one set",
+    "ladder_caption": "Same rules. One more repetition each round.",
+    "related_heading": "Ideas for your next challenge",
+    "ideas_link": "Sports and challenge ideas",
+    "method_link": "The 12 Challenges method",
+    "watch_link": "Check off on Apple Watch",
+    "breadcrumb_label": "Breadcrumb",
+    "contents_label": "On this page",
+    "published": "2026-10-03",
+    "sports_anchor": "sports",
+    "hero_alt": "Person doing a pull-up on a training bar",
+    "home_body": "A suitable pull-up bar lets you do the challenge at home. Your space and available mounting points determine which setup works.",
+    "places_heading": "Where else can you do pull-ups?",
+    "places": [
+      [
+        "At the gym",
+        "Most gyms have a pull-up bar or an assisted pull-up station. Choose the option that suits your current ability."
+      ],
+      [
+        "At a calisthenics park",
+        "Many outdoor exercise areas have a purpose-built pull-up bar. They work for a ladder challenge with friends too. Allow enough space and use a dry bar you can grip securely."
+      ]
+    ],
+    "mount_heading": "Before starting: check the mounting",
+    "mount_body": "Before every session, check that the bar and its fixings are secure. Follow the load limits and mounting instructions. If you are unsure about the mounting or load capacity, do not use the bar.",
+    "hero_credit": "AI-generated image"
+  },
+  "es": {
+    "title": "Reto de dominadas: 4 variantes y reglas para empezar",
+    "description": "Un reto de dominadas de 30 días o con amigos: cuatro variantes, reglas, consejos para casa y una app para marcar tus días de entrenamiento.",
+    "h1": "Reto de dominadas: 4 variantes para ti y tus amigos",
+    "name": "Reto de dominadas",
+    "eyebrow": "Tu objetivo en la barra",
+    "lede": "Un número fijo, una más por sesión, tu primera dominada sin ayuda o una competición con amigos: elige el reto que encaje contigo.",
+    "definition": "En un reto de dominadas defines un objetivo y unas reglas: un número de repeticiones en tus días de entrenamiento o más repeticiones en cada ronda. Puedes practicar durante 30 días o competir con amigos. No existe un reglamento único; lo importante es acordar qué cuenta antes de empezar.",
+    "hero_note": "Treinta días marcan el plazo. Tu punto de partida marca el objetivo.",
+    "nav": [
+      "Beneficios",
+      "Variantes",
+      "Reglas",
+      "En casa",
+      "Con la app",
+      "Preguntas"
+    ],
+    "benefit_heading": "¿Qué beneficios tienen las dominadas?",
+    "benefits": [
+      [
+        "Entrenar espalda y brazos",
+        "Al subir trabajan los músculos de la espalda y los flexores del brazo. Es un movimiento de tracción con tu propio peso."
+      ],
+      [
+        "Trabajar el agarre",
+        "Las manos y los antebrazos te sostienen en la barra. Practicar con una carga adecuada también exige fuerza de agarre."
+      ],
+      [
+        "Ver tus avances",
+        "La primera dominada sin ayuda o más repeticiones controladas son objetivos concretos. El reto organiza tu práctica y forma parte de un entrenamiento equilibrado."
+      ]
+    ],
+    "variants_heading": "¿Qué reto de dominadas te conviene?",
+    "variants_intro": "Si todavía no haces ninguna, trabaja hacia la primera. Si ya haces varias, puedes elegir un objetivo fijo, una progresión o la escalera con amigos.",
+    "table_caption": "Comparativa de las cuatro variantes",
+    "table_heads": [
+      "Variante",
+      "¿Para quién?",
+      "¿Qué cuenta?"
+    ],
+    "variants": [
+      {
+        "id": "festes-ziel",
+        "heading": "Un número fijo al día",
+        "short": "Tu objetivo fijo",
+        "audience": "Ya haces dominadas controladas.",
+        "goal": "Alcanzar una cantidad elegida en tus días de entrenamiento.",
+        "count": "Total del día de entrenamiento",
+        "rules": [
+          "Elige una cantidad acorde con tu nivel actual.",
+          "Puedes repartir las repeticiones en varias series. Cinco en total no significa cinco seguidas.",
+          "Entrenar a diario es una opción, pero la carga debe encajar contigo. Acuerda días de recuperación; un ritmo con descansos también es un reto."
+        ],
+        "example": "Para sumar cinco: dos por la mañana, dos más tarde y una por la noche. Es un ejemplo para explicar el recuento, no una pauta de entrenamiento."
+      },
+      {
+        "id": "steigerung",
+        "heading": "Una dominada más por sesión",
+        "short": "Una más",
+        "audience": "Tienes una base y quieres progresar.",
+        "goal": "Aumentar gradualmente el objetivo acordado.",
+        "count": "Objetivo por sesión",
+        "rules": [
+          "Elige una cifra inicial y decide si el objetivo corresponde a toda la sesión o a una sola serie.",
+          "La regla es una dominada en la primera sesión, dos en la segunda y tres en la tercera. Si cuentas el total de la sesión, puedes repartirlo en series.",
+          "Aumenta solo mientras mantengas el control. Mantén la cifra, redúcela o descansa si hace falta. Los días de recuperación quedan entre sesiones y no aumentan el siguiente objetivo."
+        ],
+        "example": "Una dominada en la primera sesión, dos en la segunda y tres en la tercera, con los días de recuperación previstos entre ellas. La progresión sigue tu entrenamiento, no el calendario."
+      },
+      {
+        "id": "erster-klimmzug",
+        "heading": "Trabaja hacia tu primera dominada en 30 días",
+        "short": "Tu primera dominada",
+        "audience": "Todavía no haces una dominada sin ayuda.",
+        "goal": "Practicar con constancia y acercarte a la primera.",
+        "count": "Sesión de práctica prevista",
+        "rules": [
+          "Usa 30 días como plazo y planifica entrenamiento y recuperación.",
+          "Una banda de resistencia adecuada o una máquina de dominadas asistidas puede facilitar el inicio. Pide ayuda con la técnica.",
+          "Compara el comienzo y el final en las mismas condiciones. Necesitar menos ayuda también es avanzar."
+        ],
+        "example": "Al principio necesitas asistencia; después haces el mismo movimiento con menos ayuda. Es un avance, aunque la primera dominada libre no llegue el día 30."
+      },
+      {
+        "id": "leiter",
+        "heading": "La escalera de dominadas con amigos",
+        "short": "Escalera con amigos",
+        "audience": "Ya hacéis dominadas sin ayuda y queréis competir.",
+        "goal": "Completar la ronda más alta.",
+        "count": "Repeticiones seguidas",
+        "rules": [
+          "Acordad agarre, recorrido, orden y una pausa mínima entre las series de cada persona. Mantened el orden y esperad si la pausa aún no ha terminado.",
+          "Cada persona hace una en la primera ronda, dos en la segunda y tres en la tercera. Cada ronda se completa en una sola serie.",
+          "Quien no complete la ronda con control queda fuera. Seguid hasta que gane una persona. Si todos los que quedan fallan la misma ronda, comparten la victoria quienes hayan completado la ronda más alta."
+        ],
+        "example": "Alex y Sam completan la tercera ronda. En la cuarta, Alex hace las cuatro y Sam solo tres: gana Alex. Si ninguno completa las cuatro, hay empate."
+      }
+    ],
+    "audience_label": "¿Para quién?",
+    "goal_label": "Tu objetivo",
+    "rules_label": "Cómo funciona",
+    "example_label": "Un ejemplo",
+    "rules_heading": "Reglas comunes: ¿qué cuenta como dominada?",
+    "common_rules": [
+      "Acordad el agarre: prono y supino son variantes distintas. Comparad con el mismo agarre.",
+      "Empieza con los brazos extendidos y una posición controlada. Sube la barbilla por encima de la barra y baja con control. Sin balanceo, saltos ni repeticiones parciales.",
+      "En la competición, la serie termina al soltar la barra. Contad por separado las repeticiones asistidas y sin ayuda.",
+      "Termina la serie cuando no puedas mantener la ejecución acordada. Si aparece dolor, deja el ejercicio."
+    ],
+    "recovery_heading": "Un reto también puede tener descansos",
+    "recovery_body": "Treinta días de reto no significan treinta sesiones duras. Deja un día completo de recuperación antes de volver a entrenar el mismo grupo muscular. Planifica tus días en consecuencia y no aumentes la carga solo por el calendario.",
+    "home_heading": "Dominadas en casa: ¿qué opciones tienes?",
+    "equipment": [
+      [
+        "Barra en el marco de la puerta",
+        "Una barra de puerta es una opción si el modelo encaja en el marco y puede montarse según las instrucciones del fabricante."
+      ],
+      [
+        "Una barra fija",
+        "También puedes usar una barra fija en una pared, un techo o una viga adecuada. La estructura y los anclajes deben estar preparados para la carga."
+      ]
+    ],
+    "app_heading": "Lleva el seguimiento de tu reto de dominadas",
+    "app_body": "Con 12 Challenges defines tu objetivo para 30 días, activas recordatorios y marcas los días completados. También sirve para otras actividades deportivas.",
+    "app_goal": "He completado mi entrenamiento de dominadas previsto",
+    "app_steps": [
+      "Crea un reto con tu propio título. Describe el objetivo y el ritmo de entrenamiento.",
+      "Decide qué significa completar cada día: la sesión prevista en los días de entrenamiento y el descanso acordado en los de recuperación. La marca indica que has seguido tu plan.",
+      "Marca el día si has seguido tu plan. Un recordatorio puede ayudarte y el calendario muestra los días completados de un vistazo."
+    ],
+    "app_example_label": "Ejemplo de objetivo en la app",
+    "app_alt": "12 Challenges: vista de un reto con calendario y días completados",
+    "inline_body": "Empieza tu reto de 30 días: fija tu objetivo, activa recordatorios y marca los días completados.",
+    "final_body": "Convierte tu idea en un reto con reglas claras y lleva el seguimiento de los días completados con 12 Challenges.",
+    "faq_heading": "Preguntas sobre el reto de dominadas",
+    "faq": [
+      [
+        "¿Qué es un reto de dominadas?",
+        "Una meta en la barra con reglas propias: una cantidad fija, una progresión, la primera dominada sin ayuda o una escalera con amigos."
+      ],
+      [
+        "¿Puedo participar si todavía no hago ninguna?",
+        "Sí. Trabaja hacia la primera con asistencia adecuada. Treinta días son un plazo, no una garantía de conseguirla."
+      ],
+      [
+        "¿Cuántas dominadas debería hacer al día?",
+        "No hay una cifra válida para todos. Depende de tu nivel y entrenamiento. Los ejemplos explican las reglas; no son un plan personal."
+      ],
+      [
+        "¿Tengo que hacer dominadas todos los días durante 30 días?",
+        "No. Lo importante es seguir el ritmo de entrenamiento y recuperación que fijaste antes de empezar."
+      ],
+      [
+        "¿Puedo usar una barra de puerta?",
+        "Sí, si es compatible con el marco, está bien montada y soporta la carga. Sigue las instrucciones y comprueba el montaje antes de entrenar."
+      ],
+      [
+        "¿Quién gana la escalera de dominadas?",
+        "La última persona que completa una ronda. Si todos los que quedan fallan la misma ronda, ganan juntos quienes hayan completado la ronda más alta."
+      ],
+      [
+        "¿Cómo puedo seguir mi reto de dominadas con la app?",
+        "Crea tu objetivo en 12 Challenges, activa un recordatorio y marca los días en los que sigues tu plan. El calendario muestra tu constancia. La app registra días completados; anota las repeticiones y las series aparte si lo necesitas."
+      ]
+    ],
+    "round_label": "Ronda",
+    "reps_label": "por persona, seguidas",
+    "ladder_caption": "Mismas reglas. Una repetición más en cada ronda.",
+    "related_heading": "Ideas para tu próximo reto",
+    "ideas_link": "Ideas de retos y deporte",
+    "method_link": "El método de 12 Challenges",
+    "watch_link": "Marca tus días en el Apple Watch",
+    "breadcrumb_label": "Ruta de navegación",
+    "contents_label": "Contenido de esta página",
+    "published": "2026-10-03",
+    "sports_anchor": "deporte",
+    "hero_alt": "Persona haciendo una dominada en una barra de entrenamiento",
+    "home_body": "Con una barra adecuada puedes hacer el reto en casa. La solución depende del espacio y de los puntos de montaje disponibles.",
+    "places_heading": "¿Dónde más puedes hacer dominadas?",
+    "places": [
+      [
+        "En el gimnasio",
+        "Suele haber una barra o una estación de dominadas asistidas. Elige la opción que encaje con tu nivel actual."
+      ],
+      [
+        "En un parque de calistenia",
+        "Muchas zonas de entrenamiento al aire libre tienen una barra preparada para dominadas. También sirven para la escalera con amigos. Deja espacio suficiente y usa una barra seca que puedas agarrar bien."
+      ]
+    ],
+    "mount_heading": "Antes de empezar: comprueba la sujeción",
+    "mount_body": "Antes de cada sesión, comprueba que la barra y sus anclajes estén firmes. Respeta la carga máxima y las instrucciones de montaje. Si no estás seguro de la sujeción o la resistencia, no uses la barra.",
+    "hero_credit": "Imagen generada con IA"
+  },
+  "fr": {
+    "title": "Défi tractions : 4 variantes et règles pour se lancer",
+    "description": "Un défi tractions sur 30 jours ou entre amis : quatre variantes, des règles claires, des conseils pour la maison et une app pour cocher tes journées.",
+    "h1": "Défi tractions : 4 variantes pour toi et tes amis",
+    "name": "Défi tractions",
+    "eyebrow": "Ton objectif à la barre",
+    "lede": "Un nombre fixe, une de plus par séance, ta première traction sans aide ou une compétition entre amis : choisis le défi qui te correspond.",
+    "definition": "Un défi tractions consiste à fixer un objectif et des règles : un nombre de répétitions les jours d’entraînement ou une répétition de plus à chaque tour. Tu peux pratiquer sur 30 jours ou te mesurer à tes amis. Il n’y a pas de règlement unique : mettez-vous d’accord avant de commencer.",
+    "hero_note": "Trente jours donnent un cadre. Ton niveau de départ détermine l’objectif.",
+    "nav": [
+      "Bénéfices",
+      "Variantes",
+      "Règles",
+      "À la maison",
+      "Avec l’app",
+      "Questions"
+    ],
+    "benefit_heading": "Quels sont les bénéfices des tractions ?",
+    "benefits": [
+      [
+        "Solliciter le dos et les bras",
+        "Les tractions font travailler les muscles du dos et les fléchisseurs du bras. Tu effectues un mouvement de tirage avec le poids de ton corps."
+      ],
+      [
+        "Travailler la force de préhension",
+        "Tes mains et tes avant-bras te maintiennent à la barre. Une pratique bien dosée sollicite aussi ta prise."
+      ],
+      [
+        "Constater tes progrès",
+        "Une première traction sans aide ou davantage de répétitions contrôlées sont des objectifs concrets. Le défi structure ta pratique et s’intègre à un entraînement équilibré."
+      ]
+    ],
+    "variants_heading": "Quel défi tractions choisir ?",
+    "variants_intro": "Tu ne fais pas encore de traction ? Travaille vers la première. Tu en fais déjà plusieurs ? Choisis un objectif fixe, une progression ou l’échelle entre amis.",
+    "table_caption": "Les quatre variantes en un coup d’œil",
+    "table_heads": [
+      "Variante",
+      "Pour qui ?",
+      "Ce qui compte"
+    ],
+    "variants": [
+      {
+        "id": "festes-ziel",
+        "heading": "Un nombre fixe par jour",
+        "short": "Ton objectif fixe",
+        "audience": "Tu fais déjà des tractions contrôlées.",
+        "goal": "Atteindre un nombre choisi les jours d’entraînement.",
+        "count": "Total du jour d’entraînement",
+        "rules": [
+          "Choisis un objectif adapté à ton niveau actuel.",
+          "Tu peux répartir les répétitions en plusieurs séries. Cinq au total ne veut pas dire cinq d’affilée.",
+          "La pratique quotidienne est une option, mais la charge doit te convenir. Prévois de la récupération : un rythme avec des jours de repos reste un défi."
+        ],
+        "example": "Pour un total de cinq : deux le matin, deux plus tard et une le soir. Cet exemple explique le décompte, pas un programme d’entraînement."
+      },
+      {
+        "id": "steigerung",
+        "heading": "Une traction de plus par séance",
+        "short": "Une de plus",
+        "audience": "Tu as déjà une base et souhaites progresser.",
+        "goal": "Augmenter progressivement l’objectif convenu.",
+        "count": "Objectif par séance",
+        "rules": [
+          "Choisis un nombre de départ et précise si l’objectif concerne toute la séance ou une seule série.",
+          "Le principe : une traction à la première séance, deux à la deuxième, trois à la troisième. Si tu comptes le total de la séance, tu peux le répartir en plusieurs séries.",
+          "Augmente seulement si le mouvement reste contrôlé. Garde le même objectif, réduis-le ou repose-toi si nécessaire. Les jours de récupération séparent les séances et n’augmentent pas l’objectif suivant."
+        ],
+        "example": "Une traction à la première séance, deux à la deuxième, trois à la troisième, avec les jours de récupération prévus entre les séances. La progression suit ton entraînement, pas le calendrier."
+      },
+      {
+        "id": "erster-klimmzug",
+        "heading": "Viser ta première traction sur 30 jours",
+        "short": "Ta première traction",
+        "audience": "Tu ne fais pas encore de traction sans aide.",
+        "goal": "Pratiquer régulièrement et te rapprocher de la première.",
+        "count": "Séance de pratique prévue",
+        "rules": [
+          "Prends 30 jours comme période de pratique et prévois entraînement et récupération.",
+          "Un élastique adapté ou une machine à tractions assistées peut faciliter le départ. Fais-toi expliquer la technique.",
+          "Compare le début et la fin dans les mêmes conditions. Avoir besoin de moins d’aide est aussi un progrès."
+        ],
+        "example": "Tu commences avec de l’assistance, puis réalises le même mouvement avec moins d’aide. C’est un progrès, même sans traction libre au jour 30."
+      },
+      {
+        "id": "leiter",
+        "heading": "L’échelle de tractions entre amis",
+        "short": "L’échelle entre amis",
+        "audience": "Vous faites des tractions sans aide et voulez vous mesurer.",
+        "goal": "Terminer le tour le plus élevé.",
+        "count": "Répétitions d’affilée",
+        "rules": [
+          "Fixez la prise, l’amplitude, l’ordre et un repos minimum entre les séries de chaque personne. Gardez l’ordre et attendez si le repos convenu n’est pas écoulé.",
+          "Chacun fait une traction au premier tour, deux au deuxième, trois au troisième. Chaque tour se fait en une seule série.",
+          "Qui ne termine pas le tour avec contrôle est éliminé. Continuez jusqu’à une victoire. Si tous les participants restants échouent au même tour, ceux qui ont terminé le tour le plus élevé partagent la victoire."
+        ],
+        "example": "Alex et Sam terminent le troisième tour. Au quatrième, Alex fait les quatre et Sam seulement trois : Alex gagne. Si aucun ne fait les quatre, ils sont à égalité."
+      }
+    ],
+    "audience_label": "Pour qui ?",
+    "goal_label": "Ton objectif",
+    "rules_label": "Comment ça marche",
+    "example_label": "Un exemple",
+    "rules_heading": "Règles communes : qu’est-ce qui compte comme traction ?",
+    "common_rules": [
+      "Choisissez la prise. Pronation et supination sont deux variantes différentes : comparez avec la même prise.",
+      "Pars d’une position contrôlée, bras tendus, monte le menton au-dessus de la barre et redescends avec contrôle. Pas de balancement, de saut ni de répétitions partielles.",
+      "En compétition, la série s’arrête quand tu lâches la barre. Comptez séparément les répétitions assistées et sans aide.",
+      "Arrête la série si tu ne peux plus respecter la technique convenue. En cas de douleur, arrête l’exercice."
+    ],
+    "recovery_heading": "Un défi peut aussi inclure du repos",
+    "recovery_body": "Trente jours de défi ne signifient pas trente séances intenses. Prévois un jour complet de récupération avant de retravailler le même groupe musculaire. Organise tes séances en conséquence plutôt que d’augmenter la charge pour suivre le calendrier.",
+    "home_heading": "Tractions à la maison : quelles possibilités ?",
+    "equipment": [
+      [
+        "Barre de porte",
+        "Une barre de porte est une option si le modèle convient à l’encadrement et peut être installé selon les instructions du fabricant."
+      ],
+      [
+        "Une barre fixe",
+        "Une barre fixe au mur, au plafond ou sur une poutre adaptée est une autre possibilité. Le support et les fixations doivent être conçus pour cette charge."
+      ]
+    ],
+    "app_heading": "Garde une trace de ton défi tractions",
+    "app_body": "Avec 12 Challenges, définis ton objectif sur 30 jours, active un rappel et coche les journées accomplies. Tu peux aussi suivre d’autres activités sportives.",
+    "app_goal": "Ma séance de tractions prévue est terminée",
+    "app_steps": [
+      "Crée un défi avec ton propre titre. Décris ton objectif et ton rythme.",
+      "Définis ce qui signifie « accompli » chaque jour : la séance prévue les jours d’entraînement et le repos respecté les jours de récupération. Une coche signifie alors que tu as suivi ton plan.",
+      "Coche la journée si tu as suivi ton plan. Un rappel peut t’aider et le calendrier montre tes journées accomplies en un coup d’œil."
+    ],
+    "app_example_label": "Exemple d’objectif dans l’app",
+    "app_alt": "12 Challenges : vue d’un défi avec calendrier et journées accomplies",
+    "inline_body": "Lance ton défi de 30 jours : définis ton objectif, active les rappels et coche les journées accomplies.",
+    "final_body": "Transforme ton idée en défi avec des règles claires et garde une trace des journées accomplies avec 12 Challenges.",
+    "faq_heading": "Questions sur le défi tractions",
+    "faq": [
+      [
+        "Qu’est-ce qu’un défi tractions ?",
+        "Un objectif à la barre avec tes propres règles : nombre fixe, progression, première traction sans aide ou échelle entre amis."
+      ],
+      [
+        "Puis-je participer sans réussir une traction ?",
+        "Oui. Travaille vers la première avec une assistance adaptée. Trente jours donnent un cadre, pas une garantie de résultat."
+      ],
+      [
+        "Combien de tractions faire par jour ?",
+        "Aucun nombre ne convient à tout le monde. Cela dépend de ton niveau et de ton entraînement. Les exemples expliquent les règles, pas un programme personnel."
+      ],
+      [
+        "Faut-il faire des tractions chaque jour pendant 30 jours ?",
+        "Non. L’important est de respecter le rythme d’entraînement et de récupération fixé avant de commencer."
+      ],
+      [
+        "Peut-on utiliser une barre de porte ?",
+        "Oui, si elle convient à l’encadrement, est correctement montée et supporte la charge. Respecte les instructions et vérifie la fixation avant la séance."
+      ],
+      [
+        "Qui gagne l’échelle de tractions ?",
+        "La dernière personne qui termine un tour. Si tous les participants restants échouent au même tour, ceux qui ont terminé le tour le plus élevé partagent la victoire."
+      ],
+      [
+        "Comment suivre mon défi tractions avec l’app ?",
+        "Crée ton objectif dans 12 Challenges, active un rappel et coche les jours où tu suis ton plan. Le calendrier montre ta régularité. L’app enregistre les journées accomplies ; note les répétitions et les séries à part si besoin."
+      ]
+    ],
+    "round_label": "Tour",
+    "reps_label": "par personne, d’affilée",
+    "ladder_caption": "Mêmes règles. Une répétition de plus à chaque tour.",
+    "related_heading": "Des idées pour ton prochain défi",
+    "ideas_link": "Idées de défis et de sport",
+    "method_link": "La méthode 12 Challenges",
+    "watch_link": "Cocher sur l’Apple Watch",
+    "breadcrumb_label": "Fil d’Ariane",
+    "contents_label": "Sur cette page",
+    "published": "2026-10-03",
+    "sports_anchor": "sport",
+    "hero_alt": "Personne faisant une traction sur une barre d’entraînement",
+    "home_body": "Avec une barre adaptée, tu peux faire le défi à la maison. Le choix dépend de l’espace et des possibilités de fixation.",
+    "places_heading": "Où peut-on aussi faire des tractions ?",
+    "places": [
+      [
+        "En salle de sport",
+        "Tu y trouveras généralement une barre ou une machine à tractions assistées. Choisis ce qui convient à ton niveau actuel."
+      ],
+      [
+        "Dans un parc de street workout",
+        "De nombreuses installations extérieures ont une barre prévue pour les tractions. Elles conviennent aussi à l’échelle entre amis. Prévois assez de place et une barre sèche que tu peux bien saisir."
+      ]
+    ],
+    "mount_heading": "Avant de commencer : vérifier la fixation",
+    "mount_body": "Avant chaque séance, vérifie que la barre et ses fixations tiennent fermement. Respecte la charge maximale et les instructions de montage. Si tu as un doute sur la fixation ou la résistance, n’utilise pas la barre.",
+    "hero_credit": "Image générée par IA"
+  },
+  "pt": {
+    "title": "Desafio de elevações: 4 variantes e regras para começar",
+    "description": "Um desafio de elevações de 30 dias ou com amigos: quatro variantes, regras claras, dicas para casa e uma app para assinalar os dias cumpridos.",
+    "h1": "Desafio de elevações: 4 variantes para ti e os teus amigos",
+    "name": "Desafio de elevações",
+    "eyebrow": "O teu objetivo na barra",
+    "lede": "Um número fixo, mais uma por sessão, a primeira elevação sem ajuda ou uma competição com amigos: escolhe o desafio que se adapta a ti.",
+    "definition": "Num desafio de elevações defines um objetivo e regras: um número de repetições nos dias de treino ou mais repetições a cada ronda. Podes praticar durante 30 dias ou competir com amigos. Não há um regulamento único; combinem o que conta antes de começar.",
+    "hero_note": "Trinta dias definem o prazo. O teu nível inicial define o objetivo.",
+    "nav": [
+      "Benefícios",
+      "Variantes",
+      "Regras",
+      "Em casa",
+      "Com a app",
+      "Perguntas"
+    ],
+    "benefit_heading": "Quais são os benefícios das elevações?",
+    "benefits": [
+      [
+        "Treinar costas e braços",
+        "Ao puxares o corpo, trabalham os músculos das costas e os flexores do braço. É um movimento de puxar com o peso do teu corpo."
+      ],
+      [
+        "Trabalhar a força de preensão",
+        "As mãos e os antebraços sustentam-te na barra. Uma prática bem doseada também exige força na pega."
+      ],
+      [
+        "Ver os teus progressos",
+        "A primeira elevação sem ajuda ou mais repetições controladas são metas concretas. O desafio organiza a prática e faz parte de um treino equilibrado."
+      ]
+    ],
+    "variants_heading": "Qual é o desafio indicado para ti?",
+    "variants_intro": "Ainda não consegues uma elevação? Trabalha para a primeira. Se já fazes várias, escolhe uma meta fixa, uma progressão ou a escada com amigos.",
+    "table_caption": "Comparação das quatro variantes",
+    "table_heads": [
+      "Variante",
+      "Para quem?",
+      "O que conta?"
+    ],
+    "variants": [
+      {
+        "id": "festes-ziel",
+        "heading": "Um número fixo por dia",
+        "short": "A tua meta fixa",
+        "audience": "Já fazes elevações controladas.",
+        "goal": "Atingir um número escolhido nos dias de treino.",
+        "count": "Total do dia de treino",
+        "rules": [
+          "Escolhe uma meta adequada ao teu nível atual.",
+          "Podes dividir as repetições por séries. Cinco no total não significa cinco seguidas.",
+          "Treinar diariamente é uma opção, mas a carga tem de se adequar a ti. Combina dias de recuperação; um ritmo com descanso também é um desafio."
+        ],
+        "example": "Para um total de cinco: duas de manhã, duas mais tarde e uma à noite. É um exemplo de contagem, não uma prescrição de treino."
+      },
+      {
+        "id": "steigerung",
+        "heading": "Mais uma elevação por sessão",
+        "short": "Mais uma",
+        "audience": "Tens uma base e queres progredir.",
+        "goal": "Aumentar gradualmente a meta combinada.",
+        "count": "Meta por sessão",
+        "rules": [
+          "Escolhe um número inicial e define se a meta se aplica à sessão inteira ou a uma única série.",
+          "A regra é uma elevação na primeira sessão, duas na segunda e três na terceira. Se contares o total da sessão, podes dividi-lo por séries.",
+          "Aumenta apenas enquanto manténs o controlo. Mantém a meta, reduz ou descansa se necessário. Os dias de recuperação ficam entre sessões e não aumentam a meta seguinte."
+        ],
+        "example": "Uma elevação na primeira sessão, duas na segunda e três na terceira, com os dias de recuperação planeados entre elas. A progressão segue o treino, não o calendário."
+      },
+      {
+        "id": "erster-klimmzug",
+        "heading": "Trabalhar para a primeira elevação em 30 dias",
+        "short": "A tua primeira elevação",
+        "audience": "Ainda não fazes uma elevação sem ajuda.",
+        "goal": "Praticar com regularidade e aproximar-te da primeira.",
+        "count": "Sessão de prática planeada",
+        "rules": [
+          "Usa 30 dias como período de prática e planeia treino e recuperação.",
+          "Um elástico adequado ou uma máquina de elevações assistidas pode ajudar. Pede orientação sobre a técnica.",
+          "Compara o início e o fim nas mesmas condições. Precisar de menos ajuda também é progredir."
+        ],
+        "example": "Começas com assistência e, mais tarde, fazes o mesmo movimento com menos ajuda. É progresso, mesmo sem uma elevação livre no dia 30."
+      },
+      {
+        "id": "leiter",
+        "heading": "A escada de elevações com amigos",
+        "short": "A escada com amigos",
+        "audience": "Já fazem elevações sem ajuda e querem competir.",
+        "goal": "Completar a ronda mais alta.",
+        "count": "Repetições seguidas",
+        "rules": [
+          "Combinem pega, amplitude, ordem e descanso mínimo entre as séries de cada pessoa. Mantenham a ordem e esperem se o descanso ainda não terminou.",
+          "Cada pessoa faz uma na primeira ronda, duas na segunda e três na terceira. Cada ronda tem de ser feita numa só série.",
+          "Quem não completa a ronda com controlo sai. Continuem até haver um vencedor. Se todos os restantes falharem a mesma ronda, partilham a vitória os que completaram a ronda mais alta."
+        ],
+        "example": "Alex e Sam completam a terceira ronda. Na quarta, Alex faz as quatro e Sam apenas três: Alex ganha. Se nenhum completar quatro, empatam."
+      }
+    ],
+    "audience_label": "Para quem?",
+    "goal_label": "O teu objetivo",
+    "rules_label": "Como funciona",
+    "example_label": "Um exemplo",
+    "rules_heading": "Regras comuns: o que conta como elevação?",
+    "common_rules": [
+      "Combinem a pega. Pronação e supinação são variantes diferentes; comparem com a mesma pega.",
+      "Começa numa posição controlada, com os braços estendidos. Sobe o queixo acima da barra e desce com controlo. Sem balanço, saltos ou repetições parciais.",
+      "Na competição, a série acaba quando largas a barra. Contem separadamente as repetições assistidas e sem ajuda.",
+      "Termina a série quando já não consegues manter a técnica combinada. Se sentires dor, para o exercício."
+    ],
+    "recovery_heading": "Um desafio também pode incluir descanso",
+    "recovery_body": "Trinta dias de desafio não são trinta treinos intensos. Reserva um dia completo de recuperação antes de voltar a treinar o mesmo grupo muscular. Organiza os treinos em conformidade, em vez de aumentar a carga só por causa do calendário.",
+    "home_heading": "Elevações em casa: que opções tens?",
+    "equipment": [
+      [
+        "Barra no vão da porta",
+        "Uma barra de porta é uma opção se o modelo for compatível e puder ser montado segundo as instruções do fabricante."
+      ],
+      [
+        "Uma barra fixa",
+        "Também podes usar uma barra fixa numa parede, no teto ou numa viga adequada. A estrutura e as fixações devem suportar a carga prevista."
+      ]
+    ],
+    "app_heading": "Acompanha o teu desafio de elevações",
+    "app_body": "Com o 12 Challenges defines o teu objetivo para 30 dias, recebes lembretes e assinalas os dias cumpridos. Também podes acompanhar outras atividades desportivas.",
+    "app_goal": "Cumpri o meu treino de elevações planeado",
+    "app_steps": [
+      "Cria um desafio com um título teu. Descreve o objetivo e o ritmo de treino.",
+      "Define o que significa cumprir cada dia: a sessão prevista nos dias de treino e o descanso respeitado nos dias de recuperação. A marca indica que seguiste o plano.",
+      "Assinala o dia se seguiste o teu plano. Um lembrete pode ajudar e o calendário mostra os dias cumpridos de uma só vez."
+    ],
+    "app_example_label": "Exemplo de objetivo na app",
+    "app_alt": "12 Challenges: vista de um desafio com calendário e dias cumpridos",
+    "inline_body": "Começa o teu desafio de 30 dias: define o objetivo, recebe lembretes e assinala os dias cumpridos.",
+    "final_body": "Transforma a ideia num desafio com regras claras e acompanha os dias cumpridos com o 12 Challenges.",
+    "faq_heading": "Perguntas sobre o desafio de elevações",
+    "faq": [
+      [
+        "O que é um desafio de elevações?",
+        "Uma meta na barra com regras próprias: número fixo, progressão, primeira elevação sem ajuda ou uma escada com amigos."
+      ],
+      [
+        "Posso participar se ainda não conseguir uma?",
+        "Sim. Trabalha para a primeira com assistência adequada. Trinta dias dão um prazo, não garantem o resultado."
+      ],
+      [
+        "Quantas elevações devo fazer por dia?",
+        "Não há um número que sirva para todos. Depende do nível e do treino. Os exemplos explicam as regras; não são um plano pessoal."
+      ],
+      [
+        "Tenho de fazer elevações todos os dias durante 30 dias?",
+        "Não. O importante é respeitar o ritmo de treino e recuperação que definiste antes de começar."
+      ],
+      [
+        "Posso usar uma barra de porta?",
+        "Sim, se for compatível com a porta, estiver bem montada e suportar a carga. Segue as instruções e verifica a fixação antes do treino."
+      ],
+      [
+        "Quem ganha a escada de elevações?",
+        "A última pessoa a completar uma ronda. Se todos os restantes falharem a mesma ronda, partilham a vitória os que completaram a ronda mais alta."
+      ],
+      [
+        "Como posso acompanhar o desafio de elevações com a app?",
+        "Cria o teu objetivo no 12 Challenges, ativa um lembrete e assinala os dias em que segues o plano. O calendário mostra a tua regularidade. A app regista dias cumpridos; anota as repetições e as séries à parte se precisares."
+      ]
+    ],
+    "round_label": "Ronda",
+    "reps_label": "por pessoa, seguidas",
+    "ladder_caption": "As mesmas regras. Mais uma repetição em cada ronda.",
+    "related_heading": "Ideias para o teu próximo desafio",
+    "ideas_link": "Ideias de desafios e desporto",
+    "method_link": "O método 12 Challenges",
+    "watch_link": "Assinalar no Apple Watch",
+    "breadcrumb_label": "Percurso de navegação",
+    "contents_label": "Nesta página",
+    "published": "2026-10-03",
+    "sports_anchor": "desporto",
+    "hero_alt": "Pessoa a fazer uma elevação numa barra de treino",
+    "home_body": "Com uma barra adequada podes fazer o desafio em casa. A solução depende do espaço e das possibilidades de fixação.",
+    "places_heading": "Onde mais podes fazer elevações?",
+    "places": [
+      [
+        "No ginásio",
+        "Normalmente há uma barra ou uma máquina de elevações assistidas. Escolhe a opção adequada ao teu nível atual."
+      ],
+      [
+        "Num parque de calistenia",
+        "Muitas instalações de treino ao ar livre têm uma barra própria para elevações. Também servem para a escada com amigos. Deixa espaço suficiente e usa uma barra seca que consigas agarrar bem."
+      ]
+    ],
+    "mount_heading": "Antes de começar: verificar a fixação",
+    "mount_body": "Antes de cada sessão, verifica se a barra e as fixações estão firmes. Respeita a carga máxima e as instruções de montagem. Se tiveres dúvidas sobre a fixação ou a resistência, não uses a barra.",
+    "hero_credit": "Imagem gerada por IA"
+  },
+  "it": {
+    "title": "Sfida di trazioni: 4 varianti e regole per iniziare",
+    "description": "Una sfida di trazioni di 30 giorni o con gli amici: quattro varianti, regole chiare, consigli per casa e un’app per segnare i giorni completati.",
+    "h1": "Sfida di trazioni: 4 varianti per te e i tuoi amici",
+    "name": "Sfida di trazioni",
+    "eyebrow": "Il tuo obiettivo alla sbarra",
+    "lede": "Un numero fisso, una in più per sessione, la prima trazione senza aiuto o una gara tra amici: scegli la sfida adatta a te.",
+    "definition": "In una sfida di trazioni scegli un obiettivo e delle regole: un numero di ripetizioni nei giorni di allenamento o più ripetizioni a ogni turno. Puoi esercitarti per 30 giorni o gareggiare con gli amici. Non esiste un regolamento unico: concordate cosa conta prima di iniziare.",
+    "hero_note": "Trenta giorni definiscono il periodo. Il tuo livello iniziale definisce l’obiettivo.",
+    "nav": [
+      "Benefici",
+      "Varianti",
+      "Regole",
+      "A casa",
+      "Con l’app",
+      "Domande"
+    ],
+    "benefit_heading": "A cosa servono le trazioni?",
+    "benefits": [
+      [
+        "Allenare schiena e braccia",
+        "Nel sollevarti lavorano i muscoli della schiena e i flessori del braccio. È un movimento di tirata con il peso del tuo corpo."
+      ],
+      [
+        "Allenare la presa",
+        "Mani e avambracci ti sostengono alla sbarra. Una pratica ben dosata mette alla prova anche la presa."
+      ],
+      [
+        "Vedere i progressi",
+        "La prima trazione senza aiuto o più ripetizioni controllate sono obiettivi concreti. La sfida dà struttura alla pratica ed è parte di un allenamento equilibrato."
+      ]
+    ],
+    "variants_heading": "Quale sfida di trazioni fa per te?",
+    "variants_intro": "Non riesci ancora a fare una trazione? Lavora verso la prima. Se ne fai già diverse, scegli un obiettivo fisso, una progressione o la scala con gli amici.",
+    "table_caption": "Le quattro varianti a confronto",
+    "table_heads": [
+      "Variante",
+      "Per chi?",
+      "Cosa conta?"
+    ],
+    "variants": [
+      {
+        "id": "festes-ziel",
+        "heading": "Un numero fisso al giorno",
+        "short": "Il tuo obiettivo fisso",
+        "audience": "Fai già trazioni controllate.",
+        "goal": "Raggiungere un numero scelto nei giorni di allenamento.",
+        "count": "Totale del giorno di allenamento",
+        "rules": [
+          "Scegli un numero adatto al tuo livello attuale.",
+          "Puoi dividere le ripetizioni in più serie. Cinque in totale non significa cinque consecutive.",
+          "Allenarti ogni giorno è un’opzione, ma il carico deve essere adatto a te. Concorda giorni di recupero: anche un ritmo con pause è una sfida."
+        ],
+        "example": "Per un totale di cinque: due al mattino, due più tardi e una alla sera. È un esempio di conteggio, non una prescrizione di allenamento."
+      },
+      {
+        "id": "steigerung",
+        "heading": "Una trazione in più per sessione",
+        "short": "Una in più",
+        "audience": "Hai già una base e vuoi progredire.",
+        "goal": "Aumentare gradualmente l’obiettivo concordato.",
+        "count": "Obiettivo per sessione",
+        "rules": [
+          "Scegli un numero iniziale e decidi se l’obiettivo riguarda tutta la sessione o una singola serie.",
+          "La regola è una trazione nella prima sessione, due nella seconda e tre nella terza. Se conti il totale della sessione, puoi dividerlo in più serie.",
+          "Aumenta solo mantenendo il controllo. Mantieni il numero, riducilo o riposa quando serve. I giorni di recupero separano le sessioni e non aumentano l’obiettivo successivo."
+        ],
+        "example": "Una trazione nella prima sessione, due nella seconda e tre nella terza, con i giorni di recupero previsti tra le sessioni. La progressione segue l’allenamento, non il calendario."
+      },
+      {
+        "id": "erster-klimmzug",
+        "heading": "Punta alla prima trazione in 30 giorni",
+        "short": "La tua prima trazione",
+        "audience": "Non fai ancora una trazione senza aiuto.",
+        "goal": "Esercitarti con costanza e avvicinarti alla prima.",
+        "count": "Sessione di pratica prevista",
+        "rules": [
+          "Usa 30 giorni come periodo di pratica e pianifica allenamento e recupero.",
+          "Un elastico adatto o una macchina per trazioni assistite può aiutare all’inizio. Fatti spiegare la tecnica.",
+          "Confronta inizio e fine nelle stesse condizioni. Aver bisogno di meno aiuto è già un progresso."
+        ],
+        "example": "All’inizio usi assistenza; in seguito esegui lo stesso movimento con meno aiuto. È un progresso, anche senza una trazione libera al giorno 30."
+      },
+      {
+        "id": "leiter",
+        "heading": "La scala di trazioni con gli amici",
+        "short": "La scala con gli amici",
+        "audience": "Fate già trazioni senza aiuto e volete gareggiare.",
+        "goal": "Completare il turno più alto.",
+        "count": "Ripetizioni consecutive",
+        "rules": [
+          "Concordate presa, ampiezza, ordine e pausa minima tra le serie di ciascuno. Mantenete l’ordine e aspettate se la pausa non è ancora terminata.",
+          "Ognuno fa una trazione al primo turno, due al secondo e tre al terzo. Ogni turno va completato in una sola serie.",
+          "Chi non completa il turno con controllo è eliminato. Continuate finché resta un vincitore. Se tutti i rimasti falliscono nello stesso turno, condividono la vittoria quelli che hanno completato il turno più alto."
+        ],
+        "example": "Alex e Sam completano il terzo turno. Al quarto Alex ne fa quattro e Sam solo tre: vince Alex. Se nessuno completa le quattro, è un pareggio."
+      }
+    ],
+    "audience_label": "Per chi?",
+    "goal_label": "Il tuo obiettivo",
+    "rules_label": "Come funziona",
+    "example_label": "Un esempio",
+    "rules_heading": "Regole comuni: cosa conta come trazione?",
+    "common_rules": [
+      "Concordate la presa. Prona e supina sono varianti diverse: confrontatevi usando la stessa.",
+      "Parti in posizione controllata con le braccia distese, porta il mento sopra la sbarra e scendi con controllo. Niente slanci, salti o ripetizioni parziali.",
+      "Nella gara la serie finisce quando lasci la sbarra. Contate separatamente ripetizioni assistite e senza aiuto.",
+      "Termina la serie quando non riesci più a mantenere la tecnica concordata. In caso di dolore interrompi l’esercizio."
+    ],
+    "recovery_heading": "Una sfida può includere giorni di riposo",
+    "recovery_body": "Trenta giorni di sfida non sono trenta allenamenti intensi. Prevedi un giorno completo di recupero prima di allenare di nuovo lo stesso gruppo muscolare. Organizza le sessioni di conseguenza, senza aumentare il carico solo per il calendario.",
+    "home_heading": "Trazioni a casa: quali possibilità hai?",
+    "equipment": [
+      [
+        "Sbarra nel telaio della porta",
+        "Una sbarra da porta è un’opzione se il modello è compatibile con il telaio e può essere montato secondo le istruzioni del produttore."
+      ],
+      [
+        "Una sbarra fissa",
+        "In alternativa, una sbarra fissa a parete, al soffitto o su una trave adatta. La struttura e i fissaggi devono essere progettati per il carico."
+      ]
+    ],
+    "app_heading": "Tieni traccia della tua sfida di trazioni",
+    "app_body": "Con 12 Challenges scegli l’obiettivo per 30 giorni, imposti promemoria e spunti i giorni completati. Puoi seguire anche altre attività sportive.",
+    "app_goal": "Ho completato il mio allenamento di trazioni previsto",
+    "app_steps": [
+      "Crea una sfida con un titolo tuo. Descrivi l’obiettivo e il ritmo di allenamento.",
+      "Definisci cosa significa completare ogni giorno: la sessione prevista nei giorni di allenamento e il riposo rispettato in quelli di recupero. La spunta indica che hai seguito il piano.",
+      "Spunta il giorno se hai seguito il tuo piano. Un promemoria può aiutarti e il calendario mostra i giorni completati a colpo d’occhio."
+    ],
+    "app_example_label": "Un esempio di obiettivo nell’app",
+    "app_alt": "12 Challenges: vista di una sfida con calendario e giorni completati",
+    "inline_body": "Inizia la tua sfida di 30 giorni: scegli l’obiettivo, imposta i promemoria e spunta i giorni completati.",
+    "final_body": "Trasforma l’idea in una sfida con regole chiare e tieni traccia dei giorni completati con 12 Challenges.",
+    "faq_heading": "Domande sulla sfida di trazioni",
+    "faq": [
+      [
+        "Cos’è una sfida di trazioni?",
+        "Un obiettivo alla sbarra con regole proprie: numero fisso, progressione, prima trazione senza aiuto o scala con gli amici."
+      ],
+      [
+        "Posso partecipare se non riesco ancora a farne una?",
+        "Sì. Lavora verso la prima con assistenza adatta. Trenta giorni danno un periodo, non una garanzia di risultato."
+      ],
+      [
+        "Quante trazioni dovrei fare al giorno?",
+        "Non esiste un numero adatto a tutti. Dipende dal livello e dall’allenamento. Gli esempi spiegano le regole, non un piano personale."
+      ],
+      [
+        "Devo fare trazioni ogni giorno per 30 giorni?",
+        "No. Conta rispettare il ritmo di allenamento e recupero che hai stabilito prima di iniziare."
+      ],
+      [
+        "Posso usare una sbarra da porta?",
+        "Sì, se è compatibile con il telaio, montata correttamente e abbastanza resistente. Segui le istruzioni e controlla il montaggio prima di allenarti."
+      ],
+      [
+        "Chi vince la scala di trazioni?",
+        "L’ultima persona che completa un turno. Se tutti i rimasti falliscono nello stesso turno, vincono insieme quelli che hanno completato il turno più alto."
+      ],
+      [
+        "Come posso seguire la sfida di trazioni con l’app?",
+        "Crea il tuo obiettivo in 12 Challenges, imposta un promemoria e spunta i giorni in cui segui il piano. Il calendario mostra la tua costanza. L’app registra i giorni completati; annota le ripetizioni e le serie a parte se ti servono."
+      ]
+    ],
+    "round_label": "Turno",
+    "reps_label": "a persona, consecutive",
+    "ladder_caption": "Stesse regole. Una ripetizione in più a ogni turno.",
+    "related_heading": "Idee per la tua prossima sfida",
+    "ideas_link": "Idee di sfide e sport",
+    "method_link": "Il metodo 12 Challenges",
+    "watch_link": "Spunta sull’Apple Watch",
+    "breadcrumb_label": "Percorso di navigazione",
+    "contents_label": "In questa pagina",
+    "published": "2026-10-03",
+    "sports_anchor": "sport",
+    "hero_alt": "Persona che esegue una trazione alla sbarra",
+    "home_body": "Con una sbarra adatta puoi fare la sfida a casa. La scelta dipende dallo spazio e dai punti di fissaggio disponibili.",
+    "places_heading": "Dove altro puoi fare trazioni?",
+    "places": [
+      [
+        "In palestra",
+        "Di solito trovi una sbarra o una macchina per trazioni assistite. Scegli la soluzione adatta al tuo livello attuale."
+      ],
+      [
+        "In un parco di calisthenics",
+        "Molte aree di allenamento all’aperto hanno una sbarra predisposta per le trazioni. Vanno bene anche per la scala con gli amici. Lascia spazio sufficiente e usa una sbarra asciutta con una presa sicura."
+      ]
+    ],
+    "mount_heading": "Prima di iniziare: controlla il fissaggio",
+    "mount_body": "Prima di ogni sessione, controlla che la sbarra e i fissaggi siano saldi. Rispetta il carico massimo e le istruzioni di montaggio. Se hai dubbi sul fissaggio o sulla resistenza, non usare la sbarra.",
+    "hero_credit": "Immagine generata con IA"
+  },
+  "tr": {
+    "title": "Barfiks challenge: 4 seçenek ve katılım kuralları",
+    "description": "30 günlük veya arkadaşlarla yapılan barfiks challenge: dört seçenek, açık kurallar, evde antrenman önerileri ve tamamlanan günleri takip eden bir uygulama.",
+    "h1": "Barfiks challenge: sen ve arkadaşların için 4 seçenek",
+    "name": "Barfiks challenge",
+    "eyebrow": "Barfikste hedefin",
+    "lede": "Sabit bir sayı, her antrenmanda bir tekrar daha, ilk desteksiz barfiksin ya da arkadaşlarla yarışma: sana uygun seçeneği bul.",
+    "definition": "Barfiks challenge için bir hedef ve kurallar belirlersin: antrenman günlerinde sabit sayıda tekrar yapmak veya her turda tekrar sayısını artırmak gibi. 30 gün boyunca tek başına çalışabilir ya da arkadaşlarınla yarışabilirsin. Tek bir resmî kural yoktur; başlamadan önce neyin sayılacağını kararlaştırın.",
+    "hero_note": "Otuz gün süreyi belirler. Başlangıç seviyen ise hedefini.",
+    "nav": [
+      "Faydaları",
+      "Seçenekler",
+      "Kurallar",
+      "Evde",
+      "Uygulamayla",
+      "Sorular"
+    ],
+    "benefit_heading": "Barfiks ne işe yarar?",
+    "benefits": [
+      [
+        "Sırt ve kolları çalıştırmak",
+        "Kendini yukarı çekerken sırt kasların ve kol bükücülerin çalışır. Kendi vücut ağırlığınla bir çekiş hareketi yaparsın."
+      ],
+      [
+        "Kavrama gücünü çalıştırmak",
+        "Ellerin ve ön kolların seni barda tutar. Uygun yükle düzenli çalışmak kavramanı da zorlar."
+      ],
+      [
+        "Gelişimi görmek",
+        "İlk desteksiz barfiks veya daha fazla kontrollü tekrar somut hedeflerdir. Challenge çalışmana düzen katar ve dengeli bir antrenmanın parçasıdır."
+      ]
+    ],
+    "variants_heading": "Hangi barfiks challenge sana uygun?",
+    "variants_intro": "Henüz barfiks çekemiyor musun? İlk tekrarına odaklan. Birkaç tekrar yapabiliyorsan sabit hedef, kademeli artış veya arkadaşlarla merdiven yarışmasını seç.",
+    "table_caption": "Dört seçeneğin karşılaştırması",
+    "table_heads": [
+      "Seçenek",
+      "Kimler için?",
+      "Ne sayılır?"
+    ],
+    "variants": [
+      {
+        "id": "festes-ziel",
+        "heading": "Her gün sabit sayıda barfiks",
+        "short": "Sabit hedefin",
+        "audience": "Kontrollü barfiks çekebiliyorsun.",
+        "goal": "Antrenman günlerinde seçtiğin sayıya ulaşmak.",
+        "count": "Antrenman gününün toplamı",
+        "rules": [
+          "Mevcut seviyene uygun bir hedef belirle.",
+          "Tekrarları setlere bölebilirsin. Toplam beş tekrar, aralıksız beş tekrar demek değildir.",
+          "Her gün çalışmak bir seçenektir, ancak yük sana uygun olmalı. Dinlenme günlerini belirle; molalı bir düzen de challenge olabilir."
+        ],
+        "example": "Beş tekrar hedefi için sabah iki, daha sonra iki, akşam bir yapabilirsin. Bu bir sayım örneğidir, antrenman önerisi değildir."
+      },
+      {
+        "id": "steigerung",
+        "heading": "Her antrenmanda bir barfiks daha",
+        "short": "Bir tekrar daha",
+        "audience": "Bir temelin var ve gelişmek istiyorsun.",
+        "goal": "Belirlediğin hedefi kademeli artırmak.",
+        "count": "Antrenman başına hedef",
+        "rules": [
+          "Başlangıç sayısını seç ve hedefin tüm antrenmana mı yoksa tek sete mi ait olduğunu belirle.",
+          "Kural: ilk antrenmanda bir, ikincide iki, üçüncüde üç barfiks. Antrenmanın toplamını sayıyorsan tekrarları setlere bölebilirsin.",
+          "Yalnızca kontrollü tekniği koruyabildiğinde artır. Gerektiğinde aynı hedefte kal, azalt veya dinlen. Dinlenme günleri antrenmanların arasında yer alır ve sonraki hedefi artırmaz."
+        ],
+        "example": "İlk antrenmanda bir, ikincide iki, üçüncüde üç barfiks yaparsın. Aralarına planladığın dinlenme günleri girer. Artış takvime değil, antrenmanına göre ilerler."
+      },
+      {
+        "id": "erster-klimmzug",
+        "heading": "30 günde ilk barfiksine doğru çalış",
+        "short": "İlk barfiksin",
+        "audience": "Henüz desteksiz barfiks çekemiyorsun.",
+        "goal": "Düzenli çalışıp ilk tekrarına yaklaşmak.",
+        "count": "Planlanan çalışma seansı",
+        "rules": [
+          "30 günü çalışma süresi olarak kullan ve antrenmanla dinlenmeyi planla.",
+          "Uygun bir direnç bandı veya destekli barfiks makinesi başlangıcı kolaylaştırabilir. Teknik için yardım al.",
+          "Başlangıcı ve son durumu aynı koşullarda karşılaştır. Daha az desteğe ihtiyaç duymak da ilerlemedir."
+        ],
+        "example": "Başlangıçta desteğe ihtiyaç duyarken daha sonra aynı hareketi daha az yardımla yaparsın. İlk desteksiz tekrar 30. günde olmasa da ilerlemiş olursun."
+      },
+      {
+        "id": "leiter",
+        "heading": "Arkadaşlarla barfiks merdiveni",
+        "short": "Arkadaşlarla merdiven",
+        "audience": "Desteksiz barfiks çekebiliyor ve yarışmak istiyorsunuz.",
+        "goal": "En yüksek turu tamamlamak.",
+        "count": "Aralıksız tekrarlar",
+        "rules": [
+          "Tutuşu, hareket açıklığını, sırayı ve kişinin kendi setleri arasındaki minimum dinlenmeyi belirleyin. Sırayı koruyun; dinlenme süresi dolmadıysa bekleyin.",
+          "İlk turda herkes bir, ikinci turda iki, üçüncü turda üç tekrar yapar. Her tur tek sette tamamlanır.",
+          "Turu kontrollü tamamlayamayan elenir. Bir kişi kazanana kadar devam edin. Kalan herkes aynı turda elenirse en yüksek turu tamamlayanlar galibiyeti paylaşır."
+        ],
+        "example": "Alex ve Sam üçüncü turu tamamlar. Dördüncüde Alex dört, Sam üç tekrar yapar: Alex kazanır. İkisi de dördü tamamlayamazsa berabere kalırlar."
+      }
+    ],
+    "audience_label": "Kimler için?",
+    "goal_label": "Hedefin",
+    "rules_label": "Nasıl yapılır?",
+    "example_label": "Bir örnek",
+    "rules_heading": "Ortak kurallar: hangi tekrar sayılır?",
+    "common_rules": [
+      "Tutuşu belirleyin. Üstten ve alttan tutuş farklı seçeneklerdir; aynı tutuşla karşılaştırın.",
+      "Kollar düz ve vücut kontrollü konumdayken başla. Çeneni barın üzerine çıkar ve kontrollü in. Sallanma, sıçrama veya yarım tekrar yok.",
+      "Yarışmada barı bıraktığında set biter. Destekli ve desteksiz tekrarları ayrı sayın.",
+      "Belirlenen tekniği koruyamadığında seti bitir. Ağrı olursa egzersizi durdur."
+    ],
+    "recovery_heading": "Challenge dinlenme günleri de içerebilir",
+    "recovery_body": "30 günlük challenge, 30 ağır antrenman demek değildir. Aynı kas grubunu yeniden çalıştırmadan önce tam bir gün dinlen. Günlerini buna göre planla; yükü sırf takvim gereği artırma.",
+    "home_heading": "Evde barfiks: hangi seçenekler var?",
+    "equipment": [
+      [
+        "Kapıya takılan bar",
+        "Model kapı çerçevene uyuyorsa ve üretici talimatlarına göre monte edilebiliyorsa kapı barı bir seçenektir."
+      ],
+      [
+        "Sabit monte edilen bar",
+        "Alternatif olarak duvara, tavana veya uygun bir kirişe sabitlenen bar kullanılabilir. Yapı ve bağlantılar bu yük için tasarlanmış olmalıdır."
+      ]
+    ],
+    "app_heading": "Barfiks challenge günlerini takip et",
+    "app_body": "12 Challenges ile 30 günlük hedefini oluştur, hatırlatıcı ekle ve tamamladığın günleri işaretle. Diğer spor aktiviteleri için de kullanabilirsin.",
+    "app_goal": "Planladığım barfiks antrenmanını tamamladım",
+    "app_steps": [
+      "Kendi başlığınla bir challenge oluştur. Hedefini ve antrenman düzenini açıklamaya yaz.",
+      "Her gün için tamamlamanın anlamını belirle: antrenman gününde planlanan seans, dinlenme gününde plana uygun dinlenme. İşaret, planına uyduğun anlamına gelir.",
+      "Planına uyduysan günü işaretle. Bir hatırlatıcı yardımcı olabilir; takvimde tamamladığın günleri bir bakışta görürsün."
+    ],
+    "app_example_label": "Uygulamada bir hedef örneği",
+    "app_alt": "12 Challenges: takvim ve tamamlanan günlerle challenge görünümü",
+    "inline_body": "30 günlük challenge’ına başla: hedefini belirle, hatırlatıcı ekle ve tamamladığın günleri işaretle.",
+    "final_body": "Fikrini açık kuralları olan bir challenge’a dönüştür ve 12 Challenges ile tamamladığın günleri takip et.",
+    "faq_heading": "Barfiks challenge hakkında sorular",
+    "faq": [
+      [
+        "Barfiks challenge nedir?",
+        "Barda kendin belirlediğin kurallarla bir hedef: sabit sayı, artan tekrarlar, ilk desteksiz barfiks veya arkadaşlarla merdiven yarışması."
+      ],
+      [
+        "Henüz barfiks çekemiyorsam katılabilir miyim?",
+        "Evet. Uygun destekle ilk tekrarına doğru çalış. Otuz gün bir süre verir, sonuç garantisi değil."
+      ],
+      [
+        "Günde kaç barfiks çekmeliyim?",
+        "Herkese uygun bir sayı yoktur. Seviyene ve antrenmanına bağlıdır. Örnekler kuralları açıklar; kişisel program değildir."
+      ],
+      [
+        "30 gün boyunca her gün barfiks şart mı?",
+        "Hayır. Önemli olan, başlamadan önce belirlediğin antrenman ve dinlenme düzenine uymandır."
+      ],
+      [
+        "Kapı barı kullanabilir miyim?",
+        "Evet; çerçeveye uygun, doğru monte edilmiş ve yeterince dayanıklıysa. Talimatlara uy ve antrenmandan önce bağlantıyı kontrol et."
+      ],
+      [
+        "Barfiks merdivenini kim kazanır?",
+        "Tam bir turu tamamlayan son kişi. Kalan herkes aynı turda elenirse daha önce en yüksek turu tamamlayanlar galibiyeti paylaşır."
+      ],
+      [
+        "Barfiks challenge günlerini uygulamayla nasıl takip ederim?",
+        "12 Challenges’ta hedefini oluştur, hatırlatıcı ekle ve planına uyduğun günleri işaretle. Takvim ne kadar düzenli devam ettiğini gösterir. Uygulama tamamlanan günleri kaydeder; tekrar sayılarını ve setleri gerekirse ayrıca not al."
+      ]
+    ],
+    "round_label": "Tur",
+    "reps_label": "kişi başı, aralıksız",
+    "ladder_caption": "Aynı kurallar. Her turda bir tekrar daha.",
+    "related_heading": "Sonraki challenge için fikirler",
+    "ideas_link": "Spor ve challenge fikirleri",
+    "method_link": "12 Challenges yöntemi",
+    "watch_link": "Apple Watch’ta işaretle",
+    "breadcrumb_label": "Gezinti yolu",
+    "contents_label": "Bu sayfada",
+    "published": "2026-10-03",
+    "sports_anchor": "spor",
+    "hero_alt": "Antrenman barında barfiks çeken bir kişi",
+    "home_body": "Uygun bir barfiks barıyla challenge’ı evde de yapabilirsin. Seçim, alanına ve montaj imkânlarına bağlıdır.",
+    "places_heading": "Başka nerede barfiks çekebilirsin?",
+    "places": [
+      [
+        "Spor salonunda",
+        "Genellikle bir barfiks barı veya destekli barfiks makinesi bulunur. Mevcut seviyene uygun seçeneği kullan."
+      ],
+      [
+        "Açık hava antrenman parkında",
+        "Birçok açık hava antrenman alanında barfiks için tasarlanmış barlar bulunur. Arkadaşlarla merdiven yarışması için de uygundur. Yeterli alan bırak ve güvenle kavrayabileceğin kuru bir bar kullan."
+      ]
+    ],
+    "mount_heading": "Başlamadan önce: bağlantıyı kontrol et",
+    "mount_body": "Her antrenmandan önce barın ve bağlantılarının sağlamlığını kontrol et. Yük sınırına ve montaj talimatlarına uy. Bağlantıdan veya taşıma kapasitesinden emin değilsen barı kullanma.",
+    "hero_credit": "Yapay zekâ ile oluşturulmuş görsel"
+  },
+  "pl": {
+    "title": "Wyzwanie w podciąganiu: 4 warianty i zasady",
+    "description": "Wyzwanie w podciąganiu na 30 dni lub ze znajomymi: cztery warianty, zasady, wskazówki do ćwiczeń w domu i aplikacja do odhaczania wykonanych dni.",
+    "h1": "Wyzwanie w podciąganiu: 4 warianty dla ciebie i znajomych",
+    "name": "Wyzwanie w podciąganiu",
+    "eyebrow": "Twój cel na drążku",
+    "lede": "Stała liczba, o jedno więcej na trening, pierwsze podciągnięcie bez pomocy albo zawody ze znajomymi: wybierz wariant dla siebie.",
+    "definition": "W wyzwaniu w podciąganiu ustalasz cel i zasady: liczbę powtórzeń w dni treningowe lub więcej powtórzeń w każdej rundzie. Możesz ćwiczyć przez 30 dni lub rywalizować ze znajomymi. Nie ma jednego regulaminu, więc przed startem ustalcie, co się liczy.",
+    "hero_note": "Trzydzieści dni wyznacza czas. Twój poziom początkowy wyznacza cel.",
+    "nav": [
+      "Korzyści",
+      "Warianty",
+      "Zasady",
+      "W domu",
+      "Z aplikacją",
+      "Pytania"
+    ],
+    "benefit_heading": "Co daje podciąganie?",
+    "benefits": [
+      [
+        "Ćwiczenie pleców i ramion",
+        "Przy podciąganiu pracują mięśnie pleców i zginacze ramion. Wykonujesz ruch przyciągania z ciężarem własnego ciała."
+      ],
+      [
+        "Praca nad siłą chwytu",
+        "Dłonie i przedramiona utrzymują cię na drążku. Odpowiednio dobrane ćwiczenia angażują też chwyt."
+      ],
+      [
+        "Widoczne postępy",
+        "Pierwsze podciągnięcie bez pomocy lub więcej kontrolowanych powtórzeń to konkretne cele. Wyzwanie porządkuje ćwiczenia i jest częścią zrównoważonego treningu."
+      ]
+    ],
+    "variants_heading": "Które wyzwanie wybrać?",
+    "variants_intro": "Nie robisz jeszcze podciągnięcia? Pracuj nad pierwszym. Jeśli robisz już kilka, wybierz stały cel, stopniowy wzrost lub drabinkę ze znajomymi.",
+    "table_caption": "Porównanie czterech wariantów",
+    "table_heads": [
+      "Wariant",
+      "Dla kogo?",
+      "Co się liczy?"
+    ],
+    "variants": [
+      {
+        "id": "festes-ziel",
+        "heading": "Stała liczba podciągnięć dziennie",
+        "short": "Twój stały cel",
+        "audience": "Robisz już kontrolowane podciągnięcia.",
+        "goal": "Osiągać wybraną liczbę w dni treningowe.",
+        "count": "Suma w dniu treningowym",
+        "rules": [
+          "Wybierz cel odpowiedni do obecnego poziomu.",
+          "Możesz podzielić powtórzenia na serie. Pięć łącznie nie oznacza pięciu z rzędu.",
+          "Codzienne ćwiczenia są opcją, ale obciążenie musi ci odpowiadać. Ustal dni regeneracji; rytm z odpoczynkiem też jest wyzwaniem."
+        ],
+        "example": "Aby zebrać pięć: dwa rano, dwa później i jedno wieczorem. To przykład liczenia, a nie zalecenie treningowe."
+      },
+      {
+        "id": "steigerung",
+        "heading": "O jedno podciągnięcie więcej na trening",
+        "short": "O jedno więcej",
+        "audience": "Masz podstawy i chcesz robić postępy.",
+        "goal": "Stopniowo zwiększać ustalony cel.",
+        "count": "Cel na trening",
+        "rules": [
+          "Wybierz liczbę początkową i ustal, czy cel dotyczy całego treningu, czy jednej serii.",
+          "Zasada: jedno podciągnięcie na pierwszym treningu, dwa na drugim, trzy na trzecim. Jeśli liczysz sumę treningu, możesz rozłożyć powtórzenia na serie.",
+          "Zwiększaj tylko przy zachowaniu kontroli. Utrzymaj cel, zmniejsz go lub odpocznij, jeśli trzeba. Dni regeneracji przypadają między treningami i nie zwiększają następnego celu."
+        ],
+        "example": "Jedno podciągnięcie na pierwszym treningu, dwa na drugim, trzy na trzecim. Pomiędzy nimi są zaplanowane dni regeneracji. Postęp podąża za treningiem, a nie za kalendarzem."
+      },
+      {
+        "id": "erster-klimmzug",
+        "heading": "Pracuj nad pierwszym podciągnięciem przez 30 dni",
+        "short": "Pierwsze podciągnięcie",
+        "audience": "Nie robisz jeszcze podciągnięcia bez pomocy.",
+        "goal": "Ćwiczyć regularnie i zbliżyć się do pierwszego powtórzenia.",
+        "count": "Zaplanowana sesja ćwiczeń",
+        "rules": [
+          "Przyjmij 30 dni jako okres ćwiczeń i zaplanuj trening oraz regenerację.",
+          "Odpowiednia guma lub maszyna do podciągania z odciążeniem może ułatwić początek. Poproś o pokazanie techniki.",
+          "Porównaj początek i koniec w tych samych warunkach. Mniejsza pomoc też oznacza postęp."
+        ],
+        "example": "Na początku korzystasz z pomocy, a później wykonujesz ten sam ruch z mniejszym wsparciem. To postęp, nawet bez samodzielnego podciągnięcia w dniu 30."
+      },
+      {
+        "id": "leiter",
+        "heading": "Drabinka podciągnięć ze znajomymi",
+        "short": "Drabinka ze znajomymi",
+        "audience": "Robicie już podciągnięcia bez pomocy i chcecie rywalizować.",
+        "goal": "Ukończyć najwyższą rundę.",
+        "count": "Powtórzenia z rzędu",
+        "rules": [
+          "Ustalcie chwyt, zakres ruchu, kolejność i minimalną przerwę między seriami danej osoby. Zachowajcie kolejność i poczekajcie, jeśli przerwa jeszcze nie minęła.",
+          "Każdy robi jedno w pierwszej rundzie, dwa w drugiej, trzy w trzeciej. Rundę trzeba wykonać w jednej serii.",
+          "Kto nie ukończy rundy z kontrolą, odpada. Grajcie do zwycięstwa jednej osoby. Jeśli wszyscy pozostali odpadną w tej samej rundzie, wygrywają wspólnie ci, którzy ukończyli najwyższą rundę."
+        ],
+        "example": "Alex i Sam kończą rundę trzecią. W czwartej Alex robi cztery, a Sam tylko trzy: wygrywa Alex. Jeśli żadne nie ukończy czterech, jest remis."
+      }
+    ],
+    "audience_label": "Dla kogo?",
+    "goal_label": "Twój cel",
+    "rules_label": "Jak to działa",
+    "example_label": "Przykład",
+    "rules_heading": "Wspólne zasady: co liczy się jako podciągnięcie?",
+    "common_rules": [
+      "Ustalcie chwyt. Nachwyt i podchwyt to różne warianty; porównujcie przy tym samym chwycie.",
+      "Zacznij w kontrolowanej pozycji z prostymi ramionami. Unieś brodę ponad drążek i opuść się z kontrolą. Bez bujania, podskoków i skracania ruchu.",
+      "W zawodach seria kończy się po puszczeniu drążka. Liczcie osobno powtórzenia z pomocą i bez niej.",
+      "Zakończ serię, gdy nie możesz utrzymać ustalonej techniki. Jeśli pojawi się ból, przerwij ćwiczenie."
+    ],
+    "recovery_heading": "Wyzwanie może zawierać dni odpoczynku",
+    "recovery_body": "Trzydzieści dni wyzwania nie oznacza trzydziestu ciężkich treningów. Zaplanuj pełny dzień regeneracji przed ponownym treningiem tej samej grupy mięśni. Zaplanuj dni odpowiednio, zamiast zwiększać obciążenie tylko z powodu kalendarza.",
+    "home_heading": "Podciąganie w domu: jakie masz możliwości?",
+    "equipment": [
+      [
+        "Drążek w futrynie",
+        "Drążek do drzwi jest opcją, jeśli model pasuje do futryny i można go zamontować zgodnie z instrukcją producenta."
+      ],
+      [
+        "Drążek zamontowany na stałe",
+        "Alternatywą jest drążek mocowany do ściany, sufitu lub odpowiedniej belki. Konstrukcja i mocowania muszą być przystosowane do obciążenia."
+      ]
+    ],
+    "app_heading": "Śledź swoje wyzwanie w podciąganiu",
+    "app_body": "W 12 Challenges wybierasz cel na 30 dni, ustawiasz przypomnienia i odhaczasz ukończone dni. Możesz śledzić również inne aktywności sportowe.",
+    "app_goal": "Zaplanowany trening podciągania wykonany",
+    "app_steps": [
+      "Utwórz wyzwanie z własnym tytułem. Opisz cel i rytm treningu.",
+      "Określ, co oznacza wykonanie dnia: zaplanowaną sesję w dzień treningowy i zachowany odpoczynek w dzień regeneracji. Odhaczenie oznacza wtedy realizację planu.",
+      "Odhacz dzień, jeśli udało ci się zrealizować plan. Przypomnienie może pomóc, a kalendarz pokazuje wykonane dni na pierwszy rzut oka."
+    ],
+    "app_example_label": "Przykładowy cel w aplikacji",
+    "app_alt": "12 Challenges: widok wyzwania z kalendarzem i wykonanymi dniami",
+    "inline_body": "Zacznij wyzwanie na 30 dni: ustal swój cel, ustaw przypomnienia i odhaczaj wykonane dni.",
+    "final_body": "Zamień pomysł w wyzwanie z jasnymi zasadami i śledź wykonane dni w 12 Challenges.",
+    "faq_heading": "Pytania o wyzwanie w podciąganiu",
+    "faq": [
+      [
+        "Czym jest wyzwanie w podciąganiu?",
+        "Celem na drążku z własnymi zasadami: stała liczba, zwiększanie powtórzeń, pierwsze podciągnięcie bez pomocy lub drabinka ze znajomymi."
+      ],
+      [
+        "Czy mogę zacząć, jeśli nie robię jeszcze podciągnięcia?",
+        "Tak. Pracuj nad pierwszym z odpowiednim wsparciem. Trzydzieści dni daje ramy czasowe, nie gwarancję wyniku."
+      ],
+      [
+        "Ile podciągnięć robić dziennie?",
+        "Nie ma liczby odpowiedniej dla wszystkich. Zależy od poziomu i treningu. Przykłady wyjaśniają zasady, nie zastępują osobistego planu."
+      ],
+      [
+        "Czy muszę podciągać się codziennie przez 30 dni?",
+        "Nie. Ważne jest przestrzeganie rytmu treningu i regeneracji ustalonego przed startem."
+      ],
+      [
+        "Czy mogę użyć drążka do drzwi?",
+        "Tak, jeśli pasuje do futryny, jest prawidłowo zamontowany i wytrzymuje obciążenie. Przestrzegaj instrukcji i sprawdzaj mocowanie przed treningiem."
+      ],
+      [
+        "Kto wygrywa drabinkę podciągnięć?",
+        "Ostatnia osoba, która ukończy pełną rundę. Jeśli wszyscy pozostali odpadną w tej samej rundzie, zwycięstwo dzielą ci, którzy ukończyli najwyższą wcześniejszą rundę."
+      ],
+      [
+        "Jak śledzić wyzwanie w podciąganiu w aplikacji?",
+        "Utwórz swój cel w 12 Challenges, ustaw przypomnienie i odhaczaj dni, w których realizujesz plan. Kalendarz pokazuje twoją regularność. Aplikacja zapisuje wykonane dni; liczby powtórzeń i serie notuj osobno, jeśli ich potrzebujesz."
+      ]
+    ],
+    "round_label": "Runda",
+    "reps_label": "na osobę, z rzędu",
+    "ladder_caption": "Te same zasady. O jedno powtórzenie więcej w każdej rundzie.",
+    "related_heading": "Pomysły na kolejne wyzwanie",
+    "ideas_link": "Pomysły na sport i wyzwania",
+    "method_link": "Metoda 12 Challenges",
+    "watch_link": "Odhaczaj na Apple Watch",
+    "breadcrumb_label": "Ścieżka nawigacji",
+    "contents_label": "Na tej stronie",
+    "published": "2026-10-03",
+    "sports_anchor": "sport",
+    "hero_alt": "Osoba wykonująca podciągnięcie na drążku",
+    "home_body": "Z odpowiednim drążkiem możesz realizować wyzwanie w domu. Wybór zależy od miejsca i możliwości mocowania.",
+    "places_heading": "Gdzie jeszcze można się podciągać?",
+    "places": [
+      [
+        "Na siłowni",
+        "Zwykle znajdziesz drążek lub maszynę do podciągania z odciążeniem. Wybierz opcję odpowiednią do obecnego poziomu."
+      ],
+      [
+        "W parku do kalisteniki",
+        "Wiele plenerowych stref treningowych ma drążek przeznaczony do podciągania. Nadają się też do drabinki ze znajomymi. Zadbaj o miejsce i suchy drążek, który można pewnie chwycić."
+      ]
+    ],
+    "mount_heading": "Przed startem: sprawdź mocowanie",
+    "mount_body": "Przed każdym treningiem sprawdź, czy drążek i jego mocowania są stabilne. Przestrzegaj limitu obciążenia i instrukcji montażu. Jeśli masz wątpliwości co do mocowania lub nośności, nie używaj drążka.",
+    "hero_credit": "Obraz wygenerowany przez AI"
+  },
+  "el": {
+    "title": "Πρόκληση έλξεων: 4 παραλλαγές και κανόνες",
+    "description": "Πρόκληση έλξεων για 30 ημέρες ή με φίλους: τέσσερις παραλλαγές, κανόνες, συμβουλές για το σπίτι και εφαρμογή για να σημειώνεις τις ημέρες που ολοκληρώνεις.",
+    "h1": "Πρόκληση έλξεων: 4 παραλλαγές για εσένα και τους φίλους σου",
+    "name": "Πρόκληση έλξεων",
+    "eyebrow": "Ο στόχος σου στο μονόζυγο",
+    "lede": "Σταθερός αριθμός, μία παραπάνω σε κάθε προπόνηση, η πρώτη έλξη χωρίς βοήθεια ή αγώνας με φίλους: διάλεξε την πρόκληση που σου ταιριάζει.",
+    "definition": "Σε μια πρόκληση έλξεων ορίζεις στόχο και κανόνες: έναν αριθμό επαναλήψεων τις ημέρες προπόνησης ή περισσότερες επαναλήψεις σε κάθε γύρο. Μπορείς να εξασκηθείς για 30 ημέρες ή να παίξεις με φίλους. Δεν υπάρχει ένας επίσημος κανονισμός, οπότε συμφωνήστε τι μετράει πριν αρχίσετε.",
+    "hero_note": "Οι τριάντα ημέρες ορίζουν τη διάρκεια. Το αρχικό σου επίπεδο ορίζει τον στόχο.",
+    "nav": [
+      "Οφέλη",
+      "Παραλλαγές",
+      "Κανόνες",
+      "Στο σπίτι",
+      "Με την εφαρμογή",
+      "Ερωτήσεις"
+    ],
+    "benefit_heading": "Τι προσφέρουν οι έλξεις;",
+    "benefits": [
+      [
+        "Εκγύμναση πλάτης και χεριών",
+        "Όταν ανεβαίνεις, δουλεύουν οι μύες της πλάτης και οι καμπτήρες των χεριών. Είναι μια κίνηση έλξης με το βάρος του σώματός σου."
+      ],
+      [
+        "Δουλειά στη δύναμη της λαβής",
+        "Τα χέρια και οι πήχεις σε κρατούν στο μονόζυγο. Η εξάσκηση με κατάλληλη επιβάρυνση απαιτεί και δύναμη λαβής."
+      ],
+      [
+        "Ορατή πρόοδος",
+        "Η πρώτη έλξη χωρίς βοήθεια ή περισσότερες ελεγχόμενες επαναλήψεις είναι συγκεκριμένοι στόχοι. Η πρόκληση οργανώνει την εξάσκηση και αποτελεί μέρος μιας ισορροπημένης προπόνησης."
+      ]
+    ],
+    "variants_heading": "Ποια πρόκληση έλξεων σου ταιριάζει;",
+    "variants_intro": "Δεν κάνεις ακόμα έλξη; Δούλεψε για την πρώτη. Αν κάνεις ήδη αρκετές, διάλεξε σταθερό στόχο, σταδιακή αύξηση ή σκάλα με φίλους.",
+    "table_caption": "Σύγκριση των τεσσάρων παραλλαγών",
+    "table_heads": [
+      "Παραλλαγή",
+      "Για ποιον;",
+      "Τι μετράει;"
+    ],
+    "variants": [
+      {
+        "id": "festes-ziel",
+        "heading": "Σταθερός αριθμός κάθε μέρα",
+        "short": "Ο σταθερός σου στόχος",
+        "audience": "Κάνεις ήδη ελεγχόμενες έλξεις.",
+        "goal": "Να φτάνεις έναν αριθμό τις ημέρες προπόνησης.",
+        "count": "Σύνολο της ημέρας προπόνησης",
+        "rules": [
+          "Διάλεξε στόχο που ταιριάζει στο σημερινό σου επίπεδο.",
+          "Μπορείς να μοιράσεις τις επαναλήψεις σε σετ. Πέντε συνολικά δεν σημαίνει πέντε συνεχόμενες.",
+          "Η καθημερινή εξάσκηση είναι επιλογή, αλλά η επιβάρυνση πρέπει να σου ταιριάζει. Όρισε ημέρες αποκατάστασης· ένας ρυθμός με ανάπαυση είναι επίσης πρόκληση."
+        ],
+        "example": "Για σύνολο πέντε: δύο το πρωί, δύο αργότερα και μία το βράδυ. Είναι παράδειγμα μέτρησης, όχι οδηγία προπόνησης."
+      },
+      {
+        "id": "steigerung",
+        "heading": "Μία έλξη παραπάνω σε κάθε προπόνηση",
+        "short": "Μία παραπάνω",
+        "audience": "Έχεις μια βάση και θέλεις να προοδεύσεις.",
+        "goal": "Να αυξάνεις σταδιακά τον συμφωνημένο στόχο.",
+        "count": "Στόχος ανά προπόνηση",
+        "rules": [
+          "Διάλεξε αρχικό αριθμό και όρισε αν ο στόχος αφορά ολόκληρη την προπόνηση ή ένα σετ.",
+          "Ο κανόνας: μία έλξη στην πρώτη προπόνηση, δύο στη δεύτερη, τρεις στην τρίτη. Αν μετράς το σύνολο της προπόνησης, μπορείς να το μοιράσεις σε σετ.",
+          "Αύξησε μόνο όσο κρατάς τον έλεγχο. Κράτησε τον στόχο, μείωσέ τον ή ξεκουράσου όταν χρειάζεται. Οι ημέρες αποκατάστασης μπαίνουν ανάμεσα στις προπονήσεις και δεν αυξάνουν τον επόμενο στόχο."
+        ],
+        "example": "Μία έλξη στην πρώτη προπόνηση, δύο στη δεύτερη, τρεις στην τρίτη. Ανάμεσά τους μπαίνουν οι προγραμματισμένες ημέρες αποκατάστασης. Η αύξηση ακολουθεί την προπόνηση, όχι το ημερολόγιο."
+      },
+      {
+        "id": "erster-klimmzug",
+        "heading": "Δούλεψε για την πρώτη σου έλξη σε 30 ημέρες",
+        "short": "Η πρώτη σου έλξη",
+        "audience": "Δεν κάνεις ακόμα έλξη χωρίς βοήθεια.",
+        "goal": "Να εξασκείσαι σταθερά και να πλησιάσεις την πρώτη.",
+        "count": "Προγραμματισμένη εξάσκηση",
+        "rules": [
+          "Χρησιμοποίησε τις 30 ημέρες ως περίοδο εξάσκησης και προγραμμάτισε προπόνηση και αποκατάσταση.",
+          "Ένα κατάλληλο λάστιχο ή μηχάνημα υποβοηθούμενων έλξεων μπορεί να βοηθήσει στην αρχή. Ζήτησε καθοδήγηση για την τεχνική.",
+          "Σύγκρινε αρχή και τέλος με ίδιες συνθήκες. Η μικρότερη βοήθεια είναι επίσης πρόοδος."
+        ],
+        "example": "Στην αρχή χρειάζεσαι υποστήριξη και αργότερα κάνεις την ίδια κίνηση με λιγότερη βοήθεια. Είναι πρόοδος, ακόμα και χωρίς ελεύθερη έλξη την ημέρα 30."
+      },
+      {
+        "id": "leiter",
+        "heading": "Η σκάλα έλξεων με φίλους",
+        "short": "Σκάλα με φίλους",
+        "audience": "Κάνετε έλξεις χωρίς βοήθεια και θέλετε να συναγωνιστείτε.",
+        "goal": "Να ολοκληρώσετε τον υψηλότερο γύρο.",
+        "count": "Συνεχόμενες επαναλήψεις",
+        "rules": [
+          "Συμφωνήστε λαβή, εύρος κίνησης, σειρά και ελάχιστη ανάπαυση ανάμεσα στα σετ κάθε ατόμου. Κρατήστε τη σειρά και περιμένετε αν η ανάπαυση δεν έχει τελειώσει.",
+          "Όλοι κάνουν μία στον πρώτο γύρο, δύο στον δεύτερο, τρεις στον τρίτο. Κάθε γύρος ολοκληρώνεται σε ένα σετ.",
+          "Όποιος δεν ολοκληρώνει τον γύρο με έλεγχο αποκλείεται. Συνεχίστε μέχρι να κερδίσει ένας. Αν αποκλειστούν όλοι οι υπόλοιποι στον ίδιο γύρο, μοιράζονται τη νίκη όσοι ολοκλήρωσαν τον υψηλότερο γύρο."
+        ],
+        "example": "Ο Alex και ο Sam ολοκληρώνουν τον τρίτο γύρο. Στον τέταρτο ο Alex κάνει τέσσερις και ο Sam μόνο τρεις: κερδίζει ο Alex. Αν κανείς δεν ολοκληρώσει τέσσερις, έχουν ισοπαλία."
+      }
+    ],
+    "audience_label": "Για ποιον;",
+    "goal_label": "Ο στόχος σου",
+    "rules_label": "Πώς λειτουργεί",
+    "example_label": "Ένα παράδειγμα",
+    "rules_heading": "Κοινοί κανόνες: τι μετράει ως έλξη;",
+    "common_rules": [
+      "Συμφωνήστε τη λαβή. Η πρηνής και η ύπτια λαβή είναι διαφορετικές παραλλαγές· συγκρίνετε με την ίδια λαβή.",
+      "Ξεκίνα με τεντωμένα χέρια σε ελεγχόμενη θέση. Ανέβασε το πηγούνι πάνω από τη μπάρα και κατέβα με έλεγχο. Χωρίς αιώρηση, άλμα ή μισές επαναλήψεις.",
+      "Στον αγώνα το σετ τελειώνει όταν αφήσεις τη μπάρα. Μετρήστε χωριστά υποβοηθούμενες και ελεύθερες επαναλήψεις.",
+      "Σταμάτα το σετ όταν δεν κρατάς τη συμφωνημένη τεχνική. Αν πονέσεις, σταμάτα την άσκηση."
+    ],
+    "recovery_heading": "Μια πρόκληση μπορεί να περιλαμβάνει ανάπαυση",
+    "recovery_body": "Τριάντα ημέρες πρόκλησης δεν σημαίνουν τριάντα έντονες προπονήσεις. Προγραμμάτισε μία πλήρη ημέρα αποκατάστασης πριν ξαναγυμνάσεις την ίδια μυϊκή ομάδα. Οργάνωσε ανάλογα τις ημέρες σου και μην αυξάνεις την επιβάρυνση μόνο λόγω ημερολογίου.",
+    "home_heading": "Έλξεις στο σπίτι: ποιες επιλογές έχεις;",
+    "equipment": [
+      [
+        "Μονόζυγο στην κάσα της πόρτας",
+        "Ένα μονόζυγο πόρτας είναι επιλογή αν το μοντέλο ταιριάζει στην κάσα και τοποθετείται σύμφωνα με τις οδηγίες του κατασκευαστή."
+      ],
+      [
+        "Σταθερό μονόζυγο",
+        "Εναλλακτικά, μπορείς να χρησιμοποιήσεις σταθερό μονόζυγο σε τοίχο, οροφή ή κατάλληλο δοκάρι. Η κατασκευή και η στερέωση πρέπει να είναι σχεδιασμένες για το φορτίο."
+      ]
+    ],
+    "app_heading": "Κράτα αρχείο της πρόκλησης έλξεων",
+    "app_body": "Με το 12 Challenges ορίζεις τον στόχο για 30 ημέρες, βάζεις υπενθυμίσεις και σημειώνεις τις ημέρες που ολοκληρώνεις. Μπορείς να παρακολουθείς και άλλες αθλητικές δραστηριότητες.",
+    "app_goal": "Ολοκλήρωσα την προγραμματισμένη προπόνηση έλξεων",
+    "app_steps": [
+      "Δημιούργησε πρόκληση με δικό σου τίτλο. Περιέγραψε τον στόχο και τον ρυθμό προπόνησης.",
+      "Όρισε τι σημαίνει ολοκλήρωση κάθε μέρα: η προγραμματισμένη άσκηση τις ημέρες προπόνησης και η τήρηση της ανάπαυσης τις ημέρες αποκατάστασης. Το σημάδι σημαίνει ότι ακολούθησες το πλάνο.",
+      "Σημείωσε την ημέρα αν ακολούθησες το πλάνο σου. Μια υπενθύμιση μπορεί να βοηθήσει και το ημερολόγιο δείχνει τις ολοκληρωμένες ημέρες με μια ματιά."
+    ],
+    "app_example_label": "Παράδειγμα στόχου στην εφαρμογή",
+    "app_alt": "12 Challenges: προβολή πρόκλησης με ημερολόγιο και ολοκληρωμένες ημέρες",
+    "inline_body": "Ξεκίνα την πρόκληση 30 ημερών: όρισε τον στόχο σου, βάλε υπενθυμίσεις και σημείωνε τις ολοκληρωμένες ημέρες.",
+    "final_body": "Κάνε την ιδέα σου πρόκληση με σαφείς κανόνες και παρακολούθησε τις ολοκληρωμένες ημέρες με το 12 Challenges.",
+    "faq_heading": "Ερωτήσεις για την πρόκληση έλξεων",
+    "faq": [
+      [
+        "Τι είναι η πρόκληση έλξεων;",
+        "Ένας στόχος στο μονόζυγο με δικούς σου κανόνες: σταθερός αριθμός, αύξηση επαναλήψεων, πρώτη έλξη χωρίς βοήθεια ή σκάλα με φίλους."
+      ],
+      [
+        "Μπορώ να συμμετέχω χωρίς να κάνω ακόμα έλξη;",
+        "Ναι. Δούλεψε για την πρώτη με κατάλληλη βοήθεια. Οι τριάντα ημέρες δίνουν χρονικό πλαίσιο, όχι εγγύηση αποτελέσματος."
+      ],
+      [
+        "Πόσες έλξεις να κάνω κάθε μέρα;",
+        "Δεν υπάρχει αριθμός για όλους. Εξαρτάται από το επίπεδο και την προπόνησή σου. Τα παραδείγματα εξηγούν κανόνες, όχι προσωπικό πρόγραμμα."
+      ],
+      [
+        "Πρέπει να κάνω έλξεις καθημερινά για 30 ημέρες;",
+        "Όχι. Σημασία έχει να τηρείς τον ρυθμό προπόνησης και αποκατάστασης που όρισες πριν ξεκινήσεις."
+      ],
+      [
+        "Μπορώ να χρησιμοποιήσω μονόζυγο πόρτας;",
+        "Ναι, αν ταιριάζει στην κάσα, είναι σωστά στερεωμένο και αντέχει την επιβάρυνση. Ακολούθησε τις οδηγίες και έλεγξέ το πριν την προπόνηση."
+      ],
+      [
+        "Ποιος κερδίζει τη σκάλα έλξεων;",
+        "Το τελευταίο άτομο που ολοκληρώνει έναν γύρο. Αν αποκλειστούν όλοι οι υπόλοιποι στον ίδιο γύρο, μοιράζονται τη νίκη όσοι ολοκλήρωσαν τον υψηλότερο προηγούμενο γύρο."
+      ],
+      [
+        "Πώς παρακολουθώ την πρόκληση έλξεων με την εφαρμογή;",
+        "Δημιούργησε τον στόχο σου στο 12 Challenges, βάλε υπενθύμιση και σημείωνε τις ημέρες που ακολουθείς το πλάνο. Το ημερολόγιο δείχνει τη συνέπειά σου. Η εφαρμογή καταγράφει ολοκληρωμένες ημέρες· σημείωσε χωριστά επαναλήψεις και σετ αν τα χρειάζεσαι."
+      ]
+    ],
+    "round_label": "Γύρος",
+    "reps_label": "ανά άτομο, συνεχόμενα",
+    "ladder_caption": "Ίδιοι κανόνες. Μία επανάληψη παραπάνω σε κάθε γύρο.",
+    "related_heading": "Ιδέες για την επόμενη πρόκλησή σου",
+    "ideas_link": "Ιδέες για άθληση και προκλήσεις",
+    "method_link": "Η μέθοδος 12 Challenges",
+    "watch_link": "Σημείωσε στο Apple Watch",
+    "breadcrumb_label": "Διαδρομή πλοήγησης",
+    "contents_label": "Σε αυτή τη σελίδα",
+    "published": "2026-10-03",
+    "sports_anchor": "athlisi",
+    "hero_alt": "Άτομο που κάνει έλξη σε μονόζυγο",
+    "home_body": "Με κατάλληλο μονόζυγο μπορείς να κάνεις την πρόκληση στο σπίτι. Η επιλογή εξαρτάται από τον χώρο και τις δυνατότητες στερέωσης.",
+    "places_heading": "Πού αλλού μπορείς να κάνεις έλξεις;",
+    "places": [
+      [
+        "Στο γυμναστήριο",
+        "Συνήθως υπάρχει μονόζυγο ή μηχάνημα υποβοηθούμενων έλξεων. Διάλεξε αυτό που ταιριάζει στο σημερινό σου επίπεδο."
+      ],
+      [
+        "Σε πάρκο καλλισθενικής",
+        "Πολλοί υπαίθριοι χώροι προπόνησης έχουν μονόζυγο σχεδιασμένο για έλξεις. Είναι κατάλληλοι και για τη σκάλα με φίλους. Άφησε αρκετό χώρο και χρησιμοποίησε στεγνή μπάρα με ασφαλή λαβή."
+      ]
+    ],
+    "mount_heading": "Πριν ξεκινήσεις: έλεγξε τη στερέωση",
+    "mount_body": "Πριν από κάθε προπόνηση, έλεγξε ότι η μπάρα και τα στηρίγματά της είναι σταθερά. Τήρησε το όριο φορτίου και τις οδηγίες τοποθέτησης. Αν δεν είσαι σίγουρος για τη στερέωση ή την αντοχή, μην τη χρησιμοποιήσεις.",
+    "hero_credit": "Εικόνα δημιουργημένη με τεχνητή νοημοσύνη"
+  }
+}
