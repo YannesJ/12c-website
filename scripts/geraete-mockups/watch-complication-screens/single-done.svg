@@ -1,0 +1,23 @@
+<svg class="watch-face-preview" xmlns="http://www.w3.org/2000/svg" viewBox="76 75 248 310" width="416" height="496" preserveAspectRatio="none" style="background:#08090b;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif" role="img" aria-labelledby="watch-preview-progress">
+
+  <defs>
+    <linearGradient id="watch-case-progress" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#92959a"/><stop offset=".25" stop-color="#33363b"/><stop offset=".55" stop-color="#777b80"/><stop offset="1" stop-color="#25282c"/>
+    </linearGradient>
+    <linearGradient id="watch-band-progress" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#202328"/><stop offset=".5" stop-color="#393d43"/><stop offset="1" stop-color="#202328"/>
+    </linearGradient>
+    <path id="watch-flame-progress" d="M12 1C14 8 20 9 20 16A8 8 0 0 1 4 16C4 12 6 9 8 7C8 11 10 12 11 11C13 9 11 6 12 1Z"/>
+  </defs>
+  <g aria-hidden="true">
+    <text x="200" y="130" text-anchor="middle" fill="#9a9da3" font-size="13" font-weight="600" letter-spacing="2">@DAY@</text>
+    <text x="200" y="192" text-anchor="middle" fill="#f5f5f7" font-size="64" font-weight="500" letter-spacing="-3">9:41</text>
+
+    <circle cx="200" cy="252" r="25" fill="none" stroke="#30d158" stroke-opacity=".2" stroke-width="5"/>
+    <circle cx="200" cy="252" r="25" fill="none" stroke="#30d158" stroke-width="5" stroke-linecap="round" stroke-dasharray="57.60 157.08" transform="rotate(-90 200 252)"/>
+    <path d="M190 252l7 7 14-15" fill="none" stroke="#30d158" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="108" y="317" fill="#f5f5f7" font-size="17" font-weight="600">@GOAL@</text>
+    <circle cx="115" cy="337" r="7" fill="#30d158"/><path d="M111 337l3 3 5-6" fill="none" stroke="#08090b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="130" y="342" fill="#30d158" font-size="15">@DONE@</text>
+
+  </g>
+</svg>

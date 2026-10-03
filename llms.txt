@@ -17,6 +17,7 @@
 ## English
 
 - [Home](https://12challenges.de/en/): Overview of the app, how it works, and App Store link
+- [Apple Watch](https://12challenges.de/en/apple-watch.html): Check off habits on Apple Watch and see your progress on the watch face. Explore 12 Challenges with screenshots, complications and a setup guide.
 - [Story](https://12challenges.de/en/story.html): The story behind 12 Challenges
 - [Method](https://12challenges.de/en/method.html): How the 12 Challenges method works and why it helps you stick to habits
 - [Challenge Ideas](https://12challenges.de/en/challenge-ideas/): 72 ideas for 30-day challenges
@@ -28,6 +29,7 @@
 ## Español
 
 - [Inicio](https://12challenges.de/es/): Resumen de la app, cómo funciona y enlace al App Store
+- [Apple Watch](https://12challenges.de/es/apple-watch.html): Marca tus hábitos en el Apple Watch y consulta tu progreso en la esfera. Descubre 12 Challenges con imágenes, complicaciones y guía de configuración.
 - [Historia](https://12challenges.de/es/historia.html): La historia detrás de 12 Challenges
 - [Método](https://12challenges.de/es/metodo.html): Cómo funciona el método de 12 Challenges y por qué ayuda a mantener hábitos
 - [Ideas de challenges](https://12challenges.de/es/ideas-challenges/): 72 ideas para challenges de 30 días
@@ -39,6 +41,7 @@
 ## Français
 
 - [Accueil](https://12challenges.de/fr/): Présentation de l'appli, son fonctionnement et le lien vers l'App Store
+- [Apple Watch](https://12challenges.de/fr/apple-watch.html): Coche tes habitudes sur Apple Watch et suis ta progression sur le cadran. Découvre 12 Challenges, ses complications et les étapes d’installation.
 - [Histoire](https://12challenges.de/fr/histoire.html): L'histoire derrière 12 Challenges
 - [Méthode](https://12challenges.de/fr/methode.html): Comment fonctionne la méthode 12 Challenges et pourquoi elle aide à tenir ses habitudes
 - [Idées de challenges](https://12challenges.de/fr/idees-challenges/): 72 idées de challenges de 30 jours
@@ -50,6 +53,7 @@
 ## Português
 
 - [Início](https://12challenges.de/pt/): Visão geral da app, como funciona e link para a App Store
+- [Apple Watch](https://12challenges.de/pt/apple-watch.html): Assinala hábitos no Apple Watch e vê o progresso no mostrador. Conhece o 12 Challenges com imagens, complicações e instruções de configuração.
 - [Story](https://12challenges.de/pt/historia.html): A história por trás do 12 Challenges
 - [Método](https://12challenges.de/pt/metodo.html): Como funciona o método 12 Challenges e porque ajuda a manter hábitos
 - [Ideias de challenges](https://12challenges.de/pt/ideias-challenges/): 72 ideias para challenges de 30 dias
@@ -61,6 +65,7 @@
 ## Italiano
 
 - [Inizio](https://12challenges.de/it/): Panoramica dell’app, come funziona e link all’App Store
+- [Apple Watch](https://12challenges.de/it/apple-watch.html): Spunta le tue abitudini su Apple Watch e segui i progressi sul quadrante. Scopri 12 Challenges con immagini, complicazioni e istruzioni per iniziare.
 - [Storia](https://12challenges.de/it/storia.html): La storia dietro 12 Challenges
 - [Metodo](https://12challenges.de/it/metodo.html): Come funziona il metodo di 12 Challenges e perché aiuta a tenere le abitudini
 - [Idee per le challenge](https://12challenges.de/it/idee-challenge/): 72 idee per challenge di 30 giorni
@@ -72,6 +77,7 @@
 ## Türkçe
 
 - [Başlangıç](https://12challenges.de/tr/): Uygulamaya genel bakış, nasıl çalıştığı ve App Store bağlantısı
+- [Apple Watch](https://12challenges.de/tr/apple-watch.html): Alışkanlıklarını Apple Watch’ta işaretle, ilerlemeni kadranda gör. 12 Challenges’ın özelliklerini, komplikasyonlarını ve kurulum adımlarını keşfet.
 - [Hikâye](https://12challenges.de/tr/hikaye.html): 12 Challenges’ın arkasındaki hikâye
 - [Yöntem](https://12challenges.de/tr/yontem.html): 12 Challenges yönteminin nasıl işlediği ve alışkanlıkları sürdürmeye nasıl yardım ettiği
 - [Challenge fikirleri](https://12challenges.de/tr/challenge-fikirleri/): 30 günlük challenge’lar için 72 fikir
@@ -83,6 +89,7 @@
 ## Polski
 
 - [Start](https://12challenges.de/pl/): Przegląd aplikacji, jak działa i link do App Store
+- [Apple Watch](https://12challenges.de/pl/apple-watch.html): Odhaczaj nawyki na Apple Watch i sprawdzaj postęp na tarczy. Poznaj 12 Challenges, komplikacje i konfigurację na przykładach z aplikacji.
 - [Historia](https://12challenges.de/pl/historia.html): Historia stojąca za 12 Challenges
 - [Metoda](https://12challenges.de/pl/metoda.html): Jak działa metoda 12 Challenges i dlaczego pomaga wytrwać w nawykach
 - [Pomysły na challenge](https://12challenges.de/pl/pomysly-na-challenge/): 72 pomysły na 30-dniowe challenge’e
@@ -94,6 +101,7 @@
 ## Ελληνικά
 
 - [Αρχική](https://12challenges.de/el/): Επισκόπηση της εφαρμογής, πώς λειτουργεί και σύνδεσμος στο App Store
+- [Apple Watch](https://12challenges.de/el/apple-watch.html): Σημείωσε συνήθειες στο Apple Watch και δες την πρόοδο στην πρόσοψη. Γνώρισε το 12 Challenges με εικόνες, πολυπλοκότητες και οδηγίες ρύθμισης.
 - [Ιστορία](https://12challenges.de/el/istoria.html): Η ιστορία πίσω από το 12 Challenges
 - [Μέθοδος](https://12challenges.de/el/methodos.html): Πώς λειτουργεί η μέθοδος του 12 Challenges και γιατί βοηθά να κρατήσεις τις συνήθειες
 - [Ιδέες για challenges](https://12challenges.de/el/idees-challenge/): 72 ιδέες για challenges 30 ημερών

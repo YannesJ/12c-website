@@ -1,0 +1,250 @@
+{% assign w = site.data.apple_watch_copy[page.lang] %}
+<main class="legal watch-page">
+  <div class="container">
+    <article lang="{{ page.lang }}">
+      <nav class="watch-breadcrumb" aria-label="{{ w.aria_breadcrumb | escape }}">
+        <a href="{{ site.data.pages.home[page.lang] | relative_url }}">{{ w.brand | escape }}</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">{{ w.watch_name | escape }}</span>
+      </nav>
+      <div class="watch-intro">
+        <div class="watch-intro-copy">
+          <span class="eyebrow">{{ w.hero_eyebrow | escape }}</span>
+          <h1>{{ w.hero_title | escape }}<br>{{ w.hero_subtitle | escape }}</h1>
+          <p class="lede">{{ w.hero_lede | escape }}</p>
+          <div class="badge-cta">
+            <a class="appstore-badge" href="https://apps.apple.com/app/id6790353238">
+              <img src="{{ '/assets/appstore-badge.svg' | relative_url }}" alt="{{ w.download_alt | escape }}" width="165" height="55" />
+            </a>
+          </div>
+          <p class="watch-intro-note">{{ w.hero_note | escape }}</p>
+        </div>
+        <figure class="watch-intro-visual">
+          <img class="mock mock-watch" src="{{ '/assets/mock/watch-checkin-' | append: page.lang | append: '.webp' | relative_url }}" srcset="{{ '/assets/mock/watch-page/watch-checkin-' | append: page.lang | append: '-260.webp' | relative_url }} 260w, {{ '/assets/mock/watch-page/watch-checkin-' | append: page.lang | append: '-390.webp' | relative_url }} 390w, {{ '/assets/mock/watch-page/watch-checkin-' | append: page.lang | append: '-520.webp' | relative_url }} 520w, {{ '/assets/mock/watch-checkin-' | append: page.lang | append: '.webp' | relative_url }} 780w" sizes="(max-width: 375px) 56vw, (max-width: 760px) 210px, (max-width: 832px) calc(33.25vw - 16.8px), 260px" alt="{{ w.hero_alt | escape }}" width="780" height="1226" loading="eager" fetchpriority="high" decoding="async" />
+          <figcaption>{{ w.hero_caption | escape }}</figcaption>
+        </figure>
+      </div>
+
+      <nav class="idea-nav" aria-label="{{ w.aria_contents | escape }}">
+        <a href="#funktionen">{{ w.nav_features | escape }}</a>
+        <a href="#alltag">{{ w.nav_everyday | escape }}</a>
+        <a href="#zifferblatt">{{ w.nav_complications | escape }}</a>
+        <a href="#einrichten">{{ w.nav_setup | escape }}</a>
+        <a href="#fragen">{{ w.nav_faq | escape }}</a>
+      </nav>
+
+      <section class="watch-section" aria-labelledby="funktionen">
+        <div class="section-intro">
+          <span class="eyebrow">{{ w.features_eyebrow | escape }}</span>
+          <h2 id="funktionen">{{ w.features_heading | escape }}</h2>
+          <p>{{ w.features_intro | escape }}</p>
+        </div>
+        <h3 class="watch-gallery-heading">{{ w.gallery_heading | escape }}</h3>
+        <div class="watch-gallery mock-watch-gallery swipe-gallery" role="region" aria-label="{{ w.gallery_aria | escape }}" tabindex="0">
+          <div class="watch-item watch-feature">
+            <img class="mock mock-watch" src="{{ '/assets/mock/watch-checkin-' | append: page.lang | append: '.webp' | relative_url }}" srcset="{{ '/assets/mock/watch-page/watch-checkin-' | append: page.lang | append: '-260.webp' | relative_url }} 260w, {{ '/assets/mock/watch-page/watch-checkin-' | append: page.lang | append: '-390.webp' | relative_url }} 390w, {{ '/assets/mock/watch-page/watch-checkin-' | append: page.lang | append: '-520.webp' | relative_url }} 520w, {{ '/assets/mock/watch-checkin-' | append: page.lang | append: '.webp' | relative_url }} 780w" sizes="(max-width: 760px) min(220px, calc(78vw - 75.44px)), min(220px, calc(33.333vw - 78px))" alt="{{ w.single_alt | escape }}" width="780" height="1226" loading="lazy" decoding="async" />
+            <h3>{{ w.checkin_heading | escape }}</h3>
+            <p>{{ w.checkin_body | escape }}</p>
+          </div>
+          <div class="watch-item watch-feature">
+            <img class="mock mock-watch" src="{{ '/assets/mock/watch-liste-' | append: page.lang | append: '.webp' | relative_url }}" srcset="{{ '/assets/mock/watch-page/watch-liste-' | append: page.lang | append: '-260.webp' | relative_url }} 260w, {{ '/assets/mock/watch-page/watch-liste-' | append: page.lang | append: '-390.webp' | relative_url }} 390w, {{ '/assets/mock/watch-page/watch-liste-' | append: page.lang | append: '-520.webp' | relative_url }} 520w, {{ '/assets/mock/watch-liste-' | append: page.lang | append: '.webp' | relative_url }} 780w" sizes="(max-width: 760px) min(220px, calc(78vw - 75.44px)), min(220px, calc(33.333vw - 78px))" alt="{{ w.list_alt | escape }}" width="780" height="1226" loading="lazy" decoding="async" />
+            <h3>{{ w.list_heading | escape }}</h3>
+            <p>{{ w.list_body | escape }}</p>
+          </div>
+          <div class="watch-item watch-feature">
+            <img class="mock mock-watch" src="{{ '/assets/mock/watch-fertig-' | append: page.lang | append: '.webp' | relative_url }}" srcset="{{ '/assets/mock/watch-page/watch-fertig-' | append: page.lang | append: '-260.webp' | relative_url }} 260w, {{ '/assets/mock/watch-page/watch-fertig-' | append: page.lang | append: '-390.webp' | relative_url }} 390w, {{ '/assets/mock/watch-page/watch-fertig-' | append: page.lang | append: '-520.webp' | relative_url }} 520w, {{ '/assets/mock/watch-fertig-' | append: page.lang | append: '.webp' | relative_url }} 780w" sizes="(max-width: 760px) min(220px, calc(78vw - 75.44px)), min(220px, calc(33.333vw - 78px))" alt="{{ w.done_alt | escape }}" width="780" height="1226" loading="lazy" decoding="async" />
+            <h3>{{ w.done_heading | escape }}</h3>
+            <p>{{ w.done_body | escape }}</p>
+          </div>
+        </div>
+        <div class="gallery-controls" hidden>
+          <span class="gallery-swipe-hint">{{ w.swipe_hint | escape }}</span>
+          <button type="button" data-gallery-prev aria-label="{{ w.previous_label | escape }}">←</button>
+          <span class="gallery-count" aria-live="polite" aria-atomic="true">1 / 3</span>
+          <button type="button" data-gallery-next aria-label="{{ w.next_label | escape }}">→</button>
+        </div>
+      </section>
+
+      <section class="watch-section" aria-labelledby="alltag">
+        <div class="section-intro">
+          <span class="eyebrow">{{ w.everyday_eyebrow | escape }}</span>
+          <h2 id="alltag">{{ w.everyday_heading | escape }}</h2>
+          <p>{{ w.everyday_intro | escape }}</p>
+        </div>
+        <div class="watch-use-cases">
+          <div>
+            <span class="watch-example-icon" aria-hidden="true">↗</span>
+            <h3>{{ w.walk_heading | escape }}</h3>
+            <p>{{ w.walk_body | escape }}</p>
+          </div>
+          <div>
+            <span class="watch-example-icon" aria-hidden="true">Aa</span>
+            <h3>{{ w.read_heading | escape }}</h3>
+            <p>{{ w.read_body | escape }}</p>
+          </div>
+          <div>
+            <span class="watch-example-icon" aria-hidden="true">◌</span>
+            <h3>{{ w.pause_heading | escape }}</h3>
+            <p>{{ w.pause_body | escape }}</p>
+          </div>
+        </div>
+        <p class="watch-related">{{ w.ideas_prefix | escape }} <a href="{{ site.data.pages['challenge-ideas'][page.lang] | relative_url }}">{{ w.ideas_link | escape }}</a> {{ w.ideas_suffix | escape }}</p>
+      </section>
+
+      <section class="watch-section" aria-labelledby="zifferblatt">
+        <div class="section-intro">
+          <span class="eyebrow">{{ w.complications_eyebrow | escape }}</span>
+          <h2 id="zifferblatt">{{ w.complications_heading | escape }}</h2>
+          <p>{{ w.complications_intro | escape }}</p>
+        </div>
+        <div class="watch-complication-previews">
+          <figure class="watch-complication-card">
+            <div class="watch-complication-visual">
+              {% include watch-complication-preview.html kind="single" %}
+            </div>
+            <figcaption>
+              <span class="eyebrow">{{ w.single_eyebrow | escape }}</span>
+              <h3>{{ w.single_heading | escape }}</h3>
+              <p>{{ w.single_body | escape }}</p>
+            </figcaption>
+          </figure>
+          <figure class="watch-complication-card">
+            <div class="watch-complication-visual watch-complication-visual-done">
+              {% include watch-complication-preview.html kind="single-done" %}
+            </div>
+            <figcaption>
+              <span class="eyebrow">{{ w.single_done_eyebrow | escape }}</span>
+              <h3>{{ w.single_done_heading | escape }}</h3>
+              <p>{{ w.single_done_body | escape }}</p>
+            </figcaption>
+          </figure>
+          <figure class="watch-complication-card">
+            <div class="watch-complication-visual">
+              {% include watch-complication-preview.html kind="progress" %}
+            </div>
+            <figcaption>
+              <span class="eyebrow">{{ w.multiple_eyebrow | escape }}</span>
+              <h3>{{ w.multiple_heading | escape }}</h3>
+              <p>{{ w.multiple_body | escape }}</p>
+            </figcaption>
+          </figure>
+          <figure class="watch-complication-card">
+            <div class="watch-complication-visual watch-complication-visual-done">
+              {% include watch-complication-preview.html kind="done" %}
+            </div>
+            <figcaption>
+              <span class="eyebrow">{{ w.multiple_done_eyebrow | escape }}</span>
+              <h3>{{ w.done_heading | escape }}</h3>
+              <p>{{ w.multiple_done_body | escape }}</p>
+            </figcaption>
+          </figure>
+          <figure class="watch-complication-card">
+            <div class="watch-complication-visual watch-complication-visual-streak">
+              {% include watch-complication-preview.html kind="streak" %}
+            </div>
+            <figcaption>
+              <span class="eyebrow">{{ w.streak_eyebrow | escape }}</span>
+              <h3>{{ w.streak_heading | escape }}</h3>
+              <p>{{ w.streak_body | escape }}</p>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="watch-small-note watch-preview-note">{{ w.preview_note | escape }}</p>
+      </section>
+
+      <section class="watch-section" aria-labelledby="zusammenspiel">
+        <div class="watch-split watch-sync">
+          <div class="watch-sync-visual">
+            <img class="mock mock-phone" src="{{ '/assets/mock/detail-' | append: page.lang | append: '.webp' | relative_url }}" srcset="{{ '/assets/mock/watch-page/detail-' | append: page.lang | append: '-240.webp' | relative_url }} 240w, {{ '/assets/mock/watch-page/detail-' | append: page.lang | append: '-380.webp' | relative_url }} 380w, {{ '/assets/mock/watch-page/detail-' | append: page.lang | append: '-570.webp' | relative_url }} 570w, {{ '/assets/mock/detail-' | append: page.lang | append: '.webp' | relative_url }} 940w" sizes="clamp(120px, 20vw, 190px)" alt="{{ w.phone_alt | escape }}" width="940" height="1918" loading="lazy" decoding="async" />
+            <img class="mock mock-watch" src="{{ '/assets/mock/watch-checkin-' | append: page.lang | append: '.webp' | relative_url }}" srcset="{{ '/assets/mock/watch-page/watch-checkin-' | append: page.lang | append: '-260.webp' | relative_url }} 260w, {{ '/assets/mock/watch-page/watch-checkin-' | append: page.lang | append: '-390.webp' | relative_url }} 390w, {{ '/assets/mock/watch-page/watch-checkin-' | append: page.lang | append: '-520.webp' | relative_url }} 520w, {{ '/assets/mock/watch-checkin-' | append: page.lang | append: '.webp' | relative_url }} 780w" sizes="clamp(100px, 14vw, 150px)" alt="{{ w.sync_alt | escape }}" width="780" height="1226" loading="lazy" decoding="async" />
+          </div>
+          <div>
+            <span class="eyebrow">{{ w.sync_eyebrow | escape }}</span>
+            <h2 id="zusammenspiel">{{ w.sync_heading | escape }}</h2>
+            <p>{{ w.sync_intro | escape }}</p>
+            <p>{{ w.sync_body | escape }}</p>
+            <a href="{{ site.data.pages.home[page.lang] | relative_url }}">{{ w.home_link | escape }}</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="inline-cta">
+        <p><strong>{{ w.inline_heading | escape }}</strong> {{ w.inline_body | escape }}</p>
+        <div class="badge-cta">
+          <a class="appstore-badge" href="https://apps.apple.com/app/id6790353238">
+            <img src="{{ '/assets/appstore-badge.svg' | relative_url }}" alt="{{ w.download_alt | escape }}" width="132" height="44" />
+          </a>
+        </div>
+      </div>
+
+      <section class="watch-section" aria-labelledby="funktionsvergleich">
+        <div class="section-intro">
+          <span class="eyebrow">{{ w.table_eyebrow | escape }}</span>
+          <h2 id="funktionsvergleich">{{ w.table_heading | escape }}</h2>
+        </div>
+        <div class="watch-function-overview">
+          <table class="watch-function-table">
+            <caption>{{ w.table_caption | escape }}</caption>
+            <thead>
+              <tr><th scope="col">{{ w.table_feature | escape }}</th><th scope="col">{{ w.table_phone | escape }}</th><th scope="col">{{ w.watch_name | escape }}</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">{{ w.table_create | escape }}</th><td>{{ w.yes | escape }}</td><td>{{ w.phone_only | escape }}</td></tr>
+              <tr><th scope="row">{{ w.table_checkin | escape }}</th><td>{{ w.yes | escape }}</td><td>{{ w.watch_checkin | escape }}</td></tr>
+              <tr><th scope="row">{{ w.table_progress | escape }}</th><td>{{ w.phone_progress | escape }}</td><td>{{ w.watch_progress | escape }}</td></tr>
+              <tr><th scope="row">{{ w.table_today | escape }}</th><td>{{ w.phone_today | escape }}</td><td>{{ w.watch_today | escape }}</td></tr>
+              <tr><th scope="row">{{ w.table_streak | escape }}</th><td>{{ w.phone_streak | escape }}</td><td>{{ w.watch_streak | escape }}</td></tr>
+              <tr><th scope="row">{{ w.table_complications | escape }}</th><td>{{ w.watch_only | escape }}</td><td>{{ w.watch_complications | escape }}</td></tr>
+              <tr><th scope="row">{{ w.table_sync | escape }}</th><td>{{ w.phone_sync | escape }}</td><td>{{ w.watch_sync | escape }}</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="watch-section" aria-labelledby="einrichten">
+        <div class="section-intro">
+          <span class="eyebrow">{{ w.setup_eyebrow | escape }}</span>
+          <h2 id="einrichten">{{ w.setup_heading | escape }}</h2>
+        </div>
+        <ol class="watch-steps">
+          <li><h3>{{ w.setup_phone_heading | escape }}</h3><p>{{ w.setup_phone_body | escape }}</p></li>
+          <li><h3>{{ w.setup_watch_heading | escape }}</h3><p>{{ w.setup_watch_body | escape }}</p></li>
+          <li><h3>{{ w.setup_face_heading | escape }}</h3><p>{{ w.setup_face_body | escape }}</p></li>
+        </ol>
+        <p class="watch-related">{{ w.method_prefix | escape }} <a href="{{ site.data.pages.method[page.lang] | relative_url }}">{{ w.method_link | escape }}</a>{{ w.method_suffix | escape }}</p>
+      </section>
+
+      <section class="watch-section" aria-labelledby="fragen">
+        <div class="section-intro">
+          <span class="eyebrow">{{ w.faq_eyebrow | escape }}</span>
+          <h2 id="fragen">{{ w.faq_heading | escape }}</h2>
+        </div>
+        <div class="faq">
+          {% for item in site.data.apple_watch[page.lang].faq %}
+          <details>
+            <summary>{{ item.question }}</summary>
+            <p>{{ item.answer }}</p>
+          </details>
+          {% endfor %}
+        </div>
+      </section>
+    </article>
+
+    <div class="cta-final">
+      <span class="eyebrow">{{ w.final_eyebrow | escape }}</span>
+      <h2>{{ w.final_heading | escape }}</h2>
+      <p>{{ w.final_body | escape }}</p>
+      <div class="badge-cta">
+        <a class="appstore-badge" href="https://apps.apple.com/app/id6790353238">
+          <img src="{{ '/assets/appstore-badge.svg' | relative_url }}" alt="{{ w.download_alt | escape }}" width="165" height="55" />
+        </a>
+      </div>
+    </div>
+    <div class="floating-cta">
+      <a class="appstore-badge" href="https://apps.apple.com/app/id6790353238">
+        <img src="{{ '/assets/appstore-badge.svg' | relative_url }}" alt="{{ w.download_alt | escape }}" width="165" height="55" />
+      </a>
+    </div>
+  </div>
+</main>
+{% include landing-interactions.html %}

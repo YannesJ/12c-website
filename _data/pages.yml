@@ -6,6 +6,14 @@
 
 apple-watch:
   de: /apple-watch.html
+  en: /en/apple-watch.html
+  fr: /fr/apple-watch.html
+  es: /es/apple-watch.html
+  it: /it/apple-watch.html
+  pt: /pt/apple-watch.html
+  tr: /tr/apple-watch.html
+  pl: /pl/apple-watch.html
+  el: /el/apple-watch.html
 
 home:
   de: /
