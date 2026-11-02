@@ -1,0 +1,13 @@
+{
+  "anzahl": 112,
+  "je_kategorie": {
+    "category.sport": 15,
+    "category.health": 15,
+    "category.learning": 15,
+    "category.creativity": 13,
+    "category.focus": 12,
+    "category.finance": 12,
+    "category.everyday": 14,
+    "category.other": 16
+  }
+}

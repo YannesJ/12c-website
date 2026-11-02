@@ -1891,6 +1891,43 @@ p {
   margin: 10px 0 0;
 }
 
+/* „Weitere Ideen anzeigen": Kacheln über der neunten stehen im HTML (für Suchmaschinen und ohne
+   JavaScript sichtbar) und werden erst eingeklappt, wenn das Skript im Layout läuft. */
+.idea-grid.is-collapsed .is-extra {
+  display: none;
+}
+
+.idea-more {
+  display: block;
+  margin: 18px auto 0;
+  padding: 11px 22px;
+  border: 1px solid var(--border-visible);
+  border-radius: 999px;
+  background: var(--surface-raised);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: var(--fs-md);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+/* Das hidden-Attribut muss gegen display: block oben gewinnen. */
+.idea-more[hidden] {
+  display: none;
+}
+
+/* Die erste aufgeklappte Kachel bekommt nur für Screenreader den Fokus, keinen Rahmen. */
+.template-card.is-extra:focus {
+  outline: none;
+}
+
+.idea-more:hover,
+.idea-more:focus-visible {
+  color: var(--accent-light);
+  border-color: var(--accent);
+  background: var(--accent-subtle);
+}
+
 /* Anker landen nicht unter dem sticky Header */
 .idea-section {
   scroll-margin-top: 90px;

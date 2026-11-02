@@ -92,5 +92,23 @@
     })();
   </script>
   {% endif %}
+  {% if page.page_id == 'challenge-ideas' %}
+  <script>
+    // Ideen-Seite: je Kategorie nur die ersten Kacheln zeigen, der Rest über „Weitere anzeigen".
+    // Ohne Skript bleibt alles sichtbar und der Knopf versteckt (hidden-Attribut im HTML).
+    document.querySelectorAll('.idea-more').forEach(function (knopf) {
+      var raster = knopf.previousElementSibling;
+      raster.classList.add('is-collapsed');
+      knopf.hidden = false;
+      knopf.addEventListener('click', function () {
+        raster.classList.remove('is-collapsed');
+        knopf.setAttribute('aria-expanded', 'true');
+        knopf.hidden = true;
+        var erste = raster.querySelector('.is-extra');
+        if (erste) { erste.setAttribute('tabindex', '-1'); erste.focus({ preventScroll: true }); }
+      });
+    });
+  </script>
+  {% endif %}
 </body>
 </html>
