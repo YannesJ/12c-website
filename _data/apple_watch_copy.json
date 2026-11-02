@@ -121,7 +121,7 @@
       "progress": "erledigt",
       "streak": "7 Tage Streak"
     },
-    "title": "Habit Tracker für die Apple Watch – 12 Challenges",
+    "title": "Habit Tracker für die Apple Watch | 12 Challenges",
     "qr_label": "QR-Code zum App Store anzeigen",
     "qr_close": "Schließen",
     "qr_alt": "QR-Code, der zum App-Store-Eintrag von 12 Challenges führt",
@@ -243,7 +243,7 @@
     "next_label": "Next Watch screenshot",
     "phone_alt": "Challenge calendar on iPhone with completed days and current streak",
     "sync_alt": "Matching challenge on Apple Watch with the daily check-off button",
-    "title": "Habit tracker for Apple Watch – 12 Challenges",
+    "title": "Habit tracker for Apple Watch | 12 Challenges",
     "description": "Check off habits on Apple Watch and see your progress on the watch face. Explore 12 Challenges with screenshots, complications and a setup guide.",
     "face": {
       "goal": "Read for 20 minutes",
@@ -378,7 +378,7 @@
     "next_label": "Capture Watch suivante",
     "phone_alt": "Calendrier d’un challenge sur iPhone avec les jours accomplis et la série en cours",
     "sync_alt": "Le même challenge sur Apple Watch avec le bouton pour cocher la journée",
-    "title": "Suivi d’habitudes sur Apple Watch – 12 Challenges",
+    "title": "Suivi d’habitudes sur Apple Watch | 12 Challenges",
     "description": "Coche tes habitudes sur Apple Watch et suis ta progression sur le cadran. Découvre 12 Challenges, ses complications et les étapes d’installation.",
     "face": {
       "goal": "Lire 20 minutes",
@@ -513,7 +513,7 @@
     "next_label": "Siguiente captura del Watch",
     "phone_alt": "Calendario de un reto en iPhone con días completados y racha actual",
     "sync_alt": "El mismo reto en Apple Watch con el botón para marcar el día",
-    "title": "Seguimiento de hábitos en Apple Watch – 12 Challenges",
+    "title": "Seguimiento de hábitos en Apple Watch | 12 Challenges",
     "description": "Marca tus hábitos en el Apple Watch y consulta tu progreso en la esfera. Descubre 12 Challenges con imágenes, complicaciones y guía de configuración.",
     "face": {
       "goal": "Leer 20 minutos",
@@ -648,7 +648,7 @@
     "next_label": "Schermata Watch successiva",
     "phone_alt": "Calendario di una sfida su iPhone con giorni completati e serie attuale",
     "sync_alt": "La stessa sfida su Apple Watch con il pulsante per spuntare la giornata",
-    "title": "Tracker di abitudini per Apple Watch – 12 Challenges",
+    "title": "Tracker di abitudini per Apple Watch | 12 Challenges",
     "description": "Spunta le tue abitudini su Apple Watch e segui i progressi sul quadrante. Scopri 12 Challenges con immagini, complicazioni e istruzioni per iniziare.",
     "face": {
       "goal": "Leggere 20 minuti",
@@ -783,7 +783,7 @@
     "next_label": "Próxima captura do Watch",
     "phone_alt": "Calendário de um desafio no iPhone com dias concluídos e sequência atual",
     "sync_alt": "O mesmo desafio no Apple Watch com o botão para marcar o dia",
-    "title": "Hábitos no Apple Watch – 12 Challenges",
+    "title": "Hábitos no Apple Watch | 12 Challenges",
     "description": "Assinala hábitos no Apple Watch e vê o progresso no mostrador. Conhece o 12 Challenges com imagens, complicações e instruções de configuração.",
     "face": {
       "goal": "Ler 20 minutos",
@@ -918,7 +918,7 @@
     "next_label": "Sonraki Watch ekran görüntüsü",
     "phone_alt": "iPhone’da tamamlanan günleri ve güncel seriyi gösteren hedef takvimi",
     "sync_alt": "Apple Watch’ta günlük işaretleme düğmesiyle aynı hedef",
-    "title": "Apple Watch’ta alışkanlık takibi – 12 Challenges",
+    "title": "Apple Watch’ta alışkanlık takibi | 12 Challenges",
     "description": "Alışkanlıklarını Apple Watch’ta işaretle, ilerlemeni kadranda gör. 12 Challenges’ın özelliklerini, komplikasyonlarını ve kurulum adımlarını keşfet.",
     "face": {
       "goal": "20 dakika oku",
@@ -1053,7 +1053,7 @@
     "next_label": "Następny zrzut Watch",
     "phone_alt": "Kalendarz wyzwania na iPhonie z ukończonymi dniami i aktualną serią",
     "sync_alt": "To samo wyzwanie na Apple Watch z przyciskiem codziennego odhaczania",
-    "title": "Śledzenie nawyków na Apple Watch – 12 Challenges",
+    "title": "Śledzenie nawyków na Apple Watch | 12 Challenges",
     "description": "Odhaczaj nawyki na Apple Watch i sprawdzaj postęp na tarczy. Poznaj 12 Challenges, komplikacje i konfigurację na przykładach z aplikacji.",
     "face": {
       "goal": "Czytaj 20 minut",
@@ -1188,7 +1188,7 @@
     "next_label": "Επόμενη οθόνη Watch",
     "phone_alt": "Ημερολόγιο πρόκλησης στο iPhone με ολοκληρωμένες ημέρες και τρέχον σερί",
     "sync_alt": "Η ίδια πρόκληση στο Apple Watch με το κουμπί καθημερινής καταγραφής",
-    "title": "Παρακολούθηση συνηθειών στο Apple Watch – 12 Challenges",
+    "title": "Παρακολούθηση συνηθειών στο Apple Watch | 12 Challenges",
     "description": "Σημείωσε συνήθειες στο Apple Watch και δες την πρόοδο στην πρόσοψη. Γνώρισε το 12 Challenges με εικόνες, πολυπλοκότητες και οδηγίες ρύθμισης.",
     "face": {
       "goal": "Διάβασε 20 λεπτά",
